@@ -1,0 +1,26 @@
+{
+  "base_protocol": "5dfecfc536b3763b9278cfc25325376ea313edcb21382b84739a7e1c0758cb8c",
+  "training_layouts": [
+    440,
+    441,
+    442,
+    443,
+    520,
+    521,
+    522,
+    523
+  ],
+  "sampling": "All physical pure departure pairs in eight development layouts. Use matching existing prefixes, once each. Original 440-443 former diagnostics are now training, and are excluded from evaluation.",
+  "validation": [
+    524,
+    525
+  ],
+  "test": [
+    526,
+    527,
+    528,
+    529
+  ],
+  "rule": "Identical three standardized groups, ridge .25, fixed known-plan difference, all eight subsets, zero threshold, validation regret then size and MAE; with no validation gain, retain baseline. Both protocols reported; neither selected using test values.",
+  "trigger": "Initial 16 training labels contained zero positive differences. Expansion was set before viewing either validation or testing results."
+}

@@ -1,0 +1,5225 @@
+{
+  "id": "validation_c6_n20_p40_l0_d0",
+  "cities": 6,
+  "n": 20,
+  "p": 0.4,
+  "layout_seed": 1846111097,
+  "day_seed": 1225209158,
+  "configuration": {
+    "truck_capacity": 1300,
+    "drone_capacity": 20,
+    "drone_endurance": 30,
+    "drones_per_station": 5,
+    "truck_supply": "nonbinding",
+    "truck_mainline_speed_kmh": 100,
+    "drone_speed_km_min": 1.5,
+    "truck_handling_setup": 5,
+    "truck_handling_per_kg": 0.025,
+    "drone_handling_setup_per_request": 1,
+    "drone_handling_per_kg": 0.025,
+    "customer_service_per_request": 1,
+    "delivery_and_pickup_weight_distribution": {
+      "type": "discrete_uniform",
+      "low": 6,
+      "high": 19
+    },
+    "truck_time_cost": 0.4,
+    "truck_distance_cost": 1.5,
+    "toll_per_marked_km": 0.45,
+    "drone_first_use_cost": 45,
+    "drone_distance_cost": 0.3,
+    "revenue_per_kg": 3.2,
+    "rejection_per_kg": 1.6,
+    "pickup_lateness_per_request_min": 0.3,
+    "truck_dispatch_cutoff": 660,
+    "delivery_deadline": 660,
+    "pickup_release_integer_support": [
+      1,
+      590
+    ],
+    "pickup_deadline_slacks": [
+      240,
+      360,
+      480
+    ],
+    "review_interval": 5,
+    "declared_public_counts": "per_city_fixed_pickup_counts_for_main_synthetic_grid",
+    "network": {
+      "depot": [
+        0,
+        0
+      ],
+      "first_city_x": 20,
+      "city_gap_uniform_km": [
+        15,
+        25
+      ],
+      "station_y": [
+        -0.25,
+        0.25
+      ],
+      "customer_local_x_uniform": [
+        -10,
+        10
+      ],
+      "customer_y_intervals": [
+        [
+          -10,
+          -0.5
+        ],
+        [
+          0.5,
+          10
+        ]
+      ],
+      "road_weights_independent_of_coordinates": true,
+      "turnaround_distance": 10,
+      "turnaround_time": 10,
+      "turnaround_tolled": false,
+      "depot_connectors_each_km": 20,
+      "mainline_and_connectors_tolled": true
+    }
+  },
+  "network": {
+    "city_x": [
+      20.0,
+      42.531548,
+      58.240813,
+      81.252978,
+      96.466549,
+      120.262472
+    ],
+    "stations": {
+      "L1+": [
+        20.0,
+        0.25
+      ],
+      "L1-": [
+        20.0,
+        -0.25
+      ],
+      "L2+": [
+        42.531548,
+        0.25
+      ],
+      "L2-": [
+        42.531548,
+        -0.25
+      ],
+      "L3+": [
+        58.240813,
+        0.25
+      ],
+      "L3-": [
+        58.240813,
+        -0.25
+      ],
+      "L4+": [
+        81.252978,
+        0.25
+      ],
+      "L4-": [
+        81.252978,
+        -0.25
+      ],
+      "L5+": [
+        96.466549,
+        0.25
+      ],
+      "L5-": [
+        96.466549,
+        -0.25
+      ],
+      "L6+": [
+        120.262472,
+        0.25
+      ],
+      "L6-": [
+        120.262472,
+        -0.25
+      ]
+    },
+    "arcs": [
+      {
+        "from": "depot",
+        "to": "L1+",
+        "km": 20.0,
+        "min": 12.0,
+        "tolled": true
+      },
+      {
+        "from": "L1+",
+        "to": "L2+",
+        "km": 22.531548,
+        "min": 13.5189288,
+        "tolled": true
+      },
+      {
+        "from": "L2+",
+        "to": "L3+",
+        "km": 15.709265000000002,
+        "min": 9.425559000000002,
+        "tolled": true
+      },
+      {
+        "from": "L3+",
+        "to": "L4+",
+        "km": 23.012164999999996,
+        "min": 13.807298999999997,
+        "tolled": true
+      },
+      {
+        "from": "L4+",
+        "to": "L5+",
+        "km": 15.213571000000002,
+        "min": 9.1281426,
+        "tolled": true
+      },
+      {
+        "from": "L5+",
+        "to": "L6+",
+        "km": 23.795923000000002,
+        "min": 14.277553800000002,
+        "tolled": true
+      },
+      {
+        "from": "L6+",
+        "to": "L6-",
+        "km": 10.0,
+        "min": 10.0,
+        "tolled": false
+      },
+      {
+        "from": "L6-",
+        "to": "L5-",
+        "km": 23.795923000000002,
+        "min": 14.277553800000002,
+        "tolled": true
+      },
+      {
+        "from": "L5-",
+        "to": "L4-",
+        "km": 15.213571000000002,
+        "min": 9.1281426,
+        "tolled": true
+      },
+      {
+        "from": "L4-",
+        "to": "L3-",
+        "km": 23.012164999999996,
+        "min": 13.807298999999997,
+        "tolled": true
+      },
+      {
+        "from": "L3-",
+        "to": "L2-",
+        "km": 15.709265000000002,
+        "min": 9.425559000000002,
+        "tolled": true
+      },
+      {
+        "from": "L2-",
+        "to": "L1-",
+        "km": 22.531548,
+        "min": 13.5189288,
+        "tolled": true
+      },
+      {
+        "from": "L1-",
+        "to": "depot",
+        "km": 20.0,
+        "min": 12.0,
+        "tolled": true
+      }
+    ]
+  },
+  "input": {
+    "start_time": 0,
+    "stop_time": 5000,
+    "orders": [
+      {
+        "id": "DC01R01",
+        "kind": "D",
+        "weight": 13,
+        "release": 0,
+        "deadline": 660,
+        "city": "C1",
+        "xy": [
+          27.713895,
+          -1.386784
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC01R02",
+        "kind": "D",
+        "weight": 15,
+        "release": 0,
+        "deadline": 660,
+        "city": "C1",
+        "xy": [
+          19.669621,
+          6.598402
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC01R03",
+        "kind": "D",
+        "weight": 12,
+        "release": 0,
+        "deadline": 660,
+        "city": "C1",
+        "xy": [
+          26.328318,
+          1.709332
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC01R04",
+        "kind": "D",
+        "weight": 7,
+        "release": 0,
+        "deadline": 660,
+        "city": "C1",
+        "xy": [
+          10.705119,
+          0.741313
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC01R07",
+        "kind": "D",
+        "weight": 19,
+        "release": 0,
+        "deadline": 660,
+        "city": "C1",
+        "xy": [
+          19.147281,
+          -3.994665
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC01R09",
+        "kind": "D",
+        "weight": 6,
+        "release": 0,
+        "deadline": 660,
+        "city": "C1",
+        "xy": [
+          24.589479,
+          0.956478
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC01R11",
+        "kind": "D",
+        "weight": 19,
+        "release": 0,
+        "deadline": 660,
+        "city": "C1",
+        "xy": [
+          18.014754,
+          1.82834
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC01R12",
+        "kind": "D",
+        "weight": 7,
+        "release": 0,
+        "deadline": 660,
+        "city": "C1",
+        "xy": [
+          17.88646,
+          -9.595556
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC01R14",
+        "kind": "D",
+        "weight": 12,
+        "release": 0,
+        "deadline": 660,
+        "city": "C1",
+        "xy": [
+          16.660437,
+          5.34622
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC01R18",
+        "kind": "D",
+        "weight": 18,
+        "release": 0,
+        "deadline": 660,
+        "city": "C1",
+        "xy": [
+          15.106676,
+          9.278699
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC01R19",
+        "kind": "D",
+        "weight": 16,
+        "release": 0,
+        "deadline": 660,
+        "city": "C1",
+        "xy": [
+          25.116962,
+          9.12571
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC01R20",
+        "kind": "D",
+        "weight": 8,
+        "release": 0,
+        "deadline": 660,
+        "city": "C1",
+        "xy": [
+          22.091688,
+          -8.677987
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC02R02",
+        "kind": "D",
+        "weight": 12,
+        "release": 0,
+        "deadline": 660,
+        "city": "C2",
+        "xy": [
+          44.822624,
+          7.207382
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC02R03",
+        "kind": "D",
+        "weight": 7,
+        "release": 0,
+        "deadline": 660,
+        "city": "C2",
+        "xy": [
+          40.397843,
+          3.911614
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC02R04",
+        "kind": "D",
+        "weight": 17,
+        "release": 0,
+        "deadline": 660,
+        "city": "C2",
+        "xy": [
+          36.984703,
+          3.607141
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC02R05",
+        "kind": "D",
+        "weight": 19,
+        "release": 0,
+        "deadline": 660,
+        "city": "C2",
+        "xy": [
+          36.608655,
+          -0.670384
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC02R09",
+        "kind": "D",
+        "weight": 18,
+        "release": 0,
+        "deadline": 660,
+        "city": "C2",
+        "xy": [
+          37.96452,
+          -4.313564
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC02R10",
+        "kind": "D",
+        "weight": 7,
+        "release": 0,
+        "deadline": 660,
+        "city": "C2",
+        "xy": [
+          42.605577,
+          -0.527695
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC02R11",
+        "kind": "D",
+        "weight": 19,
+        "release": 0,
+        "deadline": 660,
+        "city": "C2",
+        "xy": [
+          40.283229,
+          0.802022
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC02R12",
+        "kind": "D",
+        "weight": 11,
+        "release": 0,
+        "deadline": 660,
+        "city": "C2",
+        "xy": [
+          51.442168,
+          7.356893
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC02R13",
+        "kind": "D",
+        "weight": 15,
+        "release": 0,
+        "deadline": 660,
+        "city": "C2",
+        "xy": [
+          47.041311,
+          -1.199063
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC02R16",
+        "kind": "D",
+        "weight": 11,
+        "release": 0,
+        "deadline": 660,
+        "city": "C2",
+        "xy": [
+          36.892331,
+          9.354619
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC02R18",
+        "kind": "D",
+        "weight": 15,
+        "release": 0,
+        "deadline": 660,
+        "city": "C2",
+        "xy": [
+          32.974036,
+          -9.847822
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC02R20",
+        "kind": "D",
+        "weight": 9,
+        "release": 0,
+        "deadline": 660,
+        "city": "C2",
+        "xy": [
+          46.975842,
+          -2.695336
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC03R01",
+        "kind": "D",
+        "weight": 18,
+        "release": 0,
+        "deadline": 660,
+        "city": "C3",
+        "xy": [
+          48.846225,
+          -9.694552
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC03R04",
+        "kind": "D",
+        "weight": 11,
+        "release": 0,
+        "deadline": 660,
+        "city": "C3",
+        "xy": [
+          52.353133,
+          -6.854275
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC03R05",
+        "kind": "D",
+        "weight": 17,
+        "release": 0,
+        "deadline": 660,
+        "city": "C3",
+        "xy": [
+          56.472174,
+          2.867423
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC03R06",
+        "kind": "D",
+        "weight": 9,
+        "release": 0,
+        "deadline": 660,
+        "city": "C3",
+        "xy": [
+          66.901193,
+          -6.365463
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC03R08",
+        "kind": "D",
+        "weight": 16,
+        "release": 0,
+        "deadline": 660,
+        "city": "C3",
+        "xy": [
+          65.941817,
+          -1.192024
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC03R10",
+        "kind": "D",
+        "weight": 11,
+        "release": 0,
+        "deadline": 660,
+        "city": "C3",
+        "xy": [
+          62.971746,
+          -3.858882
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC03R11",
+        "kind": "D",
+        "weight": 9,
+        "release": 0,
+        "deadline": 660,
+        "city": "C3",
+        "xy": [
+          57.178728,
+          5.894327
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC03R12",
+        "kind": "D",
+        "weight": 7,
+        "release": 0,
+        "deadline": 660,
+        "city": "C3",
+        "xy": [
+          52.208555,
+          -8.263427
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC03R15",
+        "kind": "D",
+        "weight": 16,
+        "release": 0,
+        "deadline": 660,
+        "city": "C3",
+        "xy": [
+          62.390285,
+          4.53499
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC03R16",
+        "kind": "D",
+        "weight": 10,
+        "release": 0,
+        "deadline": 660,
+        "city": "C3",
+        "xy": [
+          67.664999,
+          -3.559812
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC03R18",
+        "kind": "D",
+        "weight": 17,
+        "release": 0,
+        "deadline": 660,
+        "city": "C3",
+        "xy": [
+          53.615748,
+          -7.085003
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC03R19",
+        "kind": "D",
+        "weight": 6,
+        "release": 0,
+        "deadline": 660,
+        "city": "C3",
+        "xy": [
+          49.965002,
+          4.304609
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC04R02",
+        "kind": "D",
+        "weight": 7,
+        "release": 0,
+        "deadline": 660,
+        "city": "C4",
+        "xy": [
+          81.307852,
+          -2.874206
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC04R05",
+        "kind": "D",
+        "weight": 18,
+        "release": 0,
+        "deadline": 660,
+        "city": "C4",
+        "xy": [
+          86.144744,
+          5.126529
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC04R06",
+        "kind": "D",
+        "weight": 7,
+        "release": 0,
+        "deadline": 660,
+        "city": "C4",
+        "xy": [
+          74.843595,
+          -7.795541
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC04R07",
+        "kind": "D",
+        "weight": 12,
+        "release": 0,
+        "deadline": 660,
+        "city": "C4",
+        "xy": [
+          74.101071,
+          -4.565659
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC04R08",
+        "kind": "D",
+        "weight": 10,
+        "release": 0,
+        "deadline": 660,
+        "city": "C4",
+        "xy": [
+          90.920929,
+          8.005189
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC04R09",
+        "kind": "D",
+        "weight": 19,
+        "release": 0,
+        "deadline": 660,
+        "city": "C4",
+        "xy": [
+          78.630764,
+          1.443764
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC04R12",
+        "kind": "D",
+        "weight": 19,
+        "release": 0,
+        "deadline": 660,
+        "city": "C4",
+        "xy": [
+          80.638127,
+          -0.548702
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC04R14",
+        "kind": "D",
+        "weight": 14,
+        "release": 0,
+        "deadline": 660,
+        "city": "C4",
+        "xy": [
+          78.862292,
+          5.497882
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC04R16",
+        "kind": "D",
+        "weight": 13,
+        "release": 0,
+        "deadline": 660,
+        "city": "C4",
+        "xy": [
+          81.978853,
+          -2.398648
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC04R17",
+        "kind": "D",
+        "weight": 10,
+        "release": 0,
+        "deadline": 660,
+        "city": "C4",
+        "xy": [
+          72.525508,
+          -2.572359
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC04R18",
+        "kind": "D",
+        "weight": 12,
+        "release": 0,
+        "deadline": 660,
+        "city": "C4",
+        "xy": [
+          90.24409,
+          7.784813
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC04R19",
+        "kind": "D",
+        "weight": 11,
+        "release": 0,
+        "deadline": 660,
+        "city": "C4",
+        "xy": [
+          82.674401,
+          -9.569225
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC05R03",
+        "kind": "D",
+        "weight": 15,
+        "release": 0,
+        "deadline": 660,
+        "city": "C5",
+        "xy": [
+          106.062206,
+          3.319116
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC05R04",
+        "kind": "D",
+        "weight": 18,
+        "release": 0,
+        "deadline": 660,
+        "city": "C5",
+        "xy": [
+          89.2847,
+          1.367016
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC05R05",
+        "kind": "D",
+        "weight": 9,
+        "release": 0,
+        "deadline": 660,
+        "city": "C5",
+        "xy": [
+          99.090679,
+          6.202072
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC05R06",
+        "kind": "D",
+        "weight": 18,
+        "release": 0,
+        "deadline": 660,
+        "city": "C5",
+        "xy": [
+          99.885095,
+          -7.315049
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC05R08",
+        "kind": "D",
+        "weight": 9,
+        "release": 0,
+        "deadline": 660,
+        "city": "C5",
+        "xy": [
+          87.451212,
+          -9.140561
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC05R10",
+        "kind": "D",
+        "weight": 12,
+        "release": 0,
+        "deadline": 660,
+        "city": "C5",
+        "xy": [
+          95.973438,
+          -9.954068
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC05R11",
+        "kind": "D",
+        "weight": 18,
+        "release": 0,
+        "deadline": 660,
+        "city": "C5",
+        "xy": [
+          92.474603,
+          4.774938
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC05R12",
+        "kind": "D",
+        "weight": 16,
+        "release": 0,
+        "deadline": 660,
+        "city": "C5",
+        "xy": [
+          93.633009,
+          -9.135807
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC05R14",
+        "kind": "D",
+        "weight": 10,
+        "release": 0,
+        "deadline": 660,
+        "city": "C5",
+        "xy": [
+          90.226475,
+          0.64139
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC05R16",
+        "kind": "D",
+        "weight": 15,
+        "release": 0,
+        "deadline": 660,
+        "city": "C5",
+        "xy": [
+          102.730376,
+          5.14644
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC05R19",
+        "kind": "D",
+        "weight": 6,
+        "release": 0,
+        "deadline": 660,
+        "city": "C5",
+        "xy": [
+          96.675652,
+          -9.334435
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC05R20",
+        "kind": "D",
+        "weight": 14,
+        "release": 0,
+        "deadline": 660,
+        "city": "C5",
+        "xy": [
+          88.799423,
+          -6.859196
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC06R02",
+        "kind": "D",
+        "weight": 16,
+        "release": 0,
+        "deadline": 660,
+        "city": "C6",
+        "xy": [
+          122.739055,
+          3.244549
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC06R04",
+        "kind": "D",
+        "weight": 19,
+        "release": 0,
+        "deadline": 660,
+        "city": "C6",
+        "xy": [
+          125.888139,
+          7.967797
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC06R05",
+        "kind": "D",
+        "weight": 14,
+        "release": 0,
+        "deadline": 660,
+        "city": "C6",
+        "xy": [
+          123.748227,
+          -9.343113
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC06R06",
+        "kind": "D",
+        "weight": 8,
+        "release": 0,
+        "deadline": 660,
+        "city": "C6",
+        "xy": [
+          120.9678,
+          -4.875235
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC06R08",
+        "kind": "D",
+        "weight": 8,
+        "release": 0,
+        "deadline": 660,
+        "city": "C6",
+        "xy": [
+          120.047963,
+          5.211771
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC06R10",
+        "kind": "D",
+        "weight": 12,
+        "release": 0,
+        "deadline": 660,
+        "city": "C6",
+        "xy": [
+          114.064866,
+          -3.258024
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC06R11",
+        "kind": "D",
+        "weight": 14,
+        "release": 0,
+        "deadline": 660,
+        "city": "C6",
+        "xy": [
+          116.737768,
+          -7.15027
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC06R13",
+        "kind": "D",
+        "weight": 14,
+        "release": 0,
+        "deadline": 660,
+        "city": "C6",
+        "xy": [
+          110.609525,
+          7.904319
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC06R15",
+        "kind": "D",
+        "weight": 17,
+        "release": 0,
+        "deadline": 660,
+        "city": "C6",
+        "xy": [
+          110.280086,
+          9.295954
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC06R16",
+        "kind": "D",
+        "weight": 14,
+        "release": 0,
+        "deadline": 660,
+        "city": "C6",
+        "xy": [
+          112.622331,
+          -3.957478
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC06R19",
+        "kind": "D",
+        "weight": 12,
+        "release": 0,
+        "deadline": 660,
+        "city": "C6",
+        "xy": [
+          112.970222,
+          -3.936387
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "DC06R20",
+        "kind": "D",
+        "weight": 11,
+        "release": 0,
+        "deadline": 660,
+        "city": "C6",
+        "xy": [
+          116.141291,
+          -0.566293
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": true
+      },
+      {
+        "id": "PC01R05",
+        "kind": "P",
+        "weight": 10,
+        "release": 237,
+        "deadline": 597,
+        "city": "C1",
+        "xy": [
+          10.765594,
+          4.922651
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC01R06",
+        "kind": "P",
+        "weight": 19,
+        "release": 152,
+        "deadline": 512,
+        "city": "C1",
+        "xy": [
+          20.397143,
+          2.87825
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC01R08",
+        "kind": "P",
+        "weight": 13,
+        "release": 420,
+        "deadline": 780,
+        "city": "C1",
+        "xy": [
+          10.34722,
+          -2.547228
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC01R10",
+        "kind": "P",
+        "weight": 15,
+        "release": 44,
+        "deadline": 404,
+        "city": "C1",
+        "xy": [
+          23.642046,
+          4.574904
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC01R13",
+        "kind": "P",
+        "weight": 10,
+        "release": 487,
+        "deadline": 847,
+        "city": "C1",
+        "xy": [
+          22.8047,
+          -9.788912
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC01R15",
+        "kind": "P",
+        "weight": 8,
+        "release": 559,
+        "deadline": 919,
+        "city": "C1",
+        "xy": [
+          17.191508,
+          -6.822167
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC01R16",
+        "kind": "P",
+        "weight": 11,
+        "release": 161,
+        "deadline": 521,
+        "city": "C1",
+        "xy": [
+          18.069476,
+          9.238503
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC01R17",
+        "kind": "P",
+        "weight": 18,
+        "release": 366,
+        "deadline": 726,
+        "city": "C1",
+        "xy": [
+          25.136336,
+          7.581059
+        ],
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC02R01",
+        "kind": "P",
+        "weight": 18,
+        "release": 128,
+        "deadline": 488,
+        "city": "C2",
+        "xy": [
+          48.264474,
+          1.166549
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC02R06",
+        "kind": "P",
+        "weight": 13,
+        "release": 2,
+        "deadline": 362,
+        "city": "C2",
+        "xy": [
+          32.949957,
+          -4.966333
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC02R07",
+        "kind": "P",
+        "weight": 9,
+        "release": 338,
+        "deadline": 698,
+        "city": "C2",
+        "xy": [
+          51.515565,
+          4.228144
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC02R08",
+        "kind": "P",
+        "weight": 19,
+        "release": 451,
+        "deadline": 811,
+        "city": "C2",
+        "xy": [
+          45.750204,
+          1.810526
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC02R14",
+        "kind": "P",
+        "weight": 19,
+        "release": 553,
+        "deadline": 913,
+        "city": "C2",
+        "xy": [
+          34.244006,
+          -0.763715
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC02R15",
+        "kind": "P",
+        "weight": 7,
+        "release": 32,
+        "deadline": 392,
+        "city": "C2",
+        "xy": [
+          44.902455,
+          8.519633
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC02R17",
+        "kind": "P",
+        "weight": 6,
+        "release": 398,
+        "deadline": 758,
+        "city": "C2",
+        "xy": [
+          44.013365,
+          -6.579573
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC02R19",
+        "kind": "P",
+        "weight": 8,
+        "release": 50,
+        "deadline": 410,
+        "city": "C2",
+        "xy": [
+          41.806321,
+          6.034884
+        ],
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC03R02",
+        "kind": "P",
+        "weight": 13,
+        "release": 298,
+        "deadline": 658,
+        "city": "C3",
+        "xy": [
+          54.692935,
+          -5.453091
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC03R03",
+        "kind": "P",
+        "weight": 11,
+        "release": 180,
+        "deadline": 540,
+        "city": "C3",
+        "xy": [
+          55.500216,
+          -7.059044
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC03R07",
+        "kind": "P",
+        "weight": 15,
+        "release": 111,
+        "deadline": 471,
+        "city": "C3",
+        "xy": [
+          64.936062,
+          -3.425908
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC03R09",
+        "kind": "P",
+        "weight": 16,
+        "release": 341,
+        "deadline": 701,
+        "city": "C3",
+        "xy": [
+          58.236885,
+          -3.108314
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC03R13",
+        "kind": "P",
+        "weight": 13,
+        "release": 31,
+        "deadline": 391,
+        "city": "C3",
+        "xy": [
+          55.931807,
+          0.60764
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC03R14",
+        "kind": "P",
+        "weight": 18,
+        "release": 370,
+        "deadline": 730,
+        "city": "C3",
+        "xy": [
+          54.105762,
+          -5.956127
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC03R17",
+        "kind": "P",
+        "weight": 9,
+        "release": 461,
+        "deadline": 821,
+        "city": "C3",
+        "xy": [
+          49.962836,
+          6.641248
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC03R20",
+        "kind": "P",
+        "weight": 9,
+        "release": 458,
+        "deadline": 818,
+        "city": "C3",
+        "xy": [
+          48.31441,
+          4.391869
+        ],
+        "eligible_stations": [
+          "L3+",
+          "L3-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC04R01",
+        "kind": "P",
+        "weight": 7,
+        "release": 470,
+        "deadline": 830,
+        "city": "C4",
+        "xy": [
+          86.844947,
+          7.299392
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC04R03",
+        "kind": "P",
+        "weight": 16,
+        "release": 455,
+        "deadline": 815,
+        "city": "C4",
+        "xy": [
+          85.123731,
+          1.906673
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC04R04",
+        "kind": "P",
+        "weight": 18,
+        "release": 65,
+        "deadline": 425,
+        "city": "C4",
+        "xy": [
+          77.604725,
+          -2.705033
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC04R10",
+        "kind": "P",
+        "weight": 15,
+        "release": 302,
+        "deadline": 662,
+        "city": "C4",
+        "xy": [
+          80.374608,
+          -0.756715
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC04R11",
+        "kind": "P",
+        "weight": 13,
+        "release": 170,
+        "deadline": 530,
+        "city": "C4",
+        "xy": [
+          78.04723,
+          -2.457973
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC04R13",
+        "kind": "P",
+        "weight": 12,
+        "release": 393,
+        "deadline": 753,
+        "city": "C4",
+        "xy": [
+          81.64999,
+          4.68839
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC04R15",
+        "kind": "P",
+        "weight": 6,
+        "release": 30,
+        "deadline": 390,
+        "city": "C4",
+        "xy": [
+          81.332298,
+          -0.980026
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC04R20",
+        "kind": "P",
+        "weight": 18,
+        "release": 459,
+        "deadline": 819,
+        "city": "C4",
+        "xy": [
+          89.135877,
+          -8.188032
+        ],
+        "eligible_stations": [
+          "L4+",
+          "L4-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC05R01",
+        "kind": "P",
+        "weight": 12,
+        "release": 555,
+        "deadline": 915,
+        "city": "C5",
+        "xy": [
+          92.756871,
+          -7.569192
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC05R02",
+        "kind": "P",
+        "weight": 14,
+        "release": 226,
+        "deadline": 586,
+        "city": "C5",
+        "xy": [
+          89.049433,
+          -6.013898
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC05R07",
+        "kind": "P",
+        "weight": 17,
+        "release": 22,
+        "deadline": 382,
+        "city": "C5",
+        "xy": [
+          103.951469,
+          -9.521054
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC05R09",
+        "kind": "P",
+        "weight": 12,
+        "release": 338,
+        "deadline": 698,
+        "city": "C5",
+        "xy": [
+          105.120831,
+          8.075939
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC05R13",
+        "kind": "P",
+        "weight": 9,
+        "release": 35,
+        "deadline": 395,
+        "city": "C5",
+        "xy": [
+          96.632509,
+          5.515181
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC05R15",
+        "kind": "P",
+        "weight": 8,
+        "release": 380,
+        "deadline": 740,
+        "city": "C5",
+        "xy": [
+          92.934229,
+          1.04711
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC05R17",
+        "kind": "P",
+        "weight": 8,
+        "release": 345,
+        "deadline": 705,
+        "city": "C5",
+        "xy": [
+          104.748116,
+          1.16369
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC05R18",
+        "kind": "P",
+        "weight": 13,
+        "release": 352,
+        "deadline": 712,
+        "city": "C5",
+        "xy": [
+          105.502286,
+          3.707957
+        ],
+        "eligible_stations": [
+          "L5+",
+          "L5-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC06R01",
+        "kind": "P",
+        "weight": 10,
+        "release": 253,
+        "deadline": 613,
+        "city": "C6",
+        "xy": [
+          121.394498,
+          0.906309
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC06R03",
+        "kind": "P",
+        "weight": 16,
+        "release": 535,
+        "deadline": 895,
+        "city": "C6",
+        "xy": [
+          122.999247,
+          5.105164
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC06R07",
+        "kind": "P",
+        "weight": 17,
+        "release": 160,
+        "deadline": 520,
+        "city": "C6",
+        "xy": [
+          121.98228,
+          -7.23952
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC06R09",
+        "kind": "P",
+        "weight": 9,
+        "release": 46,
+        "deadline": 406,
+        "city": "C6",
+        "xy": [
+          124.808438,
+          5.536731
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC06R12",
+        "kind": "P",
+        "weight": 7,
+        "release": 342,
+        "deadline": 702,
+        "city": "C6",
+        "xy": [
+          115.671587,
+          5.532139
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC06R14",
+        "kind": "P",
+        "weight": 10,
+        "release": 63,
+        "deadline": 423,
+        "city": "C6",
+        "xy": [
+          124.809241,
+          -8.085791
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC06R17",
+        "kind": "P",
+        "weight": 12,
+        "release": 170,
+        "deadline": 530,
+        "city": "C6",
+        "xy": [
+          113.435564,
+          -7.008713
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": null
+      },
+      {
+        "id": "PC06R18",
+        "kind": "P",
+        "weight": 8,
+        "release": 570,
+        "deadline": 930,
+        "city": "C6",
+        "xy": [
+          117.504294,
+          2.36415
+        ],
+        "eligible_stations": [
+          "L6+",
+          "L6-"
+        ],
+        "accepted": null
+      }
+    ],
+    "trucks": [
+      {
+        "id": "I0T00001",
+        "location": "depot",
+        "onboard_weight": 0,
+        "departed_at": null,
+        "unloading_phase": "not_started",
+        "completed_batches": 0,
+        "active_operation": null,
+        "return_time": null,
+        "departure_time": null,
+        "loading_end": null,
+        "loading_batches": 0,
+        "active_batch": null
+      }
+    ],
+    "drones": [
+      {
+        "id": "U1+0",
+        "home": "L1+",
+        "location": "L1+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U1+1",
+        "home": "L1+",
+        "location": "L1+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U1+2",
+        "home": "L1+",
+        "location": "L1+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U1+3",
+        "home": "L1+",
+        "location": "L1+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U1+4",
+        "home": "L1+",
+        "location": "L1+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U1-0",
+        "home": "L1-",
+        "location": "L1-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U1-1",
+        "home": "L1-",
+        "location": "L1-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U1-2",
+        "home": "L1-",
+        "location": "L1-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U1-3",
+        "home": "L1-",
+        "location": "L1-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U1-4",
+        "home": "L1-",
+        "location": "L1-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U2+0",
+        "home": "L2+",
+        "location": "L2+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U2+1",
+        "home": "L2+",
+        "location": "L2+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U2+2",
+        "home": "L2+",
+        "location": "L2+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U2+3",
+        "home": "L2+",
+        "location": "L2+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U2+4",
+        "home": "L2+",
+        "location": "L2+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U2-0",
+        "home": "L2-",
+        "location": "L2-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U2-1",
+        "home": "L2-",
+        "location": "L2-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U2-2",
+        "home": "L2-",
+        "location": "L2-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U2-3",
+        "home": "L2-",
+        "location": "L2-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U2-4",
+        "home": "L2-",
+        "location": "L2-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U3+0",
+        "home": "L3+",
+        "location": "L3+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U3+1",
+        "home": "L3+",
+        "location": "L3+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U3+2",
+        "home": "L3+",
+        "location": "L3+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U3+3",
+        "home": "L3+",
+        "location": "L3+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U3+4",
+        "home": "L3+",
+        "location": "L3+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U3-0",
+        "home": "L3-",
+        "location": "L3-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U3-1",
+        "home": "L3-",
+        "location": "L3-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U3-2",
+        "home": "L3-",
+        "location": "L3-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U3-3",
+        "home": "L3-",
+        "location": "L3-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U3-4",
+        "home": "L3-",
+        "location": "L3-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U4+0",
+        "home": "L4+",
+        "location": "L4+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U4+1",
+        "home": "L4+",
+        "location": "L4+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U4+2",
+        "home": "L4+",
+        "location": "L4+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U4+3",
+        "home": "L4+",
+        "location": "L4+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U4+4",
+        "home": "L4+",
+        "location": "L4+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U4-0",
+        "home": "L4-",
+        "location": "L4-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U4-1",
+        "home": "L4-",
+        "location": "L4-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U4-2",
+        "home": "L4-",
+        "location": "L4-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U4-3",
+        "home": "L4-",
+        "location": "L4-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U4-4",
+        "home": "L4-",
+        "location": "L4-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U5+0",
+        "home": "L5+",
+        "location": "L5+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U5+1",
+        "home": "L5+",
+        "location": "L5+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U5+2",
+        "home": "L5+",
+        "location": "L5+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U5+3",
+        "home": "L5+",
+        "location": "L5+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U5+4",
+        "home": "L5+",
+        "location": "L5+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U5-0",
+        "home": "L5-",
+        "location": "L5-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U5-1",
+        "home": "L5-",
+        "location": "L5-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U5-2",
+        "home": "L5-",
+        "location": "L5-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U5-3",
+        "home": "L5-",
+        "location": "L5-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U5-4",
+        "home": "L5-",
+        "location": "L5-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U6+0",
+        "home": "L6+",
+        "location": "L6+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U6+1",
+        "home": "L6+",
+        "location": "L6+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U6+2",
+        "home": "L6+",
+        "location": "L6+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U6+3",
+        "home": "L6+",
+        "location": "L6+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U6+4",
+        "home": "L6+",
+        "location": "L6+",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U6-0",
+        "home": "L6-",
+        "location": "L6-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U6-1",
+        "home": "L6-",
+        "location": "L6-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U6-2",
+        "home": "L6-",
+        "location": "L6-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U6-3",
+        "home": "L6-",
+        "location": "L6-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      },
+      {
+        "id": "U6-4",
+        "home": "L6-",
+        "location": "L6-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null
+      }
+    ],
+    "inventory": [
+      {
+        "order": "DC01R01",
+        "lot": "DC01R01",
+        "weight": 13,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC01R02",
+        "lot": "DC01R02",
+        "weight": 15,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC01R03",
+        "lot": "DC01R03",
+        "weight": 12,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC01R04",
+        "lot": "DC01R04",
+        "weight": 7,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC01R07",
+        "lot": "DC01R07",
+        "weight": 19,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC01R09",
+        "lot": "DC01R09",
+        "weight": 6,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC01R11",
+        "lot": "DC01R11",
+        "weight": 19,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC01R12",
+        "lot": "DC01R12",
+        "weight": 7,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC01R14",
+        "lot": "DC01R14",
+        "weight": 12,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC01R18",
+        "lot": "DC01R18",
+        "weight": 18,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC01R19",
+        "lot": "DC01R19",
+        "weight": 16,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC01R20",
+        "lot": "DC01R20",
+        "weight": 8,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC02R02",
+        "lot": "DC02R02",
+        "weight": 12,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC02R03",
+        "lot": "DC02R03",
+        "weight": 7,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC02R04",
+        "lot": "DC02R04",
+        "weight": 17,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC02R05",
+        "lot": "DC02R05",
+        "weight": 19,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC02R09",
+        "lot": "DC02R09",
+        "weight": 18,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC02R10",
+        "lot": "DC02R10",
+        "weight": 7,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC02R11",
+        "lot": "DC02R11",
+        "weight": 19,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC02R12",
+        "lot": "DC02R12",
+        "weight": 11,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC02R13",
+        "lot": "DC02R13",
+        "weight": 15,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC02R16",
+        "lot": "DC02R16",
+        "weight": 11,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC02R18",
+        "lot": "DC02R18",
+        "weight": 15,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC02R20",
+        "lot": "DC02R20",
+        "weight": 9,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC03R01",
+        "lot": "DC03R01",
+        "weight": 18,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC03R04",
+        "lot": "DC03R04",
+        "weight": 11,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC03R05",
+        "lot": "DC03R05",
+        "weight": 17,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC03R06",
+        "lot": "DC03R06",
+        "weight": 9,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC03R08",
+        "lot": "DC03R08",
+        "weight": 16,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC03R10",
+        "lot": "DC03R10",
+        "weight": 11,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC03R11",
+        "lot": "DC03R11",
+        "weight": 9,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC03R12",
+        "lot": "DC03R12",
+        "weight": 7,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC03R15",
+        "lot": "DC03R15",
+        "weight": 16,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC03R16",
+        "lot": "DC03R16",
+        "weight": 10,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC03R18",
+        "lot": "DC03R18",
+        "weight": 17,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC03R19",
+        "lot": "DC03R19",
+        "weight": 6,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC04R02",
+        "lot": "DC04R02",
+        "weight": 7,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC04R05",
+        "lot": "DC04R05",
+        "weight": 18,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC04R06",
+        "lot": "DC04R06",
+        "weight": 7,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC04R07",
+        "lot": "DC04R07",
+        "weight": 12,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC04R08",
+        "lot": "DC04R08",
+        "weight": 10,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC04R09",
+        "lot": "DC04R09",
+        "weight": 19,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC04R12",
+        "lot": "DC04R12",
+        "weight": 19,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC04R14",
+        "lot": "DC04R14",
+        "weight": 14,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC04R16",
+        "lot": "DC04R16",
+        "weight": 13,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC04R17",
+        "lot": "DC04R17",
+        "weight": 10,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC04R18",
+        "lot": "DC04R18",
+        "weight": 12,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC04R19",
+        "lot": "DC04R19",
+        "weight": 11,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC05R03",
+        "lot": "DC05R03",
+        "weight": 15,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC05R04",
+        "lot": "DC05R04",
+        "weight": 18,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC05R05",
+        "lot": "DC05R05",
+        "weight": 9,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC05R06",
+        "lot": "DC05R06",
+        "weight": 18,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC05R08",
+        "lot": "DC05R08",
+        "weight": 9,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC05R10",
+        "lot": "DC05R10",
+        "weight": 12,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC05R11",
+        "lot": "DC05R11",
+        "weight": 18,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC05R12",
+        "lot": "DC05R12",
+        "weight": 16,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC05R14",
+        "lot": "DC05R14",
+        "weight": 10,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC05R16",
+        "lot": "DC05R16",
+        "weight": 15,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC05R19",
+        "lot": "DC05R19",
+        "weight": 6,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC05R20",
+        "lot": "DC05R20",
+        "weight": 14,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC06R02",
+        "lot": "DC06R02",
+        "weight": 16,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC06R04",
+        "lot": "DC06R04",
+        "weight": 19,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC06R05",
+        "lot": "DC06R05",
+        "weight": 14,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC06R06",
+        "lot": "DC06R06",
+        "weight": 8,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC06R08",
+        "lot": "DC06R08",
+        "weight": 8,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC06R10",
+        "lot": "DC06R10",
+        "weight": 12,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC06R11",
+        "lot": "DC06R11",
+        "weight": 14,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC06R13",
+        "lot": "DC06R13",
+        "weight": 14,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC06R15",
+        "lot": "DC06R15",
+        "weight": 17,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC06R16",
+        "lot": "DC06R16",
+        "weight": 14,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC06R19",
+        "lot": "DC06R19",
+        "weight": 12,
+        "state": "depot",
+        "holder": "depot"
+      },
+      {
+        "order": "DC06R20",
+        "lot": "DC06R20",
+        "weight": 11,
+        "state": "depot",
+        "holder": "depot"
+      }
+    ],
+    "actions": [
+      {
+        "at": 0,
+        "kind": "truck_dispatch",
+        "actor": "I0T00001",
+        "delivery_orders": [
+          "DC01R01",
+          "DC01R02",
+          "DC01R03",
+          "DC01R04",
+          "DC01R07",
+          "DC01R09",
+          "DC01R11",
+          "DC01R12",
+          "DC01R14",
+          "DC01R18",
+          "DC01R19",
+          "DC01R20",
+          "DC02R02",
+          "DC02R03",
+          "DC02R04",
+          "DC02R05",
+          "DC02R09",
+          "DC02R10",
+          "DC02R11",
+          "DC02R12",
+          "DC02R13",
+          "DC02R16",
+          "DC02R18",
+          "DC02R20",
+          "DC03R01",
+          "DC03R04",
+          "DC03R05",
+          "DC03R06",
+          "DC03R08",
+          "DC03R10",
+          "DC03R11",
+          "DC03R12",
+          "DC03R15",
+          "DC03R16",
+          "DC03R18",
+          "DC03R19",
+          "DC04R02",
+          "DC04R05",
+          "DC04R06",
+          "DC04R07",
+          "DC04R08",
+          "DC04R09",
+          "DC04R12",
+          "DC04R14",
+          "DC04R16",
+          "DC04R17",
+          "DC04R18",
+          "DC04R19",
+          "DC05R03",
+          "DC05R04",
+          "DC05R05",
+          "DC05R06",
+          "DC05R08",
+          "DC05R10",
+          "DC05R11",
+          "DC05R12",
+          "DC05R14",
+          "DC05R16",
+          "DC05R19",
+          "DC05R20",
+          "DC06R02",
+          "DC06R04",
+          "DC06R05",
+          "DC06R06",
+          "DC06R08",
+          "DC06R10",
+          "DC06R11",
+          "DC06R13",
+          "DC06R15",
+          "DC06R16",
+          "DC06R19",
+          "DC06R20"
+        ],
+        "quantities": {
+          "DC01R01": 13,
+          "DC01R02": 15,
+          "DC01R03": 12,
+          "DC01R04": 7,
+          "DC01R07": 19,
+          "DC01R09": 6,
+          "DC01R11": 19,
+          "DC01R12": 7,
+          "DC01R14": 12,
+          "DC01R18": 18,
+          "DC01R19": 16,
+          "DC01R20": 8,
+          "DC02R02": 12,
+          "DC02R03": 7,
+          "DC02R04": 17,
+          "DC02R05": 19,
+          "DC02R09": 18,
+          "DC02R10": 7,
+          "DC02R11": 19,
+          "DC02R12": 11,
+          "DC02R13": 15,
+          "DC02R16": 11,
+          "DC02R18": 15,
+          "DC02R20": 9,
+          "DC03R01": 18,
+          "DC03R04": 11,
+          "DC03R05": 17,
+          "DC03R06": 9,
+          "DC03R08": 16,
+          "DC03R10": 11,
+          "DC03R11": 9,
+          "DC03R12": 7,
+          "DC03R15": 16,
+          "DC03R16": 10,
+          "DC03R18": 17,
+          "DC03R19": 6,
+          "DC04R02": 7,
+          "DC04R05": 18,
+          "DC04R06": 7,
+          "DC04R07": 12,
+          "DC04R08": 10,
+          "DC04R09": 19,
+          "DC04R12": 19,
+          "DC04R14": 14,
+          "DC04R16": 13,
+          "DC04R17": 10,
+          "DC04R18": 12,
+          "DC04R19": 11,
+          "DC05R03": 15,
+          "DC05R04": 18,
+          "DC05R05": 9,
+          "DC05R06": 18,
+          "DC05R08": 9,
+          "DC05R10": 12,
+          "DC05R11": 18,
+          "DC05R12": 16,
+          "DC05R14": 10,
+          "DC05R16": 15,
+          "DC05R19": 6,
+          "DC05R20": 14,
+          "DC06R02": 16,
+          "DC06R04": 19,
+          "DC06R05": 14,
+          "DC06R06": 8,
+          "DC06R08": 8,
+          "DC06R10": 12,
+          "DC06R11": 14,
+          "DC06R13": 14,
+          "DC06R15": 17,
+          "DC06R16": 14,
+          "DC06R19": 12,
+          "DC06R20": 11
+        }
+      },
+      {
+        "at": "12.0",
+        "kind": "truck_unload",
+        "actor": "I0T00001",
+        "station": "L1+",
+        "quantities": {
+          "DC01R02": 15,
+          "DC01R03": 12,
+          "DC01R04": 7,
+          "DC01R09": 6,
+          "DC01R11": 19,
+          "DC01R14": 12,
+          "DC01R18": 18,
+          "DC01R19": 16
+        }
+      },
+      {
+        "at": "19.625",
+        "kind": "truck_continue_circuit",
+        "actor": "I0T00001"
+      },
+      {
+        "at": "33.1439288",
+        "kind": "truck_unload",
+        "actor": "I0T00001",
+        "station": "L2+",
+        "quantities": {
+          "DC02R02": 12,
+          "DC02R03": 7,
+          "DC02R04": 17,
+          "DC02R11": 19,
+          "DC02R12": 11,
+          "DC02R16": 11
+        }
+      },
+      {
+        "at": "40.0689288",
+        "kind": "truck_continue_circuit",
+        "actor": "I0T00001"
+      },
+      {
+        "at": "49.494487800000002",
+        "kind": "truck_unload",
+        "actor": "I0T00001",
+        "station": "L3+",
+        "quantities": {
+          "DC03R05": 17,
+          "DC03R11": 9,
+          "DC03R15": 16,
+          "DC03R19": 6
+        }
+      },
+      {
+        "at": "55.694487800000002",
+        "kind": "truck_continue_circuit",
+        "actor": "I0T00001"
+      },
+      {
+        "at": "69.501786799999999",
+        "kind": "truck_unload",
+        "actor": "I0T00001",
+        "station": "L4+",
+        "quantities": {
+          "DC04R05": 18,
+          "DC04R08": 10,
+          "DC04R09": 19,
+          "DC04R14": 14,
+          "DC04R18": 12
+        }
+      },
+      {
+        "at": "76.326786799999999",
+        "kind": "truck_continue_circuit",
+        "actor": "I0T00001"
+      },
+      {
+        "at": "85.454929399999999",
+        "kind": "truck_unload",
+        "actor": "I0T00001",
+        "station": "L5+",
+        "quantities": {
+          "DC05R03": 15,
+          "DC05R04": 18,
+          "DC05R05": 9,
+          "DC05R11": 18,
+          "DC05R14": 10,
+          "DC05R16": 15
+        }
+      },
+      {
+        "at": "92.579929399999999",
+        "kind": "truck_continue_circuit",
+        "actor": "I0T00001"
+      },
+      {
+        "at": "106.857483200000001",
+        "kind": "truck_unload",
+        "actor": "I0T00001",
+        "station": "L6+",
+        "quantities": {
+          "DC06R02": 16,
+          "DC06R04": 19,
+          "DC06R08": 8,
+          "DC06R13": 14,
+          "DC06R15": 17
+        }
+      },
+      {
+        "at": "113.707483200000001",
+        "kind": "truck_continue_circuit",
+        "actor": "I0T00001"
+      },
+      {
+        "at": "123.707483200000001",
+        "kind": "truck_unload",
+        "actor": "I0T00001",
+        "station": "L6-",
+        "quantities": {
+          "DC06R05": 14,
+          "DC06R06": 8,
+          "DC06R10": 12,
+          "DC06R11": 14,
+          "DC06R16": 14,
+          "DC06R19": 12,
+          "DC06R20": 11
+        }
+      },
+      {
+        "at": "130.832483200000001",
+        "kind": "truck_continue_circuit",
+        "actor": "I0T00001"
+      },
+      {
+        "at": "145.110037000000003",
+        "kind": "truck_unload",
+        "actor": "I0T00001",
+        "station": "L5-",
+        "quantities": {
+          "DC05R06": 18,
+          "DC05R08": 9,
+          "DC05R10": 12,
+          "DC05R12": 16,
+          "DC05R19": 6,
+          "DC05R20": 14
+        }
+      },
+      {
+        "at": "151.985037000000003",
+        "kind": "truck_continue_circuit",
+        "actor": "I0T00001"
+      },
+      {
+        "at": "161.113179600000003",
+        "kind": "truck_unload",
+        "actor": "I0T00001",
+        "station": "L4-",
+        "quantities": {
+          "DC04R02": 7,
+          "DC04R06": 7,
+          "DC04R07": 12,
+          "DC04R12": 19,
+          "DC04R16": 13,
+          "DC04R17": 10,
+          "DC04R19": 11
+        }
+      },
+      {
+        "at": "168.088179600000003",
+        "kind": "truck_continue_circuit",
+        "actor": "I0T00001"
+      },
+      {
+        "at": "181.895478600000000",
+        "kind": "truck_unload",
+        "actor": "I0T00001",
+        "station": "L3-",
+        "quantities": {
+          "DC03R01": 18,
+          "DC03R04": 11,
+          "DC03R06": 9,
+          "DC03R08": 16,
+          "DC03R10": 11,
+          "DC03R12": 7,
+          "DC03R16": 10,
+          "DC03R18": 17
+        }
+      },
+      {
+        "at": "189.370478600000000",
+        "kind": "truck_continue_circuit",
+        "actor": "I0T00001"
+      },
+      {
+        "at": "198.796037600000002",
+        "kind": "truck_unload",
+        "actor": "I0T00001",
+        "station": "L2-",
+        "quantities": {
+          "DC02R05": 19,
+          "DC02R09": 18,
+          "DC02R10": 7,
+          "DC02R13": 15,
+          "DC02R18": 15,
+          "DC02R20": 9
+        }
+      },
+      {
+        "at": "205.871037600000002",
+        "kind": "truck_continue_circuit",
+        "actor": "I0T00001"
+      },
+      {
+        "at": "219.389966400000002",
+        "kind": "truck_unload",
+        "actor": "I0T00001",
+        "station": "L1-",
+        "quantities": {
+          "DC01R01": 13,
+          "DC01R07": 19,
+          "DC01R12": 7,
+          "DC01R20": 8
+        }
+      },
+      {
+        "at": "225.564966400000002",
+        "kind": "truck_continue_circuit",
+        "actor": "I0T00001"
+      },
+      {
+        "at": "225.564966400000002",
+        "kind": "drone_load",
+        "actor": "U1-0",
+        "orders": [
+          "DC01R01"
+        ]
+      },
+      {
+        "at": "226.889966400000002",
+        "kind": "drone_sortie",
+        "actor": "U1-0",
+        "visit_order": [
+          "DC01R01"
+        ]
+      },
+      {
+        "at": "19.625",
+        "kind": "drone_load",
+        "actor": "U1+0",
+        "orders": [
+          "DC01R02"
+        ]
+      },
+      {
+        "at": "21.000",
+        "kind": "drone_sortie",
+        "actor": "U1+0",
+        "visit_order": [
+          "DC01R02"
+        ]
+      },
+      {
+        "at": "30.47599048158922315758579526",
+        "kind": "drone_load",
+        "actor": "U1+0",
+        "orders": [
+          "DC01R03"
+        ]
+      },
+      {
+        "at": "31.77599048158922315758579526",
+        "kind": "drone_sortie",
+        "actor": "U1+0",
+        "visit_order": [
+          "DC01R03"
+        ]
+      },
+      {
+        "at": "41.43519327736646748004309924",
+        "kind": "drone_load",
+        "actor": "U1+0",
+        "orders": [
+          "DC01R04"
+        ]
+      },
+      {
+        "at": "42.61019327736646748004309924",
+        "kind": "drone_sortie",
+        "actor": "U1+0",
+        "visit_order": [
+          "DC01R04"
+        ]
+      },
+      {
+        "at": "238.2862438477689121563688396",
+        "kind": "drone_load",
+        "actor": "U1-0",
+        "orders": [
+          "DC01R07"
+        ]
+      },
+      {
+        "at": "239.7612438477689121563688396",
+        "kind": "drone_sortie",
+        "actor": "U1-0",
+        "visit_order": [
+          "DC01R07"
+        ]
+      },
+      {
+        "at": "56.02066922978523216644475258",
+        "kind": "drone_load",
+        "actor": "U1+0",
+        "orders": [
+          "DC01R09"
+        ]
+      },
+      {
+        "at": "57.17066922978523216644475258",
+        "kind": "drone_sortie",
+        "actor": "U1+0",
+        "visit_order": [
+          "DC01R09"
+        ]
+      },
+      {
+        "at": "64.36205086068331647023977376",
+        "kind": "drone_load",
+        "actor": "U1+0",
+        "orders": [
+          "DC01R11"
+        ]
+      },
+      {
+        "at": "65.83705086068331647023977376",
+        "kind": "drone_sortie",
+        "actor": "U1+0",
+        "visit_order": [
+          "DC01R11"
+        ]
+      },
+      {
+        "at": "245.8819461702913044183603314",
+        "kind": "drone_load",
+        "actor": "U1-0",
+        "orders": [
+          "DC01R12"
+        ]
+      },
+      {
+        "at": "247.0569461702913044183603314",
+        "kind": "drone_sortie",
+        "actor": "U1-0",
+        "visit_order": [
+          "DC01R12"
+        ]
+      },
+      {
+        "at": "70.21866358208409147584026502",
+        "kind": "drone_load",
+        "actor": "U1+0",
+        "orders": [
+          "DC01R14"
+        ]
+      },
+      {
+        "at": "71.51866358208409147584026502",
+        "kind": "drone_sortie",
+        "actor": "U1+0",
+        "visit_order": [
+          "DC01R14"
+        ]
+      },
+      {
+        "at": "80.64260781509679996752374572",
+        "kind": "drone_load",
+        "actor": "U1+0",
+        "orders": [
+          "DC01R18"
+        ]
+      },
+      {
+        "at": "82.09260781509679996752374572",
+        "kind": "drone_sortie",
+        "actor": "U1+0",
+        "visit_order": [
+          "DC01R18"
+        ]
+      },
+      {
+        "at": "96.78523521667167489286608286",
+        "kind": "drone_load",
+        "actor": "U1+0",
+        "orders": [
+          "DC01R19"
+        ]
+      },
+      {
+        "at": "98.18523521667167489286608286",
+        "kind": "drone_sortie",
+        "actor": "U1+0",
+        "visit_order": [
+          "DC01R19"
+        ]
+      },
+      {
+        "at": "260.8323717665582596607341458",
+        "kind": "drone_load",
+        "actor": "U1-0",
+        "orders": [
+          "DC01R20"
+        ]
+      },
+      {
+        "at": "262.0323717665582596607341458",
+        "kind": "drone_sortie",
+        "actor": "U1-0",
+        "visit_order": [
+          "DC01R20"
+        ]
+      },
+      {
+        "at": "40.0689288",
+        "kind": "drone_load",
+        "actor": "U2+0",
+        "orders": [
+          "DC02R02"
+        ]
+      },
+      {
+        "at": "41.3689288",
+        "kind": "drone_sortie",
+        "actor": "U2+0",
+        "visit_order": [
+          "DC02R02"
+        ]
+      },
+      {
+        "at": "52.13546518426870575104654428",
+        "kind": "drone_load",
+        "actor": "U2+0",
+        "orders": [
+          "DC02R03"
+        ]
+      },
+      {
+        "at": "53.31046518426870575104654428",
+        "kind": "drone_sortie",
+        "actor": "U2+0",
+        "visit_order": [
+          "DC02R03"
+        ]
+      },
+      {
+        "at": "59.96104849528218022532810916",
+        "kind": "drone_load",
+        "actor": "U2+0",
+        "orders": [
+          "DC02R04"
+        ]
+      },
+      {
+        "at": "61.38604849528218022532810916",
+        "kind": "drone_sortie",
+        "actor": "U2+0",
+        "visit_order": [
+          "DC02R04"
+        ]
+      },
+      {
+        "at": "205.871037600000002",
+        "kind": "drone_load",
+        "actor": "U2-0",
+        "orders": [
+          "DC02R05"
+        ]
+      },
+      {
+        "at": "207.346037600000002",
+        "kind": "drone_sortie",
+        "actor": "U2-0",
+        "visit_order": [
+          "DC02R05"
+        ]
+      },
+      {
+        "at": "216.2630947633550267539108914",
+        "kind": "drone_load",
+        "actor": "U2-0",
+        "orders": [
+          "DC02R09"
+        ]
+      },
+      {
+        "at": "217.7130947633550267539108914",
+        "kind": "drone_sortie",
+        "actor": "U2-0",
+        "visit_order": [
+          "DC02R09"
+        ]
+      },
+      {
+        "at": "226.8639280824299679539946202",
+        "kind": "drone_load",
+        "actor": "U2-0",
+        "orders": [
+          "DC02R10"
+        ]
+      },
+      {
+        "at": "228.0389280824299679539946202",
+        "kind": "drone_sortie",
+        "actor": "U2-0",
+        "visit_order": [
+          "DC02R10"
+        ]
+      },
+      {
+        "at": "71.03093241819992971948583498",
+        "kind": "drone_load",
+        "actor": "U2+0",
+        "orders": [
+          "DC02R11"
+        ]
+      },
+      {
+        "at": "72.50593241819992971948583498",
+        "kind": "drone_sortie",
+        "actor": "U2+0",
+        "visit_order": [
+          "DC02R11"
+        ]
+      },
+      {
+        "at": "76.59272625697540294978144106",
+        "kind": "drone_load",
+        "actor": "U2+0",
+        "orders": [
+          "DC02R12"
+        ]
+      },
+      {
+        "at": "77.86772625697540294978144106",
+        "kind": "drone_sortie",
+        "actor": "U2+0",
+        "visit_order": [
+          "DC02R12"
+        ]
+      },
+      {
+        "at": "229.4221189101234873149936706",
+        "kind": "drone_load",
+        "actor": "U2-0",
+        "orders": [
+          "DC02R13"
+        ]
+      },
+      {
+        "at": "230.7971189101234873149936706",
+        "kind": "drone_sortie",
+        "actor": "U2-0",
+        "visit_order": [
+          "DC02R13"
+        ]
+      },
+      {
+        "at": "94.06463102357392529405611794",
+        "kind": "drone_load",
+        "actor": "U2+0",
+        "orders": [
+          "DC02R16"
+        ]
+      },
+      {
+        "at": "95.33963102357392529405611794",
+        "kind": "drone_sortie",
+        "actor": "U2+0",
+        "visit_order": [
+          "DC02R16"
+        ]
+      },
+      {
+        "at": "237.9418449803781699989599790",
+        "kind": "drone_load",
+        "actor": "U2-0",
+        "orders": [
+          "DC02R18"
+        ]
+      },
+      {
+        "at": "239.3168449803781699989599790",
+        "kind": "drone_sortie",
+        "actor": "U2-0",
+        "visit_order": [
+          "DC02R18"
+        ]
+      },
+      {
+        "at": "258.3767070580514962147961106",
+        "kind": "drone_load",
+        "actor": "U2-0",
+        "orders": [
+          "DC02R20"
+        ]
+      },
+      {
+        "at": "259.6017070580514962147961106",
+        "kind": "drone_sortie",
+        "actor": "U2-0",
+        "visit_order": [
+          "DC02R20"
+        ]
+      },
+      {
+        "at": "189.370478600000000",
+        "kind": "drone_load",
+        "actor": "U3-0",
+        "orders": [
+          "DC03R01"
+        ]
+      },
+      {
+        "at": "190.820478600000000",
+        "kind": "drone_sortie",
+        "actor": "U3-0",
+        "visit_order": [
+          "DC03R01"
+        ]
+      },
+      {
+        "at": "209.5822525940054911672067114",
+        "kind": "drone_load",
+        "actor": "U3-0",
+        "orders": [
+          "DC03R04"
+        ]
+      },
+      {
+        "at": "210.8572525940054911672067114",
+        "kind": "drone_sortie",
+        "actor": "U3-0",
+        "visit_order": [
+          "DC03R04"
+        ]
+      },
+      {
+        "at": "55.694487800000002",
+        "kind": "drone_load",
+        "actor": "U3+0",
+        "orders": [
+          "DC03R05"
+        ]
+      },
+      {
+        "at": "57.119487800000002",
+        "kind": "drone_sortie",
+        "actor": "U3+0",
+        "visit_order": [
+          "DC03R05"
+        ]
+      },
+      {
+        "at": "223.6541428854170375611847272",
+        "kind": "drone_load",
+        "actor": "U3-0",
+        "orders": [
+          "DC03R06"
+        ]
+      },
+      {
+        "at": "224.8791428854170375611847272",
+        "kind": "drone_sortie",
+        "actor": "U3-0",
+        "visit_order": [
+          "DC03R06"
+        ]
+      },
+      {
+        "at": "240.0150589669618845867563330",
+        "kind": "drone_load",
+        "actor": "U3-0",
+        "orders": [
+          "DC03R08"
+        ]
+      },
+      {
+        "at": "241.4150589669618845867563330",
+        "kind": "drone_sortie",
+        "actor": "U3-0",
+        "visit_order": [
+          "DC03R08"
+        ]
+      },
+      {
+        "at": "252.7596010017928986889069278",
+        "kind": "drone_load",
+        "actor": "U3-0",
+        "orders": [
+          "DC03R10"
+        ]
+      },
+      {
+        "at": "254.0346010017928986889069278",
+        "kind": "drone_sortie",
+        "actor": "U3-0",
+        "visit_order": [
+          "DC03R10"
+        ]
+      },
+      {
+        "at": "62.33142577005079033764887760",
+        "kind": "drone_load",
+        "actor": "U3+0",
+        "orders": [
+          "DC03R11"
+        ]
+      },
+      {
+        "at": "63.55642577005079033764887760",
+        "kind": "drone_sortie",
+        "actor": "U3+0",
+        "visit_order": [
+          "DC03R11"
+        ]
+      },
+      {
+        "at": "262.9682991828053884587070536",
+        "kind": "drone_load",
+        "actor": "U3-0",
+        "orders": [
+          "DC03R12"
+        ]
+      },
+      {
+        "at": "264.1432991828053884587070536",
+        "kind": "drone_sortie",
+        "actor": "U3-0",
+        "visit_order": [
+          "DC03R12"
+        ]
+      },
+      {
+        "at": "72.21427018159278045406279644",
+        "kind": "drone_load",
+        "actor": "U3+0",
+        "orders": [
+          "DC03R15"
+        ]
+      },
+      {
+        "at": "73.61427018159278045406279644",
+        "kind": "drone_sortie",
+        "actor": "U3+0",
+        "visit_order": [
+          "DC03R15"
+        ]
+      },
+      {
+        "at": "278.5167819910689444869318976",
+        "kind": "drone_load",
+        "actor": "U3-0",
+        "orders": [
+          "DC03R16"
+        ]
+      },
+      {
+        "at": "279.7667819910689444869318976",
+        "kind": "drone_sortie",
+        "actor": "U3-0",
+        "visit_order": [
+          "DC03R16"
+        ]
+      },
+      {
+        "at": "294.0847823239811226690302046",
+        "kind": "drone_load",
+        "actor": "U3-0",
+        "orders": [
+          "DC03R18"
+        ]
+      },
+      {
+        "at": "295.5097823239811226690302046",
+        "kind": "drone_sortie",
+        "actor": "U3-0",
+        "visit_order": [
+          "DC03R18"
+        ]
+      },
+      {
+        "at": "82.56738358217122589934651674",
+        "kind": "drone_load",
+        "actor": "U3+0",
+        "orders": [
+          "DC03R19"
+        ]
+      },
+      {
+        "at": "83.71738358217122589934651674",
+        "kind": "drone_sortie",
+        "actor": "U3+0",
+        "visit_order": [
+          "DC03R19"
+        ]
+      },
+      {
+        "at": "168.088179600000003",
+        "kind": "drone_load",
+        "actor": "U4-0",
+        "orders": [
+          "DC04R02"
+        ]
+      },
+      {
+        "at": "169.263179600000003",
+        "kind": "drone_sortie",
+        "actor": "U4-0",
+        "visit_order": [
+          "DC04R02"
+        ]
+      },
+      {
+        "at": "76.326786799999999",
+        "kind": "drone_load",
+        "actor": "U4+0",
+        "orders": [
+          "DC04R05"
+        ]
+      },
+      {
+        "at": "77.776786799999999",
+        "kind": "drone_sortie",
+        "actor": "U4+0",
+        "visit_order": [
+          "DC04R05"
+        ]
+      },
+      {
+        "at": "173.7628858191147192377301622",
+        "kind": "drone_load",
+        "actor": "U4-0",
+        "orders": [
+          "DC04R06"
+        ]
+      },
+      {
+        "at": "174.9378858191147192377301622",
+        "kind": "drone_sortie",
+        "actor": "U4-0",
+        "visit_order": [
+          "DC04R06"
+        ]
+      },
+      {
+        "at": "189.1382480648761757813367286",
+        "kind": "drone_load",
+        "actor": "U4-0",
+        "orders": [
+          "DC04R07"
+        ]
+      },
+      {
+        "at": "190.4382480648761757813367286",
+        "kind": "drone_sortie",
+        "actor": "U4-0",
+        "visit_order": [
+          "DC04R07"
+        ]
+      },
+      {
+        "at": "87.98643485085497664424113374",
+        "kind": "drone_load",
+        "actor": "U4+0",
+        "orders": [
+          "DC04R08"
+        ]
+      },
+      {
+        "at": "89.23643485085497664424113374",
+        "kind": "drone_sortie",
+        "actor": "U4+0",
+        "visit_order": [
+          "DC04R08"
+        ]
+      },
+      {
+        "at": "106.7618218102710589866412463",
+        "kind": "drone_load",
+        "actor": "U4+0",
+        "orders": [
+          "DC04R09"
+        ]
+      },
+      {
+        "at": "108.2368218102710589866412463",
+        "kind": "drone_sortie",
+        "actor": "U4+0",
+        "visit_order": [
+          "DC04R09"
+        ]
+      },
+      {
+        "at": "202.5757471929713156144193242",
+        "kind": "drone_load",
+        "actor": "U4-0",
+        "orders": [
+          "DC04R12"
+        ]
+      },
+      {
+        "at": "204.0507471929713156144193242",
+        "kind": "drone_sortie",
+        "actor": "U4-0",
+        "visit_order": [
+          "DC04R12"
+        ]
+      },
+      {
+        "at": "113.0783675060073757775677773",
+        "kind": "drone_load",
+        "actor": "U4+0",
+        "orders": [
+          "DC04R14"
+        ]
+      },
+      {
+        "at": "114.4283675060073757775677773",
+        "kind": "drone_sortie",
+        "actor": "U4+0",
+        "visit_order": [
+          "DC04R14"
+        ]
+      },
+      {
+        "at": "205.9621706335349698082214842",
+        "kind": "drone_load",
+        "actor": "U4-0",
+        "orders": [
+          "DC04R16"
+        ]
+      },
+      {
+        "at": "207.2871706335349698082214842",
+        "kind": "drone_sortie",
+        "actor": "U4-0",
+        "visit_order": [
+          "DC04R16"
+        ]
+      },
+      {
+        "at": "211.3110997166331682457179544",
+        "kind": "drone_load",
+        "actor": "U4-0",
+        "orders": [
+          "DC04R17"
+        ]
+      },
+      {
+        "at": "212.5610997166331682457179544",
+        "kind": "drone_sortie",
+        "actor": "U4-0",
+        "visit_order": [
+          "DC04R17"
+        ]
+      },
+      {
+        "at": "123.1173951904152756780973023",
+        "kind": "drone_load",
+        "actor": "U4+0",
+        "orders": [
+          "DC04R18"
+        ]
+      },
+      {
+        "at": "124.4173951904152756780973023",
+        "kind": "drone_sortie",
+        "actor": "U4+0",
+        "visit_order": [
+          "DC04R18"
+        ]
+      },
+      {
+        "at": "225.6026635815345854247458812",
+        "kind": "drone_load",
+        "actor": "U4-0",
+        "orders": [
+          "DC04R19"
+        ]
+      },
+      {
+        "at": "226.8776635815345854247458812",
+        "kind": "drone_sortie",
+        "actor": "U4-0",
+        "visit_order": [
+          "DC04R19"
+        ]
+      },
+      {
+        "at": "92.579929399999999",
+        "kind": "drone_load",
+        "actor": "U5+0",
+        "orders": [
+          "DC05R03"
+        ]
+      },
+      {
+        "at": "93.954929399999999",
+        "kind": "drone_sortie",
+        "actor": "U5+0",
+        "visit_order": [
+          "DC05R03"
+        ]
+      },
+      {
+        "at": "108.3876328613690303369607174",
+        "kind": "drone_load",
+        "actor": "U5+0",
+        "orders": [
+          "DC05R04"
+        ]
+      },
+      {
+        "at": "109.8376328613690303369607174",
+        "kind": "drone_sortie",
+        "actor": "U5+0",
+        "visit_order": [
+          "DC05R04"
+        ]
+      },
+      {
+        "at": "120.5285614767111580590403128",
+        "kind": "drone_load",
+        "actor": "U5+0",
+        "orders": [
+          "DC05R05"
+        ]
+      },
+      {
+        "at": "121.7535614767111580590403128",
+        "kind": "drone_sortie",
+        "actor": "U5+0",
+        "visit_order": [
+          "DC05R05"
+        ]
+      },
+      {
+        "at": "151.985037000000003",
+        "kind": "drone_load",
+        "actor": "U5-0",
+        "orders": [
+          "DC05R06"
+        ]
+      },
+      {
+        "at": "153.435037000000003",
+        "kind": "drone_sortie",
+        "actor": "U5-0",
+        "visit_order": [
+          "DC05R06"
+        ]
+      },
+      {
+        "at": "164.8999093834883410238947734",
+        "kind": "drone_load",
+        "actor": "U5-0",
+        "orders": [
+          "DC05R08"
+        ]
+      },
+      {
+        "at": "166.1249093834883410238947734",
+        "kind": "drone_sortie",
+        "actor": "U5-0",
+        "visit_order": [
+          "DC05R08"
+        ]
+      },
+      {
+        "at": "184.0071617934162163901282756",
+        "kind": "drone_load",
+        "actor": "U5-0",
+        "orders": [
+          "DC05R10"
+        ]
+      },
+      {
+        "at": "185.3071617934162163901282756",
+        "kind": "drone_sortie",
+        "actor": "U5-0",
+        "visit_order": [
+          "DC05R10"
+        ]
+      },
+      {
+        "at": "131.4267097555552364862722664",
+        "kind": "drone_load",
+        "actor": "U5+0",
+        "orders": [
+          "DC05R11"
+        ]
+      },
+      {
+        "at": "132.8767097555552364862722664",
+        "kind": "drone_sortie",
+        "actor": "U5+0",
+        "visit_order": [
+          "DC05R11"
+        ]
+      },
+      {
+        "at": "199.2626132727961954847859812",
+        "kind": "drone_load",
+        "actor": "U5-0",
+        "orders": [
+          "DC05R12"
+        ]
+      },
+      {
+        "at": "200.6626132727961954847859812",
+        "kind": "drone_sortie",
+        "actor": "U5-0",
+        "visit_order": [
+          "DC05R12"
+        ]
+      },
+      {
+        "at": "141.9222133191901580404558536",
+        "kind": "drone_load",
+        "actor": "U5+0",
+        "orders": [
+          "DC05R14"
+        ]
+      },
+      {
+        "at": "143.1722133191901580404558536",
+        "kind": "drone_sortie",
+        "actor": "U5+0",
+        "visit_order": [
+          "DC05R14"
+        ]
+      },
+      {
+        "at": "152.5086617670952703218835040",
+        "kind": "drone_load",
+        "actor": "U5+0",
+        "orders": [
+          "DC05R16"
+        ]
+      },
+      {
+        "at": "153.8836617670952703218835040",
+        "kind": "drone_sortie",
+        "actor": "U5+0",
+        "visit_order": [
+          "DC05R16"
+        ]
+      },
+      {
+        "at": "214.0981548084537757203320514",
+        "kind": "drone_load",
+        "actor": "U5-0",
+        "orders": [
+          "DC05R19"
+        ]
+      },
+      {
+        "at": "215.2481548084537757203320514",
+        "kind": "drone_sortie",
+        "actor": "U5-0",
+        "visit_order": [
+          "DC05R19"
+        ]
+      },
+      {
+        "at": "228.3639431000514792692377968",
+        "kind": "drone_load",
+        "actor": "U5-0",
+        "orders": [
+          "DC05R20"
+        ]
+      },
+      {
+        "at": "229.7139431000514792692377968",
+        "kind": "drone_sortie",
+        "actor": "U5-0",
+        "visit_order": [
+          "DC05R20"
+        ]
+      },
+      {
+        "at": "113.707483200000001",
+        "kind": "drone_load",
+        "actor": "U6+0",
+        "orders": [
+          "DC06R02"
+        ]
+      },
+      {
+        "at": "115.107483200000001",
+        "kind": "drone_sortie",
+        "actor": "U6+0",
+        "visit_order": [
+          "DC06R02"
+        ]
+      },
+      {
+        "at": "121.2887806898897465391782206",
+        "kind": "drone_load",
+        "actor": "U6+0",
+        "orders": [
+          "DC06R04"
+        ]
+      },
+      {
+        "at": "122.7637806898897465391782206",
+        "kind": "drone_sortie",
+        "actor": "U6+0",
+        "visit_order": [
+          "DC06R04"
+        ]
+      },
+      {
+        "at": "130.832483200000001",
+        "kind": "drone_load",
+        "actor": "U6-0",
+        "orders": [
+          "DC06R05"
+        ]
+      },
+      {
+        "at": "132.182483200000001",
+        "kind": "drone_sortie",
+        "actor": "U6-0",
+        "visit_order": [
+          "DC06R05"
+        ]
+      },
+      {
+        "at": "146.1669314671159956192784234",
+        "kind": "drone_load",
+        "actor": "U6-0",
+        "orders": [
+          "DC06R06"
+        ]
+      },
+      {
+        "at": "147.3669314671159956192784234",
+        "kind": "drone_sortie",
+        "actor": "U6-0",
+        "visit_order": [
+          "DC06R06"
+        ]
+      },
+      {
+        "at": "136.4978134614719595585371452",
+        "kind": "drone_load",
+        "actor": "U6+0",
+        "orders": [
+          "DC06R08"
+        ]
+      },
+      {
+        "at": "137.6978134614719595585371452",
+        "kind": "drone_sortie",
+        "actor": "U6+0",
+        "visit_order": [
+          "DC06R08"
+        ]
+      },
+      {
+        "at": "154.6052056433867942440035208",
+        "kind": "drone_load",
+        "actor": "U6-0",
+        "orders": [
+          "DC06R10"
+        ]
+      },
+      {
+        "at": "155.9052056433867942440035208",
+        "kind": "drone_sortie",
+        "actor": "U6-0",
+        "visit_order": [
+          "DC06R10"
+        ]
+      },
+      {
+        "at": "166.0905590585496292050211334",
+        "kind": "drone_load",
+        "actor": "U6-0",
+        "orders": [
+          "DC06R11"
+        ]
+      },
+      {
+        "at": "167.4405590585496292050211334",
+        "kind": "drone_sortie",
+        "actor": "U6-0",
+        "visit_order": [
+          "DC06R11"
+        ]
+      },
+      {
+        "at": "145.3196877268673527163549372",
+        "kind": "drone_load",
+        "actor": "U6+0",
+        "orders": [
+          "DC06R13"
+        ]
+      },
+      {
+        "at": "146.6696877268673527163549372",
+        "kind": "drone_sortie",
+        "actor": "U6+0",
+        "visit_order": [
+          "DC06R13"
+        ]
+      },
+      {
+        "at": "164.0955743500441295863661666",
+        "kind": "drone_load",
+        "actor": "U6+0",
+        "orders": [
+          "DC06R15"
+        ]
+      },
+      {
+        "at": "165.5205743500441295863661666",
+        "kind": "drone_sortie",
+        "actor": "U6+0",
+        "visit_order": [
+          "DC06R15"
+        ]
+      },
+      {
+        "at": "178.7717213561178515678233114",
+        "kind": "drone_load",
+        "actor": "U6-0",
+        "orders": [
+          "DC06R16"
+        ]
+      },
+      {
+        "at": "180.1217213561178515678233114",
+        "kind": "drone_sortie",
+        "actor": "U6-0",
+        "visit_order": [
+          "DC06R16"
+        ]
+      },
+      {
+        "at": "192.4446301006147551092459328",
+        "kind": "drone_load",
+        "actor": "U6-0",
+        "orders": [
+          "DC06R19"
+        ]
+      },
+      {
+        "at": "193.7446301006147551092459328",
+        "kind": "drone_sortie",
+        "actor": "U6-0",
+        "visit_order": [
+          "DC06R19"
+        ]
+      },
+      {
+        "at": "205.6393879981864328809267380",
+        "kind": "drone_load",
+        "actor": "U6-0",
+        "orders": [
+          "DC06R20"
+        ]
+      },
+      {
+        "at": "206.9143879981864328809267380",
+        "kind": "drone_sortie",
+        "actor": "U6-0",
+        "visit_order": [
+          "DC06R20"
+        ]
+      }
+    ],
+    "external_events": [
+      {
+        "at": 2,
+        "kind": "request_reveal",
+        "orders": [
+          "PC02R06"
+        ]
+      },
+      {
+        "at": 22,
+        "kind": "request_reveal",
+        "orders": [
+          "PC05R07"
+        ]
+      },
+      {
+        "at": 30,
+        "kind": "request_reveal",
+        "orders": [
+          "PC04R15"
+        ]
+      },
+      {
+        "at": 31,
+        "kind": "request_reveal",
+        "orders": [
+          "PC03R13"
+        ]
+      },
+      {
+        "at": 32,
+        "kind": "request_reveal",
+        "orders": [
+          "PC02R15"
+        ]
+      },
+      {
+        "at": 35,
+        "kind": "request_reveal",
+        "orders": [
+          "PC05R13"
+        ]
+      },
+      {
+        "at": 44,
+        "kind": "request_reveal",
+        "orders": [
+          "PC01R10"
+        ]
+      },
+      {
+        "at": 46,
+        "kind": "request_reveal",
+        "orders": [
+          "PC06R09"
+        ]
+      },
+      {
+        "at": 50,
+        "kind": "request_reveal",
+        "orders": [
+          "PC02R19"
+        ]
+      },
+      {
+        "at": 63,
+        "kind": "request_reveal",
+        "orders": [
+          "PC06R14"
+        ]
+      },
+      {
+        "at": 65,
+        "kind": "request_reveal",
+        "orders": [
+          "PC04R04"
+        ]
+      },
+      {
+        "at": 111,
+        "kind": "request_reveal",
+        "orders": [
+          "PC03R07"
+        ]
+      },
+      {
+        "at": 128,
+        "kind": "request_reveal",
+        "orders": [
+          "PC02R01"
+        ]
+      },
+      {
+        "at": 152,
+        "kind": "request_reveal",
+        "orders": [
+          "PC01R06"
+        ]
+      },
+      {
+        "at": 160,
+        "kind": "request_reveal",
+        "orders": [
+          "PC06R07"
+        ]
+      },
+      {
+        "at": 161,
+        "kind": "request_reveal",
+        "orders": [
+          "PC01R16"
+        ]
+      },
+      {
+        "at": 170,
+        "kind": "request_reveal",
+        "orders": [
+          "PC04R11",
+          "PC06R17"
+        ]
+      },
+      {
+        "at": 180,
+        "kind": "request_reveal",
+        "orders": [
+          "PC03R03"
+        ]
+      },
+      {
+        "at": 226,
+        "kind": "request_reveal",
+        "orders": [
+          "PC05R02"
+        ]
+      },
+      {
+        "at": 237,
+        "kind": "request_reveal",
+        "orders": [
+          "PC01R05"
+        ]
+      },
+      {
+        "at": 253,
+        "kind": "request_reveal",
+        "orders": [
+          "PC06R01"
+        ]
+      },
+      {
+        "at": 298,
+        "kind": "request_reveal",
+        "orders": [
+          "PC03R02"
+        ]
+      },
+      {
+        "at": 302,
+        "kind": "request_reveal",
+        "orders": [
+          "PC04R10"
+        ]
+      },
+      {
+        "at": 338,
+        "kind": "request_reveal",
+        "orders": [
+          "PC02R07",
+          "PC05R09"
+        ]
+      },
+      {
+        "at": 341,
+        "kind": "request_reveal",
+        "orders": [
+          "PC03R09"
+        ]
+      },
+      {
+        "at": 342,
+        "kind": "request_reveal",
+        "orders": [
+          "PC06R12"
+        ]
+      },
+      {
+        "at": 345,
+        "kind": "request_reveal",
+        "orders": [
+          "PC05R17"
+        ]
+      },
+      {
+        "at": 352,
+        "kind": "request_reveal",
+        "orders": [
+          "PC05R18"
+        ]
+      },
+      {
+        "at": 366,
+        "kind": "request_reveal",
+        "orders": [
+          "PC01R17"
+        ]
+      },
+      {
+        "at": 370,
+        "kind": "request_reveal",
+        "orders": [
+          "PC03R14"
+        ]
+      },
+      {
+        "at": 380,
+        "kind": "request_reveal",
+        "orders": [
+          "PC05R15"
+        ]
+      },
+      {
+        "at": 393,
+        "kind": "request_reveal",
+        "orders": [
+          "PC04R13"
+        ]
+      },
+      {
+        "at": 398,
+        "kind": "request_reveal",
+        "orders": [
+          "PC02R17"
+        ]
+      },
+      {
+        "at": 420,
+        "kind": "request_reveal",
+        "orders": [
+          "PC01R08"
+        ]
+      },
+      {
+        "at": 451,
+        "kind": "request_reveal",
+        "orders": [
+          "PC02R08"
+        ]
+      },
+      {
+        "at": 455,
+        "kind": "request_reveal",
+        "orders": [
+          "PC04R03"
+        ]
+      },
+      {
+        "at": 458,
+        "kind": "request_reveal",
+        "orders": [
+          "PC03R20"
+        ]
+      },
+      {
+        "at": 459,
+        "kind": "request_reveal",
+        "orders": [
+          "PC04R20"
+        ]
+      },
+      {
+        "at": 461,
+        "kind": "request_reveal",
+        "orders": [
+          "PC03R17"
+        ]
+      },
+      {
+        "at": 470,
+        "kind": "request_reveal",
+        "orders": [
+          "PC04R01"
+        ]
+      },
+      {
+        "at": 487,
+        "kind": "request_reveal",
+        "orders": [
+          "PC01R13"
+        ]
+      },
+      {
+        "at": 535,
+        "kind": "request_reveal",
+        "orders": [
+          "PC06R03"
+        ]
+      },
+      {
+        "at": 553,
+        "kind": "request_reveal",
+        "orders": [
+          "PC02R14"
+        ]
+      },
+      {
+        "at": 555,
+        "kind": "request_reveal",
+        "orders": [
+          "PC05R01"
+        ]
+      },
+      {
+        "at": 559,
+        "kind": "request_reveal",
+        "orders": [
+          "PC01R15"
+        ]
+      },
+      {
+        "at": 570,
+        "kind": "request_reveal",
+        "orders": [
+          "PC06R18"
+        ]
+      }
+    ],
+    "policy": null,
+    "candidates": [],
+    "public_information": {
+      "future_count": 48,
+      "city_pickup_totals": {
+        "C1": 8,
+        "C2": 8,
+        "C3": 8,
+        "C4": 8,
+        "C5": 8,
+        "C6": 8
+      },
+      "revelation_end": 590,
+      "revelation_closed": false
+    }
+  },
+  "i0_hash": "1a5a3094823ce5c55bf8ea137d20309cf4817ed4ca95856ed50b923321eec1d5",
+  "input_hash": "44da8f6e22fd3a1b092df112513b4e959ea3ad70326c6dd2cab5b9e46b148237",
+  "i0_algorithm": "I0-packed-D-only-v1"
+}
