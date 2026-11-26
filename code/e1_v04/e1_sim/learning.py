@@ -8,7 +8,7 @@ from random import Random
 from math import floor
 from time import perf_counter
 from .online import MyopicPolicy, evaluate_plan, select_best
-from .quantities import dec
+from .quantities import dec, InvalidAction
 
 
 def sample_release_times(now, count, end, rng):
@@ -23,10 +23,27 @@ def sample_release_times(now, count, end, rng):
     return sorted(rng.randint(low,end) for _ in range(count))
 
 
-def wait_pool(known, evaluated, review_interval=5, budget=16):
-    """Delay an unstarted station departure; no real inventory is created."""
+def wait_pool(known, evaluated, review_interval=5, budget=16, *,
+              departure_only=False, diagnostics=None):
+    """Delay a station action and propagate only device/cargo dependencies.
+
+    Pass a number (or a one-argument public-state callback) for one system-wide
+    interval. Historical two-argument ``(known, station)`` callbacks remain
+    supported for reproducing the old city-rule experiments. New system-wide
+    controllers compute their interval once before entering this function.
+    ``diagnostics`` may be a list or a callable receiving one record per attempt.
+    """
     from .kernel import require
+    from .retiming import retime_plan
+    from inspect import signature
     fixed_delta = None if callable(review_interval) else dec(review_interval)
+    if callable(review_interval):
+        try:
+            signature(review_interval).bind(known)
+        except TypeError:
+            pass  # Explicit compatibility with the historical station callback.
+        else:
+            fixed_delta = dec(review_interval(known))
     require(fixed_delta is None or fixed_delta > 0,'positive waiting review interval required')
     from .information import opportunities_open
     if not opportunities_open(known.public,known.now):
@@ -35,8 +52,9 @@ def wait_pool(known, evaluated, review_interval=5, budget=16):
     attempts=0
     # Deterministic bounded extension, identical for Myopic and learned VFA.
     for row in evaluated[:8]:
-        for a in row['plan']['actions']:
-            if a['kind'] not in ('truck_continue_circuit','truck_load') or dec(a['at'])!=known.now:
+        for index, a in enumerate(row['plan']['actions']):
+            kinds = ('truck_continue_circuit',) if departure_only else ('truck_continue_circuit','truck_load')
+            if a['kind'] not in kinds or dec(a['at'])!=known.now:
                 continue
             t=known.trucks.get(a['actor'])
             if not t or t['location'] not in known.network['stations'] or t['active_operation'] is not None:
@@ -47,30 +65,29 @@ def wait_pool(known, evaluated, review_interval=5, budget=16):
             end=dec(known.public.get('revelation_end',known.now+delta))
             minutes=min(delta,end-known.now)
             if minutes<=0:continue
-            for minutes in (minutes,):
-                attempts+=1
-                plan=deepcopy(row['plan'])
-                plan['id']=row['id']+f"_wait_{a['actor']}_{minutes}"
-                for cmd in plan['actions']:
-                    if cmd.get('actor')==a['actor'] and dec(cmd['at'])>=known.now:
-                        cmd['at']=dec(cmd['at'])+minutes
-                plan.setdefault('wait_reviews',{})[a['actor']]=known.now+minutes
+            attempts+=1
+            info = dict(base_id=row['id'], truck=a['actor'], station=t['location'],
+                        h=float(minutes), requested_h=float(delta), action_kind=a['kind'])
+            plan=deepcopy(row['plan'])
+            plan['id']=row['id']+f"_wait_{a['actor']}_{minutes}"
+            plan['actions'][index]['at'] = known.now + minutes
+            plan.setdefault('wait_reviews',{})[a['actor']]=known.now+minutes
+            try:
+                plan = retime_plan(known, plan, order_reference=row['plan'])
+                if any(cmd.get('actor') != a['actor'] and dec(cmd['at']) > dec(old['at'])
+                       for cmd, old in zip(plan['actions'], row['plan']['actions'])):
+                    # Keep the historical identifier for dependency-repaired waits.
+                    plan['id'] += '_synchronized'
                 candidate=evaluate_plan(known,plan,'WK')
-                if not candidate['feasible']:
-                    # Conservative fallback: shift remaining planned operations
-                    # together. Already-started operations live in the physical
-                    # event queue, not these commands, and are never shifted.
-                    # Full replay still rejects deadlines, commitment conflicts,
-                    # dispatch-cutoff violations and unavailable onboard cargo.
-                    plan=deepcopy(row['plan'])
-                    plan['id']=row['id']+f"_wait_{a['actor']}_{minutes}_synchronized"
-                    for cmd in plan['actions']:
-                        if dec(cmd['at'])>=known.now:
-                            cmd['at']=dec(cmd['at'])+minutes
-                    plan.setdefault('wait_reviews',{})[a['actor']]=known.now+minutes
-                    candidate=evaluate_plan(known,plan,'WK')
-                if candidate['feasible'] and candidate['allowed']:
-                    pool.append(candidate)
+            except (InvalidAction, KeyError) as exc:
+                candidate = dict(feasible=False, allowed=False, reason=str(exc))
+            info.update(feasible=candidate['feasible'], allowed=candidate['allowed'],
+                        reason=candidate.get('reason'))
+            if diagnostics is not None:
+                diagnostics(info) if callable(diagnostics) else diagnostics.append(info)
+            if candidate['feasible'] and candidate['allowed']:
+                candidate['wait_info'] = info
+                pool.append(candidate)
     return pool
 
 

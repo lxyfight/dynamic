@@ -106,7 +106,17 @@ def install_plan(state, plan, *, admit=True):
     for at in plan.get('wakeups',[]):
         require(dec(at)>=state.now,'past scheduled wakeup')
         state._actions.setdefault(dec(at),[])
-    state._wait_reviews={k:dec(v) for k,v in plan.get('wait_reviews',{}).items() if dec(v)>state.now}
+    previous_reviews = getattr(state, '_wait_reviews', {})
+    reviews = {k:dec(v) for k,v in plan.get('wait_reviews',{}).items() if dec(v)>state.now}
+    for tid, memory in state._station_wait_memory.items():
+        until = reviews.get(tid)
+        if until is not None and until != previous_reviews.get(tid):
+            truck = state.trucks[tid]
+            require(truck['location'] == memory['station'] and truck['active_operation'] is None,
+                    'new active wait requires an idle station truck')
+            memory['review_count'] += 1
+        memory['active_wait_until'] = until
+    state._wait_reviews = reviews
     for at in state._wait_reviews.values():
         state._actions.setdefault(at,[])
     state.check_invariants()
@@ -332,24 +342,34 @@ def pickup_variants(known, plan, oid):
                 if old_pickups and unload is None:
                     continue
                 boundary = dec(unload["at"]) if unload else old_return
-                unload_at = max(boundary, returned)
-                # Conservative suffix retiming; complete replay rejects any
-                # broken deadline, inventory, capacity or active-operation lock.
-                delay = unload_at - boundary + known._handling("drone", o["weight"])
-                for a in variant["actions"]:
-                    if dec(a["at"]) >= boundary:
-                        a["at"] = dec(a["at"]) + delay
                 variant["actions"][replace]["visit_order"] = visits
                 if unload is None:
-                    variant["actions"].append(dict(at=unload_at, kind="drone_unload", actor=uid, orders=pickups))
+                    # Keep the former return time as a lower bound so the new
+                    # unload precedes this drone's later scheduled operations.
+                    unload = dict(at=boundary, kind="drone_unload", actor=uid, orders=pickups)
+                    variant["actions"].append(unload)
                 else:
-                    unload.update(at=unload_at, orders=pickups)
-                ready = unload_at + sum(known._handling("drone", known.orders[p]["weight"]) for p in pickups)
+                    unload.update(orders=pickups)
+                unload_index = next(i for i, a in enumerate(variant['actions']) if a is unload)
+                from .retiming import retime_plan
+                try:
+                    variant = retime_plan(known, variant)
+                except (InvalidAction, KeyError):
+                    continue
+                ready = dec(variant['actions'][unload_index]['at'])
+                for pickup in pickups:
+                    ready += known._handling("drone", known.orders[pickup]["weight"])
             projection = evaluate_plan(known, variant, "WK", require_complete=False)
             if not projection["feasible"]:
                 continue
             for recovered in _recovery_variants(known, variant, projection, oid, station, ready):
-                yield recovered
+                # A recovery batch can delay this truck's later replenishment,
+                # and hence dependent sorties, but not unrelated devices.
+                from .retiming import retime_plan
+                try:
+                    yield retime_plan(known, recovered)
+                except (InvalidAction, KeyError):
+                    continue
 
 
 class MyopicPolicy:
@@ -494,6 +514,7 @@ class OnlineCoordinator:
             require(environment._driver_calls[environment.now] == 1, "duplicate online policy call at timestamp")
             chosen, log = self.policy.decide(known)
             log.update(reason=reason, policy_called=True)
+        log['station_wait_memory'] = deepcopy(known._station_wait_memory)
         # Validate and atomically commit against the same current known state;
         # reveal-stream ownership stays with the environment.
         require(evaluate_plan(known, chosen, self.policy.waiting)["allowed"], "selected candidate failed final validation")

@@ -101,10 +101,17 @@ def compile_candidate(known,candidate,T,Q):
         final,controller=_run(known,plan,T,Q,extra) if left else (first,controller)
         require(final.is_terminal(),'WTQ finite recovery did not complete')
         compiled=deepcopy(plan)
-        compiled['new_trucks']+=extra['trucks'];compiled['actions']=final.executed_commands
+        compiled['new_trucks']+=extra['trucks']
+        # Online event barriers expose a default departure at pass-through
+        # stations. The ordinary oracle traverses those stations automatically;
+        # recording that default as an additional command would start the same
+        # road leg twice. Preserve departures only at the compiler's real stops.
+        compiled['actions']=[a for a in final.executed_commands
+            if not (a['kind']=='truck_continue_circuit'
+                    and a.get('station') not in final._stops.get(a['actor'],set()))]
         compiled['wakeups']=sorted({arrival+dec(T) for tid,station,arrival in controller.records if arrival+dec(T)>=known.now})
         checked=evaluate_plan(known,compiled,'WK')
-        require(checked['feasible'],'compiled WTQ plan failed ordinary replay')
+        require(checked['feasible'],'compiled WTQ plan failed ordinary replay: '+str(checked.get('reason')))
         checked['wtq_closures']=controller.log
         return checked
     except (InvalidAction,KeyError) as exc:

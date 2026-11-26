@@ -15,7 +15,9 @@ def validate_public(public):
     end=public['revelation_end']
     if isinstance(end,bool) or int(end)!=end or end<1:raise InvalidAction('integer public revelation horizon required')
     model=public['demand_model']
-    if set(model)!={'kind','rates_by_city','attributes'} or model['kind']!='independent_poisson_per_minute':
+    required={'kind','rates_by_city','attributes'}
+    optional={'spatial_service_lags_by_city'}
+    if not required<=set(model) or set(model)-required-optional or model['kind']!='independent_poisson_per_minute':
         raise InvalidAction('unsupported public demand law')
     attr=model['attributes']
     if set(attr)!={'weight_min','weight_max','x_radius','y_min','y_max','pickup_deadline_lag'}:
@@ -32,6 +34,16 @@ def validate_public(public):
             if not (type(a) is int and type(b) is int and last<a<=b<=end and isfinite(r) and r>=0):
                 raise InvalidAction('invalid/overlapping arrival segments')
             last=b
+    if 'spatial_service_lags_by_city' in model:
+        lags=model['spatial_service_lags_by_city']
+        if not isinstance(lags,dict) or set(lags)!=set(model['rates_by_city']):
+            raise InvalidAction('spatial service lag cities must match public rate cities')
+        for city,values in lags.items():
+            if not isinstance(values,list) or any(isinstance(v,bool) or not isinstance(v,(int,float)) or not isfinite(v) or v<0 for v in values):
+                raise InvalidAction('finite nonnegative historical service lags required')
+            if values!=sorted(values):raise InvalidAction('historical service lags must be sorted')
+            if not values and any(r['rate']>0 for r in model['rates_by_city'][city]):
+                raise InvalidAction('positive-rate city requires historical service lags')
 
 def closed(public):
     if unknown(public):

@@ -79,7 +79,12 @@ class TriggerTests(unittest.TestCase):
         self.assertEqual(state.orders['P2']['completed_at'], Decimal('161.5'))
         self.assertFalse(any(r['at']==110 and r['policy_called'] for r in c.event_checks))
         self.assertEqual([e['at'] for e in state.trace if e['kind']=='truck_load_started'],[Decimal(110)])
-        self.assertEqual([r['at'] for r in c.decisions if r['policy_called']], [115.5])
+        # The reserved loading at 110 remains automatic. Every later station
+        # departure, including a pass without cargo work, is now a choice.
+        self.assertEqual([r['at'] for r in c.decisions if r['policy_called']],
+                         [115.5, 127.5, 137.5, 149.5])
+        self.assertTrue(all(r['reason'] == 'station_departure_or_wait'
+                            for r in c.decisions if r['policy_called']))
 
     def test_observation_events_change_neither_actions_nor_policy_calls(self):
         raw,_ = make_world(PACKAGE,(1,24.6))

@@ -23,8 +23,17 @@ BANDS = ((1, 150, 1), (151, 350, 3), (351, 590, 2))
 POLICIES = [('fixed', 0), ('adaptive', 0), ('fixed', 28), ('adaptive', 28)]
 
 
-def release_slots(rng, count):
-    weights = [w for lo, hi, w in BANDS for _ in range(lo, hi+1)]
+def arrival_bands(temporal='peak'):
+    """Separate temporal shape from the uniform/dual spatial pattern."""
+    if temporal == 'peak':
+        return BANDS
+    if temporal == 'flat':
+        return ((1, 590, 1),)
+    raise ValueError('temporal must be peak or flat')
+
+
+def release_slots(rng, count, temporal='peak'):
+    weights = [w for lo, hi, w in arrival_bands(temporal) for _ in range(lo, hi+1)]
     return sorted(rng.choices(range(1, 591), weights, k=count))
 
 

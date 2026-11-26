@@ -54,6 +54,10 @@ class Replay:
         self._actions = {}
         self._driver_calls = {}
         self._completed_event_ids = []
+        # Controller memory is public history, copied with the physical state.
+        # A reservation for already-known cargo has no active-wait interval.
+        self._station_wait_memory = {}
+        self._station_wait_history = []
         self.absorption_time = None
         self.batch_permission = (initial.get("policy") or {}).get("batch_permission", "BM")
         require(self.batch_permission in ("B1", "BM"), "unknown batch permission")
@@ -88,6 +92,8 @@ class Replay:
             require(t["departed_at"] is None or t["departed_at"] <= self.start,
                     "future inherited departure")
             self.trucks[t["id"]] = t
+            if t["location"] in self.network["stations"]:
+                self._begin_station_visit(t, arrival_observed=False)
         for row in initial["drones"]:
             u = deepcopy(row)
             op = u["active_operation"]
@@ -196,6 +202,19 @@ class Replay:
 
     def _idle(self, vehicle):
         require(vehicle["active_operation"] is None, "vehicle has a locked active operation")
+
+    def _begin_station_visit(self, truck, *, arrival_observed=True):
+        self._station_wait_memory[truck['id']] = dict(
+            visit_id=f"{truck['id']}:{truck['location']}:{self.now}",
+            station=truck['location'], arrived_at=self.now,
+            arrival_observed=arrival_observed, active_wait_minutes=ZERO,
+            review_count=0, active_wait_until=None, departed_at=None)
+
+    def _end_active_wait(self, truck):
+        memory = self._station_wait_memory.get(truck['id'])
+        if memory is not None:
+            memory['active_wait_until'] = None
+        getattr(self, '_wait_reviews', {}).pop(truck['id'], None)
 
     def _known(self, oid, kind=None):
         require(oid in self.orders, "request is not revealed")
@@ -332,6 +351,7 @@ class Replay:
                 t["unloading_phase"] = "skipped"
                 self._emit("unload_skipped", actor=actor, station=station)
                 return
+            self._end_active_wait(t)
             if kind == "truck_unload":
                 require(t["unloading_phase"] == "not_started" and t["completed_batches"] == 0,
                         "one unload before any loading only")
@@ -430,6 +450,11 @@ class Replay:
 
     def _truck_leg(self, t):
         arc = self._arcs[t["location"]]
+        memory = self._station_wait_memory.get(t['id'])
+        if memory is not None and memory['station'] == t['location'] and memory['departed_at'] is None:
+            self._end_active_wait(t)
+            memory['departed_at'] = self.now
+            self._station_wait_history.append(dict(truck=t['id'], **deepcopy(memory)))
         end = self.now + dec(arc["min"])
         t["active_operation"] = dict(kind="road", end=end)
         t["location"] = "road"
@@ -543,13 +568,23 @@ class Replay:
                     self._complete(o)
                 t["onboard_weight"] = 0
             else:
+                self._begin_station_visit(t)
                 positive_unload = any(a["kind"] == "truck_unload" and a.get("actor") == t["id"]
                                       and a.get("station") == t["location"]
                                       for at, acts in self._actions.items() if at >= self.now for a in acts)
                 t.update(unloading_phase="not_started" if positive_unload else "skipped",
                          completed_batches=0, active_batch=None)
                 if t["location"] not in self._stops.get(t["id"], set()):
-                    self._truck_leg(t)
+                    if getattr(self, '_online_station_decisions', False):
+                        # Finish all same-time completions and disclosures before
+                        # committing another road leg. The default remains leave.
+                        due = self._actions.setdefault(self.now, [])
+                        if not any(a.get('actor') == t['id'] and a['kind'] == 'truck_continue_circuit'
+                                   for a in due):
+                            due.append(dict(at=self.now, kind='truck_continue_circuit',
+                                            actor=t['id'], station=t['location']))
+                    else:
+                        self._truck_leg(t)
         elif kind == "truck_unload_done":
             t = self.trucks[data["actor"]]
             for oid, q in data["quantities"].items():
@@ -617,6 +652,11 @@ class Replay:
     def _advance(self, target):
         require(target >= self.now, "clock moved backwards")
         dt = target - self.now
+        for tid, memory in self._station_wait_memory.items():
+            truck = self.trucks[tid]
+            until = memory['active_wait_until']
+            if until is not None and truck['location'] == memory['station'] and truck['active_operation'] is None:
+                memory['active_wait_minutes'] += max(ZERO, min(target, until) - self.now)
         outside = sum(t["departed_at"] is not None and t["return_time"] is None for t in self.trucks.values())
         self.ledger["truck_time"] += dt * outside * dec(self.cfg["truck_time_cost"])
         for o in self.orders.values():
@@ -649,6 +689,9 @@ class Replay:
         if getattr(self, "_has_run", False):
             raise InvalidAction("replay can only be run once")
         self._has_run = True
+        # A planning replay deliberately has no hook; it must not inherit the
+        # online deferral flag from the live state it was cloned from.
+        self._online_station_decisions = decision_hook is not None
         ticks = {self.start, self.stop} | {dec(t) for t in checkpoints}
         require(all(self.start <= t <= self.stop for t in ticks), "checkpoint outside replay window")
         processed = None
