@@ -1,0 +1,3425 @@
+{
+  "site": {
+    "id": "L112882_d0_N80_uniform_e01_I0E00001",
+    "case": "L112882_d0_N80_uniform",
+    "spec": {
+      "layout_id": 112882,
+      "day_id": 0,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "uniform",
+      "cities": 2,
+      "pickup_deadline_lags": [
+        240,
+        300,
+        360
+      ],
+      "arrival_mode": "p2"
+    },
+    "at": 42.71279539267001,
+    "truck": "I0E00001",
+    "station": "L2+",
+    "qualification": {
+      "eligible": true,
+      "reasons": [],
+      "truck": "I0E00001",
+      "station": "L2+",
+      "at": 42.71279539267001,
+      "just_unloaded": true,
+      "live_review": false,
+      "known_cargo_reservation": false,
+      "first_command_deferred": false,
+      "first_action_index": 0,
+      "first_action": {
+        "kind": "truck_continue_circuit",
+        "actor": "I0E00001",
+        "at": 42.71279539267001
+      },
+      "recent_truck_event_kinds": [
+        "truck_unload_done"
+      ],
+      "stratum": "post_unload_primary"
+    },
+    "prefix_hash": "64c0ab9028a4733eed0fc215c32a292f7e41cc9b57dbabb471a918c1590bea63",
+    "base_plan_hash": "b0fda6d8a2cd5bf56f2e5a61c0d886aa2751736238f7eeef2d3d24d4278e32e5",
+    "interventions": {
+      "0": {
+        "qualification": {
+          "eligible": true,
+          "reasons": [],
+          "truck": "I0E00001",
+          "station": "L2+",
+          "at": 42.71279539267001,
+          "just_unloaded": true,
+          "live_review": false,
+          "known_cargo_reservation": false,
+          "first_command_deferred": false,
+          "first_action_index": 0,
+          "first_action": {
+            "kind": "truck_continue_circuit",
+            "actor": "I0E00001",
+            "at": 42.71279539267001
+          }
+        },
+        "truck": "I0E00001",
+        "interval": 0,
+        "admissions_unchanged": true,
+        "action_identities_unchanged": true,
+        "other_truck_actions_unchanged": true,
+        "strict_non_target_actions_unchanged": true,
+        "timing_only_changes": [],
+        "base_hash": "b0fda6d8a2cd5bf56f2e5a61c0d886aa2751736238f7eeef2d3d24d4278e32e5",
+        "branch_hash": "b0fda6d8a2cd5bf56f2e5a61c0d886aa2751736238f7eeef2d3d24d4278e32e5"
+      },
+      "2": {
+        "qualification": {
+          "eligible": true,
+          "reasons": [],
+          "truck": "I0E00001",
+          "station": "L2+",
+          "at": 42.71279539267001,
+          "just_unloaded": true,
+          "live_review": false,
+          "known_cargo_reservation": false,
+          "first_command_deferred": false,
+          "first_action_index": 0,
+          "first_action": {
+            "kind": "truck_continue_circuit",
+            "actor": "I0E00001",
+            "at": 42.71279539267001
+          }
+        },
+        "truck": "I0E00001",
+        "interval": 2,
+        "admissions_unchanged": true,
+        "action_identities_unchanged": true,
+        "other_truck_actions_unchanged": true,
+        "strict_non_target_actions_unchanged": false,
+        "timing_only_changes": [
+          {
+            "index": 0,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 42.71279539267001,
+            "new_at": 44.71279539267001,
+            "delay": 2.0
+          },
+          {
+            "index": 15,
+            "actor": "I0E00001",
+            "kind": "truck_unload",
+            "old_at": 52.71279539267001,
+            "new_at": 54.71279539267001,
+            "delay": 2.0
+          },
+          {
+            "index": 18,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 55.38779539267001,
+            "new_at": 57.38779539267001,
+            "delay": 2.0
+          },
+          {
+            "index": 19,
+            "actor": "UL2-_0",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 57.38779539267001,
+            "delay": 2.0
+          },
+          {
+            "index": 20,
+            "actor": "UL2-_1",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 57.38779539267001,
+            "delay": 2.0
+          },
+          {
+            "index": 21,
+            "actor": "UL2-_2",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 57.38779539267001,
+            "delay": 2.0
+          },
+          {
+            "index": 22,
+            "actor": "UL2-_3",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 57.38779539267001,
+            "delay": 2.0
+          },
+          {
+            "index": 23,
+            "actor": "UL2-_4",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 57.38779539267001,
+            "delay": 2.0
+          },
+          {
+            "index": 24,
+            "actor": "UL2-_4",
+            "kind": "drone_sortie",
+            "old_at": 55.63779539267001,
+            "new_at": 57.63779539267001,
+            "delay": 2.0
+          },
+          {
+            "index": 25,
+            "actor": "UL2-_1",
+            "kind": "drone_sortie",
+            "old_at": 55.71279539267001,
+            "new_at": 57.71279539267001,
+            "delay": 2.0
+          },
+          {
+            "index": 26,
+            "actor": "UL2-_2",
+            "kind": "drone_sortie",
+            "old_at": 55.71279539267001,
+            "new_at": 57.71279539267001,
+            "delay": 2.0
+          },
+          {
+            "index": 27,
+            "actor": "UL2-_3",
+            "kind": "drone_sortie",
+            "old_at": 55.73779539267001,
+            "new_at": 57.73779539267001,
+            "delay": 2.0
+          },
+          {
+            "index": 28,
+            "actor": "UL2-_0",
+            "kind": "drone_sortie",
+            "old_at": 55.812795392670004,
+            "new_at": 57.812795392670004,
+            "delay": 2.0
+          },
+          {
+            "index": 29,
+            "actor": "UL2-_1",
+            "kind": "drone_load",
+            "old_at": 60.25024892753061,
+            "new_at": 62.25024892753061,
+            "delay": 2.0
+          },
+          {
+            "index": 30,
+            "actor": "UL2-_1",
+            "kind": "drone_sortie",
+            "old_at": 60.50024892753061,
+            "new_at": 62.50024892753061,
+            "delay": 2.0
+          },
+          {
+            "index": 31,
+            "actor": "UL2-_3",
+            "kind": "drone_load",
+            "old_at": 61.94491398262784,
+            "new_at": 63.94491398262784,
+            "delay": 2.0
+          },
+          {
+            "index": 32,
+            "actor": "UL2-_3",
+            "kind": "drone_sortie",
+            "old_at": 62.26991398262784,
+            "new_at": 64.26991398262784,
+            "delay": 2.0
+          },
+          {
+            "index": 33,
+            "actor": "UL2-_1",
+            "kind": "drone_load",
+            "old_at": 65.55924661184935,
+            "new_at": 67.55924661184935,
+            "delay": 2.0
+          },
+          {
+            "index": 34,
+            "actor": "UL2-_1",
+            "kind": "drone_sortie",
+            "old_at": 65.98424661184934,
+            "new_at": 67.98424661184934,
+            "delay": 2.0
+          },
+          {
+            "index": 35,
+            "actor": "I0E00001",
+            "kind": "truck_unload",
+            "old_at": 70.02459559267001,
+            "new_at": 72.02459559267001,
+            "delay": 2.0
+          },
+          {
+            "index": 36,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 72.17459559267,
+            "new_at": 74.17459559267,
+            "delay": 2.0
+          },
+          {
+            "index": 37,
+            "actor": "UL1-_0",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 74.17459559267,
+            "delay": 2.0
+          },
+          {
+            "index": 38,
+            "actor": "UL1-_1",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 74.17459559267,
+            "delay": 2.0
+          },
+          {
+            "index": 39,
+            "actor": "UL1-_2",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 74.17459559267,
+            "delay": 2.0
+          },
+          {
+            "index": 40,
+            "actor": "UL1-_3",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 74.17459559267,
+            "delay": 2.0
+          },
+          {
+            "index": 41,
+            "actor": "UL1-_4",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 74.17459559267,
+            "delay": 2.0
+          },
+          {
+            "index": 42,
+            "actor": "UL1-_4",
+            "kind": "drone_sortie",
+            "old_at": 72.42459559267,
+            "new_at": 74.42459559267,
+            "delay": 2.0
+          },
+          {
+            "index": 43,
+            "actor": "UL1-_2",
+            "kind": "drone_sortie",
+            "old_at": 72.52459559267001,
+            "new_at": 74.52459559267001,
+            "delay": 2.0
+          },
+          {
+            "index": 44,
+            "actor": "UL1-_1",
+            "kind": "drone_sortie",
+            "old_at": 72.54959559267,
+            "new_at": 74.54959559267,
+            "delay": 2.0
+          },
+          {
+            "index": 45,
+            "actor": "UL1-_3",
+            "kind": "drone_sortie",
+            "old_at": 72.54959559267,
+            "new_at": 74.54959559267,
+            "delay": 2.0
+          },
+          {
+            "index": 46,
+            "actor": "UL1-_0",
+            "kind": "drone_sortie",
+            "old_at": 72.59959559267,
+            "new_at": 74.59959559267,
+            "delay": 2.0
+          },
+          {
+            "index": 47,
+            "actor": "UL1-_1",
+            "kind": "drone_load",
+            "old_at": 75.91658416943595,
+            "new_at": 77.91658416943595,
+            "delay": 2.0
+          },
+          {
+            "index": 48,
+            "actor": "UL1-_1",
+            "kind": "drone_sortie",
+            "old_at": 76.09158416943595,
+            "new_at": 78.09158416943595,
+            "delay": 2.0
+          },
+          {
+            "index": 49,
+            "actor": "UL1-_2",
+            "kind": "drone_load",
+            "old_at": 81.50980787801892,
+            "new_at": 83.50980787801892,
+            "delay": 2.0
+          },
+          {
+            "index": 50,
+            "actor": "UL1-_2",
+            "kind": "drone_sortie",
+            "old_at": 81.7098078780189,
+            "new_at": 83.7098078780189,
+            "delay": 2.0
+          }
+        ],
+        "base_hash": "b0fda6d8a2cd5bf56f2e5a61c0d886aa2751736238f7eeef2d3d24d4278e32e5",
+        "branch_hash": "d99c9378f51097ddf16ab941a2364748795a814b94ade5894975d748d89d5c73"
+      },
+      "5": {
+        "qualification": {
+          "eligible": true,
+          "reasons": [],
+          "truck": "I0E00001",
+          "station": "L2+",
+          "at": 42.71279539267001,
+          "just_unloaded": true,
+          "live_review": false,
+          "known_cargo_reservation": false,
+          "first_command_deferred": false,
+          "first_action_index": 0,
+          "first_action": {
+            "kind": "truck_continue_circuit",
+            "actor": "I0E00001",
+            "at": 42.71279539267001
+          }
+        },
+        "truck": "I0E00001",
+        "interval": 5,
+        "admissions_unchanged": true,
+        "action_identities_unchanged": true,
+        "other_truck_actions_unchanged": true,
+        "strict_non_target_actions_unchanged": false,
+        "timing_only_changes": [
+          {
+            "index": 0,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 42.71279539267001,
+            "new_at": 47.71279539267001,
+            "delay": 5.0
+          },
+          {
+            "index": 15,
+            "actor": "I0E00001",
+            "kind": "truck_unload",
+            "old_at": 52.71279539267001,
+            "new_at": 57.71279539267001,
+            "delay": 5.0
+          },
+          {
+            "index": 18,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 55.38779539267001,
+            "new_at": 60.38779539267001,
+            "delay": 5.0
+          },
+          {
+            "index": 19,
+            "actor": "UL2-_0",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 60.38779539267001,
+            "delay": 5.0
+          },
+          {
+            "index": 20,
+            "actor": "UL2-_1",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 60.38779539267001,
+            "delay": 5.0
+          },
+          {
+            "index": 21,
+            "actor": "UL2-_2",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 60.38779539267001,
+            "delay": 5.0
+          },
+          {
+            "index": 22,
+            "actor": "UL2-_3",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 60.38779539267001,
+            "delay": 5.0
+          },
+          {
+            "index": 23,
+            "actor": "UL2-_4",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 60.38779539267001,
+            "delay": 5.0
+          },
+          {
+            "index": 24,
+            "actor": "UL2-_4",
+            "kind": "drone_sortie",
+            "old_at": 55.63779539267001,
+            "new_at": 60.63779539267001,
+            "delay": 5.0
+          },
+          {
+            "index": 25,
+            "actor": "UL2-_1",
+            "kind": "drone_sortie",
+            "old_at": 55.71279539267001,
+            "new_at": 60.71279539267001,
+            "delay": 5.0
+          },
+          {
+            "index": 26,
+            "actor": "UL2-_2",
+            "kind": "drone_sortie",
+            "old_at": 55.71279539267001,
+            "new_at": 60.71279539267001,
+            "delay": 5.0
+          },
+          {
+            "index": 27,
+            "actor": "UL2-_3",
+            "kind": "drone_sortie",
+            "old_at": 55.73779539267001,
+            "new_at": 60.73779539267001,
+            "delay": 5.0
+          },
+          {
+            "index": 28,
+            "actor": "UL2-_0",
+            "kind": "drone_sortie",
+            "old_at": 55.812795392670004,
+            "new_at": 60.812795392670004,
+            "delay": 5.0
+          },
+          {
+            "index": 29,
+            "actor": "UL2-_1",
+            "kind": "drone_load",
+            "old_at": 60.25024892753061,
+            "new_at": 65.2502489275306,
+            "delay": 5.0
+          },
+          {
+            "index": 30,
+            "actor": "UL2-_1",
+            "kind": "drone_sortie",
+            "old_at": 60.50024892753061,
+            "new_at": 65.5002489275306,
+            "delay": 5.0
+          },
+          {
+            "index": 31,
+            "actor": "UL2-_3",
+            "kind": "drone_load",
+            "old_at": 61.94491398262784,
+            "new_at": 66.94491398262784,
+            "delay": 5.0
+          },
+          {
+            "index": 32,
+            "actor": "UL2-_3",
+            "kind": "drone_sortie",
+            "old_at": 62.26991398262784,
+            "new_at": 67.26991398262784,
+            "delay": 5.0
+          },
+          {
+            "index": 33,
+            "actor": "UL2-_1",
+            "kind": "drone_load",
+            "old_at": 65.55924661184935,
+            "new_at": 70.55924661184935,
+            "delay": 5.0
+          },
+          {
+            "index": 34,
+            "actor": "UL2-_1",
+            "kind": "drone_sortie",
+            "old_at": 65.98424661184934,
+            "new_at": 70.98424661184934,
+            "delay": 5.0
+          },
+          {
+            "index": 35,
+            "actor": "I0E00001",
+            "kind": "truck_unload",
+            "old_at": 70.02459559267001,
+            "new_at": 75.02459559267001,
+            "delay": 5.0
+          },
+          {
+            "index": 36,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 72.17459559267,
+            "new_at": 77.17459559267,
+            "delay": 5.0
+          },
+          {
+            "index": 37,
+            "actor": "UL1-_0",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 77.17459559267,
+            "delay": 5.0
+          },
+          {
+            "index": 38,
+            "actor": "UL1-_1",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 77.17459559267,
+            "delay": 5.0
+          },
+          {
+            "index": 39,
+            "actor": "UL1-_2",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 77.17459559267,
+            "delay": 5.0
+          },
+          {
+            "index": 40,
+            "actor": "UL1-_3",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 77.17459559267,
+            "delay": 5.0
+          },
+          {
+            "index": 41,
+            "actor": "UL1-_4",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 77.17459559267,
+            "delay": 5.0
+          },
+          {
+            "index": 42,
+            "actor": "UL1-_4",
+            "kind": "drone_sortie",
+            "old_at": 72.42459559267,
+            "new_at": 77.42459559267,
+            "delay": 5.0
+          },
+          {
+            "index": 43,
+            "actor": "UL1-_2",
+            "kind": "drone_sortie",
+            "old_at": 72.52459559267001,
+            "new_at": 77.52459559267001,
+            "delay": 5.0
+          },
+          {
+            "index": 44,
+            "actor": "UL1-_1",
+            "kind": "drone_sortie",
+            "old_at": 72.54959559267,
+            "new_at": 77.54959559267,
+            "delay": 5.0
+          },
+          {
+            "index": 45,
+            "actor": "UL1-_3",
+            "kind": "drone_sortie",
+            "old_at": 72.54959559267,
+            "new_at": 77.54959559267,
+            "delay": 5.0
+          },
+          {
+            "index": 46,
+            "actor": "UL1-_0",
+            "kind": "drone_sortie",
+            "old_at": 72.59959559267,
+            "new_at": 77.59959559267,
+            "delay": 5.0
+          },
+          {
+            "index": 47,
+            "actor": "UL1-_1",
+            "kind": "drone_load",
+            "old_at": 75.91658416943595,
+            "new_at": 80.91658416943595,
+            "delay": 5.0
+          },
+          {
+            "index": 48,
+            "actor": "UL1-_1",
+            "kind": "drone_sortie",
+            "old_at": 76.09158416943595,
+            "new_at": 81.09158416943595,
+            "delay": 5.0
+          },
+          {
+            "index": 49,
+            "actor": "UL1-_2",
+            "kind": "drone_load",
+            "old_at": 81.50980787801892,
+            "new_at": 86.50980787801892,
+            "delay": 5.0
+          },
+          {
+            "index": 50,
+            "actor": "UL1-_2",
+            "kind": "drone_sortie",
+            "old_at": 81.7098078780189,
+            "new_at": 86.7098078780189,
+            "delay": 5.0
+          }
+        ],
+        "base_hash": "b0fda6d8a2cd5bf56f2e5a61c0d886aa2751736238f7eeef2d3d24d4278e32e5",
+        "branch_hash": "8ba22554ce18691472b8980bf4eb0c442daf879ad64a4877c5de855565b5d7da"
+      },
+      "10": {
+        "qualification": {
+          "eligible": true,
+          "reasons": [],
+          "truck": "I0E00001",
+          "station": "L2+",
+          "at": 42.71279539267001,
+          "just_unloaded": true,
+          "live_review": false,
+          "known_cargo_reservation": false,
+          "first_command_deferred": false,
+          "first_action_index": 0,
+          "first_action": {
+            "kind": "truck_continue_circuit",
+            "actor": "I0E00001",
+            "at": 42.71279539267001
+          }
+        },
+        "truck": "I0E00001",
+        "interval": 10,
+        "admissions_unchanged": true,
+        "action_identities_unchanged": true,
+        "other_truck_actions_unchanged": true,
+        "strict_non_target_actions_unchanged": false,
+        "timing_only_changes": [
+          {
+            "index": 0,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 42.71279539267001,
+            "new_at": 52.71279539267001,
+            "delay": 10.0
+          },
+          {
+            "index": 15,
+            "actor": "I0E00001",
+            "kind": "truck_unload",
+            "old_at": 52.71279539267001,
+            "new_at": 62.71279539267001,
+            "delay": 10.0
+          },
+          {
+            "index": 18,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 55.38779539267001,
+            "new_at": 65.38779539267,
+            "delay": 10.0
+          },
+          {
+            "index": 19,
+            "actor": "UL2-_0",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 65.38779539267,
+            "delay": 10.0
+          },
+          {
+            "index": 20,
+            "actor": "UL2-_1",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 65.38779539267,
+            "delay": 10.0
+          },
+          {
+            "index": 21,
+            "actor": "UL2-_2",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 65.38779539267,
+            "delay": 10.0
+          },
+          {
+            "index": 22,
+            "actor": "UL2-_3",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 65.38779539267,
+            "delay": 10.0
+          },
+          {
+            "index": 23,
+            "actor": "UL2-_4",
+            "kind": "drone_load",
+            "old_at": 55.38779539267001,
+            "new_at": 65.38779539267,
+            "delay": 10.0
+          },
+          {
+            "index": 24,
+            "actor": "UL2-_4",
+            "kind": "drone_sortie",
+            "old_at": 55.63779539267001,
+            "new_at": 65.63779539267,
+            "delay": 10.0
+          },
+          {
+            "index": 25,
+            "actor": "UL2-_1",
+            "kind": "drone_sortie",
+            "old_at": 55.71279539267001,
+            "new_at": 65.71279539267,
+            "delay": 10.0
+          },
+          {
+            "index": 26,
+            "actor": "UL2-_2",
+            "kind": "drone_sortie",
+            "old_at": 55.71279539267001,
+            "new_at": 65.71279539267,
+            "delay": 10.0
+          },
+          {
+            "index": 27,
+            "actor": "UL2-_3",
+            "kind": "drone_sortie",
+            "old_at": 55.73779539267001,
+            "new_at": 65.73779539267001,
+            "delay": 10.0
+          },
+          {
+            "index": 28,
+            "actor": "UL2-_0",
+            "kind": "drone_sortie",
+            "old_at": 55.812795392670004,
+            "new_at": 65.81279539267001,
+            "delay": 10.0
+          },
+          {
+            "index": 29,
+            "actor": "UL2-_1",
+            "kind": "drone_load",
+            "old_at": 60.25024892753061,
+            "new_at": 70.2502489275306,
+            "delay": 10.0
+          },
+          {
+            "index": 30,
+            "actor": "UL2-_1",
+            "kind": "drone_sortie",
+            "old_at": 60.50024892753061,
+            "new_at": 70.5002489275306,
+            "delay": 10.0
+          },
+          {
+            "index": 31,
+            "actor": "UL2-_3",
+            "kind": "drone_load",
+            "old_at": 61.94491398262784,
+            "new_at": 71.94491398262784,
+            "delay": 10.0
+          },
+          {
+            "index": 32,
+            "actor": "UL2-_3",
+            "kind": "drone_sortie",
+            "old_at": 62.26991398262784,
+            "new_at": 72.26991398262784,
+            "delay": 10.0
+          },
+          {
+            "index": 33,
+            "actor": "UL2-_1",
+            "kind": "drone_load",
+            "old_at": 65.55924661184935,
+            "new_at": 75.55924661184935,
+            "delay": 10.0
+          },
+          {
+            "index": 34,
+            "actor": "UL2-_1",
+            "kind": "drone_sortie",
+            "old_at": 65.98424661184934,
+            "new_at": 75.98424661184934,
+            "delay": 10.0
+          },
+          {
+            "index": 35,
+            "actor": "I0E00001",
+            "kind": "truck_unload",
+            "old_at": 70.02459559267001,
+            "new_at": 80.02459559267001,
+            "delay": 10.0
+          },
+          {
+            "index": 36,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 72.17459559267,
+            "new_at": 82.17459559267,
+            "delay": 10.0
+          },
+          {
+            "index": 37,
+            "actor": "UL1-_0",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 82.17459559267,
+            "delay": 10.0
+          },
+          {
+            "index": 38,
+            "actor": "UL1-_1",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 82.17459559267,
+            "delay": 10.0
+          },
+          {
+            "index": 39,
+            "actor": "UL1-_2",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 82.17459559267,
+            "delay": 10.0
+          },
+          {
+            "index": 40,
+            "actor": "UL1-_3",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 82.17459559267,
+            "delay": 10.0
+          },
+          {
+            "index": 41,
+            "actor": "UL1-_4",
+            "kind": "drone_load",
+            "old_at": 72.17459559267,
+            "new_at": 82.17459559267,
+            "delay": 10.0
+          },
+          {
+            "index": 42,
+            "actor": "UL1-_4",
+            "kind": "drone_sortie",
+            "old_at": 72.42459559267,
+            "new_at": 82.42459559267,
+            "delay": 10.0
+          },
+          {
+            "index": 43,
+            "actor": "UL1-_2",
+            "kind": "drone_sortie",
+            "old_at": 72.52459559267001,
+            "new_at": 82.52459559267001,
+            "delay": 10.0
+          },
+          {
+            "index": 44,
+            "actor": "UL1-_1",
+            "kind": "drone_sortie",
+            "old_at": 72.54959559267,
+            "new_at": 82.54959559267,
+            "delay": 10.0
+          },
+          {
+            "index": 45,
+            "actor": "UL1-_3",
+            "kind": "drone_sortie",
+            "old_at": 72.54959559267,
+            "new_at": 82.54959559267,
+            "delay": 10.0
+          },
+          {
+            "index": 46,
+            "actor": "UL1-_0",
+            "kind": "drone_sortie",
+            "old_at": 72.59959559267,
+            "new_at": 82.59959559267,
+            "delay": 10.0
+          },
+          {
+            "index": 47,
+            "actor": "UL1-_1",
+            "kind": "drone_load",
+            "old_at": 75.91658416943595,
+            "new_at": 85.91658416943595,
+            "delay": 10.0
+          },
+          {
+            "index": 48,
+            "actor": "UL1-_1",
+            "kind": "drone_sortie",
+            "old_at": 76.09158416943595,
+            "new_at": 86.09158416943595,
+            "delay": 10.0
+          },
+          {
+            "index": 49,
+            "actor": "UL1-_2",
+            "kind": "drone_load",
+            "old_at": 81.50980787801892,
+            "new_at": 91.50980787801892,
+            "delay": 10.0
+          },
+          {
+            "index": 50,
+            "actor": "UL1-_2",
+            "kind": "drone_sortie",
+            "old_at": 81.7098078780189,
+            "new_at": 91.7098078780189,
+            "delay": 10.0
+          }
+        ],
+        "base_hash": "b0fda6d8a2cd5bf56f2e5a61c0d886aa2751736238f7eeef2d3d24d4278e32e5",
+        "branch_hash": "fa2e10f0ec72ffeff7f9ab35d5b5154a556fde27e9100d531ca4126473e846ee"
+      }
+    }
+  },
+  "replica": 1,
+  "suffix_hash": "09f0acdf428ba4091fdb1010f650cebf9f1d5e5478e8fc0003399cbd157af54b",
+  "online_known_hash": "3ec87da499f4e844e1d21589c5a84368c2cc47899f359216cb950422cd203a57",
+  "future_count": 54,
+  "overlap": {
+    "optimistic_only": true,
+    "formula": "release + idle-drone roundtrip + customer service + drone unload + truck load",
+    "counts": {
+      "2": 0,
+      "5": 0,
+      "10": 0
+    },
+    "eligible_new_releases_in_window": {
+      "2": 0,
+      "5": 0,
+      "10": 0
+    },
+    "idle_ready_in_window": {
+      "2": 0,
+      "5": 0,
+      "10": 0
+    },
+    "eligible_future": 29,
+    "first_idle_drone_ready": 74.80392801294303,
+    "rows": [
+      {
+        "id": "P00003",
+        "release": 65.0,
+        "idle_drone_ready": 74.80392801294303,
+        "truck_loaded": 74.95392801294304
+      },
+      {
+        "id": "P00005",
+        "release": 130.0,
+        "idle_drone_ready": 142.2282818311439,
+        "truck_loaded": 142.5782818311439
+      },
+      {
+        "id": "P00008",
+        "release": 154.0,
+        "idle_drone_ready": 172.1633366285302,
+        "truck_loaded": 172.3133366285302
+      },
+      {
+        "id": "P00010",
+        "release": 191.0,
+        "idle_drone_ready": 203.33214469465906,
+        "truck_loaded": 203.68214469465906
+      },
+      {
+        "id": "P00014",
+        "release": 207.0,
+        "idle_drone_ready": 215.4317317352056,
+        "truck_loaded": 215.8067317352056
+      },
+      {
+        "id": "P00016",
+        "release": 214.0,
+        "idle_drone_ready": 216.33325254044323,
+        "truck_loaded": 216.65825254044321
+      },
+      {
+        "id": "P00017",
+        "release": 216.0,
+        "idle_drone_ready": 230.19663683405875,
+        "truck_loaded": 230.39663683405874
+      },
+      {
+        "id": "P00019",
+        "release": 236.0,
+        "idle_drone_ready": 251.34803756137242,
+        "truck_loaded": 251.49803756137243
+      },
+      {
+        "id": "P00020",
+        "release": 250.0,
+        "idle_drone_ready": 256.4012699101884,
+        "truck_loaded": 256.60126991018836
+      },
+      {
+        "id": "P00021",
+        "release": 262.0,
+        "idle_drone_ready": 270.6497928794018,
+        "truck_loaded": 270.9497928794018
+      },
+      {
+        "id": "P00022",
+        "release": 265.0,
+        "idle_drone_ready": 278.8508151992068,
+        "truck_loaded": 279.0508151992068
+      },
+      {
+        "id": "P00024",
+        "release": 273.0,
+        "idle_drone_ready": 283.51875277945885,
+        "truck_loaded": 283.9187527794588
+      },
+      {
+        "id": "P00025",
+        "release": 283.0,
+        "idle_drone_ready": 292.1260688367263,
+        "truck_loaded": 292.40106883672627
+      },
+      {
+        "id": "P00027",
+        "release": 288.0,
+        "idle_drone_ready": 297.95099410599437,
+        "truck_loaded": 298.10099410599435
+      },
+      {
+        "id": "P00029",
+        "release": 294.0,
+        "idle_drone_ready": 304.8378547028149,
+        "truck_loaded": 305.1628547028149
+      },
+      {
+        "id": "P00030",
+        "release": 295.0,
+        "idle_drone_ready": 300.4032703011038,
+        "truck_loaded": 300.5782703011038
+      },
+      {
+        "id": "P00032",
+        "release": 303.0,
+        "idle_drone_ready": 320.7011985108019,
+        "truck_loaded": 321.0511985108019
+      },
+      {
+        "id": "P00033",
+        "release": 320.0,
+        "idle_drone_ready": 328.8282115844067,
+        "truck_loaded": 329.0282115844067
+      },
+      {
+        "id": "P00034",
+        "release": 324.0,
+        "idle_drone_ready": 336.01381887330643,
+        "truck_loaded": 336.1638188733064
+      },
+      {
+        "id": "P00035",
+        "release": 329.0,
+        "idle_drone_ready": 330.9853052893772,
+        "truck_loaded": 331.3603052893772
+      },
+      {
+        "id": "P00036",
+        "release": 330.0,
+        "idle_drone_ready": 333.8501043280591,
+        "truck_loaded": 334.1501043280591
+      },
+      {
+        "id": "P00038",
+        "release": 344.0,
+        "idle_drone_ready": 359.05828094640987,
+        "truck_loaded": 359.43328094640987
+      },
+      {
+        "id": "P00040",
+        "release": 360.0,
+        "idle_drone_ready": 380.3636871703016,
+        "truck_loaded": 380.7136871703016
+      },
+      {
+        "id": "P00042",
+        "release": 464.0,
+        "idle_drone_ready": 474.14541444316694,
+        "truck_loaded": 474.32041444316695
+      },
+      {
+        "id": "P00044",
+        "release": 486.0,
+        "idle_drone_ready": 491.67399449084303,
+        "truck_loaded": 491.948994490843
+      },
+      {
+        "id": "P00048",
+        "release": 540.0,
+        "idle_drone_ready": 553.2896889270643,
+        "truck_loaded": 553.4396889270643
+      },
+      {
+        "id": "P00049",
+        "release": 542.0,
+        "idle_drone_ready": 555.0066652072711,
+        "truck_loaded": 555.4066652072711
+      },
+      {
+        "id": "P00050",
+        "release": 543.0,
+        "idle_drone_ready": 555.0916198014888,
+        "truck_loaded": 555.3166198014889
+      },
+      {
+        "id": "P00052",
+        "release": 549.0,
+        "idle_drone_ready": 561.8458274661757,
+        "truck_loaded": 562.0208274661757
+      }
+    ]
+  },
+  "branches": {
+    "0": {
+      "net": -765.6858893846601,
+      "ledger": {
+        "revenue": 1299.2,
+        "truck_trip": 188.1392013,
+        "truck_time": 39.876435334924594,
+        "drone_activation": 700.0,
+        "flight": 132.0702527497355,
+        "lateness": 0.0,
+        "rejection": 1004.8,
+        "net": -765.6858893846601
+      },
+      "accepted": 2,
+      "accepted_ids": [
+        "P00000",
+        "P00001"
+      ],
+      "trips": 1,
+      "trace": "f5c5a3b81aeed8a3ab522e41843d4f6d43bd67a6e9015844c5a5af62ddc0db1a",
+      "terminal": true,
+      "ledger_audited": true,
+      "pickup_records": [
+        {
+          "id": "P00000",
+          "release": 13.0,
+          "station": "L1+",
+          "accepted": true,
+          "available_at": 25.22599519267001,
+          "completed_at": 99.69108833731147
+        },
+        {
+          "id": "P00001",
+          "release": 52.0,
+          "station": "L1-",
+          "accepted": true,
+          "available_at": 87.34108833731148,
+          "completed_at": 99.69108833731147
+        },
+        {
+          "id": "P00002",
+          "release": 52.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00003",
+          "release": 65.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00004",
+          "release": 113.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00005",
+          "release": 130.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00006",
+          "release": 148.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00007",
+          "release": 153.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00008",
+          "release": 154.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00009",
+          "release": 174.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00010",
+          "release": 191.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00011",
+          "release": 192.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00012",
+          "release": 197.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00013",
+          "release": 199.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00014",
+          "release": 207.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00015",
+          "release": 210.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00016",
+          "release": 214.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00017",
+          "release": 216.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00018",
+          "release": 222.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00019",
+          "release": 236.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00020",
+          "release": 250.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00021",
+          "release": 262.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00022",
+          "release": 265.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00023",
+          "release": 266.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00024",
+          "release": 273.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00025",
+          "release": 283.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00026",
+          "release": 287.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00027",
+          "release": 288.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00028",
+          "release": 289.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00029",
+          "release": 294.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00030",
+          "release": 295.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00031",
+          "release": 302.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00032",
+          "release": 303.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00033",
+          "release": 320.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00034",
+          "release": 324.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00035",
+          "release": 329.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00036",
+          "release": 330.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00037",
+          "release": 331.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00038",
+          "release": 344.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00039",
+          "release": 349.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00040",
+          "release": 360.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00041",
+          "release": 438.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00042",
+          "release": 464.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00043",
+          "release": 482.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00044",
+          "release": 486.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00045",
+          "release": 494.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00046",
+          "release": 501.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00047",
+          "release": 530.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00048",
+          "release": 540.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00049",
+          "release": 542.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00050",
+          "release": 543.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00051",
+          "release": 548.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00052",
+          "release": 549.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00053",
+          "release": 567.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00054",
+          "release": 573.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        }
+      ],
+      "actual_first_departure": 42.71279539267001,
+      "actual_first_departure_delay": 0.0,
+      "continuation_search": {
+        "solver": "gurobi",
+        "epochs": 56,
+        "wait_mode": "adaptive",
+        "chosen_wait_interval_counts": {},
+        "feasible_wait_epochs": 2,
+        "feasible_wait_interval_counts": {
+          "10": 4,
+          "5": 4,
+          "2": 4
+        },
+        "feasible_wait_interval_epochs": {
+          "10": 2,
+          "5": 2,
+          "2": 2
+        },
+        "feature_diagnostics": {
+          "existing_chain_near_h_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.09603658536585366,
+            "nonzero_candidates": 43,
+            "action_varying_epochs": 2
+          },
+          "existing_chain_later_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.6969512195121952,
+            "nonzero_candidates": 42,
+            "action_varying_epochs": 2
+          },
+          "added_trip_reliance_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 4.680792682926833,
+            "nonzero_candidates": 548,
+            "action_varying_epochs": 53
+          },
+          "demand_weighted_drone_tail_delay": {
+            "minimum": 0.0,
+            "maximum": 0.00041106229498423454,
+            "nonzero_candidates": 613,
+            "action_varying_epochs": 54
+          },
+          "demand_weighted_recovery_capacity": {
+            "minimum": 0.0,
+            "maximum": 0.9933865950226249,
+            "nonzero_candidates": 591,
+            "action_varying_epochs": 54
+          },
+          "future_pickup_lateness_exposure": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "nonzero_candidates": 0,
+            "action_varying_epochs": 0
+          },
+          "demand_weighted_delivery_slack": {
+            "minimum": 0.9700202685289274,
+            "maximum": 1.0,
+            "nonzero_candidates": 664,
+            "action_varying_epochs": 2
+          }
+        },
+        "decision_seconds": 20.690377100000887,
+        "truncated_epochs": 2,
+        "base_search_truncated_epochs": 1,
+        "enhancement_truncated_epochs": 2,
+        "forced_reject_requests": 0,
+        "service_patterns_attempted": 32,
+        "service_patterns_accepted": 32,
+        "wait_patterns_attempted": 12,
+        "wait_patterns_accepted": 12,
+        "wait_search_truncated_epochs": 0,
+        "service_search_truncated_epochs": 1
+      },
+      "suffix_hash": "09f0acdf428ba4091fdb1010f650cebf9f1d5e5478e8fc0003399cbd157af54b"
+    },
+    "2": {
+      "net": -766.48588938466,
+      "ledger": {
+        "revenue": 1299.2,
+        "truck_trip": 188.1392013,
+        "truck_time": 40.67643533492459,
+        "drone_activation": 700.0,
+        "flight": 132.0702527497355,
+        "lateness": 0.0,
+        "rejection": 1004.8,
+        "net": -766.48588938466
+      },
+      "accepted": 2,
+      "accepted_ids": [
+        "P00000",
+        "P00001"
+      ],
+      "trips": 1,
+      "trace": "d8c4b66122c1f28049597f13bd5cc61d3223b11c39a7fb237bcd6dcf8b595cbb",
+      "terminal": true,
+      "ledger_audited": true,
+      "pickup_records": [
+        {
+          "id": "P00000",
+          "release": 13.0,
+          "station": "L1+",
+          "accepted": true,
+          "available_at": 25.22599519267001,
+          "completed_at": 101.69108833731147
+        },
+        {
+          "id": "P00001",
+          "release": 52.0,
+          "station": "L1-",
+          "accepted": true,
+          "available_at": 89.34108833731148,
+          "completed_at": 101.69108833731147
+        },
+        {
+          "id": "P00002",
+          "release": 52.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00003",
+          "release": 65.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00004",
+          "release": 113.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00005",
+          "release": 130.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00006",
+          "release": 148.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00007",
+          "release": 153.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00008",
+          "release": 154.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00009",
+          "release": 174.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00010",
+          "release": 191.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00011",
+          "release": 192.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00012",
+          "release": 197.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00013",
+          "release": 199.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00014",
+          "release": 207.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00015",
+          "release": 210.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00016",
+          "release": 214.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00017",
+          "release": 216.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00018",
+          "release": 222.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00019",
+          "release": 236.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00020",
+          "release": 250.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00021",
+          "release": 262.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00022",
+          "release": 265.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00023",
+          "release": 266.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00024",
+          "release": 273.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00025",
+          "release": 283.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00026",
+          "release": 287.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00027",
+          "release": 288.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00028",
+          "release": 289.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00029",
+          "release": 294.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00030",
+          "release": 295.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00031",
+          "release": 302.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00032",
+          "release": 303.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00033",
+          "release": 320.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00034",
+          "release": 324.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00035",
+          "release": 329.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00036",
+          "release": 330.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00037",
+          "release": 331.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00038",
+          "release": 344.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00039",
+          "release": 349.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00040",
+          "release": 360.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00041",
+          "release": 438.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00042",
+          "release": 464.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00043",
+          "release": 482.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00044",
+          "release": 486.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00045",
+          "release": 494.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00046",
+          "release": 501.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00047",
+          "release": 530.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00048",
+          "release": 540.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00049",
+          "release": 542.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00050",
+          "release": 543.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00051",
+          "release": 548.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00052",
+          "release": 549.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00053",
+          "release": 567.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00054",
+          "release": 573.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        }
+      ],
+      "actual_first_departure": 44.71279539267001,
+      "actual_first_departure_delay": 2.0,
+      "continuation_search": {
+        "solver": "gurobi",
+        "epochs": 57,
+        "wait_mode": "adaptive",
+        "chosen_wait_interval_counts": {},
+        "feasible_wait_epochs": 3,
+        "feasible_wait_interval_counts": {
+          "10": 7,
+          "5": 7,
+          "2": 7
+        },
+        "feasible_wait_interval_epochs": {
+          "10": 3,
+          "5": 3,
+          "2": 3
+        },
+        "feature_diagnostics": {
+          "existing_chain_near_h_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.09603658536585366,
+            "nonzero_candidates": 40,
+            "action_varying_epochs": 2
+          },
+          "existing_chain_later_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.7353658536585366,
+            "nonzero_candidates": 39,
+            "action_varying_epochs": 2
+          },
+          "added_trip_reliance_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 4.680792682926833,
+            "nonzero_candidates": 551,
+            "action_varying_epochs": 53
+          },
+          "demand_weighted_drone_tail_delay": {
+            "minimum": 0.0,
+            "maximum": 0.0009021956269733651,
+            "nonzero_candidates": 625,
+            "action_varying_epochs": 55
+          },
+          "demand_weighted_recovery_capacity": {
+            "minimum": 0.0,
+            "maximum": 0.9933865950226249,
+            "nonzero_candidates": 591,
+            "action_varying_epochs": 54
+          },
+          "future_pickup_lateness_exposure": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "nonzero_candidates": 0,
+            "action_varying_epochs": 0
+          },
+          "demand_weighted_delivery_slack": {
+            "minimum": 0.9581558617492663,
+            "maximum": 1.0,
+            "nonzero_candidates": 676,
+            "action_varying_epochs": 3
+          }
+        },
+        "decision_seconds": 15.011784499999067,
+        "truncated_epochs": 2,
+        "base_search_truncated_epochs": 1,
+        "enhancement_truncated_epochs": 2,
+        "forced_reject_requests": 0,
+        "service_patterns_attempted": 32,
+        "service_patterns_accepted": 32,
+        "wait_patterns_attempted": 21,
+        "wait_patterns_accepted": 21,
+        "wait_search_truncated_epochs": 0,
+        "service_search_truncated_epochs": 1
+      },
+      "suffix_hash": "09f0acdf428ba4091fdb1010f650cebf9f1d5e5478e8fc0003399cbd157af54b"
+    },
+    "5": {
+      "net": -767.6858893846601,
+      "ledger": {
+        "revenue": 1299.2,
+        "truck_trip": 188.1392013,
+        "truck_time": 41.876435334924594,
+        "drone_activation": 700.0,
+        "flight": 132.0702527497355,
+        "lateness": 0.0,
+        "rejection": 1004.8,
+        "net": -767.6858893846601
+      },
+      "accepted": 2,
+      "accepted_ids": [
+        "P00000",
+        "P00001"
+      ],
+      "trips": 1,
+      "trace": "ef6adf2c55a7796099e07b82f65fa348c17cafb905807ca5e19104771e979228",
+      "terminal": true,
+      "ledger_audited": true,
+      "pickup_records": [
+        {
+          "id": "P00000",
+          "release": 13.0,
+          "station": "L1+",
+          "accepted": true,
+          "available_at": 25.22599519267001,
+          "completed_at": 104.69108833731147
+        },
+        {
+          "id": "P00001",
+          "release": 52.0,
+          "station": "L1-",
+          "accepted": true,
+          "available_at": 92.34108833731148,
+          "completed_at": 104.69108833731147
+        },
+        {
+          "id": "P00002",
+          "release": 52.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00003",
+          "release": 65.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00004",
+          "release": 113.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00005",
+          "release": 130.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00006",
+          "release": 148.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00007",
+          "release": 153.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00008",
+          "release": 154.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00009",
+          "release": 174.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00010",
+          "release": 191.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00011",
+          "release": 192.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00012",
+          "release": 197.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00013",
+          "release": 199.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00014",
+          "release": 207.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00015",
+          "release": 210.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00016",
+          "release": 214.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00017",
+          "release": 216.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00018",
+          "release": 222.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00019",
+          "release": 236.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00020",
+          "release": 250.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00021",
+          "release": 262.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00022",
+          "release": 265.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00023",
+          "release": 266.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00024",
+          "release": 273.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00025",
+          "release": 283.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00026",
+          "release": 287.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00027",
+          "release": 288.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00028",
+          "release": 289.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00029",
+          "release": 294.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00030",
+          "release": 295.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00031",
+          "release": 302.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00032",
+          "release": 303.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00033",
+          "release": 320.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00034",
+          "release": 324.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00035",
+          "release": 329.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00036",
+          "release": 330.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00037",
+          "release": 331.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00038",
+          "release": 344.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00039",
+          "release": 349.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00040",
+          "release": 360.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00041",
+          "release": 438.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00042",
+          "release": 464.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00043",
+          "release": 482.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00044",
+          "release": 486.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00045",
+          "release": 494.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00046",
+          "release": 501.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00047",
+          "release": 530.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00048",
+          "release": 540.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00049",
+          "release": 542.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00050",
+          "release": 543.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00051",
+          "release": 548.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00052",
+          "release": 549.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00053",
+          "release": 567.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00054",
+          "release": 573.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        }
+      ],
+      "actual_first_departure": 47.71279539267001,
+      "actual_first_departure_delay": 5.0,
+      "continuation_search": {
+        "solver": "gurobi",
+        "epochs": 57,
+        "wait_mode": "adaptive",
+        "chosen_wait_interval_counts": {},
+        "feasible_wait_epochs": 3,
+        "feasible_wait_interval_counts": {
+          "10": 7,
+          "5": 7,
+          "2": 7
+        },
+        "feasible_wait_interval_epochs": {
+          "10": 3,
+          "5": 3,
+          "2": 3
+        },
+        "feature_diagnostics": {
+          "existing_chain_near_h_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.09603658536585366,
+            "nonzero_candidates": 43,
+            "action_varying_epochs": 3
+          },
+          "existing_chain_later_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.7929878048780487,
+            "nonzero_candidates": 42,
+            "action_varying_epochs": 3
+          },
+          "added_trip_reliance_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 4.680792682926833,
+            "nonzero_candidates": 556,
+            "action_varying_epochs": 53
+          },
+          "demand_weighted_drone_tail_delay": {
+            "minimum": 0.0,
+            "maximum": 0.0008916025526744729,
+            "nonzero_candidates": 630,
+            "action_varying_epochs": 55
+          },
+          "demand_weighted_recovery_capacity": {
+            "minimum": 0.0,
+            "maximum": 0.9933865950226249,
+            "nonzero_candidates": 599,
+            "action_varying_epochs": 55
+          },
+          "future_pickup_lateness_exposure": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "nonzero_candidates": 0,
+            "action_varying_epochs": 0
+          },
+          "demand_weighted_delivery_slack": {
+            "minimum": 0.9530711159865545,
+            "maximum": 1.0,
+            "nonzero_candidates": 681,
+            "action_varying_epochs": 4
+          }
+        },
+        "decision_seconds": 13.443371800000477,
+        "truncated_epochs": 2,
+        "base_search_truncated_epochs": 1,
+        "enhancement_truncated_epochs": 2,
+        "forced_reject_requests": 0,
+        "service_patterns_attempted": 32,
+        "service_patterns_accepted": 32,
+        "wait_patterns_attempted": 21,
+        "wait_patterns_accepted": 21,
+        "wait_search_truncated_epochs": 0,
+        "service_search_truncated_epochs": 1
+      },
+      "suffix_hash": "09f0acdf428ba4091fdb1010f650cebf9f1d5e5478e8fc0003399cbd157af54b"
+    },
+    "10": {
+      "net": -748.5684462247144,
+      "ledger": {
+        "revenue": 1318.4,
+        "truck_trip": 188.1392013,
+        "truck_time": 48.79674636115593,
+        "drone_activation": 700.0,
+        "flight": 134.83249856355846,
+        "lateness": 0.0,
+        "rejection": 995.2,
+        "net": -748.5684462247144
+      },
+      "accepted": 3,
+      "accepted_ids": [
+        "P00000",
+        "P00001",
+        "P00003"
+      ],
+      "trips": 1,
+      "trace": "4a03316b687a99fbd41f3a3a9aebd559a3d3de17ae533de131a848142ebe8473",
+      "terminal": true,
+      "ledger_audited": true,
+      "pickup_records": [
+        {
+          "id": "P00000",
+          "release": 13.0,
+          "station": "L1+",
+          "accepted": true,
+          "available_at": 25.22599519267001,
+          "completed_at": 121.99186590288983
+        },
+        {
+          "id": "P00001",
+          "release": 52.0,
+          "station": "L1-",
+          "accepted": true,
+          "available_at": 109.64186590288983,
+          "completed_at": 121.99186590288983
+        },
+        {
+          "id": "P00002",
+          "release": 52.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00003",
+          "release": 65.0,
+          "station": "L2-",
+          "accepted": true,
+          "available_at": 77.53857295824837,
+          "completed_at": 121.99186590288983
+        },
+        {
+          "id": "P00004",
+          "release": 113.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00005",
+          "release": 130.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00006",
+          "release": 148.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00007",
+          "release": 153.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00008",
+          "release": 154.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00009",
+          "release": 174.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00010",
+          "release": 191.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00011",
+          "release": 192.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00012",
+          "release": 197.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00013",
+          "release": 199.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00014",
+          "release": 207.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00015",
+          "release": 210.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00016",
+          "release": 214.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00017",
+          "release": 216.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00018",
+          "release": 222.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00019",
+          "release": 236.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00020",
+          "release": 250.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00021",
+          "release": 262.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00022",
+          "release": 265.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00023",
+          "release": 266.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00024",
+          "release": 273.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00025",
+          "release": 283.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00026",
+          "release": 287.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00027",
+          "release": 288.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00028",
+          "release": 289.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00029",
+          "release": 294.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00030",
+          "release": 295.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00031",
+          "release": 302.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00032",
+          "release": 303.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00033",
+          "release": 320.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00034",
+          "release": 324.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00035",
+          "release": 329.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00036",
+          "release": 330.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00037",
+          "release": 331.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00038",
+          "release": 344.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00039",
+          "release": 349.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00040",
+          "release": 360.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00041",
+          "release": 438.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00042",
+          "release": 464.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00043",
+          "release": 482.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00044",
+          "release": 486.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00045",
+          "release": 494.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00046",
+          "release": 501.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00047",
+          "release": 530.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00048",
+          "release": 540.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00049",
+          "release": 542.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00050",
+          "release": 543.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00051",
+          "release": 548.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00052",
+          "release": 549.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00053",
+          "release": 567.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        },
+        {
+          "id": "P00054",
+          "release": 573.0,
+          "station": null,
+          "accepted": false,
+          "available_at": null,
+          "completed_at": null
+        }
+      ],
+      "actual_first_departure": 52.71279539267001,
+      "actual_first_departure_delay": 10.0,
+      "continuation_search": {
+        "solver": "gurobi",
+        "epochs": 58,
+        "wait_mode": "adaptive",
+        "chosen_wait_interval_counts": {},
+        "feasible_wait_epochs": 3,
+        "feasible_wait_interval_counts": {
+          "10": 6,
+          "5": 6,
+          "2": 6
+        },
+        "feasible_wait_interval_epochs": {
+          "10": 3,
+          "5": 3,
+          "2": 3
+        },
+        "feature_diagnostics": {
+          "existing_chain_near_h_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.0975609756097561,
+            "nonzero_candidates": 108,
+            "action_varying_epochs": 5
+          },
+          "existing_chain_later_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.8890243902439021,
+            "nonzero_candidates": 102,
+            "action_varying_epochs": 5
+          },
+          "added_trip_reliance_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 4.680792682926833,
+            "nonzero_candidates": 578,
+            "action_varying_epochs": 53
+          },
+          "demand_weighted_drone_tail_delay": {
+            "minimum": 0.0,
+            "maximum": 0.000914577187681168,
+            "nonzero_candidates": 717,
+            "action_varying_epochs": 55
+          },
+          "demand_weighted_recovery_capacity": {
+            "minimum": 0.0,
+            "maximum": 0.9933865950226249,
+            "nonzero_candidates": 686,
+            "action_varying_epochs": 56
+          },
+          "future_pickup_lateness_exposure": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "nonzero_candidates": 0,
+            "action_varying_epochs": 0
+          },
+          "demand_weighted_delivery_slack": {
+            "minimum": 0.9324937975735283,
+            "maximum": 1.0,
+            "nonzero_candidates": 767,
+            "action_varying_epochs": 5
+          }
+        },
+        "decision_seconds": 16.15490689999956,
+        "truncated_epochs": 2,
+        "base_search_truncated_epochs": 2,
+        "enhancement_truncated_epochs": 2,
+        "forced_reject_requests": 0,
+        "service_patterns_attempted": 64,
+        "service_patterns_accepted": 64,
+        "wait_patterns_attempted": 50,
+        "wait_patterns_accepted": 50,
+        "wait_search_truncated_epochs": 1,
+        "service_search_truncated_epochs": 2
+      },
+      "suffix_hash": "09f0acdf428ba4091fdb1010f650cebf9f1d5e5478e8fc0003399cbd157af54b"
+    }
+  },
+  "comparisons": {
+    "2": {
+      "net_gain": -0.7999999999999545,
+      "accepted_delta": 0,
+      "added_accepts": [],
+      "lost_accepts": [],
+      "trips_saved": 0,
+      "extra_time_cost": 0.7999999999999972,
+      "ledger_delta": {
+        "revenue": 0.0,
+        "truck_trip": 0.0,
+        "truck_time": 0.7999999999999972,
+        "drone_activation": 0.0,
+        "flight": 0.0,
+        "lateness": 0.0,
+        "rejection": 0.0,
+        "net": -0.7999999999999545
+      },
+      "actual_departure_delay": 2.0
+    },
+    "5": {
+      "net_gain": -2.0,
+      "accepted_delta": 0,
+      "added_accepts": [],
+      "lost_accepts": [],
+      "trips_saved": 0,
+      "extra_time_cost": 2.0,
+      "ledger_delta": {
+        "revenue": 0.0,
+        "truck_trip": 0.0,
+        "truck_time": 2.0,
+        "drone_activation": 0.0,
+        "flight": 0.0,
+        "lateness": 0.0,
+        "rejection": 0.0,
+        "net": -2.0
+      },
+      "actual_departure_delay": 5.0
+    },
+    "10": {
+      "net_gain": 17.11744315994565,
+      "accepted_delta": 1,
+      "added_accepts": [
+        "P00003"
+      ],
+      "lost_accepts": [],
+      "trips_saved": 0,
+      "extra_time_cost": 8.920311026231339,
+      "ledger_delta": {
+        "revenue": 19.200000000000045,
+        "truck_trip": 0.0,
+        "truck_time": 8.920311026231339,
+        "drone_activation": 0.0,
+        "flight": 2.7622458138229717,
+        "lateness": 0.0,
+        "rejection": -9.599999999999909,
+        "net": 17.11744315994565
+      },
+      "actual_departure_delay": 10.0
+    }
+  },
+  "wall_seconds": 75.4875457999999
+}

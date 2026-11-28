@@ -1,0 +1,4962 @@
+{
+  "site": {
+    "id": "L112881_d0_N80_uniform_e02_I0E00001",
+    "case": "L112881_d0_N80_uniform",
+    "spec": {
+      "layout_id": 112881,
+      "day_id": 0,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "uniform",
+      "cities": 2,
+      "pickup_deadline_lags": [
+        240,
+        300,
+        360
+      ],
+      "arrival_mode": "p2"
+    },
+    "at": 72.46931468157547,
+    "truck": "I0E00001",
+    "station": "L2-",
+    "qualification": {
+      "eligible": true,
+      "reasons": [],
+      "truck": "I0E00001",
+      "station": "L2-",
+      "at": 72.46931468157547,
+      "just_unloaded": false,
+      "live_review": false,
+      "known_cargo_reservation": false,
+      "first_command_deferred": false,
+      "first_action_index": 0,
+      "first_action": {
+        "at": 72.46931468157547,
+        "kind": "truck_continue_circuit",
+        "actor": "I0E00001",
+        "station": "L2-"
+      },
+      "recent_truck_event_kinds": [
+        "truck_load_done"
+      ],
+      "stratum": "post_known_pickup_load"
+    },
+    "prefix_hash": "8ef5abdcace70bb613aa29d40ce53678ad51beb66ed97310d4a450af0b38a7dc",
+    "base_plan_hash": "5dd8b6817d05c0dabd7d23f2fdf121466480627e64f930f0ea58029c22560d8c",
+    "interventions": {
+      "0": {
+        "qualification": {
+          "eligible": true,
+          "reasons": [],
+          "truck": "I0E00001",
+          "station": "L2-",
+          "at": 72.46931468157547,
+          "just_unloaded": false,
+          "live_review": false,
+          "known_cargo_reservation": false,
+          "first_command_deferred": false,
+          "first_action_index": 0,
+          "first_action": {
+            "at": 72.46931468157547,
+            "kind": "truck_continue_circuit",
+            "actor": "I0E00001",
+            "station": "L2-"
+          }
+        },
+        "truck": "I0E00001",
+        "interval": 0,
+        "admissions_unchanged": true,
+        "action_identities_unchanged": true,
+        "other_truck_actions_unchanged": true,
+        "strict_non_target_actions_unchanged": true,
+        "timing_only_changes": [],
+        "base_hash": "5dd8b6817d05c0dabd7d23f2fdf121466480627e64f930f0ea58029c22560d8c",
+        "branch_hash": "5dd8b6817d05c0dabd7d23f2fdf121466480627e64f930f0ea58029c22560d8c"
+      },
+      "2": {
+        "qualification": {
+          "eligible": true,
+          "reasons": [],
+          "truck": "I0E00001",
+          "station": "L2-",
+          "at": 72.46931468157547,
+          "just_unloaded": false,
+          "live_review": false,
+          "known_cargo_reservation": false,
+          "first_command_deferred": false,
+          "first_action_index": 0,
+          "first_action": {
+            "at": 72.46931468157547,
+            "kind": "truck_continue_circuit",
+            "actor": "I0E00001",
+            "station": "L2-"
+          }
+        },
+        "truck": "I0E00001",
+        "interval": 2,
+        "admissions_unchanged": true,
+        "action_identities_unchanged": true,
+        "other_truck_actions_unchanged": true,
+        "strict_non_target_actions_unchanged": false,
+        "timing_only_changes": [
+          {
+            "index": 0,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 72.46931468157547,
+            "new_at": 74.46931468157547,
+            "delay": 2.0
+          },
+          {
+            "index": 1,
+            "actor": "I0E00001",
+            "kind": "truck_unload",
+            "old_at": 85.48472048157548,
+            "new_at": 87.48472048157548,
+            "delay": 2.0
+          },
+          {
+            "index": 2,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 86.80972048157547,
+            "new_at": 88.80972048157547,
+            "delay": 2.0
+          },
+          {
+            "index": 3,
+            "actor": "UL1-_0",
+            "kind": "drone_load",
+            "old_at": 86.80972048157547,
+            "new_at": 88.80972048157547,
+            "delay": 2.0
+          },
+          {
+            "index": 4,
+            "actor": "UL1-_1",
+            "kind": "drone_load",
+            "old_at": 86.80972048157547,
+            "new_at": 88.80972048157547,
+            "delay": 2.0
+          },
+          {
+            "index": 5,
+            "actor": "UL1-_2",
+            "kind": "drone_load",
+            "old_at": 86.80972048157547,
+            "new_at": 88.80972048157547,
+            "delay": 2.0
+          },
+          {
+            "index": 6,
+            "actor": "UL1-_1",
+            "kind": "drone_sortie",
+            "old_at": 87.18472048157547,
+            "new_at": 89.18472048157547,
+            "delay": 2.0
+          },
+          {
+            "index": 7,
+            "actor": "UL1-_2",
+            "kind": "drone_sortie",
+            "old_at": 87.25972048157547,
+            "new_at": 89.25972048157547,
+            "delay": 2.0
+          },
+          {
+            "index": 8,
+            "actor": "UL1-_0",
+            "kind": "drone_sortie",
+            "old_at": 87.30972048157547,
+            "new_at": 89.30972048157547,
+            "delay": 2.0
+          }
+        ],
+        "base_hash": "5dd8b6817d05c0dabd7d23f2fdf121466480627e64f930f0ea58029c22560d8c",
+        "branch_hash": "4cd482f4bcac3209387a8ba15a3d0552f1ad3e291f26b0e40807cae6ed1bab85"
+      },
+      "5": {
+        "qualification": {
+          "eligible": true,
+          "reasons": [],
+          "truck": "I0E00001",
+          "station": "L2-",
+          "at": 72.46931468157547,
+          "just_unloaded": false,
+          "live_review": false,
+          "known_cargo_reservation": false,
+          "first_command_deferred": false,
+          "first_action_index": 0,
+          "first_action": {
+            "at": 72.46931468157547,
+            "kind": "truck_continue_circuit",
+            "actor": "I0E00001",
+            "station": "L2-"
+          }
+        },
+        "truck": "I0E00001",
+        "interval": 5,
+        "admissions_unchanged": true,
+        "action_identities_unchanged": true,
+        "other_truck_actions_unchanged": true,
+        "strict_non_target_actions_unchanged": false,
+        "timing_only_changes": [
+          {
+            "index": 0,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 72.46931468157547,
+            "new_at": 77.46931468157547,
+            "delay": 5.0
+          },
+          {
+            "index": 1,
+            "actor": "I0E00001",
+            "kind": "truck_unload",
+            "old_at": 85.48472048157548,
+            "new_at": 90.48472048157548,
+            "delay": 5.0
+          },
+          {
+            "index": 2,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 86.80972048157547,
+            "new_at": 91.80972048157547,
+            "delay": 5.0
+          },
+          {
+            "index": 3,
+            "actor": "UL1-_0",
+            "kind": "drone_load",
+            "old_at": 86.80972048157547,
+            "new_at": 91.80972048157547,
+            "delay": 5.0
+          },
+          {
+            "index": 4,
+            "actor": "UL1-_1",
+            "kind": "drone_load",
+            "old_at": 86.80972048157547,
+            "new_at": 91.80972048157547,
+            "delay": 5.0
+          },
+          {
+            "index": 5,
+            "actor": "UL1-_2",
+            "kind": "drone_load",
+            "old_at": 86.80972048157547,
+            "new_at": 91.80972048157547,
+            "delay": 5.0
+          },
+          {
+            "index": 6,
+            "actor": "UL1-_1",
+            "kind": "drone_sortie",
+            "old_at": 87.18472048157547,
+            "new_at": 92.18472048157547,
+            "delay": 5.0
+          },
+          {
+            "index": 7,
+            "actor": "UL1-_2",
+            "kind": "drone_sortie",
+            "old_at": 87.25972048157547,
+            "new_at": 92.25972048157547,
+            "delay": 5.0
+          },
+          {
+            "index": 8,
+            "actor": "UL1-_0",
+            "kind": "drone_sortie",
+            "old_at": 87.30972048157547,
+            "new_at": 92.30972048157547,
+            "delay": 5.0
+          }
+        ],
+        "base_hash": "5dd8b6817d05c0dabd7d23f2fdf121466480627e64f930f0ea58029c22560d8c",
+        "branch_hash": "c8fd7a691e88812db702a2b6fa06519d65cb42277fb0a1eda5fa4094622677d8"
+      },
+      "10": {
+        "qualification": {
+          "eligible": true,
+          "reasons": [],
+          "truck": "I0E00001",
+          "station": "L2-",
+          "at": 72.46931468157547,
+          "just_unloaded": false,
+          "live_review": false,
+          "known_cargo_reservation": false,
+          "first_command_deferred": false,
+          "first_action_index": 0,
+          "first_action": {
+            "at": 72.46931468157547,
+            "kind": "truck_continue_circuit",
+            "actor": "I0E00001",
+            "station": "L2-"
+          }
+        },
+        "truck": "I0E00001",
+        "interval": 10,
+        "admissions_unchanged": true,
+        "action_identities_unchanged": true,
+        "other_truck_actions_unchanged": true,
+        "strict_non_target_actions_unchanged": false,
+        "timing_only_changes": [
+          {
+            "index": 0,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 72.46931468157547,
+            "new_at": 82.46931468157547,
+            "delay": 10.0
+          },
+          {
+            "index": 1,
+            "actor": "I0E00001",
+            "kind": "truck_unload",
+            "old_at": 85.48472048157548,
+            "new_at": 95.48472048157548,
+            "delay": 10.0
+          },
+          {
+            "index": 2,
+            "actor": "I0E00001",
+            "kind": "truck_continue_circuit",
+            "old_at": 86.80972048157547,
+            "new_at": 96.80972048157547,
+            "delay": 10.0
+          },
+          {
+            "index": 3,
+            "actor": "UL1-_0",
+            "kind": "drone_load",
+            "old_at": 86.80972048157547,
+            "new_at": 96.80972048157547,
+            "delay": 10.0
+          },
+          {
+            "index": 4,
+            "actor": "UL1-_1",
+            "kind": "drone_load",
+            "old_at": 86.80972048157547,
+            "new_at": 96.80972048157547,
+            "delay": 10.0
+          },
+          {
+            "index": 5,
+            "actor": "UL1-_2",
+            "kind": "drone_load",
+            "old_at": 86.80972048157547,
+            "new_at": 96.80972048157547,
+            "delay": 10.0
+          },
+          {
+            "index": 6,
+            "actor": "UL1-_1",
+            "kind": "drone_sortie",
+            "old_at": 87.18472048157547,
+            "new_at": 97.18472048157547,
+            "delay": 10.0
+          },
+          {
+            "index": 7,
+            "actor": "UL1-_2",
+            "kind": "drone_sortie",
+            "old_at": 87.25972048157547,
+            "new_at": 97.25972048157547,
+            "delay": 10.0
+          },
+          {
+            "index": 8,
+            "actor": "UL1-_0",
+            "kind": "drone_sortie",
+            "old_at": 87.30972048157547,
+            "new_at": 97.30972048157547,
+            "delay": 10.0
+          }
+        ],
+        "base_hash": "5dd8b6817d05c0dabd7d23f2fdf121466480627e64f930f0ea58029c22560d8c",
+        "branch_hash": "39eb69d3f36970cdcdc8caba2683064d3943fc7722867b7875e5138cdd8aeb16"
+      }
+    }
+  },
+  "known_initial": {
+    "start_time": 72.46931468157547,
+    "stop_time": 72.46931468157547,
+    "orders": [
+      {
+        "id": "D00000",
+        "kind": "D",
+        "weight": 8,
+        "xy": [
+          24.367836,
+          -8.344677
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": null,
+        "available_at": null,
+        "collected_at": null,
+        "station": null,
+        "assigned_drone": null
+      },
+      {
+        "id": "D00001",
+        "kind": "D",
+        "weight": 19,
+        "xy": [
+          32.752727,
+          -3.009186
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 65.71913088123662,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2-",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00002",
+        "kind": "D",
+        "weight": 14,
+        "xy": [
+          48.977728,
+          2.532442
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 51.87167290359388,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00003",
+        "kind": "D",
+        "weight": 6,
+        "xy": [
+          20.945426,
+          1.781125
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 18.42466182032938,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L1+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00004",
+        "kind": "D",
+        "weight": 14,
+        "xy": [
+          26.761015,
+          1.654436
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 23.30264099164712,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L1+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00005",
+        "kind": "D",
+        "weight": 12,
+        "xy": [
+          13.54996,
+          -1.455742
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": null,
+        "available_at": null,
+        "collected_at": null,
+        "station": null,
+        "assigned_drone": null
+      },
+      {
+        "id": "D00006",
+        "kind": "D",
+        "weight": 7,
+        "xy": [
+          29.114114,
+          -3.693771
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": null,
+        "available_at": null,
+        "collected_at": null,
+        "station": null,
+        "assigned_drone": null
+      },
+      {
+        "id": "D00007",
+        "kind": "D",
+        "weight": 7,
+        "xy": [
+          30.962308,
+          7.591577
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 55.47446942380525,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00008",
+        "kind": "D",
+        "weight": 18,
+        "xy": [
+          30.597053,
+          -2.819482
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": null,
+        "available_at": null,
+        "collected_at": null,
+        "station": null,
+        "assigned_drone": null
+      },
+      {
+        "id": "D00009",
+        "kind": "D",
+        "weight": 8,
+        "xy": [
+          48.749254,
+          6.131327
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 68.37232689795982,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00010",
+        "kind": "D",
+        "weight": 10,
+        "xy": [
+          42.511362,
+          4.626826
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 49.65050302278283,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00011",
+        "kind": "D",
+        "weight": 8,
+        "xy": [
+          43.254155,
+          -5.431032
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 62.81451644741219,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2-",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00012",
+        "kind": "D",
+        "weight": 19,
+        "xy": [
+          25.447533,
+          7.307229
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 23.143440714847102,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L1+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00013",
+        "kind": "D",
+        "weight": 10,
+        "xy": [
+          16.962992,
+          5.528571
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 21.034924979827146,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L1+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00014",
+        "kind": "D",
+        "weight": 7,
+        "xy": [
+          27.237547,
+          6.310978
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 23.19347248764563,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L1+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00015",
+        "kind": "D",
+        "weight": 11,
+        "xy": [
+          41.201504,
+          8.45619
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 52.18754274997146,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00016",
+        "kind": "D",
+        "weight": 12,
+        "xy": [
+          16.855524,
+          3.009182
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 19.813931665128344,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L1+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00017",
+        "kind": "D",
+        "weight": 19,
+        "xy": [
+          12.461932,
+          6.739533
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 30.708985498762576,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L1+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00018",
+        "kind": "D",
+        "weight": 18,
+        "xy": [
+          46.068041,
+          -5.778123
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 64.15717886711053,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2-",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00019",
+        "kind": "D",
+        "weight": 19,
+        "xy": [
+          32.614376,
+          4.639479
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 53.62930653235554,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00020",
+        "kind": "D",
+        "weight": 10,
+        "xy": [
+          21.37157,
+          5.350655
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 29.86607990221855,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L1+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00021",
+        "kind": "D",
+        "weight": 12,
+        "xy": [
+          38.224085,
+          3.931458
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 57.29094070538048,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00022",
+        "kind": "D",
+        "weight": 17,
+        "xy": [
+          40.365588,
+          -2.845875
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 61.375490596406955,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2-",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00023",
+        "kind": "D",
+        "weight": 10,
+        "xy": [
+          17.766535,
+          4.485279
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 34.05863644833898,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L1+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00024",
+        "kind": "D",
+        "weight": 15,
+        "xy": [
+          25.849149,
+          6.222291
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 36.03486402682723,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L1+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00025",
+        "kind": "D",
+        "weight": 19,
+        "xy": [
+          47.252625,
+          4.407276
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 63.064773155683824,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00026",
+        "kind": "D",
+        "weight": 8,
+        "xy": [
+          19.810505,
+          -3.069421
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": null,
+        "available_at": null,
+        "collected_at": null,
+        "station": null,
+        "assigned_drone": null
+      },
+      {
+        "id": "D00027",
+        "kind": "D",
+        "weight": 16,
+        "xy": [
+          24.257764,
+          8.562065
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 37.113018424689216,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L1+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00028",
+        "kind": "D",
+        "weight": 11,
+        "xy": [
+          28.193071,
+          6.192736
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 41.409902784383554,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L1+",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00029",
+        "kind": "D",
+        "weight": 18,
+        "xy": [
+          48.897125,
+          -6.613456
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 65.86538500554855,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2-",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00030",
+        "kind": "D",
+        "weight": 17,
+        "xy": [
+          46.035537,
+          -7.433471
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": 70.34026157297433,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2-",
+        "assigned_drone": null
+      },
+      {
+        "id": "D00031",
+        "kind": "D",
+        "weight": 6,
+        "xy": [
+          35.048187,
+          -4.224869
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 0.0,
+        "deadline": 660.0,
+        "accepted": true,
+        "completed_at": null,
+        "available_at": null,
+        "collected_at": null,
+        "station": "L2-",
+        "assigned_drone": null
+      },
+      {
+        "id": "P00000",
+        "kind": "P",
+        "weight": 12,
+        "xy": [
+          24.422636,
+          -0.321567
+        ],
+        "city": "C1",
+        "eligible_stations": [
+          "L1+",
+          "L1-"
+        ],
+        "release": 14.0,
+        "deadline": 374.0,
+        "accepted": true,
+        "completed_at": null,
+        "available_at": 29.616566126496917,
+        "collected_at": 26.34362160603053,
+        "station": "L1+",
+        "assigned_drone": "UL1+_0"
+      },
+      {
+        "id": "P00001",
+        "kind": "P",
+        "weight": 14,
+        "xy": [
+          38.91509,
+          -1.419915
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 29.0,
+        "deadline": 389.0,
+        "accepted": true,
+        "completed_at": null,
+        "available_at": 70.1129368926087,
+        "collected_at": 67.75386465418244,
+        "station": "L2-",
+        "assigned_drone": "UL2-_1"
+      },
+      {
+        "id": "P00002",
+        "kind": "P",
+        "weight": 15,
+        "xy": [
+          46.343689,
+          -7.217641
+        ],
+        "city": "C2",
+        "eligible_stations": [
+          "L2+",
+          "L2-"
+        ],
+        "release": 52.0,
+        "deadline": 292.0,
+        "accepted": true,
+        "completed_at": null,
+        "available_at": 72.09431468157547,
+        "collected_at": 66.13429341566163,
+        "station": "L2-",
+        "assigned_drone": "UL2-_2"
+      }
+    ],
+    "trucks": [
+      {
+        "id": "I0E00001",
+        "location": "L2-",
+        "onboard_weight": 94,
+        "departed_at": 0.0,
+        "unloading_phase": "completed",
+        "completed_batches": 2,
+        "active_operation": null,
+        "return_time": null,
+        "departure_time": 45.431971926496914,
+        "loading_end": 72.46931468157547,
+        "loading_batches": 3,
+        "active_batch": null
+      }
+    ],
+    "drones": [
+      {
+        "id": "UL1+_0",
+        "home": "L1+",
+        "location": "L1+",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": 37.25070677018104,
+        "return_times": [
+          29.316566126496916,
+          37.25070677018104
+        ],
+        "activation_count": 1,
+        "sortie_commitment": null
+      },
+      {
+        "id": "UL1+_1",
+        "home": "L1+",
+        "location": "L1+",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": 41.60784662396025,
+        "return_times": [
+          29.086881429694202,
+          41.60784662396025
+        ],
+        "activation_count": 1,
+        "sortie_commitment": null
+      },
+      {
+        "id": "UL1+_2",
+        "home": "L1+",
+        "location": "L1+",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": 48.1574957239843,
+        "return_times": [
+          25.09484995965429,
+          33.38730984478281,
+          48.1574957239843
+        ],
+        "activation_count": 1,
+        "sortie_commitment": null
+      },
+      {
+        "id": "UL1+_3",
+        "home": "L1+",
+        "location": "L1+",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": 43.339091874087174,
+        "return_times": [
+          29.486944975291255,
+          43.339091874087174
+        ],
+        "activation_count": 1,
+        "sortie_commitment": null
+      },
+      {
+        "id": "UL1+_4",
+        "home": "L1+",
+        "location": "L1+",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": 37.34010766726846,
+        "return_times": [
+          22.60286333025669,
+          37.34010766726846
+        ],
+        "activation_count": 1,
+        "sortie_commitment": null
+      },
+      {
+        "id": "UL1-_0",
+        "home": "L1-",
+        "location": "L1-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": null,
+        "return_times": [],
+        "activation_count": 0
+      },
+      {
+        "id": "UL1-_1",
+        "home": "L1-",
+        "location": "L1-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": null,
+        "return_times": [],
+        "activation_count": 0
+      },
+      {
+        "id": "UL1-_2",
+        "home": "L1-",
+        "location": "L1-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": null,
+        "return_times": [],
+        "activation_count": 0
+      },
+      {
+        "id": "UL1-_3",
+        "home": "L1-",
+        "location": "L1-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": null,
+        "return_times": [],
+        "activation_count": 0
+      },
+      {
+        "id": "UL1-_4",
+        "home": "L1-",
+        "location": "L1-",
+        "activated": false,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": null,
+        "return_times": [],
+        "activation_count": 0
+      },
+      {
+        "id": "UL2+_0",
+        "home": "L2+",
+        "location": "L2+",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": 67.69317243067681,
+        "return_times": [
+          56.96137388069084,
+          67.69317243067681
+        ],
+        "activation_count": 1,
+        "sortie_commitment": null
+      },
+      {
+        "id": "UL2+_1",
+        "home": "L2+",
+        "location": "flight",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": 45.806971926496914,
+        "active_operation": {
+          "kind": "flight",
+          "start": 68.37232689795982,
+          "end": 74.49659556696477,
+          "distance": 9.186403003507412
+        },
+        "return_time": null,
+        "return_times": [],
+        "activation_count": 1,
+        "sortie_commitment": {
+          "visit_order": [
+            "D00007",
+            "D00009"
+          ],
+          "return_station": "L2+"
+        }
+      },
+      {
+        "id": "UL2+_2",
+        "home": "L2+",
+        "location": "L2+",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": 60.66284729169221,
+        "return_times": [
+          52.61903411906874,
+          60.66284729169221
+        ],
+        "activation_count": 1,
+        "sortie_commitment": null
+      },
+      {
+        "id": "UL2+_3",
+        "home": "L2+",
+        "location": "L2+",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": 57.66811357344601,
+        "return_times": [
+          57.66811357344601
+        ],
+        "activation_count": 1,
+        "sortie_commitment": null
+      },
+      {
+        "id": "UL2+_4",
+        "home": "L2+",
+        "location": "L2+",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": 60.35164113821417,
+        "return_times": [
+          60.35164113821417
+        ],
+        "activation_count": 1,
+        "sortie_commitment": null
+      },
+      {
+        "id": "UL2-_0",
+        "home": "L2-",
+        "location": "L2-",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": 71.95628983597634,
+        "return_times": [
+          71.95628983597634
+        ],
+        "activation_count": 1,
+        "sortie_commitment": null
+      },
+      {
+        "id": "UL2-_1",
+        "home": "L2-",
+        "location": "flight",
+        "activated": true,
+        "onboard_weight": 6,
+        "takeoff_at": 70.2629368926087,
+        "active_operation": {
+          "kind": "flight",
+          "start": 70.2629368926087,
+          "end": 75.42452116789546,
+          "distance": 7.742376412930141
+        },
+        "return_time": 69.7629368926087,
+        "return_times": [
+          69.7629368926087
+        ],
+        "activation_count": 1,
+        "sortie_commitment": {
+          "visit_order": [
+            "D00031"
+          ],
+          "return_station": "L2-"
+        }
+      },
+      {
+        "id": "UL2-_2",
+        "home": "L2-",
+        "location": "L2-",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": 71.71931468157547,
+        "return_times": [
+          71.71931468157547
+        ],
+        "activation_count": 1,
+        "sortie_commitment": null
+      },
+      {
+        "id": "UL2-_3",
+        "home": "L2-",
+        "location": "flight",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": 63.74400926631699,
+        "active_operation": {
+          "kind": "flight",
+          "start": 70.34026157297433,
+          "end": 75.93651387963166,
+          "distance": 8.394378459986005
+        },
+        "return_time": 63.319009266316996,
+        "return_times": [
+          63.319009266316996
+        ],
+        "activation_count": 1,
+        "sortie_commitment": {
+          "visit_order": [
+            "D00030"
+          ],
+          "return_station": "L2-"
+        }
+      },
+      {
+        "id": "UL2-_4",
+        "home": "L2-",
+        "location": "L2-",
+        "activated": true,
+        "onboard_weight": 0,
+        "takeoff_at": null,
+        "active_operation": null,
+        "return_time": 72.27379808460017,
+        "return_times": [
+          72.27379808460017
+        ],
+        "activation_count": 1,
+        "sortie_commitment": null
+      }
+    ],
+    "inventory": [
+      {
+        "order": "D00000",
+        "lot": "D00000",
+        "weight": 8,
+        "state": "onboard",
+        "holder": "I0E00001"
+      },
+      {
+        "order": "D00001",
+        "lot": "D00001",
+        "weight": 19,
+        "state": "delivered",
+        "holder": "D00001"
+      },
+      {
+        "order": "D00002",
+        "lot": "D00002",
+        "weight": 14,
+        "state": "delivered",
+        "holder": "D00002"
+      },
+      {
+        "order": "D00003",
+        "lot": "D00003",
+        "weight": 6,
+        "state": "delivered",
+        "holder": "D00003"
+      },
+      {
+        "order": "D00004",
+        "lot": "D00004",
+        "weight": 14,
+        "state": "delivered",
+        "holder": "D00004"
+      },
+      {
+        "order": "D00005",
+        "lot": "D00005",
+        "weight": 12,
+        "state": "onboard",
+        "holder": "I0E00001"
+      },
+      {
+        "order": "D00006",
+        "lot": "D00006",
+        "weight": 7,
+        "state": "onboard",
+        "holder": "I0E00001"
+      },
+      {
+        "order": "D00007",
+        "lot": "D00007",
+        "weight": 7,
+        "state": "delivered",
+        "holder": "D00007"
+      },
+      {
+        "order": "D00008",
+        "lot": "D00008",
+        "weight": 18,
+        "state": "onboard",
+        "holder": "I0E00001"
+      },
+      {
+        "order": "D00009",
+        "lot": "D00009",
+        "weight": 8,
+        "state": "delivered",
+        "holder": "D00009"
+      },
+      {
+        "order": "D00010",
+        "lot": "D00010",
+        "weight": 10,
+        "state": "delivered",
+        "holder": "D00010"
+      },
+      {
+        "order": "D00011",
+        "lot": "D00011",
+        "weight": 8,
+        "state": "delivered",
+        "holder": "D00011"
+      },
+      {
+        "order": "D00012",
+        "lot": "D00012",
+        "weight": 19,
+        "state": "delivered",
+        "holder": "D00012"
+      },
+      {
+        "order": "D00013",
+        "lot": "D00013",
+        "weight": 10,
+        "state": "delivered",
+        "holder": "D00013"
+      },
+      {
+        "order": "D00014",
+        "lot": "D00014",
+        "weight": 7,
+        "state": "delivered",
+        "holder": "D00014"
+      },
+      {
+        "order": "D00015",
+        "lot": "D00015",
+        "weight": 11,
+        "state": "delivered",
+        "holder": "D00015"
+      },
+      {
+        "order": "D00016",
+        "lot": "D00016",
+        "weight": 12,
+        "state": "delivered",
+        "holder": "D00016"
+      },
+      {
+        "order": "D00017",
+        "lot": "D00017",
+        "weight": 19,
+        "state": "delivered",
+        "holder": "D00017"
+      },
+      {
+        "order": "D00018",
+        "lot": "D00018",
+        "weight": 18,
+        "state": "delivered",
+        "holder": "D00018"
+      },
+      {
+        "order": "D00019",
+        "lot": "D00019",
+        "weight": 19,
+        "state": "delivered",
+        "holder": "D00019"
+      },
+      {
+        "order": "D00020",
+        "lot": "D00020",
+        "weight": 10,
+        "state": "delivered",
+        "holder": "D00020"
+      },
+      {
+        "order": "D00021",
+        "lot": "D00021",
+        "weight": 12,
+        "state": "delivered",
+        "holder": "D00021"
+      },
+      {
+        "order": "D00022",
+        "lot": "D00022",
+        "weight": 17,
+        "state": "delivered",
+        "holder": "D00022"
+      },
+      {
+        "order": "D00023",
+        "lot": "D00023",
+        "weight": 10,
+        "state": "delivered",
+        "holder": "D00023"
+      },
+      {
+        "order": "D00024",
+        "lot": "D00024",
+        "weight": 15,
+        "state": "delivered",
+        "holder": "D00024"
+      },
+      {
+        "order": "D00025",
+        "lot": "D00025",
+        "weight": 19,
+        "state": "delivered",
+        "holder": "D00025"
+      },
+      {
+        "order": "D00026",
+        "lot": "D00026",
+        "weight": 8,
+        "state": "onboard",
+        "holder": "I0E00001"
+      },
+      {
+        "order": "D00027",
+        "lot": "D00027",
+        "weight": 16,
+        "state": "delivered",
+        "holder": "D00027"
+      },
+      {
+        "order": "D00028",
+        "lot": "D00028",
+        "weight": 11,
+        "state": "delivered",
+        "holder": "D00028"
+      },
+      {
+        "order": "D00029",
+        "lot": "D00029",
+        "weight": 18,
+        "state": "delivered",
+        "holder": "D00029"
+      },
+      {
+        "order": "D00030",
+        "lot": "D00030",
+        "weight": 17,
+        "state": "delivered",
+        "holder": "D00030"
+      },
+      {
+        "order": "D00031",
+        "lot": "D00031",
+        "weight": 6,
+        "state": "onboard",
+        "holder": "UL2-_1"
+      },
+      {
+        "order": "P00000",
+        "lot": "generated:1",
+        "weight": 12,
+        "state": "onboard",
+        "holder": "I0E00001"
+      },
+      {
+        "order": "P00001",
+        "lot": "generated:2",
+        "weight": 14,
+        "state": "onboard",
+        "holder": "I0E00001"
+      },
+      {
+        "order": "P00002",
+        "lot": "generated:3",
+        "weight": 15,
+        "state": "onboard",
+        "holder": "I0E00001"
+      }
+    ],
+    "external_events": [],
+    "actions": [],
+    "policy": null,
+    "candidates": [],
+    "public_information": {
+      "information_mode": "unknown_daily_total",
+      "revelation_end": 590,
+      "revelation_closed": false,
+      "demand_model": {
+        "kind": "independent_binomial_slots_iid_marks",
+        "count_by_slot": [
+          {
+            "start": 1,
+            "end": 150,
+            "trials": 2,
+            "probability": 0.01951219512195122
+          },
+          {
+            "start": 151,
+            "end": 350,
+            "trials": 2,
+            "probability": 0.05853658536585366
+          },
+          {
+            "start": 351,
+            "end": 590,
+            "trials": 2,
+            "probability": 0.03902439024390244
+          }
+        ],
+        "space": {
+          "pattern": "uniform",
+          "city_x": [
+            20.0,
+            41.692343
+          ]
+        },
+        "attributes": {
+          "weight_min": 6,
+          "weight_max": 19,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ]
+        },
+        "rates_by_city": {
+          "C1": [
+            {
+              "start": 1,
+              "end": 150,
+              "rate": 0.01951219512195122
+            },
+            {
+              "start": 151,
+              "end": 350,
+              "rate": 0.05853658536585366
+            },
+            {
+              "start": 351,
+              "end": 590,
+              "rate": 0.03902439024390244
+            }
+          ],
+          "C2": [
+            {
+              "start": 1,
+              "end": 150,
+              "rate": 0.01951219512195122
+            },
+            {
+              "start": 151,
+              "end": 350,
+              "rate": 0.05853658536585366
+            },
+            {
+              "start": 351,
+              "end": 590,
+              "rate": 0.03902439024390244
+            }
+          ]
+        },
+        "spatial_service_lags_by_city": {
+          "C1": [
+            1.82260972,
+            2.55755711,
+            2.97120536,
+            3.39406677,
+            3.73338247,
+            3.94252487,
+            4.13963882,
+            4.45981663,
+            4.68574061,
+            4.87959247,
+            5.07821636,
+            5.22832045,
+            5.43303893,
+            5.60721643,
+            5.74396322,
+            5.88321618,
+            6.05041575,
+            6.21112934,
+            6.28964728,
+            6.50322846,
+            6.66252773,
+            6.81981104,
+            6.94993683,
+            7.06226049,
+            7.2034832,
+            7.30862526,
+            7.43116448,
+            7.5252828,
+            7.63861938,
+            7.76073413,
+            7.84609745,
+            7.96256322,
+            8.13315608,
+            8.22221404,
+            8.29016607,
+            8.39653949,
+            8.50887848,
+            8.62037368,
+            8.7688306,
+            8.83798937,
+            8.91003443,
+            8.99330477,
+            9.0929467,
+            9.18655501,
+            9.28990426,
+            9.38145677,
+            9.46587983,
+            9.54632639,
+            9.62309718,
+            9.70513161,
+            9.77547784,
+            9.85570211,
+            9.93029189,
+            10.0032518,
+            10.08589673,
+            10.17092598,
+            10.24859734,
+            10.33454029,
+            10.38877197,
+            10.46241841,
+            10.54903987,
+            10.60627264,
+            10.67260914,
+            10.74249745,
+            10.81429628,
+            10.86385039,
+            10.93002082,
+            11.00074347,
+            11.06892545,
+            11.16899234,
+            11.24044152,
+            11.31248004,
+            11.37966789,
+            11.45832686,
+            11.54335645,
+            11.60218667,
+            11.70443081,
+            11.78480162,
+            11.83752934,
+            11.89167205,
+            11.94668475,
+            12.03145968,
+            12.09668764,
+            12.18748379,
+            12.25313242,
+            12.34223995,
+            12.38578948,
+            12.44874725,
+            12.54154729,
+            12.62601052,
+            12.70903815,
+            12.77405109,
+            12.85667762,
+            12.92139791,
+            12.998401,
+            13.0829302,
+            13.17967104,
+            13.27693325,
+            13.35280346,
+            13.40515986,
+            13.50619457,
+            13.60796088,
+            13.71411384,
+            13.79499444,
+            13.88031909,
+            13.99420672,
+            14.10648147,
+            14.24810357,
+            14.36286776,
+            14.54152431,
+            14.67632397,
+            14.80606768,
+            14.92037827,
+            15.04027423,
+            15.14242828,
+            15.23846097,
+            15.41306072,
+            15.58582379,
+            15.7782257,
+            15.94835078,
+            16.13497333,
+            16.34892913,
+            16.62268611,
+            16.8853458,
+            17.25218337,
+            17.67408529,
+            18.20242963,
+            18.65493305
+          ],
+          "C2": [
+            2.03373974,
+            2.6011257,
+            3.03421908,
+            3.422167,
+            3.73079532,
+            4.04827994,
+            4.22374305,
+            4.46797928,
+            4.73983309,
+            4.93459419,
+            5.10326014,
+            5.23091366,
+            5.39679577,
+            5.57100982,
+            5.75781801,
+            5.88665893,
+            6.11006394,
+            6.25347471,
+            6.39713939,
+            6.52486286,
+            6.62631816,
+            6.75701477,
+            6.87805152,
+            7.00097868,
+            7.1179934,
+            7.25548795,
+            7.37453075,
+            7.48653729,
+            7.58174867,
+            7.68991165,
+            7.80349149,
+            7.91591252,
+            8.04303561,
+            8.17328942,
+            8.30079519,
+            8.41811813,
+            8.54880939,
+            8.64909628,
+            8.75402668,
+            8.87003113,
+            8.95184721,
+            9.04554888,
+            9.14314754,
+            9.22295614,
+            9.32041135,
+            9.4125142,
+            9.51065167,
+            9.58297881,
+            9.66818937,
+            9.73533321,
+            9.82084767,
+            9.9356295,
+            10.01765554,
+            10.08649044,
+            10.17002621,
+            10.25089321,
+            10.32927158,
+            10.38123665,
+            10.43896266,
+            10.54011127,
+            10.63987171,
+            10.74316966,
+            10.80418254,
+            10.86779462,
+            10.92744667,
+            11.01519559,
+            11.09434341,
+            11.16900366,
+            11.25091002,
+            11.30223779,
+            11.37608654,
+            11.43806992,
+            11.5254926,
+            11.59710931,
+            11.66059758,
+            11.71911739,
+            11.77956557,
+            11.83145668,
+            11.91921506,
+            11.99578183,
+            12.06000491,
+            12.12546513,
+            12.19928339,
+            12.29095805,
+            12.36059172,
+            12.44274031,
+            12.52450054,
+            12.57192294,
+            12.65598805,
+            12.73587607,
+            12.797713,
+            12.85214779,
+            12.91996839,
+            12.9767429,
+            13.05520233,
+            13.13336836,
+            13.25115428,
+            13.36128658,
+            13.47830743,
+            13.57476464,
+            13.65012011,
+            13.75381843,
+            13.85231821,
+            13.90661918,
+            14.02072899,
+            14.1493334,
+            14.27465792,
+            14.36580608,
+            14.51571895,
+            14.61702559,
+            14.74293623,
+            14.87985696,
+            15.01509454,
+            15.12925305,
+            15.27339456,
+            15.40866978,
+            15.5512453,
+            15.6575374,
+            15.80454942,
+            15.96126612,
+            16.13974627,
+            16.3300179,
+            16.56094595,
+            16.82267431,
+            17.15652453,
+            17.54442272,
+            18.0314935,
+            18.97358812
+          ]
+        }
+      }
+    }
+  },
+  "ledger": {
+    "revenue": 1107.2,
+    "truck_trip": 177.6001377,
+    "truck_time": 28.98772587263019,
+    "drone_activation": 625.0,
+    "flight": 113.92139271393884,
+    "lateness": 0.0,
+    "rejection": 0.0
+  },
+  "trace_prefix": [
+    {
+      "at": 0.0,
+      "kind": "truck_dispatched",
+      "actor": "I0E00001"
+    },
+    {
+      "at": 0.0,
+      "kind": "road_started",
+      "actor": "I0E00001",
+      "source": "depot",
+      "destination": "L1+",
+      "end": 12.0
+    },
+    {
+      "at": 12.0,
+      "kind": "truck_arrived",
+      "actor": "I0E00001",
+      "destination": "L1+"
+    },
+    {
+      "at": 12.0,
+      "kind": "truck_unload_started",
+      "actor": "I0E00001",
+      "station": "L1+",
+      "quantities": {
+        "D00003": 6,
+        "D00004": 14,
+        "D00012": 19,
+        "D00013": 10,
+        "D00014": 7,
+        "D00016": 12,
+        "D00017": 19,
+        "D00020": 10,
+        "D00023": 10,
+        "D00024": 15,
+        "D00027": 16,
+        "D00028": 11
+      },
+      "end": 15.725
+    },
+    {
+      "at": 14.0,
+      "kind": "reveal_batch",
+      "orders": [
+        "P00000"
+      ]
+    },
+    {
+      "at": 14.0,
+      "kind": "request_revealed",
+      "order": "P00000"
+    },
+    {
+      "at": 14.0,
+      "kind": "accept",
+      "order": "P00000"
+    },
+    {
+      "at": 15.725,
+      "kind": "truck_unload_done",
+      "actor": "I0E00001",
+      "station": "L1+",
+      "quantities": {
+        "D00003": 6,
+        "D00004": 14,
+        "D00012": 19,
+        "D00013": 10,
+        "D00014": 7,
+        "D00016": 12,
+        "D00017": 19,
+        "D00020": 10,
+        "D00023": 10,
+        "D00024": 15,
+        "D00027": 16,
+        "D00028": 11
+      }
+    },
+    {
+      "at": 15.725,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_0",
+      "order": "D00003",
+      "loading": true,
+      "end": 15.875
+    },
+    {
+      "at": 15.725,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_1",
+      "order": "D00012",
+      "loading": true,
+      "end": 16.2
+    },
+    {
+      "at": 15.725,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_2",
+      "order": "D00013",
+      "loading": true,
+      "end": 15.975
+    },
+    {
+      "at": 15.725,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_3",
+      "order": "D00014",
+      "loading": true,
+      "end": 15.9
+    },
+    {
+      "at": 15.725,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_4",
+      "order": "D00016",
+      "loading": true,
+      "end": 16.025
+    },
+    {
+      "at": 15.875,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_0",
+      "order": "D00003",
+      "loading": true
+    },
+    {
+      "at": 15.875,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_0",
+      "order": "D00004",
+      "loading": true,
+      "end": 16.225
+    },
+    {
+      "at": 15.9,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_3",
+      "order": "D00014",
+      "loading": true
+    },
+    {
+      "at": 15.9,
+      "kind": "drone_activated",
+      "actor": "UL1+_3"
+    },
+    {
+      "at": 15.9,
+      "kind": "drone_takeoff",
+      "actor": "UL1+_3",
+      "orders": [
+        "D00014"
+      ]
+    },
+    {
+      "at": 15.9,
+      "kind": "flight_started",
+      "actor": "UL1+_3",
+      "source": [
+        20.0,
+        0.25
+      ],
+      "destination": [
+        27.237547,
+        6.310978
+      ],
+      "end": 22.19347248764563
+    },
+    {
+      "at": 15.975,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_2",
+      "order": "D00013",
+      "loading": true
+    },
+    {
+      "at": 15.975,
+      "kind": "drone_activated",
+      "actor": "UL1+_2"
+    },
+    {
+      "at": 15.975,
+      "kind": "drone_takeoff",
+      "actor": "UL1+_2",
+      "orders": [
+        "D00013"
+      ]
+    },
+    {
+      "at": 15.975,
+      "kind": "flight_started",
+      "actor": "UL1+_2",
+      "source": [
+        20.0,
+        0.25
+      ],
+      "destination": [
+        16.962992,
+        5.528571
+      ],
+      "end": 20.034924979827146
+    },
+    {
+      "at": 16.025,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_4",
+      "order": "D00016",
+      "loading": true
+    },
+    {
+      "at": 16.025,
+      "kind": "drone_activated",
+      "actor": "UL1+_4"
+    },
+    {
+      "at": 16.025,
+      "kind": "drone_takeoff",
+      "actor": "UL1+_4",
+      "orders": [
+        "D00016"
+      ]
+    },
+    {
+      "at": 16.025,
+      "kind": "flight_started",
+      "actor": "UL1+_4",
+      "source": [
+        20.0,
+        0.25
+      ],
+      "destination": [
+        16.855524,
+        3.009182
+      ],
+      "end": 18.813931665128344
+    },
+    {
+      "at": 16.2,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_1",
+      "order": "D00012",
+      "loading": true
+    },
+    {
+      "at": 16.2,
+      "kind": "drone_activated",
+      "actor": "UL1+_1"
+    },
+    {
+      "at": 16.2,
+      "kind": "drone_takeoff",
+      "actor": "UL1+_1",
+      "orders": [
+        "D00012"
+      ]
+    },
+    {
+      "at": 16.2,
+      "kind": "flight_started",
+      "actor": "UL1+_1",
+      "source": [
+        20.0,
+        0.25
+      ],
+      "destination": [
+        25.447533,
+        7.307229
+      ],
+      "end": 22.143440714847102
+    },
+    {
+      "at": 16.225,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_0",
+      "order": "D00004",
+      "loading": true
+    },
+    {
+      "at": 16.225,
+      "kind": "drone_activated",
+      "actor": "UL1+_0"
+    },
+    {
+      "at": 16.225,
+      "kind": "drone_takeoff",
+      "actor": "UL1+_0",
+      "orders": [
+        "D00003",
+        "D00004",
+        "P00000"
+      ]
+    },
+    {
+      "at": 16.225,
+      "kind": "flight_started",
+      "actor": "UL1+_0",
+      "source": [
+        20.0,
+        0.25
+      ],
+      "destination": [
+        20.945426,
+        1.781125
+      ],
+      "end": 17.42466182032938
+    },
+    {
+      "at": 17.42466182032938,
+      "kind": "service_started",
+      "actor": "UL1+_0",
+      "order": "D00003",
+      "end": 18.42466182032938
+    },
+    {
+      "at": 18.42466182032938,
+      "kind": "order_completed",
+      "order": "D00003"
+    },
+    {
+      "at": 18.42466182032938,
+      "kind": "service_done",
+      "actor": "UL1+_0",
+      "order": "D00003"
+    },
+    {
+      "at": 18.42466182032938,
+      "kind": "flight_started",
+      "actor": "UL1+_0",
+      "source": [
+        20.945426,
+        1.781125
+      ],
+      "destination": [
+        26.761015,
+        1.654436
+      ],
+      "end": 22.30264099164712
+    },
+    {
+      "at": 18.813931665128344,
+      "kind": "service_started",
+      "actor": "UL1+_4",
+      "order": "D00016",
+      "end": 19.813931665128344
+    },
+    {
+      "at": 19.813931665128344,
+      "kind": "order_completed",
+      "order": "D00016"
+    },
+    {
+      "at": 19.813931665128344,
+      "kind": "service_done",
+      "actor": "UL1+_4",
+      "order": "D00016"
+    },
+    {
+      "at": 19.813931665128344,
+      "kind": "flight_started",
+      "actor": "UL1+_4",
+      "source": [
+        16.855524,
+        3.009182
+      ],
+      "destination": [
+        20.0,
+        0.25
+      ],
+      "end": 22.60286333025669
+    },
+    {
+      "at": 20.034924979827146,
+      "kind": "service_started",
+      "actor": "UL1+_2",
+      "order": "D00013",
+      "end": 21.034924979827146
+    },
+    {
+      "at": 21.034924979827146,
+      "kind": "order_completed",
+      "order": "D00013"
+    },
+    {
+      "at": 21.034924979827146,
+      "kind": "service_done",
+      "actor": "UL1+_2",
+      "order": "D00013"
+    },
+    {
+      "at": 21.034924979827146,
+      "kind": "flight_started",
+      "actor": "UL1+_2",
+      "source": [
+        16.962992,
+        5.528571
+      ],
+      "destination": [
+        20.0,
+        0.25
+      ],
+      "end": 25.09484995965429
+    },
+    {
+      "at": 22.143440714847102,
+      "kind": "service_started",
+      "actor": "UL1+_1",
+      "order": "D00012",
+      "end": 23.143440714847102
+    },
+    {
+      "at": 22.19347248764563,
+      "kind": "service_started",
+      "actor": "UL1+_3",
+      "order": "D00014",
+      "end": 23.19347248764563
+    },
+    {
+      "at": 22.30264099164712,
+      "kind": "service_started",
+      "actor": "UL1+_0",
+      "order": "D00004",
+      "end": 23.30264099164712
+    },
+    {
+      "at": 22.60286333025669,
+      "kind": "drone_returned",
+      "actor": "UL1+_4"
+    },
+    {
+      "at": 22.60286333025669,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_4",
+      "order": "D00017",
+      "loading": true,
+      "end": 23.077863330256687
+    },
+    {
+      "at": 23.077863330256687,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_4",
+      "order": "D00017",
+      "loading": true
+    },
+    {
+      "at": 23.077863330256687,
+      "kind": "drone_takeoff",
+      "actor": "UL1+_4",
+      "orders": [
+        "D00017"
+      ]
+    },
+    {
+      "at": 23.077863330256687,
+      "kind": "flight_started",
+      "actor": "UL1+_4",
+      "source": [
+        20.0,
+        0.25
+      ],
+      "destination": [
+        12.461932,
+        6.739533
+      ],
+      "end": 29.708985498762576
+    },
+    {
+      "at": 23.143440714847102,
+      "kind": "order_completed",
+      "order": "D00012"
+    },
+    {
+      "at": 23.143440714847102,
+      "kind": "service_done",
+      "actor": "UL1+_1",
+      "order": "D00012"
+    },
+    {
+      "at": 23.143440714847102,
+      "kind": "flight_started",
+      "actor": "UL1+_1",
+      "source": [
+        25.447533,
+        7.307229
+      ],
+      "destination": [
+        20.0,
+        0.25
+      ],
+      "end": 29.086881429694202
+    },
+    {
+      "at": 23.19347248764563,
+      "kind": "order_completed",
+      "order": "D00014"
+    },
+    {
+      "at": 23.19347248764563,
+      "kind": "service_done",
+      "actor": "UL1+_3",
+      "order": "D00014"
+    },
+    {
+      "at": 23.19347248764563,
+      "kind": "flight_started",
+      "actor": "UL1+_3",
+      "source": [
+        27.237547,
+        6.310978
+      ],
+      "destination": [
+        20.0,
+        0.25
+      ],
+      "end": 29.486944975291255
+    },
+    {
+      "at": 23.30264099164712,
+      "kind": "order_completed",
+      "order": "D00004"
+    },
+    {
+      "at": 23.30264099164712,
+      "kind": "service_done",
+      "actor": "UL1+_0",
+      "order": "D00004"
+    },
+    {
+      "at": 23.30264099164712,
+      "kind": "flight_started",
+      "actor": "UL1+_0",
+      "source": [
+        26.761015,
+        1.654436
+      ],
+      "destination": [
+        24.422636,
+        -0.321567
+      ],
+      "end": 25.34362160603053
+    },
+    {
+      "at": 25.09484995965429,
+      "kind": "drone_returned",
+      "actor": "UL1+_2"
+    },
+    {
+      "at": 25.09484995965429,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_2",
+      "order": "D00020",
+      "loading": true,
+      "end": 25.34484995965429
+    },
+    {
+      "at": 25.34362160603053,
+      "kind": "service_started",
+      "actor": "UL1+_0",
+      "order": "P00000",
+      "end": 26.34362160603053
+    },
+    {
+      "at": 25.34484995965429,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_2",
+      "order": "D00020",
+      "loading": true
+    },
+    {
+      "at": 25.34484995965429,
+      "kind": "drone_takeoff",
+      "actor": "UL1+_2",
+      "orders": [
+        "D00020"
+      ]
+    },
+    {
+      "at": 25.34484995965429,
+      "kind": "flight_started",
+      "actor": "UL1+_2",
+      "source": [
+        20.0,
+        0.25
+      ],
+      "destination": [
+        21.37157,
+        5.350655
+      ],
+      "end": 28.86607990221855
+    },
+    {
+      "at": 26.34362160603053,
+      "kind": "service_done",
+      "actor": "UL1+_0",
+      "order": "P00000"
+    },
+    {
+      "at": 26.34362160603053,
+      "kind": "flight_started",
+      "actor": "UL1+_0",
+      "source": [
+        24.422636,
+        -0.321567
+      ],
+      "destination": [
+        20.0,
+        0.25
+      ],
+      "end": 29.316566126496916
+    },
+    {
+      "at": 28.86607990221855,
+      "kind": "service_started",
+      "actor": "UL1+_2",
+      "order": "D00020",
+      "end": 29.86607990221855
+    },
+    {
+      "at": 29.0,
+      "kind": "reveal_batch",
+      "orders": [
+        "P00001"
+      ]
+    },
+    {
+      "at": 29.0,
+      "kind": "request_revealed",
+      "order": "P00001"
+    },
+    {
+      "at": 29.0,
+      "kind": "accept",
+      "order": "P00001"
+    },
+    {
+      "at": 29.086881429694202,
+      "kind": "drone_returned",
+      "actor": "UL1+_1"
+    },
+    {
+      "at": 29.086881429694202,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_1",
+      "order": "D00024",
+      "loading": true,
+      "end": 29.461881429694202
+    },
+    {
+      "at": 29.316566126496916,
+      "kind": "drone_returned",
+      "actor": "UL1+_0"
+    },
+    {
+      "at": 29.316566126496916,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_0",
+      "order": "P00000",
+      "loading": false,
+      "end": 29.616566126496917
+    },
+    {
+      "at": 29.461881429694202,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_1",
+      "order": "D00024",
+      "loading": true
+    },
+    {
+      "at": 29.461881429694202,
+      "kind": "drone_takeoff",
+      "actor": "UL1+_1",
+      "orders": [
+        "D00024"
+      ]
+    },
+    {
+      "at": 29.461881429694202,
+      "kind": "flight_started",
+      "actor": "UL1+_1",
+      "source": [
+        20.0,
+        0.25
+      ],
+      "destination": [
+        25.849149,
+        6.222291
+      ],
+      "end": 35.03486402682723
+    },
+    {
+      "at": 29.486944975291255,
+      "kind": "drone_returned",
+      "actor": "UL1+_3"
+    },
+    {
+      "at": 29.486944975291255,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_3",
+      "order": "D00027",
+      "loading": true,
+      "end": 29.886944975291254
+    },
+    {
+      "at": 29.616566126496917,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_0",
+      "order": "P00000",
+      "loading": false
+    },
+    {
+      "at": 29.616566126496917,
+      "kind": "truck_load_started",
+      "actor": "I0E00001",
+      "station": "L1+",
+      "orders": [
+        "P00000"
+      ],
+      "end": 29.916566126496917
+    },
+    {
+      "at": 29.616566126496917,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_0",
+      "order": "D00023",
+      "loading": true,
+      "end": 29.866566126496917
+    },
+    {
+      "at": 29.708985498762576,
+      "kind": "service_started",
+      "actor": "UL1+_4",
+      "order": "D00017",
+      "end": 30.708985498762576
+    },
+    {
+      "at": 29.86607990221855,
+      "kind": "order_completed",
+      "order": "D00020"
+    },
+    {
+      "at": 29.86607990221855,
+      "kind": "service_done",
+      "actor": "UL1+_2",
+      "order": "D00020"
+    },
+    {
+      "at": 29.86607990221855,
+      "kind": "flight_started",
+      "actor": "UL1+_2",
+      "source": [
+        21.37157,
+        5.350655
+      ],
+      "destination": [
+        20.0,
+        0.25
+      ],
+      "end": 33.38730984478281
+    },
+    {
+      "at": 29.866566126496917,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_0",
+      "order": "D00023",
+      "loading": true
+    },
+    {
+      "at": 29.866566126496917,
+      "kind": "drone_takeoff",
+      "actor": "UL1+_0",
+      "orders": [
+        "D00023"
+      ]
+    },
+    {
+      "at": 29.866566126496917,
+      "kind": "flight_started",
+      "actor": "UL1+_0",
+      "source": [
+        20.0,
+        0.25
+      ],
+      "destination": [
+        17.766535,
+        4.485279
+      ],
+      "end": 33.05863644833898
+    },
+    {
+      "at": 29.886944975291254,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_3",
+      "order": "D00027",
+      "loading": true
+    },
+    {
+      "at": 29.886944975291254,
+      "kind": "drone_takeoff",
+      "actor": "UL1+_3",
+      "orders": [
+        "D00027"
+      ]
+    },
+    {
+      "at": 29.886944975291254,
+      "kind": "flight_started",
+      "actor": "UL1+_3",
+      "source": [
+        20.0,
+        0.25
+      ],
+      "destination": [
+        24.257764,
+        8.562065
+      ],
+      "end": 36.113018424689216
+    },
+    {
+      "at": 29.916566126496917,
+      "kind": "truck_load_done",
+      "actor": "I0E00001",
+      "orders": [
+        "P00000"
+      ]
+    },
+    {
+      "at": 29.916566126496917,
+      "kind": "truck_left_station",
+      "actor": "I0E00001",
+      "station": "L1+"
+    },
+    {
+      "at": 29.916566126496917,
+      "kind": "road_started",
+      "actor": "I0E00001",
+      "source": "L1+",
+      "destination": "L2+",
+      "end": 42.931971926496914
+    },
+    {
+      "at": 30.708985498762576,
+      "kind": "order_completed",
+      "order": "D00017"
+    },
+    {
+      "at": 30.708985498762576,
+      "kind": "service_done",
+      "actor": "UL1+_4",
+      "order": "D00017"
+    },
+    {
+      "at": 30.708985498762576,
+      "kind": "flight_started",
+      "actor": "UL1+_4",
+      "source": [
+        12.461932,
+        6.739533
+      ],
+      "destination": [
+        20.0,
+        0.25
+      ],
+      "end": 37.34010766726846
+    },
+    {
+      "at": 33.05863644833898,
+      "kind": "service_started",
+      "actor": "UL1+_0",
+      "order": "D00023",
+      "end": 34.05863644833898
+    },
+    {
+      "at": 33.38730984478281,
+      "kind": "drone_returned",
+      "actor": "UL1+_2"
+    },
+    {
+      "at": 33.38730984478281,
+      "kind": "drone_handling_started",
+      "actor": "UL1+_2",
+      "order": "D00028",
+      "loading": true,
+      "end": 33.66230984478281
+    },
+    {
+      "at": 33.66230984478281,
+      "kind": "drone_handling_done",
+      "actor": "UL1+_2",
+      "order": "D00028",
+      "loading": true
+    },
+    {
+      "at": 33.66230984478281,
+      "kind": "drone_takeoff",
+      "actor": "UL1+_2",
+      "orders": [
+        "D00028"
+      ]
+    },
+    {
+      "at": 33.66230984478281,
+      "kind": "flight_started",
+      "actor": "UL1+_2",
+      "source": [
+        20.0,
+        0.25
+      ],
+      "destination": [
+        28.193071,
+        6.192736
+      ],
+      "end": 40.409902784383554
+    },
+    {
+      "at": 34.05863644833898,
+      "kind": "order_completed",
+      "order": "D00023"
+    },
+    {
+      "at": 34.05863644833898,
+      "kind": "service_done",
+      "actor": "UL1+_0",
+      "order": "D00023"
+    },
+    {
+      "at": 34.05863644833898,
+      "kind": "flight_started",
+      "actor": "UL1+_0",
+      "source": [
+        17.766535,
+        4.485279
+      ],
+      "destination": [
+        20.0,
+        0.25
+      ],
+      "end": 37.25070677018104
+    },
+    {
+      "at": 35.03486402682723,
+      "kind": "service_started",
+      "actor": "UL1+_1",
+      "order": "D00024",
+      "end": 36.03486402682723
+    },
+    {
+      "at": 36.03486402682723,
+      "kind": "order_completed",
+      "order": "D00024"
+    },
+    {
+      "at": 36.03486402682723,
+      "kind": "service_done",
+      "actor": "UL1+_1",
+      "order": "D00024"
+    },
+    {
+      "at": 36.03486402682723,
+      "kind": "flight_started",
+      "actor": "UL1+_1",
+      "source": [
+        25.849149,
+        6.222291
+      ],
+      "destination": [
+        20.0,
+        0.25
+      ],
+      "end": 41.60784662396025
+    },
+    {
+      "at": 36.113018424689216,
+      "kind": "service_started",
+      "actor": "UL1+_3",
+      "order": "D00027",
+      "end": 37.113018424689216
+    },
+    {
+      "at": 37.113018424689216,
+      "kind": "order_completed",
+      "order": "D00027"
+    },
+    {
+      "at": 37.113018424689216,
+      "kind": "service_done",
+      "actor": "UL1+_3",
+      "order": "D00027"
+    },
+    {
+      "at": 37.113018424689216,
+      "kind": "flight_started",
+      "actor": "UL1+_3",
+      "source": [
+        24.257764,
+        8.562065
+      ],
+      "destination": [
+        20.0,
+        0.25
+      ],
+      "end": 43.339091874087174
+    },
+    {
+      "at": 37.25070677018104,
+      "kind": "drone_returned",
+      "actor": "UL1+_0"
+    },
+    {
+      "at": 37.34010766726846,
+      "kind": "drone_returned",
+      "actor": "UL1+_4"
+    },
+    {
+      "at": 40.409902784383554,
+      "kind": "service_started",
+      "actor": "UL1+_2",
+      "order": "D00028",
+      "end": 41.409902784383554
+    },
+    {
+      "at": 41.409902784383554,
+      "kind": "order_completed",
+      "order": "D00028"
+    },
+    {
+      "at": 41.409902784383554,
+      "kind": "service_done",
+      "actor": "UL1+_2",
+      "order": "D00028"
+    },
+    {
+      "at": 41.409902784383554,
+      "kind": "flight_started",
+      "actor": "UL1+_2",
+      "source": [
+        28.193071,
+        6.192736
+      ],
+      "destination": [
+        20.0,
+        0.25
+      ],
+      "end": 48.1574957239843
+    },
+    {
+      "at": 41.60784662396025,
+      "kind": "drone_returned",
+      "actor": "UL1+_1"
+    },
+    {
+      "at": 42.931971926496914,
+      "kind": "truck_arrived",
+      "actor": "I0E00001",
+      "destination": "L2+"
+    },
+    {
+      "at": 42.931971926496914,
+      "kind": "truck_unload_started",
+      "actor": "I0E00001",
+      "station": "L2+",
+      "quantities": {
+        "D00002": 14,
+        "D00007": 7,
+        "D00009": 8,
+        "D00010": 10,
+        "D00015": 11,
+        "D00019": 19,
+        "D00021": 12,
+        "D00025": 19
+      },
+      "end": 45.431971926496914
+    },
+    {
+      "at": 43.339091874087174,
+      "kind": "drone_returned",
+      "actor": "UL1+_3"
+    },
+    {
+      "at": 45.431971926496914,
+      "kind": "truck_unload_done",
+      "actor": "I0E00001",
+      "station": "L2+",
+      "quantities": {
+        "D00002": 14,
+        "D00007": 7,
+        "D00009": 8,
+        "D00010": 10,
+        "D00015": 11,
+        "D00019": 19,
+        "D00021": 12,
+        "D00025": 19
+      }
+    },
+    {
+      "at": 45.431971926496914,
+      "kind": "truck_left_station",
+      "actor": "I0E00001",
+      "station": "L2+"
+    },
+    {
+      "at": 45.431971926496914,
+      "kind": "road_started",
+      "actor": "I0E00001",
+      "source": "L2+",
+      "destination": "L2-",
+      "end": 55.431971926496914
+    },
+    {
+      "at": 45.431971926496914,
+      "kind": "drone_handling_started",
+      "actor": "UL2+_0",
+      "order": "D00002",
+      "loading": true,
+      "end": 45.781971926496915
+    },
+    {
+      "at": 45.431971926496914,
+      "kind": "drone_handling_started",
+      "actor": "UL2+_1",
+      "order": "D00007",
+      "loading": true,
+      "end": 45.60697192649692
+    },
+    {
+      "at": 45.431971926496914,
+      "kind": "drone_handling_started",
+      "actor": "UL2+_2",
+      "order": "D00010",
+      "loading": true,
+      "end": 45.681971926496914
+    },
+    {
+      "at": 45.431971926496914,
+      "kind": "drone_handling_started",
+      "actor": "UL2+_3",
+      "order": "D00015",
+      "loading": true,
+      "end": 45.70697192649692
+    },
+    {
+      "at": 45.431971926496914,
+      "kind": "drone_handling_started",
+      "actor": "UL2+_4",
+      "order": "D00019",
+      "loading": true,
+      "end": 45.906971926496915
+    },
+    {
+      "at": 45.60697192649692,
+      "kind": "drone_handling_done",
+      "actor": "UL2+_1",
+      "order": "D00007",
+      "loading": true
+    },
+    {
+      "at": 45.60697192649692,
+      "kind": "drone_handling_started",
+      "actor": "UL2+_1",
+      "order": "D00009",
+      "loading": true,
+      "end": 45.806971926496914
+    },
+    {
+      "at": 45.681971926496914,
+      "kind": "drone_handling_done",
+      "actor": "UL2+_2",
+      "order": "D00010",
+      "loading": true
+    },
+    {
+      "at": 45.681971926496914,
+      "kind": "drone_activated",
+      "actor": "UL2+_2"
+    },
+    {
+      "at": 45.681971926496914,
+      "kind": "drone_takeoff",
+      "actor": "UL2+_2",
+      "orders": [
+        "D00010"
+      ]
+    },
+    {
+      "at": 45.681971926496914,
+      "kind": "flight_started",
+      "actor": "UL2+_2",
+      "source": [
+        41.692343,
+        0.25
+      ],
+      "destination": [
+        42.511362,
+        4.626826
+      ],
+      "end": 48.65050302278283
+    },
+    {
+      "at": 45.70697192649692,
+      "kind": "drone_handling_done",
+      "actor": "UL2+_3",
+      "order": "D00015",
+      "loading": true
+    },
+    {
+      "at": 45.70697192649692,
+      "kind": "drone_activated",
+      "actor": "UL2+_3"
+    },
+    {
+      "at": 45.70697192649692,
+      "kind": "drone_takeoff",
+      "actor": "UL2+_3",
+      "orders": [
+        "D00015"
+      ]
+    },
+    {
+      "at": 45.70697192649692,
+      "kind": "flight_started",
+      "actor": "UL2+_3",
+      "source": [
+        41.692343,
+        0.25
+      ],
+      "destination": [
+        41.201504,
+        8.45619
+      ],
+      "end": 51.18754274997146
+    },
+    {
+      "at": 45.781971926496915,
+      "kind": "drone_handling_done",
+      "actor": "UL2+_0",
+      "order": "D00002",
+      "loading": true
+    },
+    {
+      "at": 45.781971926496915,
+      "kind": "drone_activated",
+      "actor": "UL2+_0"
+    },
+    {
+      "at": 45.781971926496915,
+      "kind": "drone_takeoff",
+      "actor": "UL2+_0",
+      "orders": [
+        "D00002"
+      ]
+    },
+    {
+      "at": 45.781971926496915,
+      "kind": "flight_started",
+      "actor": "UL2+_0",
+      "source": [
+        41.692343,
+        0.25
+      ],
+      "destination": [
+        48.977728,
+        2.532442
+      ],
+      "end": 50.87167290359388
+    },
+    {
+      "at": 45.806971926496914,
+      "kind": "drone_handling_done",
+      "actor": "UL2+_1",
+      "order": "D00009",
+      "loading": true
+    },
+    {
+      "at": 45.806971926496914,
+      "kind": "drone_activated",
+      "actor": "UL2+_1"
+    },
+    {
+      "at": 45.806971926496914,
+      "kind": "drone_takeoff",
+      "actor": "UL2+_1",
+      "orders": [
+        "D00007",
+        "D00009"
+      ]
+    },
+    {
+      "at": 45.806971926496914,
+      "kind": "flight_started",
+      "actor": "UL2+_1",
+      "source": [
+        41.692343,
+        0.25
+      ],
+      "destination": [
+        30.962308,
+        7.591577
+      ],
+      "end": 54.47446942380525
+    },
+    {
+      "at": 45.906971926496915,
+      "kind": "drone_handling_done",
+      "actor": "UL2+_4",
+      "order": "D00019",
+      "loading": true
+    },
+    {
+      "at": 45.906971926496915,
+      "kind": "drone_activated",
+      "actor": "UL2+_4"
+    },
+    {
+      "at": 45.906971926496915,
+      "kind": "drone_takeoff",
+      "actor": "UL2+_4",
+      "orders": [
+        "D00019"
+      ]
+    },
+    {
+      "at": 45.906971926496915,
+      "kind": "flight_started",
+      "actor": "UL2+_4",
+      "source": [
+        41.692343,
+        0.25
+      ],
+      "destination": [
+        32.614376,
+        4.639479
+      ],
+      "end": 52.62930653235554
+    },
+    {
+      "at": 48.1574957239843,
+      "kind": "drone_returned",
+      "actor": "UL1+_2"
+    },
+    {
+      "at": 48.65050302278283,
+      "kind": "service_started",
+      "actor": "UL2+_2",
+      "order": "D00010",
+      "end": 49.65050302278283
+    },
+    {
+      "at": 49.65050302278283,
+      "kind": "order_completed",
+      "order": "D00010"
+    },
+    {
+      "at": 49.65050302278283,
+      "kind": "service_done",
+      "actor": "UL2+_2",
+      "order": "D00010"
+    },
+    {
+      "at": 49.65050302278283,
+      "kind": "flight_started",
+      "actor": "UL2+_2",
+      "source": [
+        42.511362,
+        4.626826
+      ],
+      "destination": [
+        41.692343,
+        0.25
+      ],
+      "end": 52.61903411906874
+    },
+    {
+      "at": 50.87167290359388,
+      "kind": "service_started",
+      "actor": "UL2+_0",
+      "order": "D00002",
+      "end": 51.87167290359388
+    },
+    {
+      "at": 51.18754274997146,
+      "kind": "service_started",
+      "actor": "UL2+_3",
+      "order": "D00015",
+      "end": 52.18754274997146
+    },
+    {
+      "at": 51.87167290359388,
+      "kind": "order_completed",
+      "order": "D00002"
+    },
+    {
+      "at": 51.87167290359388,
+      "kind": "service_done",
+      "actor": "UL2+_0",
+      "order": "D00002"
+    },
+    {
+      "at": 51.87167290359388,
+      "kind": "flight_started",
+      "actor": "UL2+_0",
+      "source": [
+        48.977728,
+        2.532442
+      ],
+      "destination": [
+        41.692343,
+        0.25
+      ],
+      "end": 56.96137388069084
+    },
+    {
+      "at": 52.0,
+      "kind": "reveal_batch",
+      "orders": [
+        "P00002"
+      ]
+    },
+    {
+      "at": 52.0,
+      "kind": "request_revealed",
+      "order": "P00002"
+    },
+    {
+      "at": 52.0,
+      "kind": "accept",
+      "order": "P00002"
+    },
+    {
+      "at": 52.18754274997146,
+      "kind": "order_completed",
+      "order": "D00015"
+    },
+    {
+      "at": 52.18754274997146,
+      "kind": "service_done",
+      "actor": "UL2+_3",
+      "order": "D00015"
+    },
+    {
+      "at": 52.18754274997146,
+      "kind": "flight_started",
+      "actor": "UL2+_3",
+      "source": [
+        41.201504,
+        8.45619
+      ],
+      "destination": [
+        41.692343,
+        0.25
+      ],
+      "end": 57.66811357344601
+    },
+    {
+      "at": 52.61903411906874,
+      "kind": "drone_returned",
+      "actor": "UL2+_2"
+    },
+    {
+      "at": 52.61903411906874,
+      "kind": "drone_handling_started",
+      "actor": "UL2+_2",
+      "order": "D00021",
+      "loading": true,
+      "end": 52.91903411906874
+    },
+    {
+      "at": 52.62930653235554,
+      "kind": "service_started",
+      "actor": "UL2+_4",
+      "order": "D00019",
+      "end": 53.62930653235554
+    },
+    {
+      "at": 52.91903411906874,
+      "kind": "drone_handling_done",
+      "actor": "UL2+_2",
+      "order": "D00021",
+      "loading": true
+    },
+    {
+      "at": 52.91903411906874,
+      "kind": "drone_takeoff",
+      "actor": "UL2+_2",
+      "orders": [
+        "D00021"
+      ]
+    },
+    {
+      "at": 52.91903411906874,
+      "kind": "flight_started",
+      "actor": "UL2+_2",
+      "source": [
+        41.692343,
+        0.25
+      ],
+      "destination": [
+        38.224085,
+        3.931458
+      ],
+      "end": 56.29094070538048
+    },
+    {
+      "at": 53.62930653235554,
+      "kind": "order_completed",
+      "order": "D00019"
+    },
+    {
+      "at": 53.62930653235554,
+      "kind": "service_done",
+      "actor": "UL2+_4",
+      "order": "D00019"
+    },
+    {
+      "at": 53.62930653235554,
+      "kind": "flight_started",
+      "actor": "UL2+_4",
+      "source": [
+        32.614376,
+        4.639479
+      ],
+      "destination": [
+        41.692343,
+        0.25
+      ],
+      "end": 60.35164113821417
+    },
+    {
+      "at": 54.47446942380525,
+      "kind": "service_started",
+      "actor": "UL2+_1",
+      "order": "D00007",
+      "end": 55.47446942380525
+    },
+    {
+      "at": 55.431971926496914,
+      "kind": "truck_arrived",
+      "actor": "I0E00001",
+      "destination": "L2-"
+    },
+    {
+      "at": 55.431971926496914,
+      "kind": "truck_unload_started",
+      "actor": "I0E00001",
+      "station": "L2-",
+      "quantities": {
+        "D00001": 19,
+        "D00011": 8,
+        "D00018": 18,
+        "D00022": 17,
+        "D00029": 18,
+        "D00030": 17,
+        "D00031": 6
+      },
+      "end": 58.00697192649692
+    },
+    {
+      "at": 55.47446942380525,
+      "kind": "order_completed",
+      "order": "D00007"
+    },
+    {
+      "at": 55.47446942380525,
+      "kind": "service_done",
+      "actor": "UL2+_1",
+      "order": "D00007"
+    },
+    {
+      "at": 55.47446942380525,
+      "kind": "flight_started",
+      "actor": "UL2+_1",
+      "source": [
+        30.962308,
+        7.591577
+      ],
+      "destination": [
+        48.749254,
+        6.131327
+      ],
+      "end": 67.37232689795982
+    },
+    {
+      "at": 56.29094070538048,
+      "kind": "service_started",
+      "actor": "UL2+_2",
+      "order": "D00021",
+      "end": 57.29094070538048
+    },
+    {
+      "at": 56.96137388069084,
+      "kind": "drone_returned",
+      "actor": "UL2+_0"
+    },
+    {
+      "at": 56.96137388069084,
+      "kind": "drone_handling_started",
+      "actor": "UL2+_0",
+      "order": "D00025",
+      "loading": true,
+      "end": 57.436373880690844
+    },
+    {
+      "at": 57.29094070538048,
+      "kind": "order_completed",
+      "order": "D00021"
+    },
+    {
+      "at": 57.29094070538048,
+      "kind": "service_done",
+      "actor": "UL2+_2",
+      "order": "D00021"
+    },
+    {
+      "at": 57.29094070538048,
+      "kind": "flight_started",
+      "actor": "UL2+_2",
+      "source": [
+        38.224085,
+        3.931458
+      ],
+      "destination": [
+        41.692343,
+        0.25
+      ],
+      "end": 60.66284729169221
+    },
+    {
+      "at": 57.436373880690844,
+      "kind": "drone_handling_done",
+      "actor": "UL2+_0",
+      "order": "D00025",
+      "loading": true
+    },
+    {
+      "at": 57.436373880690844,
+      "kind": "drone_takeoff",
+      "actor": "UL2+_0",
+      "orders": [
+        "D00025"
+      ]
+    },
+    {
+      "at": 57.436373880690844,
+      "kind": "flight_started",
+      "actor": "UL2+_0",
+      "source": [
+        41.692343,
+        0.25
+      ],
+      "destination": [
+        47.252625,
+        4.407276
+      ],
+      "end": 62.064773155683824
+    },
+    {
+      "at": 57.66811357344601,
+      "kind": "drone_returned",
+      "actor": "UL2+_3"
+    },
+    {
+      "at": 58.00697192649692,
+      "kind": "truck_unload_done",
+      "actor": "I0E00001",
+      "station": "L2-",
+      "quantities": {
+        "D00001": 19,
+        "D00011": 8,
+        "D00018": 18,
+        "D00022": 17,
+        "D00029": 18,
+        "D00030": 17,
+        "D00031": 6
+      }
+    },
+    {
+      "at": 58.00697192649692,
+      "kind": "drone_handling_started",
+      "actor": "UL2-_0",
+      "order": "D00001",
+      "loading": true,
+      "end": 58.48197192649692
+    },
+    {
+      "at": 58.00697192649692,
+      "kind": "drone_handling_started",
+      "actor": "UL2-_1",
+      "order": "D00011",
+      "loading": true,
+      "end": 58.20697192649692
+    },
+    {
+      "at": 58.00697192649692,
+      "kind": "drone_handling_started",
+      "actor": "UL2-_2",
+      "order": "D00018",
+      "loading": true,
+      "end": 58.45697192649692
+    },
+    {
+      "at": 58.00697192649692,
+      "kind": "drone_handling_started",
+      "actor": "UL2-_3",
+      "order": "D00022",
+      "loading": true,
+      "end": 58.431971926496914
+    },
+    {
+      "at": 58.00697192649692,
+      "kind": "drone_handling_started",
+      "actor": "UL2-_4",
+      "order": "D00029",
+      "loading": true,
+      "end": 58.45697192649692
+    },
+    {
+      "at": 58.20697192649692,
+      "kind": "drone_handling_done",
+      "actor": "UL2-_1",
+      "order": "D00011",
+      "loading": true
+    },
+    {
+      "at": 58.20697192649692,
+      "kind": "drone_activated",
+      "actor": "UL2-_1"
+    },
+    {
+      "at": 58.20697192649692,
+      "kind": "drone_takeoff",
+      "actor": "UL2-_1",
+      "orders": [
+        "D00011",
+        "P00001"
+      ]
+    },
+    {
+      "at": 58.20697192649692,
+      "kind": "flight_started",
+      "actor": "UL2-_1",
+      "source": [
+        41.692343,
+        -0.25
+      ],
+      "destination": [
+        43.254155,
+        -5.431032
+      ],
+      "end": 61.81451644741219
+    },
+    {
+      "at": 58.431971926496914,
+      "kind": "drone_handling_done",
+      "actor": "UL2-_3",
+      "order": "D00022",
+      "loading": true
+    },
+    {
+      "at": 58.431971926496914,
+      "kind": "drone_activated",
+      "actor": "UL2-_3"
+    },
+    {
+      "at": 58.431971926496914,
+      "kind": "drone_takeoff",
+      "actor": "UL2-_3",
+      "orders": [
+        "D00022"
+      ]
+    },
+    {
+      "at": 58.431971926496914,
+      "kind": "flight_started",
+      "actor": "UL2-_3",
+      "source": [
+        41.692343,
+        -0.25
+      ],
+      "destination": [
+        40.365588,
+        -2.845875
+      ],
+      "end": 60.375490596406955
+    },
+    {
+      "at": 58.45697192649692,
+      "kind": "drone_handling_done",
+      "actor": "UL2-_2",
+      "order": "D00018",
+      "loading": true
+    },
+    {
+      "at": 58.45697192649692,
+      "kind": "drone_handling_done",
+      "actor": "UL2-_4",
+      "order": "D00029",
+      "loading": true
+    },
+    {
+      "at": 58.45697192649692,
+      "kind": "drone_activated",
+      "actor": "UL2-_2"
+    },
+    {
+      "at": 58.45697192649692,
+      "kind": "drone_takeoff",
+      "actor": "UL2-_2",
+      "orders": [
+        "D00018",
+        "P00002"
+      ]
+    },
+    {
+      "at": 58.45697192649692,
+      "kind": "flight_started",
+      "actor": "UL2-_2",
+      "source": [
+        41.692343,
+        -0.25
+      ],
+      "destination": [
+        46.068041,
+        -5.778123
+      ],
+      "end": 63.15717886711054
+    },
+    {
+      "at": 58.45697192649692,
+      "kind": "drone_activated",
+      "actor": "UL2-_4"
+    },
+    {
+      "at": 58.45697192649692,
+      "kind": "drone_takeoff",
+      "actor": "UL2-_4",
+      "orders": [
+        "D00029"
+      ]
+    },
+    {
+      "at": 58.45697192649692,
+      "kind": "flight_started",
+      "actor": "UL2-_4",
+      "source": [
+        41.692343,
+        -0.25
+      ],
+      "destination": [
+        48.897125,
+        -6.613456
+      ],
+      "end": 64.86538500554855
+    },
+    {
+      "at": 58.48197192649692,
+      "kind": "drone_handling_done",
+      "actor": "UL2-_0",
+      "order": "D00001",
+      "loading": true
+    },
+    {
+      "at": 58.48197192649692,
+      "kind": "drone_activated",
+      "actor": "UL2-_0"
+    },
+    {
+      "at": 58.48197192649692,
+      "kind": "drone_takeoff",
+      "actor": "UL2-_0",
+      "orders": [
+        "D00001"
+      ]
+    },
+    {
+      "at": 58.48197192649692,
+      "kind": "flight_started",
+      "actor": "UL2-_0",
+      "source": [
+        41.692343,
+        -0.25
+      ],
+      "destination": [
+        32.752727,
+        -3.009186
+      ],
+      "end": 64.71913088123662
+    },
+    {
+      "at": 60.35164113821417,
+      "kind": "drone_returned",
+      "actor": "UL2+_4"
+    },
+    {
+      "at": 60.375490596406955,
+      "kind": "service_started",
+      "actor": "UL2-_3",
+      "order": "D00022",
+      "end": 61.375490596406955
+    },
+    {
+      "at": 60.66284729169221,
+      "kind": "drone_returned",
+      "actor": "UL2+_2"
+    },
+    {
+      "at": 61.375490596406955,
+      "kind": "order_completed",
+      "order": "D00022"
+    },
+    {
+      "at": 61.375490596406955,
+      "kind": "service_done",
+      "actor": "UL2-_3",
+      "order": "D00022"
+    },
+    {
+      "at": 61.375490596406955,
+      "kind": "flight_started",
+      "actor": "UL2-_3",
+      "source": [
+        40.365588,
+        -2.845875
+      ],
+      "destination": [
+        41.692343,
+        -0.25
+      ],
+      "end": 63.319009266316996
+    },
+    {
+      "at": 61.81451644741219,
+      "kind": "service_started",
+      "actor": "UL2-_1",
+      "order": "D00011",
+      "end": 62.81451644741219
+    },
+    {
+      "at": 62.064773155683824,
+      "kind": "service_started",
+      "actor": "UL2+_0",
+      "order": "D00025",
+      "end": 63.064773155683824
+    },
+    {
+      "at": 62.81451644741219,
+      "kind": "order_completed",
+      "order": "D00011"
+    },
+    {
+      "at": 62.81451644741219,
+      "kind": "service_done",
+      "actor": "UL2-_1",
+      "order": "D00011"
+    },
+    {
+      "at": 62.81451644741219,
+      "kind": "flight_started",
+      "actor": "UL2-_1",
+      "source": [
+        43.254155,
+        -5.431032
+      ],
+      "destination": [
+        38.91509,
+        -1.419915
+      ],
+      "end": 66.75386465418244
+    },
+    {
+      "at": 63.064773155683824,
+      "kind": "order_completed",
+      "order": "D00025"
+    },
+    {
+      "at": 63.064773155683824,
+      "kind": "service_done",
+      "actor": "UL2+_0",
+      "order": "D00025"
+    },
+    {
+      "at": 63.064773155683824,
+      "kind": "flight_started",
+      "actor": "UL2+_0",
+      "source": [
+        47.252625,
+        4.407276
+      ],
+      "destination": [
+        41.692343,
+        0.25
+      ],
+      "end": 67.69317243067681
+    },
+    {
+      "at": 63.15717886711054,
+      "kind": "service_started",
+      "actor": "UL2-_2",
+      "order": "D00018",
+      "end": 64.15717886711053
+    },
+    {
+      "at": 63.319009266316996,
+      "kind": "drone_returned",
+      "actor": "UL2-_3"
+    },
+    {
+      "at": 63.319009266316996,
+      "kind": "drone_handling_started",
+      "actor": "UL2-_3",
+      "order": "D00030",
+      "loading": true,
+      "end": 63.74400926631699
+    },
+    {
+      "at": 63.74400926631699,
+      "kind": "drone_handling_done",
+      "actor": "UL2-_3",
+      "order": "D00030",
+      "loading": true
+    },
+    {
+      "at": 63.74400926631699,
+      "kind": "drone_takeoff",
+      "actor": "UL2-_3",
+      "orders": [
+        "D00030"
+      ]
+    },
+    {
+      "at": 63.74400926631699,
+      "kind": "flight_started",
+      "actor": "UL2-_3",
+      "source": [
+        41.692343,
+        -0.25
+      ],
+      "destination": [
+        46.035537,
+        -7.433471
+      ],
+      "end": 69.34026157297433
+    },
+    {
+      "at": 64.15717886711053,
+      "kind": "order_completed",
+      "order": "D00018"
+    },
+    {
+      "at": 64.15717886711053,
+      "kind": "service_done",
+      "actor": "UL2-_2",
+      "order": "D00018"
+    },
+    {
+      "at": 64.15717886711053,
+      "kind": "flight_started",
+      "actor": "UL2-_2",
+      "source": [
+        46.068041,
+        -5.778123
+      ],
+      "destination": [
+        46.343689,
+        -7.217641
+      ],
+      "end": 65.13429341566163
+    },
+    {
+      "at": 64.71913088123662,
+      "kind": "service_started",
+      "actor": "UL2-_0",
+      "order": "D00001",
+      "end": 65.71913088123662
+    },
+    {
+      "at": 64.86538500554855,
+      "kind": "service_started",
+      "actor": "UL2-_4",
+      "order": "D00029",
+      "end": 65.86538500554855
+    },
+    {
+      "at": 65.13429341566163,
+      "kind": "service_started",
+      "actor": "UL2-_2",
+      "order": "P00002",
+      "end": 66.13429341566163
+    },
+    {
+      "at": 65.71913088123662,
+      "kind": "order_completed",
+      "order": "D00001"
+    },
+    {
+      "at": 65.71913088123662,
+      "kind": "service_done",
+      "actor": "UL2-_0",
+      "order": "D00001"
+    },
+    {
+      "at": 65.71913088123662,
+      "kind": "flight_started",
+      "actor": "UL2-_0",
+      "source": [
+        32.752727,
+        -3.009186
+      ],
+      "destination": [
+        41.692343,
+        -0.25
+      ],
+      "end": 71.95628983597634
+    },
+    {
+      "at": 65.86538500554855,
+      "kind": "order_completed",
+      "order": "D00029"
+    },
+    {
+      "at": 65.86538500554855,
+      "kind": "service_done",
+      "actor": "UL2-_4",
+      "order": "D00029"
+    },
+    {
+      "at": 65.86538500554855,
+      "kind": "flight_started",
+      "actor": "UL2-_4",
+      "source": [
+        48.897125,
+        -6.613456
+      ],
+      "destination": [
+        41.692343,
+        -0.25
+      ],
+      "end": 72.27379808460017
+    },
+    {
+      "at": 66.13429341566163,
+      "kind": "service_done",
+      "actor": "UL2-_2",
+      "order": "P00002"
+    },
+    {
+      "at": 66.13429341566163,
+      "kind": "flight_started",
+      "actor": "UL2-_2",
+      "source": [
+        46.343689,
+        -7.217641
+      ],
+      "destination": [
+        41.692343,
+        -0.25
+      ],
+      "end": 71.71931468157547
+    },
+    {
+      "at": 66.75386465418244,
+      "kind": "service_started",
+      "actor": "UL2-_1",
+      "order": "P00001",
+      "end": 67.75386465418244
+    },
+    {
+      "at": 67.37232689795982,
+      "kind": "service_started",
+      "actor": "UL2+_1",
+      "order": "D00009",
+      "end": 68.37232689795982
+    },
+    {
+      "at": 67.69317243067681,
+      "kind": "drone_returned",
+      "actor": "UL2+_0"
+    },
+    {
+      "at": 67.75386465418244,
+      "kind": "service_done",
+      "actor": "UL2-_1",
+      "order": "P00001"
+    },
+    {
+      "at": 67.75386465418244,
+      "kind": "flight_started",
+      "actor": "UL2-_1",
+      "source": [
+        38.91509,
+        -1.419915
+      ],
+      "destination": [
+        41.692343,
+        -0.25
+      ],
+      "end": 69.7629368926087
+    },
+    {
+      "at": 68.37232689795982,
+      "kind": "order_completed",
+      "order": "D00009"
+    },
+    {
+      "at": 68.37232689795982,
+      "kind": "service_done",
+      "actor": "UL2+_1",
+      "order": "D00009"
+    },
+    {
+      "at": 68.37232689795982,
+      "kind": "flight_started",
+      "actor": "UL2+_1",
+      "source": [
+        48.749254,
+        6.131327
+      ],
+      "destination": [
+        41.692343,
+        0.25
+      ],
+      "end": 74.49659556696477
+    },
+    {
+      "at": 69.34026157297433,
+      "kind": "service_started",
+      "actor": "UL2-_3",
+      "order": "D00030",
+      "end": 70.34026157297433
+    },
+    {
+      "at": 69.7629368926087,
+      "kind": "drone_returned",
+      "actor": "UL2-_1"
+    },
+    {
+      "at": 69.7629368926087,
+      "kind": "drone_handling_started",
+      "actor": "UL2-_1",
+      "order": "P00001",
+      "loading": false,
+      "end": 70.1129368926087
+    },
+    {
+      "at": 70.1129368926087,
+      "kind": "drone_handling_done",
+      "actor": "UL2-_1",
+      "order": "P00001",
+      "loading": false
+    },
+    {
+      "at": 70.1129368926087,
+      "kind": "truck_load_started",
+      "actor": "I0E00001",
+      "station": "L2-",
+      "orders": [
+        "P00001"
+      ],
+      "end": 70.4629368926087
+    },
+    {
+      "at": 70.1129368926087,
+      "kind": "drone_handling_started",
+      "actor": "UL2-_1",
+      "order": "D00031",
+      "loading": true,
+      "end": 70.2629368926087
+    },
+    {
+      "at": 70.2629368926087,
+      "kind": "drone_handling_done",
+      "actor": "UL2-_1",
+      "order": "D00031",
+      "loading": true
+    },
+    {
+      "at": 70.2629368926087,
+      "kind": "drone_takeoff",
+      "actor": "UL2-_1",
+      "orders": [
+        "D00031"
+      ]
+    },
+    {
+      "at": 70.2629368926087,
+      "kind": "flight_started",
+      "actor": "UL2-_1",
+      "source": [
+        41.692343,
+        -0.25
+      ],
+      "destination": [
+        35.048187,
+        -4.224869
+      ],
+      "end": 75.42452116789546
+    },
+    {
+      "at": 70.34026157297433,
+      "kind": "order_completed",
+      "order": "D00030"
+    },
+    {
+      "at": 70.34026157297433,
+      "kind": "service_done",
+      "actor": "UL2-_3",
+      "order": "D00030"
+    },
+    {
+      "at": 70.34026157297433,
+      "kind": "flight_started",
+      "actor": "UL2-_3",
+      "source": [
+        46.035537,
+        -7.433471
+      ],
+      "destination": [
+        41.692343,
+        -0.25
+      ],
+      "end": 75.93651387963166
+    },
+    {
+      "at": 70.4629368926087,
+      "kind": "truck_load_done",
+      "actor": "I0E00001",
+      "orders": [
+        "P00001"
+      ]
+    },
+    {
+      "at": 71.71931468157547,
+      "kind": "drone_returned",
+      "actor": "UL2-_2"
+    },
+    {
+      "at": 71.71931468157547,
+      "kind": "drone_handling_started",
+      "actor": "UL2-_2",
+      "order": "P00002",
+      "loading": false,
+      "end": 72.09431468157547
+    },
+    {
+      "at": 71.95628983597634,
+      "kind": "drone_returned",
+      "actor": "UL2-_0"
+    },
+    {
+      "at": 72.09431468157547,
+      "kind": "drone_handling_done",
+      "actor": "UL2-_2",
+      "order": "P00002",
+      "loading": false
+    },
+    {
+      "at": 72.09431468157547,
+      "kind": "truck_load_started",
+      "actor": "I0E00001",
+      "station": "L2-",
+      "orders": [
+        "P00002"
+      ],
+      "end": 72.46931468157547
+    },
+    {
+      "at": 72.27379808460017,
+      "kind": "drone_returned",
+      "actor": "UL2-_4"
+    },
+    {
+      "at": 72.46931468157547,
+      "kind": "truck_load_done",
+      "actor": "I0E00001",
+      "orders": [
+        "P00002"
+      ]
+    }
+  ],
+  "plans": {
+    "0": {
+      "id": "original",
+      "actions": [
+        {
+          "at": 72.46931468157547,
+          "kind": "truck_continue_circuit",
+          "actor": "I0E00001",
+          "station": "L2-"
+        },
+        {
+          "kind": "truck_unload",
+          "actor": "I0E00001",
+          "at": 85.48472048157548,
+          "station": "L1-",
+          "quantities": {
+            "D00000": 8,
+            "D00005": 12,
+            "D00006": 7,
+            "D00008": 18,
+            "D00026": 8
+          }
+        },
+        {
+          "kind": "truck_continue_circuit",
+          "actor": "I0E00001",
+          "at": 86.80972048157547
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_0",
+          "at": 86.80972048157547,
+          "orders": [
+            "D00000",
+            "D00005"
+          ]
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_1",
+          "at": 86.80972048157547,
+          "orders": [
+            "D00006",
+            "D00026"
+          ]
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_2",
+          "at": 86.80972048157547,
+          "orders": [
+            "D00008"
+          ]
+        },
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_1",
+          "at": 87.18472048157547,
+          "visit_order": [
+            "D00006",
+            "D00026"
+          ]
+        },
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_2",
+          "at": 87.25972048157547,
+          "visit_order": [
+            "D00008"
+          ]
+        },
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_0",
+          "at": 87.30972048157547,
+          "visit_order": [
+            "D00000",
+            "D00005"
+          ]
+        }
+      ],
+      "new_trucks": [],
+      "decisions": {},
+      "wait_reviews": {}
+    },
+    "2": {
+      "id": "original~joint_60df2cc6380b72e4",
+      "actions": [
+        {
+          "at": 74.46931468157547,
+          "kind": "truck_continue_circuit",
+          "actor": "I0E00001",
+          "station": "L2-"
+        },
+        {
+          "kind": "truck_unload",
+          "actor": "I0E00001",
+          "at": 87.48472048157548,
+          "station": "L1-",
+          "quantities": {
+            "D00000": 8,
+            "D00005": 12,
+            "D00006": 7,
+            "D00008": 18,
+            "D00026": 8
+          }
+        },
+        {
+          "kind": "truck_continue_circuit",
+          "actor": "I0E00001",
+          "at": 88.80972048157547
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_0",
+          "at": 88.80972048157547,
+          "orders": [
+            "D00000",
+            "D00005"
+          ]
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_1",
+          "at": 88.80972048157547,
+          "orders": [
+            "D00006",
+            "D00026"
+          ]
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_2",
+          "at": 88.80972048157547,
+          "orders": [
+            "D00008"
+          ]
+        },
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_1",
+          "at": 89.18472048157547,
+          "visit_order": [
+            "D00006",
+            "D00026"
+          ]
+        },
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_2",
+          "at": 89.25972048157547,
+          "visit_order": [
+            "D00008"
+          ]
+        },
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_0",
+          "at": 89.30972048157547,
+          "visit_order": [
+            "D00000",
+            "D00005"
+          ]
+        }
+      ],
+      "new_trucks": [],
+      "decisions": {},
+      "wait_reviews": {
+        "I0E00001": 74.46931468157547
+      }
+    },
+    "5": {
+      "id": "original~joint_2596b82917eeaa6d",
+      "actions": [
+        {
+          "at": 77.46931468157547,
+          "kind": "truck_continue_circuit",
+          "actor": "I0E00001",
+          "station": "L2-"
+        },
+        {
+          "kind": "truck_unload",
+          "actor": "I0E00001",
+          "at": 90.48472048157548,
+          "station": "L1-",
+          "quantities": {
+            "D00000": 8,
+            "D00005": 12,
+            "D00006": 7,
+            "D00008": 18,
+            "D00026": 8
+          }
+        },
+        {
+          "kind": "truck_continue_circuit",
+          "actor": "I0E00001",
+          "at": 91.80972048157547
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_0",
+          "at": 91.80972048157547,
+          "orders": [
+            "D00000",
+            "D00005"
+          ]
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_1",
+          "at": 91.80972048157547,
+          "orders": [
+            "D00006",
+            "D00026"
+          ]
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_2",
+          "at": 91.80972048157547,
+          "orders": [
+            "D00008"
+          ]
+        },
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_1",
+          "at": 92.18472048157547,
+          "visit_order": [
+            "D00006",
+            "D00026"
+          ]
+        },
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_2",
+          "at": 92.25972048157547,
+          "visit_order": [
+            "D00008"
+          ]
+        },
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_0",
+          "at": 92.30972048157547,
+          "visit_order": [
+            "D00000",
+            "D00005"
+          ]
+        }
+      ],
+      "new_trucks": [],
+      "decisions": {},
+      "wait_reviews": {
+        "I0E00001": 77.46931468157547
+      }
+    },
+    "10": {
+      "id": "original~joint_f2bb344b85dc0b72",
+      "actions": [
+        {
+          "at": 82.46931468157547,
+          "kind": "truck_continue_circuit",
+          "actor": "I0E00001",
+          "station": "L2-"
+        },
+        {
+          "kind": "truck_unload",
+          "actor": "I0E00001",
+          "at": 95.48472048157548,
+          "station": "L1-",
+          "quantities": {
+            "D00000": 8,
+            "D00005": 12,
+            "D00006": 7,
+            "D00008": 18,
+            "D00026": 8
+          }
+        },
+        {
+          "kind": "truck_continue_circuit",
+          "actor": "I0E00001",
+          "at": 96.80972048157547
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_0",
+          "at": 96.80972048157547,
+          "orders": [
+            "D00000",
+            "D00005"
+          ]
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_1",
+          "at": 96.80972048157547,
+          "orders": [
+            "D00006",
+            "D00026"
+          ]
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_2",
+          "at": 96.80972048157547,
+          "orders": [
+            "D00008"
+          ]
+        },
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_1",
+          "at": 97.18472048157547,
+          "visit_order": [
+            "D00006",
+            "D00026"
+          ]
+        },
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_2",
+          "at": 97.25972048157547,
+          "visit_order": [
+            "D00008"
+          ]
+        },
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_0",
+          "at": 97.30972048157547,
+          "visit_order": [
+            "D00000",
+            "D00005"
+          ]
+        }
+      ],
+      "new_trucks": [],
+      "decisions": {},
+      "wait_reviews": {
+        "I0E00001": 82.46931468157547
+      }
+    }
+  },
+  "live_actions": [
+    {
+      "at": 72.46931468157547,
+      "actions": [
+        {
+          "at": 72.46931468157547,
+          "kind": "truck_continue_circuit",
+          "actor": "I0E00001",
+          "station": "L2-"
+        }
+      ]
+    },
+    {
+      "at": 85.48472048157548,
+      "actions": [
+        {
+          "kind": "truck_unload",
+          "actor": "I0E00001",
+          "at": 85.48472048157548,
+          "station": "L1-",
+          "quantities": {
+            "D00000": 8,
+            "D00005": 12,
+            "D00006": 7,
+            "D00008": 18,
+            "D00026": 8
+          }
+        }
+      ]
+    },
+    {
+      "at": 86.80972048157547,
+      "actions": [
+        {
+          "kind": "truck_continue_circuit",
+          "actor": "I0E00001",
+          "at": 86.80972048157547
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_0",
+          "at": 86.80972048157547,
+          "orders": [
+            "D00000",
+            "D00005"
+          ]
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_1",
+          "at": 86.80972048157547,
+          "orders": [
+            "D00006",
+            "D00026"
+          ]
+        },
+        {
+          "kind": "drone_load",
+          "actor": "UL1-_2",
+          "at": 86.80972048157547,
+          "orders": [
+            "D00008"
+          ]
+        }
+      ]
+    },
+    {
+      "at": 87.18472048157547,
+      "actions": [
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_1",
+          "at": 87.18472048157547,
+          "visit_order": [
+            "D00006",
+            "D00026"
+          ]
+        }
+      ]
+    },
+    {
+      "at": 87.25972048157547,
+      "actions": [
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_2",
+          "at": 87.25972048157547,
+          "visit_order": [
+            "D00008"
+          ]
+        }
+      ]
+    },
+    {
+      "at": 87.30972048157547,
+      "actions": [
+        {
+          "kind": "drone_sortie",
+          "actor": "UL1-_0",
+          "at": 87.30972048157547,
+          "visit_order": [
+            "D00000",
+            "D00005"
+          ]
+        }
+      ]
+    }
+  ],
+  "physical_queue": [
+    [
+      74.49659556696477,
+      0,
+      1,
+      "drone_arrived",
+      {
+        "actor": "UL2+_1",
+        "remaining": []
+      }
+    ],
+    [
+      75.42452116789546,
+      0,
+      2,
+      "drone_arrived",
+      {
+        "actor": "UL2-_1",
+        "remaining": [
+          "D00031"
+        ]
+      }
+    ],
+    [
+      75.93651387963166,
+      0,
+      3,
+      "drone_arrived",
+      {
+        "actor": "UL2-_3",
+        "remaining": []
+      }
+    ]
+  ]
+}

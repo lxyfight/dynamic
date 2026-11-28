@@ -1,4 +1,23 @@
-# 1128 代码与第一轮特征筛选归档
+# 1128 代码、特征筛选与主动等待配对回放归档
+
+最新追加：同一辆车“现在走还是等”的配对回放，共32个状态、每状态8个条件未来样本，另加原未来核验，共1152次全天分支仿真。15个刚卸完配送货的主分析状态，等2/5/10分钟的平均利润差为+2.147012/+3.818829/+6.675384元。每状态仅8个样本，尚无状态的探索性95%区间下界大于零；这是单次干预诊断，不是整日策略提升或独立测试结论。
+
+- [主动等待中文报告](results/paired_wait_20261128/REPORT.txt)
+- [完整分层与逐状态结果](results/paired_wait_20261128/RESULT_TABLES.txt)
+- [配对回放协议](results/paired_wait_20261128/METHODS.txt)
+- [独立完整性核验](results/paired_wait_20261128/audit/final_integrity.json)
+- [复现脚本](results/paired_wait_20261128/REPRODUCE.ps1)
+
+从仓库根目录运行本轮配对实验（使用新输出目录）：
+
+```powershell
+cd 1128/code/e1_v04
+python run_paired_wait_diagnostic.py --stage all --samples 8 --jobs 12 --output ../../results/paired_wait_rerun
+python score_paired_wait_chain.py --output ../../results/paired_wait_rerun
+python analyze_paired_wait_diagnostic.py --output ../../results/paired_wait_rerun
+```
+
+状态快照、配对未来、288份四分支结果、正反例轨迹和源码快照均保存在 `results/paired_wait_20261128/`。独立测试布局112891—112894继续封存。
 
 本目录保存 2026-11-28 的代码、开发实验及四组 VFA 比较结果。独立测试集未生成、未运行。
 

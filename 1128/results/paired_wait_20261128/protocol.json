@@ -1,0 +1,147 @@
+{
+  "source": "none selected validation trajectories",
+  "samples": 8,
+  "interventions": [
+    0,
+    2,
+    5,
+    10
+  ],
+  "continuation": "Unified none, no exploration",
+  "search": {
+    "candidate_budget": 32,
+    "enhancement_budget": 8,
+    "action_solver": "gurobi",
+    "mip_pattern_limit": 32
+  },
+  "setting": {
+    "h": 5,
+    "review_intervals": [
+      2,
+      5,
+      10
+    ],
+    "feature_horizon": 5
+  },
+  "independent_test_opened": false,
+  "source_worlds": [
+    {
+      "layout_id": 112881,
+      "day_id": 0,
+      "total": 40,
+      "share": 0.6,
+      "pattern": "uniform",
+      "cities": 2,
+      "pickup_deadline_lags": [
+        240,
+        300,
+        360
+      ],
+      "arrival_mode": "p2"
+    },
+    {
+      "layout_id": 112881,
+      "day_id": 0,
+      "total": 40,
+      "share": 0.6,
+      "pattern": "dual",
+      "cities": 2,
+      "pickup_deadline_lags": [
+        240,
+        300,
+        360
+      ],
+      "arrival_mode": "p2"
+    },
+    {
+      "layout_id": 112881,
+      "day_id": 0,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "uniform",
+      "cities": 2,
+      "pickup_deadline_lags": [
+        240,
+        300,
+        360
+      ],
+      "arrival_mode": "p2"
+    },
+    {
+      "layout_id": 112881,
+      "day_id": 0,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "dual",
+      "cities": 2,
+      "pickup_deadline_lags": [
+        240,
+        300,
+        360
+      ],
+      "arrival_mode": "p2"
+    },
+    {
+      "layout_id": 112882,
+      "day_id": 0,
+      "total": 40,
+      "share": 0.6,
+      "pattern": "uniform",
+      "cities": 2,
+      "pickup_deadline_lags": [
+        240,
+        300,
+        360
+      ],
+      "arrival_mode": "p2"
+    },
+    {
+      "layout_id": 112882,
+      "day_id": 0,
+      "total": 40,
+      "share": 0.6,
+      "pattern": "dual",
+      "cities": 2,
+      "pickup_deadline_lags": [
+        240,
+        300,
+        360
+      ],
+      "arrival_mode": "p2"
+    },
+    {
+      "layout_id": 112882,
+      "day_id": 0,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "uniform",
+      "cities": 2,
+      "pickup_deadline_lags": [
+        240,
+        300,
+        360
+      ],
+      "arrival_mode": "p2"
+    },
+    {
+      "layout_id": 112882,
+      "day_id": 0,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "dual",
+      "cities": 2,
+      "pickup_deadline_lags": [
+        240,
+        300,
+        360
+      ],
+      "arrival_mode": "p2"
+    }
+  ],
+  "sampling": "8 independent conditional future suffixes per state; common across four branches, plus original suffix audit",
+  "information_boundary": "Full suffixes saved offline only; every online call uses known_clone",
+  "timing_rule": "First review may be interrupted by legitimate events, using same continuation policy",
+  "strata": "Primary: just unloaded (15 states); supplement: other departure-ready states. No reserved load is abandoned.",
+  "expected_offer_events": 32,
+  "evaluation_workers": 12
+}
