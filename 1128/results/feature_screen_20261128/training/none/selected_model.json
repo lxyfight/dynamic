@@ -1,0 +1,97 @@
+{
+  "version": "unified-vfa-development-v3",
+  "h": 5,
+  "feature_set": "none",
+  "operating_rules": {
+    "pickup_deadline_law": "independent_discrete_uniform",
+    "pickup_deadline_lags": [
+      240,
+      300,
+      360
+    ],
+    "truck_handling_setup": 0,
+    "drone_handling_setup_per_request": 0,
+    "truck_handling_per_kg": 0.025,
+    "drone_handling_per_kg": 0.025,
+    "customer_service_per_request": 1
+  },
+  "wait_mode": "adaptive",
+  "review_intervals": [
+    2,
+    5,
+    10
+  ],
+  "arrival_mode": "p2",
+  "feature_horizon": 5,
+  "active_features": [],
+  "feature_names": [
+    "existing_chain_near_h_city_proxy",
+    "existing_chain_later_city_proxy",
+    "added_trip_reliance_city_proxy",
+    "demand_weighted_drone_tail_delay",
+    "demand_weighted_recovery_capacity",
+    "future_pickup_lateness_exposure",
+    "demand_weighted_delivery_slack"
+  ],
+  "weights": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "scales": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "trained": false,
+  "fit": {
+    "method": "equal_day_scaled_ridge_no_intercept",
+    "ridge": 1.0,
+    "days": 8,
+    "samples": 441,
+    "target": "audited_full_day_net_minus_J_known"
+  },
+  "selection": {
+    "source": "validation_only",
+    "validation_mean_net": -596.1804977556461,
+    "candidate_h": [],
+    "adaptive_intervals": [
+      2,
+      5,
+      10
+    ],
+    "candidate_feature_sets": [
+      "none"
+    ],
+    "iteration": 1,
+    "search": {
+      "candidate_budget": 32,
+      "enhancement_budget": 8,
+      "wait_budget_per_base": 8,
+      "action_solver": "gurobi",
+      "mip_pattern_limit": 32
+    },
+    "world_options": {
+      "history_days": 160,
+      "improvement_budget": 8
+    },
+    "train_layouts": [
+      112871,
+      112872
+    ],
+    "validation_layouts": [
+      112881,
+      112882
+    ],
+    "protocol_hash": "4114428e1e52057166686c1db25f9615afd7545959ef2aceb2079d77a3bc3f0f",
+    "formal_test_opened": false
+  }
+}

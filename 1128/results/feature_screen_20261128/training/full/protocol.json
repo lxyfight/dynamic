@@ -1,0 +1,468 @@
+{
+  "version": "unified-vfa-development-v3",
+  "operating_rules": {
+    "pickup_deadline_law": "independent_discrete_uniform",
+    "pickup_deadline_lags": [
+      240,
+      300,
+      360
+    ],
+    "truck_handling_setup": 0,
+    "drone_handling_setup_per_request": 0,
+    "truck_handling_per_kg": 0.025,
+    "drone_handling_per_kg": 0.025,
+    "customer_service_per_request": 1
+  },
+  "h_values": [],
+  "review_settings": [
+    {
+      "h": 5,
+      "review_intervals": [
+        2,
+        5,
+        10
+      ],
+      "feature_horizon": 5
+    }
+  ],
+  "arrival_mode": "p2",
+  "feature_sets": {
+    "full": [
+      "existing_chain_near_h_city_proxy",
+      "existing_chain_later_city_proxy",
+      "added_trip_reliance_city_proxy",
+      "demand_weighted_drone_tail_delay",
+      "demand_weighted_recovery_capacity",
+      "future_pickup_lateness_exposure",
+      "demand_weighted_delivery_slack"
+    ]
+  },
+  "feature_names": [
+    "existing_chain_near_h_city_proxy",
+    "existing_chain_later_city_proxy",
+    "added_trip_reliance_city_proxy",
+    "demand_weighted_drone_tail_delay",
+    "demand_weighted_recovery_capacity",
+    "future_pickup_lateness_exposure",
+    "demand_weighted_delivery_slack"
+  ],
+  "iterations": 2,
+  "explore": 0.15,
+  "search": {
+    "candidate_budget": 32,
+    "enhancement_budget": 8,
+    "wait_budget_per_base": 8,
+    "action_solver": "gurobi",
+    "mip_pattern_limit": 32
+  },
+  "seed": 17,
+  "ridge": 1.0,
+  "formal_test_opened": false,
+  "source_hashes": {
+    "run_unified_vfa.py": "3854e9009269108978946a751408b905c9c78e6cecb96ab368bafcb8520feefa",
+    "unified_vfa_policy.py": "381f63ac95e29baab0f0ba3757fb16410c55176acdef06ea76bfc1bf83ee2c5d",
+    "unified_vfa_features.py": "75356b4e733248e76a225424170f86421e2ba619733c5b2517417e52e0d01b58",
+    "uniform_wait_worlds.py": "864c805d5c16a92e10710d71a005db6f9c455f705702acc24b7ca80fff266276",
+    "run_global_demand_pilot.py": "78a92048c2632bc541f6db9419a3a42a36696bbf32dd4c4101ee02ac92055571",
+    "recovery_opportunity.py": "575e1a9a25764aad7b033ee71d24d504c7854a74bfa10a0f47a8da0ff12c80cf",
+    "run_multiscale.py": "8be54a91444d4bd59c1ebad2d644f8c952ead6370a293ff159185075c730695a",
+    "joint_action_mip.py": "2f8286c842515518f0fae436aef8ca44102587fefcc87a3e904ad044ce807873",
+    "service_action_mip.py": "a81b8991049c7fab0cc901efbef28c75f34467f6afb3978aa349c4f5d1af12f5",
+    "e1_sim/__init__.py": "d1736e576fb09f73d921e0ba425b95325e36cd639a3e3b188b77dd1d9fc2e753",
+    "e1_sim/__main__.py": "74fff10eb2bd330c92909b27a5a9ae84f41b3f268a5c04f51f849276919f19c6",
+    "e1_sim/audit.py": "f24d7043e8fb4751bce7ce776b2082943c316da65be924261f4fbc67a5caa05a",
+    "e1_sim/comparators.py": "62495bf87ea95944ff048b4fb529f4419f11947490f3707e62ac9397e3a23d5f",
+    "e1_sim/constraints.py": "1a50b496d6e390cb14279ddf6933972af72236d9dcff406985f1bed82159967f",
+    "e1_sim/cost_model.py": "8a2daf408a0974fc973e1c7112ca858e0a52bd2079321f28331d2f7b928952f6",
+    "e1_sim/enhancement.py": "c15893f7bb97b9a7850c835b9a44e3dc776a26631a89a12e2bb789425f076a2d",
+    "e1_sim/examples.py": "5bd1ea9344f67c6b9ee272d9d9953d3616e088979195df9b759b314e7fdd3b03",
+    "e1_sim/forecast.py": "eac549c144eeeaa8c8ab6615199b24be4bfe4cbc1dc3ff93b9e858a64bb5d763",
+    "e1_sim/formal_features.py": "5b0a8c4918bca28d2e5871bf62af9aa2fadaaf06cdc92f8f43c87daf6eed414c",
+    "e1_sim/formal_learning.py": "e8c35abf7f805eebb7356c705b092b364227fe9a5fe6b27cae1aa1faa755aff1",
+    "e1_sim/information.py": "2e7fabd83f5cc4755fbcb0d5313d8969f9b005945d6cda2558365c2861eb50c9",
+    "e1_sim/initial_enhancement.py": "a635c10a1659da3cbd54b12619abc254e8bc8c6db78346ce8a349ce7623b7076",
+    "e1_sim/initial_timing.py": "7a751b19dded1e9bb4ee127ad3e25fe58efb50bda92c2aabf42db6203cbfb50b",
+    "e1_sim/initializer.py": "5f185c6e92d3feafb45c8f9cc3ce925c799161ba07edf0924c1757e7f1d53c8c",
+    "e1_sim/kernel.py": "6264f550916be9209e00e74798404e46fc9ecf107c9394351286e646eb1f95ad",
+    "e1_sim/learning.py": "125160322a0f58c3d7d36a1e422b7e964b1b5c579c83865f6e3e3b6c8e042dea",
+    "e1_sim/multiscale.py": "098f6f8b9923f06d259821bb17ae817ae0d0e9728293ad0c11f11c2ddfada9e8",
+    "e1_sim/online.py": "0cf6f412951b51b33d4bb3ec3bf43973588959b50613ae3f790eab6b306f5934",
+    "e1_sim/online_examples.py": "992c1de4c6d9ace9d1acb2db61a479a3c8a2fdb4edb9c00d730670c8558e1550",
+    "e1_sim/p2_arrivals.py": "b05d8b40ce509a51511c36e9e83935a38b5356bf2103bff6db3781adfca5a87e",
+    "e1_sim/pi_adapter.py": "851e5fe2086ac70f8ac4183813fa50c730cda491f58606c3d5b717e11766ef9d",
+    "e1_sim/pi_fixed_solver.py": "3705d14091886153d55636e00571f7e21e10e9d64f66572e909c5a9de5b38e20",
+    "e1_sim/pi_mapping.py": "bdd6b6743f7a5d36de4db1d2382ad494c880a68fef55d6ff893f508b3a5ad7d2",
+    "e1_sim/pi_route_bound.py": "59491d23d1903c3f31774d704db7bd1445ac81b822101ed107bc2ee36ba7b935",
+    "e1_sim/policy_cases.py": "b0595126f41f090acbf9198434a513d525852ac97f1e029a182c67b34a3118e2",
+    "e1_sim/quantities.py": "e25649469edb02a6ceaf1b2b950c3ab0d261f5589fdcb86a2cdb50e69d99e78c",
+    "e1_sim/resource_features.py": "88831363dd2f7771216f376b0a58b5b0afe73ac736485982bc8a7b7447582099",
+    "e1_sim/retiming.py": "3af4f4dd031dd26d963d5c03653e6fd792b58cfc17ec2f38dfc78df9880b4b59",
+    "e1_sim/runner.py": "7d61c780de8ec5f900d6a82f7babb9e2f55283bba1b9dfe06133a21c21b2f2de",
+    "e1_sim/system_wait.py": "f98643da466f59fb6514915154c2755579be1eb55e6bbe358034515149e6e509",
+    "e1_sim/unknown_demand.py": "c7dac9622992276f58e6fa0ca40a351421e43df6e97a9d1a15fe2fbc3393b3ab",
+    "e1_sim/wtq.py": "fff923ea8224fa8f868c28e53232d4695eeb34c3e05ed39639ca275b60a5aea8",
+    "e1_sim/wtq_audit.py": "fc8a82ad24d46d5facfd8258ab52d8924f1e39c5d22932f1629621d1f84aa73c",
+    "e1_sim/wtq_compiler.py": "e75feaaa9d07c0363b4412e6ad6f076cf376ef52477fb8df5ec0c82fe14791cf",
+    "e1_sim/wtq_full_day.py": "42cc52b6d1cb703ddb88df512e09edc8e0c5889742e1e829935de712221ff188",
+    "e1_sim/wtq_policy.py": "ec0c8dac1d799997005bfe559507bbcb43508c4611d288f6a5c153bdcb5b8121"
+  },
+  "training_label": "G - J_known, both using the full-day ledger including sunk costs",
+  "configuration": {
+    "review_mode": "adaptive",
+    "adaptive_intervals": [
+      2,
+      5,
+      10
+    ],
+    "arrival_mode": "p2",
+    "h_values": null,
+    "train_layouts": [
+      112871,
+      112872
+    ],
+    "validation_layouts": [
+      112881,
+      112882
+    ],
+    "test_layouts": [],
+    "days": 1,
+    "orders": [
+      40,
+      80
+    ],
+    "validation_orders": null,
+    "test_orders": null,
+    "feature_sets": [
+      "full"
+    ],
+    "share": 0.6,
+    "patterns": [
+      "uniform",
+      "dual"
+    ],
+    "temporal": [
+      "peak"
+    ],
+    "iterations": 2,
+    "explore": 0.15,
+    "seed": 17,
+    "ridge": 1.0,
+    "history_days": 160,
+    "initial_budget": 8,
+    "candidate_budget": 32,
+    "enhancement_budget": 8,
+    "wait_budget": 8,
+    "action_solver": "gurobi",
+    "mip_pattern_limit": 32
+  },
+  "worlds": {
+    "train": [
+      {
+        "spec": {
+          "layout_id": 112871,
+          "day_id": 0,
+          "total": 40,
+          "share": 0.6,
+          "pattern": "uniform",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "524a17e656a35a921eb356bf584027b3c03b7b076aceaf18e74e7534f71ac8c4",
+        "i0_hash": "4dacb6c91c4fd709b51d724fd9d7872b0c6053392c12600fc471b305fb9dec91",
+        "public_hash": "7f0a9b9ebd6f017d8a1853b5d93b4f90fe5381ce286a1e1514cb9bfca363c76a"
+      },
+      {
+        "spec": {
+          "layout_id": 112871,
+          "day_id": 0,
+          "total": 40,
+          "share": 0.6,
+          "pattern": "dual",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "708c5fc36839e5bee6c9bcf49af83e5280675a2737eb1c4fd84e87289c405b15",
+        "i0_hash": "7c525a17d567e743a901a482b167eca548b853064be8f3b0f165f3432110cc6c",
+        "public_hash": "4e4154929087ad1d7df55c882aa8736e493bec23c097256727770db3ad98bc7c"
+      },
+      {
+        "spec": {
+          "layout_id": 112871,
+          "day_id": 0,
+          "total": 80,
+          "share": 0.6,
+          "pattern": "uniform",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "4b026ab88782d1aedd31c9cd0fb793f1f7937ccac2d680956dd72902dee2c54b",
+        "i0_hash": "d15de63c25532098155dafdcb29e530639926fa6c29f05d8bc7fb3978ca0e053",
+        "public_hash": "3b983f906544e10ebecf645ab23bec6ee58e29ea8634e6bdf90a2340bf43a139"
+      },
+      {
+        "spec": {
+          "layout_id": 112871,
+          "day_id": 0,
+          "total": 80,
+          "share": 0.6,
+          "pattern": "dual",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "e5046056733548dd59b4b218ef9e8bc06c40017bb755ec057d78e7852fd1b5ec",
+        "i0_hash": "68d1c4f8f64cc691700c14aab226e0ca6b835b5911c2c00ef162e44fab1f2d8c",
+        "public_hash": "ead6465f2cb1b7a3c211ef9303022d653da101fab1a83752f39bf3ed49daed69"
+      },
+      {
+        "spec": {
+          "layout_id": 112872,
+          "day_id": 0,
+          "total": 40,
+          "share": 0.6,
+          "pattern": "uniform",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "f466f5f8463142f6b0645dbd97a30930d423748549207eff8836dbd7c0b15256",
+        "i0_hash": "536212e9b9b0deec56edd84d2b6421883a018b1a3dbe43691e24eeee466c0f05",
+        "public_hash": "3c674ac47154bd5730305759b09ffd2b8f9a8889877d1b8b6e339c1a3de689cd"
+      },
+      {
+        "spec": {
+          "layout_id": 112872,
+          "day_id": 0,
+          "total": 40,
+          "share": 0.6,
+          "pattern": "dual",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "a32f3ac5a6e4f169a0443cd63e9b5c6d4ebc2189670b59ca7ee7b238d0dae040",
+        "i0_hash": "8f6c66dbe5e1947c1a37dade166e245ab354bbc2093db6f3dcb0567511b5c1f4",
+        "public_hash": "f839bcd9633f91912a49bca5828c3826a99e9309c58f86fe5be20830fe480250"
+      },
+      {
+        "spec": {
+          "layout_id": 112872,
+          "day_id": 0,
+          "total": 80,
+          "share": 0.6,
+          "pattern": "uniform",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "2141dee8884f470072b0a01101be568dd7101ce154a079e2ca86f92eab91c754",
+        "i0_hash": "754b645884bd97980a5a4d50d16b8e692af4a1f6ec9e1f1947b7a0b9ba9fb068",
+        "public_hash": "36b4ad6ef2570c9a01c2be8bc97149dbc339706cbf7f89be2f81588f9f2b55c1"
+      },
+      {
+        "spec": {
+          "layout_id": 112872,
+          "day_id": 0,
+          "total": 80,
+          "share": 0.6,
+          "pattern": "dual",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "7da76ddae8312d52e1f53b7b42b9dca764612de1c47aca78100c087a43ab4715",
+        "i0_hash": "d21b18a03087b4e2be0af229a41fbe3e9152be2401674ffe4839995be4ed90c5",
+        "public_hash": "aeeb3265f06c2324f120faa2e991e0f3dbf9f74947b610b712682ccc00928145"
+      }
+    ],
+    "validation": [
+      {
+        "spec": {
+          "layout_id": 112881,
+          "day_id": 0,
+          "total": 40,
+          "share": 0.6,
+          "pattern": "uniform",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "55f08aaeedf53d033c8f65115ef274b18e4b5125b7c5bc96667ced874d212272",
+        "i0_hash": "17ace402086dd2a4c328844703ab47af49fd8bd3f7f172ce2597042a31fcd610",
+        "public_hash": "a15a64106629fee0a8bbb7eef2b68df3b7c2b4d03d5a9cd7638f4823bfc6a601"
+      },
+      {
+        "spec": {
+          "layout_id": 112881,
+          "day_id": 0,
+          "total": 40,
+          "share": 0.6,
+          "pattern": "dual",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "cde792d5b85bdcaaa11d1354bfd9546080d5df1980be21b6be4c34384e79d39a",
+        "i0_hash": "fecdca23ba9fa32c59e16c7af7eac110dd7a479e79f0d85378f6a8a2c9cb665f",
+        "public_hash": "689567dbaab5739cefe1b1420194df3c22077e9c5222f73ce2fc9ec368def443"
+      },
+      {
+        "spec": {
+          "layout_id": 112881,
+          "day_id": 0,
+          "total": 80,
+          "share": 0.6,
+          "pattern": "uniform",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "640f47223c8c77d0c73816f66b0b9ed1249c563ee3014d1e9ed8c9e9c53d7fe3",
+        "i0_hash": "0c7b061ff5267ffdedf44ecf5549447f128c6eb4c662672b98115451e7ed7f44",
+        "public_hash": "49b374a5572434f8051bb206b10f2452c60f11c6030915108c3c1876224c6615"
+      },
+      {
+        "spec": {
+          "layout_id": 112881,
+          "day_id": 0,
+          "total": 80,
+          "share": 0.6,
+          "pattern": "dual",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "0f7cfb732d45017d000eb0f6d2fa17c75ecea408f01b739dd6c87e1fa4dc0939",
+        "i0_hash": "ab868be3f8cc01ebc46f0f2f4ea0ffbdd05e8fafc4132c0aa78880e8ea1470ba",
+        "public_hash": "e8bedc0e8b7e104c1b1831395bfe81304ad8ac0743cc1ba3240094e1bd779616"
+      },
+      {
+        "spec": {
+          "layout_id": 112882,
+          "day_id": 0,
+          "total": 40,
+          "share": 0.6,
+          "pattern": "uniform",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "36eacc55b1f6e0bd131bff0da2d3dd0bb1d5ff024cabfc54a9635e136453806f",
+        "i0_hash": "4d398d77a14a1aa1d3486a1f75d9e7d7a83ef89bc2080b4020113d0a40d96ec0",
+        "public_hash": "4167addb9e586b23b6bad5b84eb586d53e4774b2d658b8961f1f5357814a9782"
+      },
+      {
+        "spec": {
+          "layout_id": 112882,
+          "day_id": 0,
+          "total": 40,
+          "share": 0.6,
+          "pattern": "dual",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "e16e9f497801ce8f93af48411fcbe402670079b2e88d1c98039cff3ac938092c",
+        "i0_hash": "9b8ee7b0bb7e7065d631ca2a5efe34df51cba26976fd1aad25450de6bb2abd58",
+        "public_hash": "f126f78105b6a924c1dc50b2e0150144e82faa37542b5e0f271feca799cc11a8"
+      },
+      {
+        "spec": {
+          "layout_id": 112882,
+          "day_id": 0,
+          "total": 80,
+          "share": 0.6,
+          "pattern": "uniform",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "8dece3425b243922c9a52d901b9bb979db0cdd445bc16a4916d6289851a89f19",
+        "i0_hash": "245774a89584c8b3c863a459920eb61e2c7f05540299a38889410899a5ef386c",
+        "public_hash": "07239b784808dd909234436f569aa6c8ff4b277fc8c7eb952656df8bc3ff057d"
+      },
+      {
+        "spec": {
+          "layout_id": 112882,
+          "day_id": 0,
+          "total": 80,
+          "share": 0.6,
+          "pattern": "dual",
+          "cities": 2,
+          "pickup_deadline_lags": [
+            240,
+            300,
+            360
+          ],
+          "arrival_mode": "p2"
+        },
+        "input_hash": "909375c71e781b299be1a333a898a4b1c4da75ff493e4f3ae1b581a2578d2e6f",
+        "i0_hash": "f36076a67a25f3cbaccd4e2979e8ac25f92672ad334411941c6e0e7d910e967e",
+        "public_hash": "8f9a5c61cd60673698e694fecd4536c5a1f0960cbda7c60ac05c672d499d93d3"
+      }
+    ]
+  }
+}

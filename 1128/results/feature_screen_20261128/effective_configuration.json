@@ -1,0 +1,85 @@
+{
+  "configuration": {
+    "truck_capacity": 1300,
+    "drone_capacity": 20,
+    "drone_endurance": 30,
+    "drones_per_station": 5,
+    "truck_supply": "nonbinding",
+    "truck_mainline_speed_kmh": 100,
+    "drone_speed_km_min": 1.5,
+    "truck_handling_setup": 0,
+    "truck_handling_per_kg": 0.025,
+    "drone_handling_setup_per_request": 0,
+    "drone_handling_per_kg": 0.025,
+    "customer_service_per_request": 1,
+    "delivery_and_pickup_weight_distribution": {
+      "type": "discrete_uniform",
+      "low": 6,
+      "high": 19
+    },
+    "truck_time_cost": 0.4,
+    "truck_distance_cost": 1.5,
+    "toll_per_marked_km": 0.45,
+    "drone_distance_cost": 0.3,
+    "revenue_per_kg": 3.2,
+    "rejection_per_kg": 1.6,
+    "pickup_lateness_per_request_min": 0.3,
+    "truck_dispatch_cutoff": 660,
+    "delivery_deadline": 660,
+    "pickup_release_integer_support": [
+      1,
+      590
+    ],
+    "pickup_deadline_slacks": [
+      240,
+      360,
+      480
+    ],
+    "review_interval": 5,
+    "declared_public_counts": "per_city_fixed_pickup_counts_for_main_synthetic_grid",
+    "network": {
+      "depot": [
+        0,
+        0
+      ],
+      "first_city_x": 20,
+      "city_gap_uniform_km": [
+        15,
+        25
+      ],
+      "station_y": [
+        -0.25,
+        0.25
+      ],
+      "customer_local_x_uniform": [
+        -10,
+        10
+      ],
+      "customer_y_intervals": [
+        [
+          -10,
+          -0.5
+        ],
+        [
+          0.5,
+          10
+        ]
+      ],
+      "road_weights_independent_of_coordinates": true,
+      "turnaround_distance": 10,
+      "turnaround_time": 10,
+      "turnaround_tolled": false,
+      "depot_connectors_each_km": 20,
+      "mainline_and_connectors_tolled": true
+    },
+    "drone_sortie_cost": 25
+  },
+  "effective_pickup_deadline_lags": [
+    240,
+    300,
+    360
+  ],
+  "fixture_path": "E:\\论文\\论文5（动态）\\论文三\\实验\\1128\\dynamic-adaptive-v3\\data\\fixtures\\e1_cases.json",
+  "fixture_sha256": "18052bb30b09bfa0ecd40f1b9066276bd78e366db8d0b6f1c7348e6901a1b791",
+  "note": "The legacy configuration pickup_deadline_slacks field is not used by make_world; actual generated/public lags are effective_pickup_deadline_lags."
+}

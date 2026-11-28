@@ -1,0 +1,182 @@
+{
+  "python": "D:\\download\\Anaconda\\envs\\pytorch\\python.exe",
+  "version": "3.8.19",
+  "script_sha256": "70ad99156feca3759170092d4edae0b1bd31346290c4ae847980a785b2ff650f",
+  "scope": "development_rule_verification_only",
+  "independent_test_opened": false,
+  "tests": {
+    "patterns": [
+      "test_pickup_deadline_distribution.py",
+      "test_weight_only_handling.py",
+      "test_unified_operating_rules.py",
+      "test_unified_vfa_features.py",
+      "test_deadline_exposure.py"
+    ],
+    "run": 20,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "log": "test_legacy_scalar_law_and_invalid_mixture (test_pickup_deadline_distribution.PickupDeadlineDistributionTests) ... ok\ntest_per_order_draws_are_independent_of_geography_and_reproducible (test_pickup_deadline_distribution.PickupDeadlineDistributionTests) ... ok\ntest_historical_forecast_uses_same_drone_unloading_time (test_weight_only_handling.WeightOnlyHandlingTests) ... ok\ntest_truck_and_drone_handling_and_customer_service (test_weight_only_handling.WeightOnlyHandlingTests) ... ok\ntest_current_weights_replay_with_their_world (test_unified_operating_rules.UnifiedOperatingRulesTests) ... ok\ntest_retraining_required_for_previous_saved_weights (test_unified_operating_rules.UnifiedOperatingRulesTests) ... ok\ntest_weights_with_different_physical_or_demand_assumptions_are_rejected (test_unified_operating_rules.UnifiedOperatingRulesTests) ... ok\ntest_added_chain_is_incremental_to_existing_city_union (test_unified_vfa_features.UnifiedFeatureTests) ... ok\ntest_capacity_uses_load_unload_trace_and_mean_weight_threshold (test_unified_vfa_features.UnifiedFeatureTests) ... ok\ntest_drone_tail_congestion_reduces_chain_opportunity (test_unified_vfa_features.UnifiedFeatureTests) ... ok\ntest_forecast_and_horizon_validation (test_unified_vfa_features.UnifiedFeatureTests) ... ok\ntest_groups_names_and_units_cover_seven_candidates (test_unified_vfa_features.UnifiedFeatureTests) ... ok\ntest_hidden_suffix_and_sunk_wait_history_are_not_feature_inputs (test_unified_vfa_features.UnifiedFeatureTests) ... ok\ntest_known_analytic_coverage_and_h_only_partitions_arrivals (test_unified_vfa_features.UnifiedFeatureTests) ... ok\ntest_late_exposure_uses_earliest_covering_return_and_only_future_pickups (test_unified_vfa_features.UnifiedFeatureTests) ... ok\ntest_real_candidate_is_finite_and_inputs_unchanged (test_unified_vfa_features.UnifiedFeatureTests) ... ok\ntest_remaining_delivery_slack_changes_with_candidate_not_known_fines (test_unified_vfa_features.UnifiedFeatureTests) ... ok\ntest_same_city_overlapping_stations_and_trucks_do_not_duplicate_demand (test_unified_vfa_features.UnifiedFeatureTests) ... ok\ntest_positive_lateness_is_averaged_after_applying_each_deadline (test_deadline_exposure.DeadlineExposureTests) ... ok\ntest_wait_probe_averages_slack_over_future_lags (test_deadline_exposure.DeadlineExposureTests) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.741s\n\nOK\n"
+  },
+  "configuration": {
+    "truck_handling_setup": 0,
+    "truck_handling_per_kg": 0.025,
+    "drone_handling_setup_per_request": 0,
+    "drone_handling_per_kg": 0.025,
+    "customer_service_per_request": 1,
+    "pickup_lateness_per_request_min": 0.3,
+    "truck_dispatch_cutoff": 660
+  },
+  "generation_call": {
+    "layout_id": 710,
+    "day_id": 1,
+    "total": 30,
+    "share": 0.9,
+    "pattern": "uniform",
+    "arrival_mode": "p2",
+    "history_days": 1,
+    "improvement_budget": 0
+  },
+  "example_world": {
+    "id": "system_wait_24e654466c05c085",
+    "spec": {
+      "layout_id": 710,
+      "day_id": 1,
+      "total": 30,
+      "share": 0.9,
+      "pattern": "uniform",
+      "cities": 2,
+      "pickup_deadline_lags": [
+        240,
+        300,
+        360
+      ],
+      "arrival_mode": "p2"
+    },
+    "generation": {
+      "pickup_count": "independent_binomial_slots",
+      "expected_pickups": 27,
+      "realized_pickups": 33,
+      "known_deliveries": 3,
+      "release_law": "independent_binomial_slots_iid_marks",
+      "i0_improvement_budget": 0
+    },
+    "input_hash": "48aa785db9a6e39c12d822e7abbf37b7dd136c2ff93cd0214a3f849a2f0ce2ef",
+    "seeds": {
+      "layout": 19933407861224,
+      "releases": 202099700334774,
+      "pickup_deadlines": 89673623462557,
+      "marks": {
+        "D": 29647136815082,
+        "P": 192389942815606
+      },
+      "weights": {
+        "D": 177228936464609,
+        "P": 261615901463181
+      },
+      "history": 20261125
+    }
+  },
+  "pickups": [
+    {
+      "id": "P00000",
+      "release": 3,
+      "lag": 360,
+      "deadline": 363
+    },
+    {
+      "id": "P00001",
+      "release": 29,
+      "lag": 240,
+      "deadline": 269
+    },
+    {
+      "id": "P00002",
+      "release": 52,
+      "lag": 240,
+      "deadline": 292
+    }
+  ],
+  "examples_covering_each_deadline_lag": [
+    {
+      "id": "P00001",
+      "release": 29,
+      "lag": 240,
+      "deadline": 269
+    },
+    {
+      "id": "P00009",
+      "release": 163,
+      "lag": 300,
+      "deadline": 463
+    },
+    {
+      "id": "P00000",
+      "release": 3,
+      "lag": 360,
+      "deadline": 363
+    }
+  ],
+  "ten_kg_replay": {
+    "fixture": "E02",
+    "operations": [
+      {
+        "kind": "truck_unload_started",
+        "loading": null,
+        "start": "12",
+        "end": "12.250",
+        "duration": "0.250"
+      },
+      {
+        "kind": "drone_handling_started",
+        "loading": true,
+        "start": "17.25",
+        "end": "17.500",
+        "duration": "0.250"
+      },
+      {
+        "kind": "service_started",
+        "loading": null,
+        "start": "20.5",
+        "end": "21.5",
+        "duration": "1.0"
+      },
+      {
+        "kind": "service_started",
+        "loading": null,
+        "start": "21.5",
+        "end": "22.5",
+        "duration": "1.0"
+      },
+      {
+        "kind": "drone_handling_started",
+        "loading": false,
+        "start": "24.5",
+        "end": "24.750",
+        "duration": "0.250"
+      },
+      {
+        "kind": "truck_load_started",
+        "loading": null,
+        "start": "25.75",
+        "end": "26.000",
+        "duration": "0.250"
+      }
+    ]
+  },
+  "reference_checks": {
+    "all_twenty_targeted_tests_pass": true,
+    "actual_pickup_count_matches_original_audit": true,
+    "three_actual_samples_match_original_audit": true,
+    "four_actual_handling_operations_are_quarter_minute": true,
+    "both_actual_customer_services_are_one_minute": true
+  },
+  "successful": true,
+  "notes": [
+    "Station setup is zero in current CFG; historical fixture defaults are overridden.",
+    "The listed pickups are generated data, not manually constructed examples.",
+    "No training model or independent test layout is loaded or changed.",
+    "The complete 336-test regression is not rerun by this script."
+  ]
+}

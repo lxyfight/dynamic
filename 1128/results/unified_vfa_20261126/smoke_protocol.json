@@ -1,0 +1,136 @@
+{
+  "version": "unified-vfa-development-v1",
+  "h_values": [
+    5,
+    10
+  ],
+  "feature_names": [
+    "existing_chain_near_h_city_proxy",
+    "existing_chain_later_city_proxy",
+    "added_trip_reliance_city_proxy",
+    "demand_weighted_drone_tail_delay",
+    "demand_weighted_recovery_capacity",
+    "future_pickup_lateness_exposure",
+    "demand_weighted_delivery_slack"
+  ],
+  "iterations": 1,
+  "explore": 0.15,
+  "search": {
+    "candidate_budget": 8,
+    "enhancement_budget": 0,
+    "wait_budget_per_base": 4
+  },
+  "seed": 17,
+  "ridge": 1.0,
+  "formal_test_opened": false,
+  "source_hashes": {
+    "run_unified_vfa.py": "c6f0eb56a4f49b4fa765f77d77ea48bd6a71b649d825bc4221140e5fa32845c3",
+    "unified_vfa_policy.py": "b65fa15f2b005a0046474f75ea98b6769560977b4878442a895f2ae233c857bb",
+    "unified_vfa_features.py": "38bb0e5336f686bbc2a68fb6b52418770f51462a9893d528fde141ce4eb56c71",
+    "uniform_wait_worlds.py": "21045a1c83641fb2547cf6e70538b4e55fce154609fedea7a61135c1c92f4bee",
+    "run_global_demand_pilot.py": "011283b96200b029b3a8db2cbf5c2cf59ed44deaadc72945b251af2d7e978eae",
+    "recovery_opportunity.py": "575e1a9a25764aad7b033ee71d24d504c7854a74bfa10a0f47a8da0ff12c80cf",
+    "run_multiscale.py": "8f9873df84de3879071551881d358ea9f0aec798cb5374a56739b1b9d8a06773",
+    "e1_sim/__init__.py": "d1736e576fb09f73d921e0ba425b95325e36cd639a3e3b188b77dd1d9fc2e753",
+    "e1_sim/__main__.py": "74fff10eb2bd330c92909b27a5a9ae84f41b3f268a5c04f51f849276919f19c6",
+    "e1_sim/audit.py": "a39e94e2d9d91a4e44bf5d0d99131e96946401433283c51c78ddf0298e84daa0",
+    "e1_sim/comparators.py": "62495bf87ea95944ff048b4fb529f4419f11947490f3707e62ac9397e3a23d5f",
+    "e1_sim/constraints.py": "1a50b496d6e390cb14279ddf6933972af72236d9dcff406985f1bed82159967f",
+    "e1_sim/cost_model.py": "56b603ed5d9adb4f9c34276747351e8650e25849816748111badb80f9eb2bcc4",
+    "e1_sim/enhancement.py": "c15893f7bb97b9a7850c835b9a44e3dc776a26631a89a12e2bb789425f076a2d",
+    "e1_sim/examples.py": "5bd1ea9344f67c6b9ee272d9d9953d3616e088979195df9b759b314e7fdd3b03",
+    "e1_sim/forecast.py": "eac549c144eeeaa8c8ab6615199b24be4bfe4cbc1dc3ff93b9e858a64bb5d763",
+    "e1_sim/formal_features.py": "d30cf6d7da94f78cbeb732bf90f27d06a4ad746bb5051a29aefebb20d8618347",
+    "e1_sim/formal_learning.py": "e8c35abf7f805eebb7356c705b092b364227fe9a5fe6b27cae1aa1faa755aff1",
+    "e1_sim/information.py": "47591d6fd928645f7d418a83378046a5c3becebc92a214b17b48526bcc06c68c",
+    "e1_sim/initial_enhancement.py": "a635c10a1659da3cbd54b12619abc254e8bc8c6db78346ce8a349ce7623b7076",
+    "e1_sim/initial_timing.py": "7a751b19dded1e9bb4ee127ad3e25fe58efb50bda92c2aabf42db6203cbfb50b",
+    "e1_sim/initializer.py": "ba80fd81940adff0c4298e6fc65e9fb7bbe84d3fc1bea46181f4014b9ec96672",
+    "e1_sim/kernel.py": "0e96aea6e7f185dfda5dac10a9f28ef3551bc552835c961ae7b3a4d83b4bf580",
+    "e1_sim/learning.py": "125160322a0f58c3d7d36a1e422b7e964b1b5c579c83865f6e3e3b6c8e042dea",
+    "e1_sim/multiscale.py": "3a0815bcf3bc6e800b774234724e986ccff7fd8e9d4b548a58eb92867478822e",
+    "e1_sim/online.py": "0cf6f412951b51b33d4bb3ec3bf43973588959b50613ae3f790eab6b306f5934",
+    "e1_sim/online_examples.py": "992c1de4c6d9ace9d1acb2db61a479a3c8a2fdb4edb9c00d730670c8558e1550",
+    "e1_sim/pi_adapter.py": "851e5fe2086ac70f8ac4183813fa50c730cda491f58606c3d5b717e11766ef9d",
+    "e1_sim/pi_fixed_solver.py": "3705d14091886153d55636e00571f7e21e10e9d64f66572e909c5a9de5b38e20",
+    "e1_sim/pi_mapping.py": "bdd6b6743f7a5d36de4db1d2382ad494c880a68fef55d6ff893f508b3a5ad7d2",
+    "e1_sim/pi_route_bound.py": "d94ec4dea68400b0938527f12147ed2fb763e93788005548102fb0a62bd3b546",
+    "e1_sim/policy_cases.py": "b0595126f41f090acbf9198434a513d525852ac97f1e029a182c67b34a3118e2",
+    "e1_sim/quantities.py": "e25649469edb02a6ceaf1b2b950c3ab0d261f5589fdcb86a2cdb50e69d99e78c",
+    "e1_sim/resource_features.py": "88831363dd2f7771216f376b0a58b5b0afe73ac736485982bc8a7b7447582099",
+    "e1_sim/retiming.py": "3af4f4dd031dd26d963d5c03653e6fd792b58cfc17ec2f38dfc78df9880b4b59",
+    "e1_sim/runner.py": "7d61c780de8ec5f900d6a82f7babb9e2f55283bba1b9dfe06133a21c21b2f2de",
+    "e1_sim/system_wait.py": "f98643da466f59fb6514915154c2755579be1eb55e6bbe358034515149e6e509",
+    "e1_sim/unknown_demand.py": "487538910190ac40ad91d5b591aec5f6acd10d9decf44265fca3866b5e4a1944",
+    "e1_sim/wtq.py": "fff923ea8224fa8f868c28e53232d4695eeb34c3e05ed39639ca275b60a5aea8",
+    "e1_sim/wtq_audit.py": "fc8a82ad24d46d5facfd8258ab52d8924f1e39c5d22932f1629621d1f84aa73c",
+    "e1_sim/wtq_compiler.py": "e75feaaa9d07c0363b4412e6ad6f076cf376ef52477fb8df5ec0c82fe14791cf",
+    "e1_sim/wtq_full_day.py": "42cc52b6d1cb703ddb88df512e09edc8e0c5889742e1e829935de712221ff188",
+    "e1_sim/wtq_policy.py": "ec0c8dac1d799997005bfe559507bbcb43508c4611d288f6a5c153bdcb5b8121"
+  },
+  "training_label": "G - J_known, both using the full-day ledger including sunk costs",
+  "configuration": {
+    "h_values": [
+      5,
+      10
+    ],
+    "train_layouts": [
+      710
+    ],
+    "validation_layouts": [
+      810
+    ],
+    "days": 1,
+    "orders": 8,
+    "share": 0.4,
+    "patterns": [
+      "uniform"
+    ],
+    "temporal": [
+      "flat"
+    ],
+    "iterations": 1,
+    "explore": 0.15,
+    "seed": 17,
+    "ridge": 1.0,
+    "history_days": 160,
+    "initial_budget": 0,
+    "candidate_budget": 8,
+    "enhancement_budget": 0,
+    "wait_budget": 4
+  },
+  "worlds": {
+    "train": [
+      {
+        "spec": {
+          "layout_id": 710,
+          "day_id": 0,
+          "total": 8,
+          "share": 0.4,
+          "pattern": "uniform",
+          "cities": 2,
+          "temporal": "flat"
+        },
+        "input_hash": "d91903d53b39e645c55156dbb13f8acdf0d21270ef840e69a1854017174751f3",
+        "i0_hash": "4204b94b1e98540451da2b2152e04538e5859d2ccfe8baa8379d32d46240d2a3",
+        "public_hash": "e0fb41b7782994901912e21210019f249bae42129589bb48f49dc23fc6de9563"
+      }
+    ],
+    "validation": [
+      {
+        "spec": {
+          "layout_id": 810,
+          "day_id": 0,
+          "total": 8,
+          "share": 0.4,
+          "pattern": "uniform",
+          "cities": 2,
+          "temporal": "flat"
+        },
+        "input_hash": "066d555354594dbb3a0ae81b00fb474093412a4692f2b16e7fa3620964b1bfd0",
+        "i0_hash": "3b6dfa4ee64f7c8749454bb3d72be5b3fece66b5fc2c34851ee86b6f4c5b290c",
+        "public_hash": "ce64391a04017a9a0a8be6de81debdb3584153c4c2761fb9f661994a3f38c81e"
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "version": "unified-vfa-development-v3",
+  "h": 5,
+  "feature_set": "full",
+  "operating_rules": {
+    "pickup_deadline_law": "independent_discrete_uniform",
+    "pickup_deadline_lags": [
+      240,
+      300,
+      360
+    ],
+    "truck_handling_setup": 0,
+    "drone_handling_setup_per_request": 0,
+    "truck_handling_per_kg": 0.025,
+    "drone_handling_per_kg": 0.025,
+    "customer_service_per_request": 1
+  },
+  "wait_mode": "adaptive",
+  "review_intervals": [
+    2,
+    5,
+    10
+  ],
+  "arrival_mode": "p2",
+  "feature_horizon": 5,
+  "active_features": [
+    "existing_chain_near_h_city_proxy",
+    "existing_chain_later_city_proxy",
+    "added_trip_reliance_city_proxy",
+    "demand_weighted_drone_tail_delay",
+    "demand_weighted_recovery_capacity",
+    "future_pickup_lateness_exposure",
+    "demand_weighted_delivery_slack"
+  ],
+  "feature_names": [
+    "existing_chain_near_h_city_proxy",
+    "existing_chain_later_city_proxy",
+    "added_trip_reliance_city_proxy",
+    "demand_weighted_drone_tail_delay",
+    "demand_weighted_recovery_capacity",
+    "future_pickup_lateness_exposure",
+    "demand_weighted_delivery_slack"
+  ],
+  "weights": [
+    -76.10000459374459,
+    16.09440750782359,
+    -20.899446961081054,
+    -91.32134214085836,
+    166.02518811664189,
+    0.0,
+    -460.0389413468348
+  ],
+  "scales": [
+    0.23221603691867343,
+    0.705653672262934,
+    0.4633351927780373,
+    0.00015428628584678502,
+    0.22465749715021788,
+    1.0,
+    0.9995624416533974
+  ],
+  "trained": true,
+  "fit": {
+    "method": "equal_day_scaled_ridge_no_intercept",
+    "ridge": 1.0,
+    "days": 16,
+    "samples": 1085,
+    "target": "audited_full_day_net_minus_J_known"
+  },
+  "selection": {
+    "source": "validation_only",
+    "validation_mean_net": -784.5042473301049,
+    "candidate_h": [],
+    "adaptive_intervals": [
+      2,
+      5,
+      10
+    ],
+    "candidate_feature_sets": [
+      "full"
+    ],
+    "iteration": 2,
+    "search": {
+      "candidate_budget": 32,
+      "enhancement_budget": 8,
+      "wait_budget_per_base": 8,
+      "action_solver": "gurobi",
+      "mip_pattern_limit": 32
+    },
+    "world_options": {
+      "history_days": 160,
+      "improvement_budget": 8
+    },
+    "train_layouts": [
+      112871,
+      112872
+    ],
+    "validation_layouts": [
+      112881,
+      112882
+    ],
+    "protocol_hash": "78e22fbcb947f1f41f9363404abe6da36d538c7a2170c92ddb8ad03839901354",
+    "formal_test_opened": false
+  }
+}

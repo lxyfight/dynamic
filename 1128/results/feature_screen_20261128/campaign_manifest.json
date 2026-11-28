@@ -1,0 +1,127 @@
+{
+  "scope": "development_only",
+  "test_generated": false,
+  "test_evaluated": false,
+  "environment": {
+    "python": "3.8.19 | packaged by conda-forge | (default, Mar 20 2024, 12:38:07) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "D:\\download\\Anaconda\\envs\\pytorch\\python.exe",
+    "numpy": "1.22.2",
+    "gurobi": [
+      11,
+      0,
+      3
+    ],
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "split": {
+    "pilot": {
+      "layouts": [
+        112870
+      ],
+      "days": [
+        0,
+        1
+      ],
+      "orders": [
+        20,
+        40,
+        80
+      ]
+    },
+    "train": {
+      "layouts": [
+        112871,
+        112872
+      ],
+      "days": [
+        0
+      ],
+      "orders": [
+        40,
+        80
+      ]
+    },
+    "validation": {
+      "layouts": [
+        112881,
+        112882
+      ],
+      "days": [
+        0
+      ],
+      "orders": [
+        40,
+        80
+      ]
+    },
+    "reserved_test": {
+      "layouts": [
+        112891,
+        112892,
+        112893,
+        112894
+      ],
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "orders": [
+        40,
+        80,
+        120
+      ],
+      "temporal": [
+        "peak",
+        "flat"
+      ],
+      "generated": false
+    }
+  },
+  "common": {
+    "patterns": [
+      "uniform",
+      "dual"
+    ],
+    "share": 0.6,
+    "temporal": "peak",
+    "cities": 2,
+    "world_options": {
+      "arrival_mode": "p2",
+      "improvement_budget": 8,
+      "history_days": 160,
+      "temporal": "peak"
+    },
+    "search": {
+      "candidate_budget": 32,
+      "enhancement_budget": 8,
+      "action_solver": "gurobi",
+      "mip_pattern_limit": 32
+    },
+    "setting": {
+      "h": 5,
+      "review_intervals": [
+        2,
+        5,
+        10
+      ],
+      "feature_horizon": 5
+    }
+  },
+  "training": {
+    "iterations": 2,
+    "exploration": 0.15,
+    "seed": 17,
+    "ridge": 1.0,
+    "feature_sets": {
+      "none": "none",
+      "chain": "existing_chain_opportunity",
+      "chain_late": "existing_chain_opportunity,future_pickup_lateness",
+      "full": "full"
+    },
+    "selection": "validation_mean_net"
+  },
+  "note": "N is nominal: mandatory D=N-round(.6N); pickup count random with expectation round(.6N)."
+}

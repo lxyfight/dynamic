@@ -1,0 +1,27 @@
+2026-11-28 first-round feature screen (development only)
+Independent test data were neither generated nor evaluated.
+See campaign_manifest.json for the preregistered split and commands/*.json for exact commands.
+
+PILOT: N / pattern / pickup counts / accepted / feasible wait epochs / chosen 2,5,10 / truncations
+20 / uniform / [14, 9] / 0 / 8 / {'2': 0, '5': 0, '10': 0} / 0/31
+20 / dual / [14, 9] / 0 / 8 / {'2': 0, '5': 0, '10': 0} / 0/31
+40 / uniform / [30, 22] / 0 / 8 / {'2': 0, '5': 0, '10': 0} / 1/59
+40 / dual / [30, 22] / 0 / 8 / {'2': 0, '5': 0, '10': 0} / 1/59
+80 / uniform / [44, 44] / 7 / 8 / {'2': 0, '5': 0, '10': 0} / 8/102
+80 / dual / [44, 44] / 5 / 8 / {'2': 0, '5': 0, '10': 0} / 4/99
+
+VALIDATION: group / iteration / mean net / paired delta / accepted / chosen waits / truncations / same decisions / same trace
+none / 1 / -596.180498 / 0.000000 / 14 / {'2': 0, '5': 0, '10': 0} / 18/358 / 8/8 / 8/8
+chain / 1 / -596.211540 / -0.031042 / 14 / {'2': 0, '5': 0, '10': 0} / 18/358 / 7/8 / 7/8
+chain_late / 1 / -596.211540 / -0.031042 / 14 / {'2': 0, '5': 0, '10': 0} / 18/358 / 7/8 / 7/8
+full / 2 / -784.504247 / -188.323750 / 30 / {'2': 2, '5': 5, '10': 29} / 28/397 / 0/8 / 0/8
+
+DAILY PAIRED DIFFERENCES: day / pickups / none net / chain delta / chain_late delta / full delta
+(112881, 0, 40, 'dual', 'peak') / 30 / -593.963956 / 0.000000 / 0.000000 / -166.116125
+(112881, 0, 40, 'uniform', 'peak') / 30 / -634.067640 / 0.000000 / 0.000000 / -55.302032
+(112881, 0, 80, 'dual', 'peak') / 56 / -657.627100 / -0.248337 / -0.248337 / -243.493806
+(112881, 0, 80, 'uniform', 'peak') / 56 / -697.256411 / 0.000000 / 0.000000 / -276.706690
+(112882, 0, 40, 'dual', 'peak') / 25 / -444.396024 / 0.000000 / 0.000000 / -197.917472
+(112882, 0, 40, 'uniform', 'peak') / 25 / -475.552427 / 0.000000 / 0.000000 / -210.194967
+(112882, 0, 80, 'dual', 'peak') / 48 / -614.112873 / 0.000000 / 0.000000 / -124.898106
+(112882, 0, 80, 'uniform', 'peak') / 48 / -652.467551 / 0.000000 / 0.000000 / -231.960798

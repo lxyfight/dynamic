@@ -1,0 +1,7773 @@
+{
+  "feature_set": "existing_chain_opportunity",
+  "h": 5,
+  "review_intervals": [
+    2,
+    5,
+    10
+  ],
+  "feature_horizon": 5,
+  "iteration": 1,
+  "validation_mean_net": -596.2115399314338,
+  "residual_fit": {
+    "reference": "on_policy_audited_G_minus_J_known",
+    "weighting": "equal_nonempty_day",
+    "days": 8,
+    "samples": 358,
+    "rmse": 502.9925413119357,
+    "r2": -1.9649358900299623
+  },
+  "validation": [
+    {
+      "net": -634.0676403798147,
+      "plans": "4a168bab57b7a7c5eb5a0c399d27bb3fb7ec6ccc233f4c37efb5775d5e334df5",
+      "trace": "1ad018a21cd34fe328e7cd8b79a828b76daafe6be5625ed1acc47eb5132ed184",
+      "decisions": 34,
+      "accepted": 0,
+      "ledger": {
+        "revenue": 569.6,
+        "truck_trip": 177.6001377,
+        "truck_time": 25.79232464,
+        "drone_activation": 300.0,
+        "flight": 71.4751780398147,
+        "lateness": 0.0,
+        "rejection": 628.8,
+        "net": -634.0676403798147
+      },
+      "changes": 0,
+      "h": 5,
+      "wait_mode": "adaptive",
+      "review_intervals": [
+        2,
+        5,
+        10
+      ],
+      "realized_pickups": 30,
+      "realized_orders": 46,
+      "realized_pickup_share": 0.6521739130434783,
+      "world_spec": {
+        "layout_id": 112881,
+        "day_id": 0,
+        "total": 40,
+        "share": 0.6,
+        "pattern": "uniform",
+        "cities": 2,
+        "pickup_deadline_lags": [
+          240,
+          300,
+          360
+        ],
+        "arrival_mode": "p2"
+      },
+      "input_hash": "55f08aaeedf53d033c8f65115ef274b18e4b5125b7c5bc96667ced874d212272",
+      "i0_hash": "17ace402086dd2a4c328844703ab47af49fd8bd3f7f172ce2597042a31fcd610",
+      "sample_count": 34,
+      "trained_model": true,
+      "canonical_decisions": "d96bf5f2fb11db89a1cb70fe801f30bbd0a26570a99643fa3a63c357d3225351",
+      "decision_summary": [
+        {
+          "at": 13.4,
+          "plan_hash": "80826534d461cf202cd9e07515954c6f4b982124e286a38f7a198457b86ddaa2",
+          "admissions": {},
+          "waits": {},
+          "J": -5.267640379814697,
+          "W": -121.9281863692326,
+          "features": [
+            0.09756097560975609,
+            0.312042682926829,
+            0.0,
+            0.0005747141917450904,
+            0.017051468874439042,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 27.6654058,
+          "plan_hash": "bdb6016698bcb9154a1a64e581b4b609e99a2c8f39575cafeb088cef51a2571b",
+          "admissions": {},
+          "waits": {},
+          "J": -5.267640379814697,
+          "W": -70.38086193466502,
+          "features": [
+            0.061432926829268306,
+            0.08993902439024393,
+            0.0,
+            0.000267368621492337,
+            0.006428152875023973,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 38.3404058,
+          "plan_hash": "2f804e0bac418cbee0eb08c5770fcf831f4dc050a25852c13ff156566c91a9e4",
+          "admissions": {},
+          "waits": {},
+          "J": -5.267640379814697,
+          "W": -28.33479111811975,
+          "features": [
+            0.026371951219512194,
+            0.007317073170731709,
+            0.0,
+            0.00012604321237243886,
+            0.0014484584731543626,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 52.4808116,
+          "plan_hash": "ae0e978af816ba6331003280fb973c8d6e7c5e7ce2e5ae4d2a29e6c98250de87",
+          "admissions": {},
+          "waits": {},
+          "J": -5.267640379814697,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            3.369021038641285e-05,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 61.0,
+          "plan_hash": "1557374d8e8a2a8275a4b77c47a4b593772f23abb2bd240d7eb28c3cdaff2259",
+          "admissions": {
+            "P00000": false
+          },
+          "waits": {},
+          "J": -24.467640379814696,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            8.409743704957805e-06,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 109.0,
+          "plan_hash": "39f250a7af0c8999a343e5e79369f6d018c5a1c9983b5a4f99ec1d26e748c8cd",
+          "admissions": {
+            "P00001": false
+          },
+          "waits": {},
+          "J": -46.867640379814695,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 115.0,
+          "plan_hash": "ea05b85f31f8ecc8c19c2f072fa6e4579e19404e2960d5724114640e7cfbd5e7",
+          "admissions": {
+            "P00002": false
+          },
+          "waits": {},
+          "J": -70.8676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 164.0,
+          "plan_hash": "1ee837d6128ceaaeeb8ebf86063138bc0c554bdd473111bf8f429205c82d9c54",
+          "admissions": {
+            "P00003": false
+          },
+          "waits": {},
+          "J": -82.06764037981469,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 227.0,
+          "plan_hash": "fa33638915e2873e8487335c3b2fc5d0f0b0b50c94ae86a0a0104f299a22940a",
+          "admissions": {
+            "P00004": false
+          },
+          "waits": {},
+          "J": -101.2676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 231.0,
+          "plan_hash": "8f9ffbb49a272a984e09990459a443cfafcc4ea8104c27ce301309887c01d4f5",
+          "admissions": {
+            "P00005": false
+          },
+          "waits": {},
+          "J": -131.66764037981469,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 242.0,
+          "plan_hash": "1cdf2a4887fc26c4a8c8f365c452202c4db6d07a1738ef1904cd030659d52ff4",
+          "admissions": {
+            "P00006": false
+          },
+          "waits": {},
+          "J": -150.8676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 255.0,
+          "plan_hash": "61651283aff57aec4d4f215976f95ca7e63a601a85a9ed0b2e1a97511fa5d3f0",
+          "admissions": {
+            "P00007": false
+          },
+          "waits": {},
+          "J": -174.8676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 264.0,
+          "plan_hash": "ed7bd57fe427ef038568d267d4af59a6736ac8a8873be212d63fb2760b4908d9",
+          "admissions": {
+            "P00008": false
+          },
+          "waits": {},
+          "J": -205.2676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 269.0,
+          "plan_hash": "255dd7ef38e285eb8603cc0ad22f4ea5444f2e029770baa0554b3b41ef905f16",
+          "admissions": {
+            "P00009": false
+          },
+          "waits": {},
+          "J": -234.0676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 281.0,
+          "plan_hash": "ad494ac0f1cb499ea0946482595469c7475106f53aff776966d65138f2f89ddc",
+          "admissions": {
+            "P00010": false
+          },
+          "waits": {},
+          "J": -243.66764037981469,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 294.0,
+          "plan_hash": "ecbe597ea67ee3aa42c4b52df3acc98a3fbe24cc5414082bd07569e8e6a82a8a",
+          "admissions": {
+            "P00011": false
+          },
+          "waits": {},
+          "J": -272.4676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 300.0,
+          "plan_hash": "b617a2f5265d4832c007dbc8aad5cb953c4a6452c975aef7868967ffe4d77e7c",
+          "admissions": {
+            "P00012": false
+          },
+          "waits": {},
+          "J": -283.6676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 316.0,
+          "plan_hash": "ba4331cec6641a2c4dd0f1d300d1faba274f7443afaef6d5acd6d90e081d9dcf",
+          "admissions": {
+            "P00013": false
+          },
+          "waits": {},
+          "J": -309.2676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 321.0,
+          "plan_hash": "7b8c80c1e49be993fe578babe8b21be50ed78c1c18bb7ef51a85cdb11d4c4ca7",
+          "admissions": {
+            "P00014": false
+          },
+          "waits": {},
+          "J": -331.6676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 328.0,
+          "plan_hash": "ce135e1c3e30a2161affababb4fb01ca856bd35db8b800e29a7a1763b2c9cb7b",
+          "admissions": {
+            "P00015": false
+          },
+          "waits": {},
+          "J": -360.4676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 341.0,
+          "plan_hash": "44b1d7353a2369fa8f1f094dc1afb326f77406ccd05d8ffca8aa57b71233918a",
+          "admissions": {
+            "P00016": false
+          },
+          "waits": {},
+          "J": -371.6676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 343.0,
+          "plan_hash": "573f44ba2a404e4b4643152c12f6c9acc11e65706fd504639cb9828a1cd58f75",
+          "admissions": {
+            "P00017": false
+          },
+          "waits": {},
+          "J": -389.2676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 350.0,
+          "plan_hash": "7898adb1b308414711e73a2eeddf429c6d114c4b8ead254f233abc6caab784aa",
+          "admissions": {
+            "P00018": false
+          },
+          "waits": {},
+          "J": -406.8676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 353.0,
+          "plan_hash": "06b6036613a272a0e55b1decf794bc24f7abaac74d42b845ff7258c93273c25e",
+          "admissions": {
+            "P00019": false
+          },
+          "waits": {},
+          "J": -429.2676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 406.0,
+          "plan_hash": "579cd0755e0ccb8b25ab92a637e1b29f1647dec66d72107486d6a731c265d234",
+          "admissions": {
+            "P00020": false
+          },
+          "waits": {},
+          "J": -451.6676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 412.0,
+          "plan_hash": "80a9ba52963c8b6fddd9c9460355903d3f9185492e22ae2b3178f48e4f11627a",
+          "admissions": {
+            "P00021": false
+          },
+          "waits": {},
+          "J": -478.8676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 441.0,
+          "plan_hash": "79e365ac27ecf5d96aeb95faa6d0f2fd263c79e1917a24db78c8515338cf2be2",
+          "admissions": {
+            "P00022": false
+          },
+          "waits": {},
+          "J": -493.2676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 447.0,
+          "plan_hash": "0724ae185ba579aee4d5aa7d303a81d2703385f66aeb3d99b580434758145ea7",
+          "admissions": {
+            "P00023": false
+          },
+          "waits": {},
+          "J": -506.0676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 465.0,
+          "plan_hash": "cda441bc54df213dd01ebf748deea8236291c7ac2f7bc55e868994aadd7ee5b2",
+          "admissions": {
+            "P00024": false
+          },
+          "waits": {},
+          "J": -520.4676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 487.0,
+          "plan_hash": "ab5482634d63d5f398f16b66f7a4180697544596323958e07e1e01ca05cb1e4b",
+          "admissions": {
+            "P00025": false
+          },
+          "waits": {},
+          "J": -542.8676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 541.0,
+          "plan_hash": "d03e3413dce05694d3f5f17d4e6575455ee0a0c1bf44d990b9ce7eeddd76cba1",
+          "admissions": {
+            "P00026": false
+          },
+          "waits": {},
+          "J": -555.6676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 552.0,
+          "plan_hash": "d9951011d30e481f44eefaf9925a9769d3c079f5fc2c792f5a87e235861508eb",
+          "admissions": {
+            "P00027": false
+          },
+          "waits": {},
+          "J": -578.0676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 555.0,
+          "plan_hash": "750f10416e5b12680b6811a63ec4704d54048b5fc867e117c43c85a1bfbcafea",
+          "admissions": {
+            "P00028": false
+          },
+          "waits": {},
+          "J": -606.8676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 576.0,
+          "plan_hash": "3cae1b321da4392bf95eb0f2ffaa52acc2faac0372f61aa5d2b30e2e7bdc76c7",
+          "admissions": {
+            "P00029": false
+          },
+          "waits": {},
+          "J": -634.0676403798147,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "action_search": {
+        "solver": "gurobi",
+        "epochs": 34,
+        "wait_mode": "adaptive",
+        "chosen_wait_interval_counts": {},
+        "feasible_wait_epochs": 4,
+        "feasible_wait_interval_counts": {
+          "10": 12,
+          "5": 12,
+          "2": 12
+        },
+        "feasible_wait_interval_epochs": {
+          "10": 4,
+          "5": 4,
+          "2": 4
+        },
+        "feature_diagnostics": {
+          "existing_chain_near_h_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.09756097560975609,
+            "nonzero_candidates": 44,
+            "action_varying_epochs": 3
+          },
+          "existing_chain_later_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.5071646341463416,
+            "nonzero_candidates": 42,
+            "action_varying_epochs": 4
+          },
+          "added_trip_reliance_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 2.041006097560977,
+            "nonzero_candidates": 300,
+            "action_varying_epochs": 30
+          },
+          "demand_weighted_drone_tail_delay": {
+            "minimum": 0.0,
+            "maximum": 0.0008549097141194198,
+            "nonzero_candidates": 349,
+            "action_varying_epochs": 33
+          },
+          "demand_weighted_recovery_capacity": {
+            "minimum": 0.0,
+            "maximum": 0.9934615384615386,
+            "nonzero_candidates": 344,
+            "action_varying_epochs": 34
+          },
+          "future_pickup_lateness_exposure": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "nonzero_candidates": 0,
+            "action_varying_epochs": 0
+          },
+          "demand_weighted_delivery_slack": {
+            "minimum": 0.9918111487275947,
+            "maximum": 1.0,
+            "nonzero_candidates": 378,
+            "action_varying_epochs": 3
+          }
+        },
+        "decision_seconds": 8.208988400000067,
+        "truncated_epochs": 0,
+        "base_search_truncated_epochs": 0,
+        "enhancement_truncated_epochs": 0,
+        "forced_reject_requests": 0,
+        "service_patterns_attempted": 0,
+        "service_patterns_accepted": 0,
+        "wait_patterns_attempted": 36,
+        "wait_patterns_accepted": 36,
+        "wait_search_truncated_epochs": 0,
+        "service_search_truncated_epochs": 0
+      }
+    },
+    {
+      "net": -593.9639564783275,
+      "plans": "88973f34f2c6ca2c0d279b44988be0578fc04b7705f61540b350ca931d323140",
+      "trace": "588f5026e8eadc58f0e9c0f7103650fe7315beddcdec0c462dacd684302b0c42",
+      "decisions": 34,
+      "accepted": 0,
+      "ledger": {
+        "revenue": 569.6,
+        "truck_trip": 177.6001377,
+        "truck_time": 25.79232464,
+        "drone_activation": 300.0,
+        "flight": 31.371494138327478,
+        "lateness": 0.0,
+        "rejection": 628.8,
+        "net": -593.9639564783275
+      },
+      "changes": 0,
+      "h": 5,
+      "wait_mode": "adaptive",
+      "review_intervals": [
+        2,
+        5,
+        10
+      ],
+      "realized_pickups": 30,
+      "realized_orders": 46,
+      "realized_pickup_share": 0.6521739130434783,
+      "world_spec": {
+        "layout_id": 112881,
+        "day_id": 0,
+        "total": 40,
+        "share": 0.6,
+        "pattern": "dual",
+        "cities": 2,
+        "pickup_deadline_lags": [
+          240,
+          300,
+          360
+        ],
+        "arrival_mode": "p2"
+      },
+      "input_hash": "cde792d5b85bdcaaa11d1354bfd9546080d5df1980be21b6be4c34384e79d39a",
+      "i0_hash": "fecdca23ba9fa32c59e16c7af7eac110dd7a479e79f0d85378f6a8a2c9cb665f",
+      "sample_count": 34,
+      "trained_model": true,
+      "canonical_decisions": "439400af5530a14d3391b8dc69bd52ef87abc52e71afa14523f7cde27f869c0a",
+      "decision_summary": [
+        {
+          "at": 14.775,
+          "plan_hash": "4f879c5cd67df018d147cffb8123463d826efdd92e2b89b534839bdb8d67f27b",
+          "admissions": {},
+          "waits": {},
+          "J": 34.83604352167252,
+          "W": -109.46703930606213,
+          "features": [
+            0.08902439024390245,
+            0.25487804878048775,
+            0.0,
+            0.00020867209531047476,
+            0.014382820901600457,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 27.7904058,
+          "plan_hash": "93c4dbfca5c7bb718257719843eb23af02380ecc4cd2a5ffb2dbf3571aa7d741",
+          "admissions": {},
+          "waits": {},
+          "J": 34.83604352167252,
+          "W": -58.62161460124149,
+          "features": [
+            0.04878048780487805,
+            0.11699695121951222,
+            0.0,
+            7.036112484252161e-05,
+            0.007062422069825434,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 39.4654058,
+          "plan_hash": "5d5974777e8504d9b3c2dc7193d46e05e5679a939ea7ac6ccdef74d020933198",
+          "admissions": {},
+          "waits": {},
+          "J": 34.83604352167252,
+          "W": -41.79772525684112,
+          "features": [
+            0.03894817073170732,
+            0.009984756097560978,
+            0.0,
+            1.2858559551936039e-05,
+            0.0021056360201511335,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 52.4808116,
+          "plan_hash": "d42423b5d90f5a1dd3950edee3c151ed7ffbef86f52c3cdf74d3c49db4c913b3",
+          "admissions": {},
+          "waits": {},
+          "J": 34.83604352167252,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            2.85058736001651e-08,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 61.0,
+          "plan_hash": "1557374d8e8a2a8275a4b77c47a4b593772f23abb2bd240d7eb28c3cdaff2259",
+          "admissions": {
+            "P00000": false
+          },
+          "waits": {},
+          "J": 15.636043521672523,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 109.0,
+          "plan_hash": "39f250a7af0c8999a343e5e79369f6d018c5a1c9983b5a4f99ec1d26e748c8cd",
+          "admissions": {
+            "P00001": false
+          },
+          "waits": {},
+          "J": -6.7639564783274775,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 115.0,
+          "plan_hash": "ea05b85f31f8ecc8c19c2f072fa6e4579e19404e2960d5724114640e7cfbd5e7",
+          "admissions": {
+            "P00002": false
+          },
+          "waits": {},
+          "J": -30.763956478327476,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 164.0,
+          "plan_hash": "1ee837d6128ceaaeeb8ebf86063138bc0c554bdd473111bf8f429205c82d9c54",
+          "admissions": {
+            "P00003": false
+          },
+          "waits": {},
+          "J": -41.963956478327475,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 227.0,
+          "plan_hash": "fa33638915e2873e8487335c3b2fc5d0f0b0b50c94ae86a0a0104f299a22940a",
+          "admissions": {
+            "P00004": false
+          },
+          "waits": {},
+          "J": -61.16395647832748,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 231.0,
+          "plan_hash": "8f9ffbb49a272a984e09990459a443cfafcc4ea8104c27ce301309887c01d4f5",
+          "admissions": {
+            "P00005": false
+          },
+          "waits": {},
+          "J": -91.56395647832748,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 242.0,
+          "plan_hash": "1cdf2a4887fc26c4a8c8f365c452202c4db6d07a1738ef1904cd030659d52ff4",
+          "admissions": {
+            "P00006": false
+          },
+          "waits": {},
+          "J": -110.76395647832747,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 255.0,
+          "plan_hash": "61651283aff57aec4d4f215976f95ca7e63a601a85a9ed0b2e1a97511fa5d3f0",
+          "admissions": {
+            "P00007": false
+          },
+          "waits": {},
+          "J": -134.7639564783275,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 264.0,
+          "plan_hash": "ed7bd57fe427ef038568d267d4af59a6736ac8a8873be212d63fb2760b4908d9",
+          "admissions": {
+            "P00008": false
+          },
+          "waits": {},
+          "J": -165.16395647832746,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 269.0,
+          "plan_hash": "255dd7ef38e285eb8603cc0ad22f4ea5444f2e029770baa0554b3b41ef905f16",
+          "admissions": {
+            "P00009": false
+          },
+          "waits": {},
+          "J": -193.96395647832747,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 281.0,
+          "plan_hash": "ad494ac0f1cb499ea0946482595469c7475106f53aff776966d65138f2f89ddc",
+          "admissions": {
+            "P00010": false
+          },
+          "waits": {},
+          "J": -203.56395647832747,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 294.0,
+          "plan_hash": "ecbe597ea67ee3aa42c4b52df3acc98a3fbe24cc5414082bd07569e8e6a82a8a",
+          "admissions": {
+            "P00011": false
+          },
+          "waits": {},
+          "J": -232.36395647832748,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 300.0,
+          "plan_hash": "b617a2f5265d4832c007dbc8aad5cb953c4a6452c975aef7868967ffe4d77e7c",
+          "admissions": {
+            "P00012": false
+          },
+          "waits": {},
+          "J": -243.56395647832747,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 316.0,
+          "plan_hash": "ba4331cec6641a2c4dd0f1d300d1faba274f7443afaef6d5acd6d90e081d9dcf",
+          "admissions": {
+            "P00013": false
+          },
+          "waits": {},
+          "J": -269.16395647832746,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 321.0,
+          "plan_hash": "7b8c80c1e49be993fe578babe8b21be50ed78c1c18bb7ef51a85cdb11d4c4ca7",
+          "admissions": {
+            "P00014": false
+          },
+          "waits": {},
+          "J": -291.5639564783275,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 328.0,
+          "plan_hash": "ce135e1c3e30a2161affababb4fb01ca856bd35db8b800e29a7a1763b2c9cb7b",
+          "admissions": {
+            "P00015": false
+          },
+          "waits": {},
+          "J": -320.36395647832745,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 341.0,
+          "plan_hash": "44b1d7353a2369fa8f1f094dc1afb326f77406ccd05d8ffca8aa57b71233918a",
+          "admissions": {
+            "P00016": false
+          },
+          "waits": {},
+          "J": -331.5639564783275,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 343.0,
+          "plan_hash": "573f44ba2a404e4b4643152c12f6c9acc11e65706fd504639cb9828a1cd58f75",
+          "admissions": {
+            "P00017": false
+          },
+          "waits": {},
+          "J": -349.16395647832746,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 350.0,
+          "plan_hash": "7898adb1b308414711e73a2eeddf429c6d114c4b8ead254f233abc6caab784aa",
+          "admissions": {
+            "P00018": false
+          },
+          "waits": {},
+          "J": -366.7639564783275,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 353.0,
+          "plan_hash": "06b6036613a272a0e55b1decf794bc24f7abaac74d42b845ff7258c93273c25e",
+          "admissions": {
+            "P00019": false
+          },
+          "waits": {},
+          "J": -389.16395647832746,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 406.0,
+          "plan_hash": "579cd0755e0ccb8b25ab92a637e1b29f1647dec66d72107486d6a731c265d234",
+          "admissions": {
+            "P00020": false
+          },
+          "waits": {},
+          "J": -411.5639564783275,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 412.0,
+          "plan_hash": "80a9ba52963c8b6fddd9c9460355903d3f9185492e22ae2b3178f48e4f11627a",
+          "admissions": {
+            "P00021": false
+          },
+          "waits": {},
+          "J": -438.7639564783275,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 441.0,
+          "plan_hash": "79e365ac27ecf5d96aeb95faa6d0f2fd263c79e1917a24db78c8515338cf2be2",
+          "admissions": {
+            "P00022": false
+          },
+          "waits": {},
+          "J": -453.16395647832746,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 447.0,
+          "plan_hash": "0724ae185ba579aee4d5aa7d303a81d2703385f66aeb3d99b580434758145ea7",
+          "admissions": {
+            "P00023": false
+          },
+          "waits": {},
+          "J": -465.9639564783275,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 465.0,
+          "plan_hash": "cda441bc54df213dd01ebf748deea8236291c7ac2f7bc55e868994aadd7ee5b2",
+          "admissions": {
+            "P00024": false
+          },
+          "waits": {},
+          "J": -480.36395647832745,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 487.0,
+          "plan_hash": "ab5482634d63d5f398f16b66f7a4180697544596323958e07e1e01ca05cb1e4b",
+          "admissions": {
+            "P00025": false
+          },
+          "waits": {},
+          "J": -502.7639564783275,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 541.0,
+          "plan_hash": "d03e3413dce05694d3f5f17d4e6575455ee0a0c1bf44d990b9ce7eeddd76cba1",
+          "admissions": {
+            "P00026": false
+          },
+          "waits": {},
+          "J": -515.5639564783274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 552.0,
+          "plan_hash": "d9951011d30e481f44eefaf9925a9769d3c079f5fc2c792f5a87e235861508eb",
+          "admissions": {
+            "P00027": false
+          },
+          "waits": {},
+          "J": -537.9639564783275,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 555.0,
+          "plan_hash": "750f10416e5b12680b6811a63ec4704d54048b5fc867e117c43c85a1bfbcafea",
+          "admissions": {
+            "P00028": false
+          },
+          "waits": {},
+          "J": -566.7639564783275,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 576.0,
+          "plan_hash": "3cae1b321da4392bf95eb0f2ffaa52acc2faac0372f61aa5d2b30e2e7bdc76c7",
+          "admissions": {
+            "P00029": false
+          },
+          "waits": {},
+          "J": -593.9639564783275,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "action_search": {
+        "solver": "gurobi",
+        "epochs": 34,
+        "wait_mode": "adaptive",
+        "chosen_wait_interval_counts": {},
+        "feasible_wait_epochs": 4,
+        "feasible_wait_interval_counts": {
+          "10": 12,
+          "5": 12,
+          "2": 12
+        },
+        "feasible_wait_interval_epochs": {
+          "10": 4,
+          "5": 4,
+          "2": 4
+        },
+        "feature_diagnostics": {
+          "existing_chain_near_h_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.09756097560975609,
+            "nonzero_candidates": 46,
+            "action_varying_epochs": 4
+          },
+          "existing_chain_later_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.44131097560975613,
+            "nonzero_candidates": 45,
+            "action_varying_epochs": 4
+          },
+          "added_trip_reliance_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 1.959832317073172,
+            "nonzero_candidates": 300,
+            "action_varying_epochs": 30
+          },
+          "demand_weighted_drone_tail_delay": {
+            "minimum": 0.0,
+            "maximum": 0.00033980938158777993,
+            "nonzero_candidates": 348,
+            "action_varying_epochs": 32
+          },
+          "demand_weighted_recovery_capacity": {
+            "minimum": 0.0,
+            "maximum": 0.9934615384615386,
+            "nonzero_candidates": 346,
+            "action_varying_epochs": 34
+          },
+          "future_pickup_lateness_exposure": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "nonzero_candidates": 0,
+            "action_varying_epochs": 0
+          },
+          "demand_weighted_delivery_slack": {
+            "minimum": 1.0,
+            "maximum": 1.0,
+            "nonzero_candidates": 378,
+            "action_varying_epochs": 0
+          }
+        },
+        "decision_seconds": 8.61386840000003,
+        "truncated_epochs": 0,
+        "base_search_truncated_epochs": 0,
+        "enhancement_truncated_epochs": 0,
+        "forced_reject_requests": 0,
+        "service_patterns_attempted": 0,
+        "service_patterns_accepted": 0,
+        "wait_patterns_attempted": 36,
+        "wait_patterns_accepted": 36,
+        "wait_search_truncated_epochs": 0,
+        "service_search_truncated_epochs": 0
+      }
+    },
+    {
+      "net": -697.2564107089057,
+      "plans": "e66fb1b8cadee6465b8be0cf8a549bccf134abaa58901ee82c866e50253c1703",
+      "trace": "40019ae2fd9cdf898bb301a192804aac91f573ff0aef7d8f8ea415570cdc5386",
+      "decisions": 62,
+      "accepted": 3,
+      "ledger": {
+        "revenue": 1427.2,
+        "truck_trip": 177.6001377,
+        "truck_time": 39.52388819263019,
+        "drone_activation": 700.0,
+        "flight": 141.73238481627556,
+        "lateness": 0.0,
+        "rejection": 1065.6,
+        "net": -697.2564107089057
+      },
+      "changes": 0,
+      "h": 5,
+      "wait_mode": "adaptive",
+      "review_intervals": [
+        2,
+        5,
+        10
+      ],
+      "realized_pickups": 56,
+      "realized_orders": 88,
+      "realized_pickup_share": 0.6363636363636364,
+      "world_spec": {
+        "layout_id": 112881,
+        "day_id": 0,
+        "total": 80,
+        "share": 0.6,
+        "pattern": "uniform",
+        "cities": 2,
+        "pickup_deadline_lags": [
+          240,
+          300,
+          360
+        ],
+        "arrival_mode": "p2"
+      },
+      "input_hash": "640f47223c8c77d0c73816f66b0b9ed1249c563ee3014d1e9ed8c9e9c53d7fe3",
+      "i0_hash": "0c7b061ff5267ffdedf44ecf5549447f128c6eb4c662672b98115451e7ed7f44",
+      "sample_count": 62,
+      "trained_model": true,
+      "canonical_decisions": "5ec7477cc981370aa2f7cfd01acdcd27189df89fce350ed8f94449de231ced14",
+      "decision_summary": [
+        {
+          "at": 14.0,
+          "plan_hash": "5363efabe46384c08ddbc3fb6975e60272140c6e54a1b2009ed4e02115ec2ebb",
+          "admissions": {
+            "P00000": true
+          },
+          "waits": {},
+          "J": 283.2197885522853,
+          "W": -152.36210733917267,
+          "features": [
+            0.0975609756097561,
+            0.8190548780487805,
+            0.0,
+            0.0017773240483738412,
+            0.019137719034666007,
+            0.0,
+            0.981133003498687
+          ]
+        },
+        {
+          "at": 15.725,
+          "plan_hash": "f53160b55afdc5906e5bf9769266215c7ed2cc381fff56d8e354a2f89915878a",
+          "admissions": {},
+          "waits": {},
+          "J": 283.2197885522853,
+          "W": -151.19086804748525,
+          "features": [
+            0.0975609756097561,
+            0.7995426829268293,
+            0.0,
+            0.0017162183443197993,
+            0.018745746280468514,
+            0.0,
+            0.9811330034986872
+          ]
+        },
+        {
+          "at": 29.0,
+          "plan_hash": "ebce1b9054bf70d88b98901ccdf7a3e641970a0611805f1245540d9ecd071da7",
+          "admissions": {
+            "P00001": true
+          },
+          "waits": {},
+          "J": 321.98400839991405,
+          "W": -149.36080665422372,
+          "features": [
+            0.0975609756097561,
+            0.7690548780487807,
+            0.0,
+            0.001173825008138521,
+            0.01812064165278934,
+            0.0,
+            0.9674492400322524
+          ]
+        },
+        {
+          "at": 29.916566126496917,
+          "plan_hash": "9630019bb9f0a8f239a135a3aaaa9f996bac27aaf9ef0efee00a4a5ed2ceb5fc",
+          "admissions": {},
+          "waits": {},
+          "J": 321.98400839991405,
+          "W": -149.36080665422372,
+          "features": [
+            0.0975609756097561,
+            0.7690548780487807,
+            0.0,
+            0.001173825008138521,
+            0.01812064165278934,
+            0.0,
+            0.9674492400322524
+          ]
+        },
+        {
+          "at": 45.431971926496914,
+          "plan_hash": "85131b6c3a0045fbc1e573ffc565581db112162eda76a1c86c481cda43ca4a24",
+          "admissions": {},
+          "waits": {},
+          "J": 321.98400839991405,
+          "W": -130.6209779872251,
+          "features": [
+            0.0975609756097561,
+            0.45685975609756085,
+            0.0,
+            0.0005741536550254976,
+            0.011749274789029533,
+            0.0,
+            0.9674492400322524
+          ]
+        },
+        {
+          "at": 52.0,
+          "plan_hash": "36ea43464f83d2379cc858c1ea0f3eb14dfeaef5aea9589e8a8563b45a88f8e2",
+          "admissions": {
+            "P00002": true
+          },
+          "waits": {},
+          "J": 368.34358929109425,
+          "W": -124.76478152878806,
+          "features": [
+            0.0975609756097561,
+            0.3592987804878047,
+            0.0,
+            0.0004207850460229461,
+            0.009624626057039311,
+            0.0,
+            0.965748919872111
+          ]
+        },
+        {
+          "at": 58.00697192649692,
+          "plan_hash": "966c055c436d2bb443d0542df503ef186a5668f5ccfdbae8f832712530f0b0dc",
+          "admissions": {},
+          "waits": {},
+          "J": 368.34358929109425,
+          "W": -117.73734577866361,
+          "features": [
+            0.0975609756097561,
+            0.2422256097560976,
+            0.0,
+            0.00029789449037758483,
+            0.007194901774579943,
+            0.0,
+            0.965748919872111
+          ]
+        },
+        {
+          "at": 70.4629368926087,
+          "plan_hash": "0f2c975993d7a977eb8ddd67f33653765c2987744ee4a4509a717e19c0b8464b",
+          "admissions": {},
+          "waits": {},
+          "J": 368.34358929109425,
+          "W": -80.65541585477148,
+          "features": [
+            0.07439024390243902,
+            0.03277439024390244,
+            0.0,
+            0.00013734874066542748,
+            0.0022926604981763927,
+            0.0,
+            0.9657489198721109
+          ]
+        },
+        {
+          "at": 72.46931468157547,
+          "plan_hash": "5dd8b6817d05c0dabd7d23f2fdf121466480627e64f930f0ea58029c22560d8c",
+          "admissions": {},
+          "waits": {},
+          "J": 368.34358929109425,
+          "W": -60.488046363915835,
+          "features": [
+            0.056249999999999994,
+            0.016463414634146342,
+            0.0,
+            0.00012004979556639294,
+            0.0015583041674970106,
+            0.0,
+            0.9657489198721111
+          ]
+        },
+        {
+          "at": 86.80972048157547,
+          "plan_hash": "9836e14f9b4f7ee6b1d37abbc494bf6ab54a13fedb74ac8f43ae996f549bf870",
+          "admissions": {},
+          "waits": {},
+          "J": 368.34358929109425,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            3.8602243908860185e-05,
+            0.0,
+            0.0,
+            0.9711934293364293
+          ]
+        },
+        {
+          "at": 121.0,
+          "plan_hash": "1ee837d6128ceaaeeb8ebf86063138bc0c554bdd473111bf8f429205c82d9c54",
+          "admissions": {
+            "P00003": false
+          },
+          "waits": {},
+          "J": 357.14358929109426,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 138.0,
+          "plan_hash": "fa33638915e2873e8487335c3b2fc5d0f0b0b50c94ae86a0a0104f299a22940a",
+          "admissions": {
+            "P00004": false
+          },
+          "waits": {},
+          "J": 337.94358929109427,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 150.0,
+          "plan_hash": "8f9ffbb49a272a984e09990459a443cfafcc4ea8104c27ce301309887c01d4f5",
+          "admissions": {
+            "P00005": false
+          },
+          "waits": {},
+          "J": 307.54358929109424,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 162.0,
+          "plan_hash": "1cdf2a4887fc26c4a8c8f365c452202c4db6d07a1738ef1904cd030659d52ff4",
+          "admissions": {
+            "P00006": false
+          },
+          "waits": {},
+          "J": 288.34358929109425,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 164.0,
+          "plan_hash": "61651283aff57aec4d4f215976f95ca7e63a601a85a9ed0b2e1a97511fa5d3f0",
+          "admissions": {
+            "P00007": false
+          },
+          "waits": {},
+          "J": 264.34358929109425,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 166.0,
+          "plan_hash": "ed7bd57fe427ef038568d267d4af59a6736ac8a8873be212d63fb2760b4908d9",
+          "admissions": {
+            "P00008": false
+          },
+          "waits": {},
+          "J": 233.94358929109424,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 179.0,
+          "plan_hash": "255dd7ef38e285eb8603cc0ad22f4ea5444f2e029770baa0554b3b41ef905f16",
+          "admissions": {
+            "P00009": false
+          },
+          "waits": {},
+          "J": 205.14358929109426,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 187.0,
+          "plan_hash": "ad494ac0f1cb499ea0946482595469c7475106f53aff776966d65138f2f89ddc",
+          "admissions": {
+            "P00010": false
+          },
+          "waits": {},
+          "J": 195.54358929109426,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 191.0,
+          "plan_hash": "ecbe597ea67ee3aa42c4b52df3acc98a3fbe24cc5414082bd07569e8e6a82a8a",
+          "admissions": {
+            "P00011": false
+          },
+          "waits": {},
+          "J": 166.74358929109425,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 192.0,
+          "plan_hash": "b617a2f5265d4832c007dbc8aad5cb953c4a6452c975aef7868967ffe4d77e7c",
+          "admissions": {
+            "P00012": false
+          },
+          "waits": {},
+          "J": 155.54358929109426,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 195.0,
+          "plan_hash": "ba4331cec6641a2c4dd0f1d300d1faba274f7443afaef6d5acd6d90e081d9dcf",
+          "admissions": {
+            "P00013": false
+          },
+          "waits": {},
+          "J": 129.94358929109424,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 198.0,
+          "plan_hash": "7b8c80c1e49be993fe578babe8b21be50ed78c1c18bb7ef51a85cdb11d4c4ca7",
+          "admissions": {
+            "P00014": false
+          },
+          "waits": {},
+          "J": 107.54358929109425,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 199.0,
+          "plan_hash": "ce135e1c3e30a2161affababb4fb01ca856bd35db8b800e29a7a1763b2c9cb7b",
+          "admissions": {
+            "P00015": false
+          },
+          "waits": {},
+          "J": 78.74358929109425,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 203.0,
+          "plan_hash": "44b1d7353a2369fa8f1f094dc1afb326f77406ccd05d8ffca8aa57b71233918a",
+          "admissions": {
+            "P00016": false
+          },
+          "waits": {},
+          "J": 67.54358929109425,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 205.0,
+          "plan_hash": "573f44ba2a404e4b4643152c12f6c9acc11e65706fd504639cb9828a1cd58f75",
+          "admissions": {
+            "P00017": false
+          },
+          "waits": {},
+          "J": 49.94358929109425,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 210.0,
+          "plan_hash": "7898adb1b308414711e73a2eeddf429c6d114c4b8ead254f233abc6caab784aa",
+          "admissions": {
+            "P00018": false
+          },
+          "waits": {},
+          "J": 32.343589291094254,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 214.0,
+          "plan_hash": "06b6036613a272a0e55b1decf794bc24f7abaac74d42b845ff7258c93273c25e",
+          "admissions": {
+            "P00019": false
+          },
+          "waits": {},
+          "J": 9.94358929109425,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 217.0,
+          "plan_hash": "579cd0755e0ccb8b25ab92a637e1b29f1647dec66d72107486d6a731c265d234",
+          "admissions": {
+            "P00020": false
+          },
+          "waits": {},
+          "J": -12.456410708905748,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 222.0,
+          "plan_hash": "80a9ba52963c8b6fddd9c9460355903d3f9185492e22ae2b3178f48e4f11627a",
+          "admissions": {
+            "P00021": false
+          },
+          "waits": {},
+          "J": -39.656410708905746,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 240.0,
+          "plan_hash": "79e365ac27ecf5d96aeb95faa6d0f2fd263c79e1917a24db78c8515338cf2be2",
+          "admissions": {
+            "P00022": false
+          },
+          "waits": {},
+          "J": -54.05641070890575,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 248.0,
+          "plan_hash": "2665b3cb185e9ca3c604e78a243b59413710ea1cfa16120c60bb0b9fdaabb972",
+          "admissions": {
+            "P00023": false,
+            "P00024": false
+          },
+          "waits": {},
+          "J": -81.25641070890575,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 257.0,
+          "plan_hash": "ab5482634d63d5f398f16b66f7a4180697544596323958e07e1e01ca05cb1e4b",
+          "admissions": {
+            "P00025": false
+          },
+          "waits": {},
+          "J": -103.65641070890575,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 274.0,
+          "plan_hash": "d03e3413dce05694d3f5f17d4e6575455ee0a0c1bf44d990b9ce7eeddd76cba1",
+          "admissions": {
+            "P00026": false
+          },
+          "waits": {},
+          "J": -116.45641070890575,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 277.0,
+          "plan_hash": "d9951011d30e481f44eefaf9925a9769d3c079f5fc2c792f5a87e235861508eb",
+          "admissions": {
+            "P00027": false
+          },
+          "waits": {},
+          "J": -138.85641070890574,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 278.0,
+          "plan_hash": "750f10416e5b12680b6811a63ec4704d54048b5fc867e117c43c85a1bfbcafea",
+          "admissions": {
+            "P00028": false
+          },
+          "waits": {},
+          "J": -167.65641070890575,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 280.0,
+          "plan_hash": "3cae1b321da4392bf95eb0f2ffaa52acc2faac0372f61aa5d2b30e2e7bdc76c7",
+          "admissions": {
+            "P00029": false
+          },
+          "waits": {},
+          "J": -194.85641070890574,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 293.0,
+          "plan_hash": "901e26503ec7c375137ac7a99757d1f6e1e67949743e636e2c19dbec6f6008b2",
+          "admissions": {
+            "P00030": false
+          },
+          "waits": {},
+          "J": -225.25641070890575,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 296.0,
+          "plan_hash": "8fbb2af5c6baf81a54e2ca0db7bcadaaf5c6ca78544619529732c64f9287b92a",
+          "admissions": {
+            "P00031": false
+          },
+          "waits": {},
+          "J": -255.65641070890575,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 298.0,
+          "plan_hash": "1b2f4fb2c59f595b39a483017d12ad938778241dca917ef65fd1e441d07017f9",
+          "admissions": {
+            "P00032": false
+          },
+          "waits": {},
+          "J": -282.85641070890574,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 300.0,
+          "plan_hash": "9556be4ca95d9b12b6852d1dba476d1e0033f5071acc22c8d80a55c2e7233b88",
+          "admissions": {
+            "P00033": false
+          },
+          "waits": {},
+          "J": -302.05641070890573,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 337.0,
+          "plan_hash": "af8dabb6d8a041682caf5dbbb59173579b2f78c4d87fa0ada53e48cc50bfb685",
+          "admissions": {
+            "P00034": false
+          },
+          "waits": {},
+          "J": -330.85641070890574,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 338.0,
+          "plan_hash": "1e37ead24bee330aa4e98223a648610c47a571fc8a17876e12a0817ae8c3f908",
+          "admissions": {
+            "P00035": false
+          },
+          "waits": {},
+          "J": -342.05641070890573,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 342.0,
+          "plan_hash": "fc25d303786246b407d1942ebd799adc35973b1db2623ca477e3c503d05e55f8",
+          "admissions": {
+            "P00036": false
+          },
+          "waits": {},
+          "J": -353.2564107089058,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 347.0,
+          "plan_hash": "4475505129e21b8e8f53aaf96c163e7192e1058affd45f0dd03b949842f82d46",
+          "admissions": {
+            "P00037": false
+          },
+          "waits": {},
+          "J": -375.65641070890575,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 360.0,
+          "plan_hash": "81f6377f9de6040cefbb80cdd915375c0d9ff50ce77eff13977cd9f443a8f357",
+          "admissions": {
+            "P00038": false
+          },
+          "waits": {},
+          "J": -390.05641070890573,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 361.0,
+          "plan_hash": "3615b9d7173368336f029fcb27aeb37b6fedbcab880b9c4b55d298ab6ac41fdc",
+          "admissions": {
+            "P00039": false
+          },
+          "waits": {},
+          "J": -415.65641070890575,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 362.0,
+          "plan_hash": "e818edf3943203b0e17dfbe5a590e60dcf16a9c3699fe91d38ab4ec79e0f6290",
+          "admissions": {
+            "P00040": false
+          },
+          "waits": {},
+          "J": -446.05641070890573,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 384.0,
+          "plan_hash": "e4e051ccb07e9924125f40b4000ca94da5702ed8c2931951e82831252829a59b",
+          "admissions": {
+            "P00041": false
+          },
+          "waits": {},
+          "J": -473.2564107089058,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 394.0,
+          "plan_hash": "a23c19d8431e8463853408a777a5f646a21a944579b1abd9d91caa71a1a7ba15",
+          "admissions": {
+            "P00042": false
+          },
+          "waits": {},
+          "J": -487.65641070890575,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 437.0,
+          "plan_hash": "e8bc988942f3258459fdf7d17505b4ca263cfc90aaa9174234b2c920470e56e0",
+          "admissions": {
+            "P00043": false
+          },
+          "waits": {},
+          "J": -498.85641070890574,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 447.0,
+          "plan_hash": "088dbdaf38a6f6b611593d0102be4e9501b25c4e5db6697e48267094bc3cacbf",
+          "admissions": {
+            "P00044": false
+          },
+          "waits": {},
+          "J": -513.2564107089057,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 465.0,
+          "plan_hash": "b52803ae11ba51232e3573617819d5be7bdb53b2718a5230c26f7d27ad5b1f93",
+          "admissions": {
+            "P00045": false
+          },
+          "waits": {},
+          "J": -535.6564107089057,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 468.0,
+          "plan_hash": "475894db16a5e09f58c934e05a388534a5ded2f5d499d04ad7e15e3b932405b7",
+          "admissions": {
+            "P00046": false
+          },
+          "waits": {},
+          "J": -548.4564107089058,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 516.0,
+          "plan_hash": "b895e604d1f9ab73210f7ab4c94bc645e3a717692ae9533ac120404769d77269",
+          "admissions": {
+            "P00047": false
+          },
+          "waits": {},
+          "J": -561.2564107089057,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 526.0,
+          "plan_hash": "2c5697238fe29d028a32f47c0bf0f1d11b76c3e3fa4dbc116836dcf0ae2cda57",
+          "admissions": {
+            "P00048": false
+          },
+          "waits": {},
+          "J": -586.8564107089057,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 547.0,
+          "plan_hash": "df7c26422bd5c9e2256f623e5c02d6ff88e2bc14f4126191226d8d53282db82c",
+          "admissions": {
+            "P00049": false
+          },
+          "waits": {},
+          "J": -607.6564107089057,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 555.0,
+          "plan_hash": "3e22e659ea4ea34bd27da30ffbaf964e016a5a9e8e798b390f165d5887742119",
+          "admissions": {
+            "P00050": false
+          },
+          "waits": {},
+          "J": -630.0564107089058,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 558.0,
+          "plan_hash": "ea6adaeac75e99d39d90c9f78f69934c22bb61cf0b2ec0211c865170a4ee3be9",
+          "admissions": {
+            "P00051": false
+          },
+          "waits": {},
+          "J": -642.8564107089057,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 567.0,
+          "plan_hash": "f479eca64bd936e806e0a264f71d583e6df3fcbca62c85d6ce03d69e4640cc9f",
+          "admissions": {
+            "P00052": false
+          },
+          "waits": {},
+          "J": -655.6564107089057,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 573.0,
+          "plan_hash": "70a7edf609514b5e278e9cd5df8ffd66bc22ae9c98731cfe12f113a9c62797f0",
+          "admissions": {
+            "P00053": false
+          },
+          "waits": {},
+          "J": -665.2564107089057,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 579.0,
+          "plan_hash": "56a0a4f4c0e6cb8f3ac30548e0affc940f6a91f142e85d3674e1b8b232ca51d4",
+          "admissions": {
+            "P00054": false
+          },
+          "waits": {},
+          "J": -679.6564107089057,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 587.0,
+          "plan_hash": "3dc6eacc952a6543efe5447fd9ff3dfed4a2f3035a35394cccac0f59d7a043e7",
+          "admissions": {
+            "P00055": false
+          },
+          "waits": {},
+          "J": -697.2564107089057,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "action_search": {
+        "solver": "gurobi",
+        "epochs": 62,
+        "wait_mode": "adaptive",
+        "chosen_wait_interval_counts": {},
+        "feasible_wait_epochs": 4,
+        "feasible_wait_interval_counts": {
+          "10": 14,
+          "5": 14,
+          "2": 14
+        },
+        "feasible_wait_interval_epochs": {
+          "10": 4,
+          "5": 4,
+          "2": 4
+        },
+        "feature_diagnostics": {
+          "existing_chain_near_h_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.19512195121951217,
+            "nonzero_candidates": 262,
+            "action_varying_epochs": 4
+          },
+          "existing_chain_later_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 1.895426829268294,
+            "nonzero_candidates": 259,
+            "action_varying_epochs": 7
+          },
+          "added_trip_reliance_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 4.118140243902441,
+            "nonzero_candidates": 679,
+            "action_varying_epochs": 55
+          },
+          "demand_weighted_drone_tail_delay": {
+            "minimum": 0.0,
+            "maximum": 0.0034801050561225942,
+            "nonzero_candidates": 832,
+            "action_varying_epochs": 58
+          },
+          "demand_weighted_recovery_capacity": {
+            "minimum": 0.0,
+            "maximum": 0.9970029694570138,
+            "nonzero_candidates": 826,
+            "action_varying_epochs": 59
+          },
+          "future_pickup_lateness_exposure": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "nonzero_candidates": 0,
+            "action_varying_epochs": 0
+          },
+          "demand_weighted_delivery_slack": {
+            "minimum": 0.921666092423926,
+            "maximum": 1.0,
+            "nonzero_candidates": 884,
+            "action_varying_epochs": 10
+          }
+        },
+        "decision_seconds": 32.90900289999993,
+        "truncated_epochs": 4,
+        "base_search_truncated_epochs": 3,
+        "enhancement_truncated_epochs": 3,
+        "forced_reject_requests": 0,
+        "service_patterns_attempted": 128,
+        "service_patterns_accepted": 128,
+        "wait_patterns_attempted": 42,
+        "wait_patterns_accepted": 42,
+        "wait_search_truncated_epochs": 0,
+        "service_search_truncated_epochs": 4
+      }
+    },
+    {
+      "net": -657.8754373600111,
+      "plans": "060538d985278694e9bfc91e4b9edd38733b7b84feea46d086c60f8e53da4e2c",
+      "trace": "9e76c0c12c7b8ed93e5e0eedc6073fc75bcebe39b5af67a0d8d9a3f86762c371",
+      "decisions": 61,
+      "accepted": 3,
+      "ledger": {
+        "revenue": 1427.2,
+        "truck_trip": 177.6001377,
+        "truck_time": 34.36794092769165,
+        "drone_activation": 725.0,
+        "flight": 82.50735873231946,
+        "lateness": 0.0,
+        "rejection": 1065.6,
+        "net": -657.8754373600111
+      },
+      "changes": 0,
+      "h": 5,
+      "wait_mode": "adaptive",
+      "review_intervals": [
+        2,
+        5,
+        10
+      ],
+      "realized_pickups": 56,
+      "realized_orders": 88,
+      "realized_pickup_share": 0.6363636363636364,
+      "world_spec": {
+        "layout_id": 112881,
+        "day_id": 0,
+        "total": 80,
+        "share": 0.6,
+        "pattern": "dual",
+        "cities": 2,
+        "pickup_deadline_lags": [
+          240,
+          300,
+          360
+        ],
+        "arrival_mode": "p2"
+      },
+      "input_hash": "0f7cfb732d45017d000eb0f6d2fa17c75ecea408f01b739dd6c87e1fa4dc0939",
+      "i0_hash": "ab868be3f8cc01ebc46f0f2f4ea0ffbdd05e8fafc4132c0aa78880e8ea1470ba",
+      "sample_count": 61,
+      "trained_model": true,
+      "canonical_decisions": "77c34f8cb77ade603ee3da5ec204e33a391650dfa32f93a52b8147ca41d7cb83",
+      "decision_summary": [
+        {
+          "at": 14.0,
+          "plan_hash": "c19c3d4a9654757ed87bfabcf0fe4c3845d7655a14db50a457d1cf4cba3a2400",
+          "admissions": {
+            "P00000": true
+          },
+          "waits": {},
+          "J": 346.47518556113783,
+          "W": -263.492931488162,
+          "features": [
+            0.19512195121951217,
+            0.9512195121951221,
+            0.0,
+            0.0007259737428908003,
+            0.023034650671337305,
+            0.0,
+            0.9966251792549504
+          ]
+        },
+        {
+          "at": 17.55,
+          "plan_hash": "f82acfe029254b4c5f32d10d3ddb6d7b3e50a7fbcb165371afbd33120f8f1f35",
+          "admissions": {},
+          "waits": {},
+          "J": 346.47518556113783,
+          "W": -256.46549573803753,
+          "features": [
+            0.19512195121951217,
+            0.8341463414634147,
+            0.0,
+            0.0006416928377918823,
+            0.020815318524478408,
+            0.0,
+            0.9966251792549503
+          ]
+        },
+        {
+          "at": 25.090460260711524,
+          "plan_hash": "ccd677411179880a66f5d77f9ee49631380646b2ce8c3031c314c9a6109d62f5",
+          "admissions": {},
+          "waits": {},
+          "J": 346.47518556113783,
+          "W": -214.19656971467003,
+          "features": [
+            0.17149390243902443,
+            0.5463414634146341,
+            0.0,
+            0.00044583661703873854,
+            0.014856851460261722,
+            0.0,
+            0.9966251792549504
+          ]
+        },
+        {
+          "at": 29.0,
+          "plan_hash": "ae7a9c4328591323cd38272f0741e99591c3ae324b9aff3a49bc16aec73f3414",
+          "admissions": {
+            "P00001": true
+          },
+          "waits": {},
+          "J": 363.7782118925076,
+          "W": -157.43704258107215,
+          "features": [
+            0.12271341463414635,
+            0.4603658536585365,
+            0.0,
+            0.00036517234718718203,
+            0.012121376717318902,
+            0.0,
+            0.9966251792549504
+          ]
+        },
+        {
+          "at": 38.10586606071152,
+          "plan_hash": "aec7da665ad5517dab439b5e2f94034e0122d662a0a4b393cc06eea0d8e68e7d",
+          "admissions": {},
+          "waits": {},
+          "J": 363.7782118925076,
+          "W": -120.27198080833088,
+          "features": [
+            0.0975609756097561,
+            0.284451219512195,
+            0.0,
+            0.0002190084903354282,
+            0.008048054739932885,
+            0.0,
+            0.9966251792549504
+          ]
+        },
+        {
+          "at": 52.0,
+          "plan_hash": "b4d29bdc90b908c40378fd7035da7ae7759eee6f27f74fe9a25a14c3fa909e27",
+          "admissions": {
+            "P00002": true
+          },
+          "waits": {},
+          "J": 407.7245626399889,
+          "W": -113.07068922584658,
+          "features": [
+            0.0975609756097561,
+            0.1644817073170732,
+            0.0,
+            8.48759681079101e-05,
+            0.0055204311618453706,
+            0.0,
+            0.9966251792549502
+          ]
+        },
+        {
+          "at": 52.68086606071152,
+          "plan_hash": "188c5dc4363b7271aa27fe9e99f2448b4667cecb290ef79d1902d25e7429fb48",
+          "admissions": {},
+          "waits": {},
+          "J": 407.7245626399889,
+          "W": -113.07068922584658,
+          "features": [
+            0.0975609756097561,
+            0.1644817073170732,
+            0.0,
+            8.48759681079101e-05,
+            0.0055204311618453706,
+            0.0,
+            0.9966251792549502
+          ]
+        },
+        {
+          "at": 60.55444651922913,
+          "plan_hash": "475a865ecac0e6935c484d19f4826018f6405007d0d44687e76c88ca7e6b2b84",
+          "admissions": {},
+          "waits": {},
+          "J": 407.7245626399889,
+          "W": -88.05320817857894,
+          "features": [
+            0.08185975609756098,
+            0.024390243902439025,
+            0.0,
+            3.521210771459388e-05,
+            0.002253664838099934,
+            0.0,
+            0.9966251792549503
+          ]
+        },
+        {
+          "at": 73.91985231922912,
+          "plan_hash": "1c158d88efab00d8da6d4c86e35f4e49fcb728027bfa880db0e94c2954d93da2",
+          "admissions": {},
+          "waits": {},
+          "J": 407.7245626399889,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            1.7020161738547838e-06,
+            0.0,
+            0.0,
+            0.9966251792549504
+          ]
+        },
+        {
+          "at": 121.0,
+          "plan_hash": "1ee837d6128ceaaeeb8ebf86063138bc0c554bdd473111bf8f429205c82d9c54",
+          "admissions": {
+            "P00003": false
+          },
+          "waits": {},
+          "J": 396.52456263998886,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 138.0,
+          "plan_hash": "fa33638915e2873e8487335c3b2fc5d0f0b0b50c94ae86a0a0104f299a22940a",
+          "admissions": {
+            "P00004": false
+          },
+          "waits": {},
+          "J": 377.32456263998887,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 150.0,
+          "plan_hash": "8f9ffbb49a272a984e09990459a443cfafcc4ea8104c27ce301309887c01d4f5",
+          "admissions": {
+            "P00005": false
+          },
+          "waits": {},
+          "J": 346.9245626399889,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 162.0,
+          "plan_hash": "1cdf2a4887fc26c4a8c8f365c452202c4db6d07a1738ef1904cd030659d52ff4",
+          "admissions": {
+            "P00006": false
+          },
+          "waits": {},
+          "J": 327.7245626399889,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 164.0,
+          "plan_hash": "61651283aff57aec4d4f215976f95ca7e63a601a85a9ed0b2e1a97511fa5d3f0",
+          "admissions": {
+            "P00007": false
+          },
+          "waits": {},
+          "J": 303.7245626399889,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 166.0,
+          "plan_hash": "ed7bd57fe427ef038568d267d4af59a6736ac8a8873be212d63fb2760b4908d9",
+          "admissions": {
+            "P00008": false
+          },
+          "waits": {},
+          "J": 273.32456263998887,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 179.0,
+          "plan_hash": "255dd7ef38e285eb8603cc0ad22f4ea5444f2e029770baa0554b3b41ef905f16",
+          "admissions": {
+            "P00009": false
+          },
+          "waits": {},
+          "J": 244.5245626399889,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 187.0,
+          "plan_hash": "ad494ac0f1cb499ea0946482595469c7475106f53aff776966d65138f2f89ddc",
+          "admissions": {
+            "P00010": false
+          },
+          "waits": {},
+          "J": 234.9245626399889,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 191.0,
+          "plan_hash": "ecbe597ea67ee3aa42c4b52df3acc98a3fbe24cc5414082bd07569e8e6a82a8a",
+          "admissions": {
+            "P00011": false
+          },
+          "waits": {},
+          "J": 206.12456263998888,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 192.0,
+          "plan_hash": "b617a2f5265d4832c007dbc8aad5cb953c4a6452c975aef7868967ffe4d77e7c",
+          "admissions": {
+            "P00012": false
+          },
+          "waits": {},
+          "J": 194.9245626399889,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 195.0,
+          "plan_hash": "ba4331cec6641a2c4dd0f1d300d1faba274f7443afaef6d5acd6d90e081d9dcf",
+          "admissions": {
+            "P00013": false
+          },
+          "waits": {},
+          "J": 169.3245626399889,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 198.0,
+          "plan_hash": "7b8c80c1e49be993fe578babe8b21be50ed78c1c18bb7ef51a85cdb11d4c4ca7",
+          "admissions": {
+            "P00014": false
+          },
+          "waits": {},
+          "J": 146.9245626399889,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 199.0,
+          "plan_hash": "ce135e1c3e30a2161affababb4fb01ca856bd35db8b800e29a7a1763b2c9cb7b",
+          "admissions": {
+            "P00015": false
+          },
+          "waits": {},
+          "J": 118.12456263998888,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 203.0,
+          "plan_hash": "44b1d7353a2369fa8f1f094dc1afb326f77406ccd05d8ffca8aa57b71233918a",
+          "admissions": {
+            "P00016": false
+          },
+          "waits": {},
+          "J": 106.92456263998889,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 205.0,
+          "plan_hash": "573f44ba2a404e4b4643152c12f6c9acc11e65706fd504639cb9828a1cd58f75",
+          "admissions": {
+            "P00017": false
+          },
+          "waits": {},
+          "J": 89.32456263998888,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 210.0,
+          "plan_hash": "7898adb1b308414711e73a2eeddf429c6d114c4b8ead254f233abc6caab784aa",
+          "admissions": {
+            "P00018": false
+          },
+          "waits": {},
+          "J": 71.72456263998889,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 214.0,
+          "plan_hash": "06b6036613a272a0e55b1decf794bc24f7abaac74d42b845ff7258c93273c25e",
+          "admissions": {
+            "P00019": false
+          },
+          "waits": {},
+          "J": 49.32456263998888,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 217.0,
+          "plan_hash": "579cd0755e0ccb8b25ab92a637e1b29f1647dec66d72107486d6a731c265d234",
+          "admissions": {
+            "P00020": false
+          },
+          "waits": {},
+          "J": 26.924562639988885,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 222.0,
+          "plan_hash": "80a9ba52963c8b6fddd9c9460355903d3f9185492e22ae2b3178f48e4f11627a",
+          "admissions": {
+            "P00021": false
+          },
+          "waits": {},
+          "J": -0.2754373600111143,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 240.0,
+          "plan_hash": "79e365ac27ecf5d96aeb95faa6d0f2fd263c79e1917a24db78c8515338cf2be2",
+          "admissions": {
+            "P00022": false
+          },
+          "waits": {},
+          "J": -14.675437360011115,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 248.0,
+          "plan_hash": "2665b3cb185e9ca3c604e78a243b59413710ea1cfa16120c60bb0b9fdaabb972",
+          "admissions": {
+            "P00023": false,
+            "P00024": false
+          },
+          "waits": {},
+          "J": -41.87543736001111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 257.0,
+          "plan_hash": "ab5482634d63d5f398f16b66f7a4180697544596323958e07e1e01ca05cb1e4b",
+          "admissions": {
+            "P00025": false
+          },
+          "waits": {},
+          "J": -64.27543736001111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 274.0,
+          "plan_hash": "d03e3413dce05694d3f5f17d4e6575455ee0a0c1bf44d990b9ce7eeddd76cba1",
+          "admissions": {
+            "P00026": false
+          },
+          "waits": {},
+          "J": -77.07543736001111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 277.0,
+          "plan_hash": "d9951011d30e481f44eefaf9925a9769d3c079f5fc2c792f5a87e235861508eb",
+          "admissions": {
+            "P00027": false
+          },
+          "waits": {},
+          "J": -99.47543736001111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 278.0,
+          "plan_hash": "750f10416e5b12680b6811a63ec4704d54048b5fc867e117c43c85a1bfbcafea",
+          "admissions": {
+            "P00028": false
+          },
+          "waits": {},
+          "J": -128.27543736001113,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 280.0,
+          "plan_hash": "3cae1b321da4392bf95eb0f2ffaa52acc2faac0372f61aa5d2b30e2e7bdc76c7",
+          "admissions": {
+            "P00029": false
+          },
+          "waits": {},
+          "J": -155.4754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 293.0,
+          "plan_hash": "901e26503ec7c375137ac7a99757d1f6e1e67949743e636e2c19dbec6f6008b2",
+          "admissions": {
+            "P00030": false
+          },
+          "waits": {},
+          "J": -185.87543736001112,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 296.0,
+          "plan_hash": "8fbb2af5c6baf81a54e2ca0db7bcadaaf5c6ca78544619529732c64f9287b92a",
+          "admissions": {
+            "P00031": false
+          },
+          "waits": {},
+          "J": -216.27543736001113,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 298.0,
+          "plan_hash": "1b2f4fb2c59f595b39a483017d12ad938778241dca917ef65fd1e441d07017f9",
+          "admissions": {
+            "P00032": false
+          },
+          "waits": {},
+          "J": -243.4754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 300.0,
+          "plan_hash": "9556be4ca95d9b12b6852d1dba476d1e0033f5071acc22c8d80a55c2e7233b88",
+          "admissions": {
+            "P00033": false
+          },
+          "waits": {},
+          "J": -262.67543736001113,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 337.0,
+          "plan_hash": "af8dabb6d8a041682caf5dbbb59173579b2f78c4d87fa0ada53e48cc50bfb685",
+          "admissions": {
+            "P00034": false
+          },
+          "waits": {},
+          "J": -291.47543736001114,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 338.0,
+          "plan_hash": "1e37ead24bee330aa4e98223a648610c47a571fc8a17876e12a0817ae8c3f908",
+          "admissions": {
+            "P00035": false
+          },
+          "waits": {},
+          "J": -302.67543736001113,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 342.0,
+          "plan_hash": "fc25d303786246b407d1942ebd799adc35973b1db2623ca477e3c503d05e55f8",
+          "admissions": {
+            "P00036": false
+          },
+          "waits": {},
+          "J": -313.8754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 347.0,
+          "plan_hash": "4475505129e21b8e8f53aaf96c163e7192e1058affd45f0dd03b949842f82d46",
+          "admissions": {
+            "P00037": false
+          },
+          "waits": {},
+          "J": -336.2754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 360.0,
+          "plan_hash": "81f6377f9de6040cefbb80cdd915375c0d9ff50ce77eff13977cd9f443a8f357",
+          "admissions": {
+            "P00038": false
+          },
+          "waits": {},
+          "J": -350.67543736001113,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 361.0,
+          "plan_hash": "3615b9d7173368336f029fcb27aeb37b6fedbcab880b9c4b55d298ab6ac41fdc",
+          "admissions": {
+            "P00039": false
+          },
+          "waits": {},
+          "J": -376.2754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 362.0,
+          "plan_hash": "e818edf3943203b0e17dfbe5a590e60dcf16a9c3699fe91d38ab4ec79e0f6290",
+          "admissions": {
+            "P00040": false
+          },
+          "waits": {},
+          "J": -406.67543736001113,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 384.0,
+          "plan_hash": "e4e051ccb07e9924125f40b4000ca94da5702ed8c2931951e82831252829a59b",
+          "admissions": {
+            "P00041": false
+          },
+          "waits": {},
+          "J": -433.8754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 394.0,
+          "plan_hash": "a23c19d8431e8463853408a777a5f646a21a944579b1abd9d91caa71a1a7ba15",
+          "admissions": {
+            "P00042": false
+          },
+          "waits": {},
+          "J": -448.2754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 437.0,
+          "plan_hash": "e8bc988942f3258459fdf7d17505b4ca263cfc90aaa9174234b2c920470e56e0",
+          "admissions": {
+            "P00043": false
+          },
+          "waits": {},
+          "J": -459.47543736001114,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 447.0,
+          "plan_hash": "088dbdaf38a6f6b611593d0102be4e9501b25c4e5db6697e48267094bc3cacbf",
+          "admissions": {
+            "P00044": false
+          },
+          "waits": {},
+          "J": -473.8754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 465.0,
+          "plan_hash": "b52803ae11ba51232e3573617819d5be7bdb53b2718a5230c26f7d27ad5b1f93",
+          "admissions": {
+            "P00045": false
+          },
+          "waits": {},
+          "J": -496.2754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 468.0,
+          "plan_hash": "475894db16a5e09f58c934e05a388534a5ded2f5d499d04ad7e15e3b932405b7",
+          "admissions": {
+            "P00046": false
+          },
+          "waits": {},
+          "J": -509.0754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 516.0,
+          "plan_hash": "b895e604d1f9ab73210f7ab4c94bc645e3a717692ae9533ac120404769d77269",
+          "admissions": {
+            "P00047": false
+          },
+          "waits": {},
+          "J": -521.8754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 526.0,
+          "plan_hash": "2c5697238fe29d028a32f47c0bf0f1d11b76c3e3fa4dbc116836dcf0ae2cda57",
+          "admissions": {
+            "P00048": false
+          },
+          "waits": {},
+          "J": -547.4754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 547.0,
+          "plan_hash": "df7c26422bd5c9e2256f623e5c02d6ff88e2bc14f4126191226d8d53282db82c",
+          "admissions": {
+            "P00049": false
+          },
+          "waits": {},
+          "J": -568.2754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 555.0,
+          "plan_hash": "3e22e659ea4ea34bd27da30ffbaf964e016a5a9e8e798b390f165d5887742119",
+          "admissions": {
+            "P00050": false
+          },
+          "waits": {},
+          "J": -590.6754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 558.0,
+          "plan_hash": "ea6adaeac75e99d39d90c9f78f69934c22bb61cf0b2ec0211c865170a4ee3be9",
+          "admissions": {
+            "P00051": false
+          },
+          "waits": {},
+          "J": -603.4754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 567.0,
+          "plan_hash": "f479eca64bd936e806e0a264f71d583e6df3fcbca62c85d6ce03d69e4640cc9f",
+          "admissions": {
+            "P00052": false
+          },
+          "waits": {},
+          "J": -616.2754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 573.0,
+          "plan_hash": "70a7edf609514b5e278e9cd5df8ffd66bc22ae9c98731cfe12f113a9c62797f0",
+          "admissions": {
+            "P00053": false
+          },
+          "waits": {},
+          "J": -625.8754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 579.0,
+          "plan_hash": "56a0a4f4c0e6cb8f3ac30548e0affc940f6a91f142e85d3674e1b8b232ca51d4",
+          "admissions": {
+            "P00054": false
+          },
+          "waits": {},
+          "J": -640.2754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 587.0,
+          "plan_hash": "3dc6eacc952a6543efe5447fd9ff3dfed4a2f3035a35394cccac0f59d7a043e7",
+          "admissions": {
+            "P00055": false
+          },
+          "waits": {},
+          "J": -657.8754373600111,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "action_search": {
+        "solver": "gurobi",
+        "epochs": 61,
+        "wait_mode": "adaptive",
+        "chosen_wait_interval_counts": {},
+        "feasible_wait_epochs": 4,
+        "feasible_wait_interval_counts": {
+          "10": 9,
+          "5": 9,
+          "2": 9
+        },
+        "feasible_wait_interval_epochs": {
+          "10": 4,
+          "5": 4,
+          "2": 4
+        },
+        "feature_diagnostics": {
+          "existing_chain_near_h_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.19512195121951217,
+            "nonzero_candidates": 243,
+            "action_varying_epochs": 6
+          },
+          "existing_chain_later_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 1.9545731707317082,
+            "nonzero_candidates": 242,
+            "action_varying_epochs": 7
+          },
+          "added_trip_reliance_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 3.919664634146344,
+            "nonzero_candidates": 667,
+            "action_varying_epochs": 55
+          },
+          "demand_weighted_drone_tail_delay": {
+            "minimum": 0.0,
+            "maximum": 0.0013734822425851873,
+            "nonzero_candidates": 809,
+            "action_varying_epochs": 57
+          },
+          "demand_weighted_recovery_capacity": {
+            "minimum": 0.0,
+            "maximum": 0.9966063348416294,
+            "nonzero_candidates": 807,
+            "action_varying_epochs": 59
+          },
+          "future_pickup_lateness_exposure": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "nonzero_candidates": 0,
+            "action_varying_epochs": 0
+          },
+          "demand_weighted_delivery_slack": {
+            "minimum": 0.9748438813683606,
+            "maximum": 1.0,
+            "nonzero_candidates": 861,
+            "action_varying_epochs": 4
+          }
+        },
+        "decision_seconds": 28.646547900000087,
+        "truncated_epochs": 4,
+        "base_search_truncated_epochs": 3,
+        "enhancement_truncated_epochs": 3,
+        "forced_reject_requests": 0,
+        "service_patterns_attempted": 128,
+        "service_patterns_accepted": 128,
+        "wait_patterns_attempted": 27,
+        "wait_patterns_accepted": 27,
+        "wait_search_truncated_epochs": 0,
+        "service_search_truncated_epochs": 4
+      }
+    },
+    {
+      "net": -475.5524268501274,
+      "plans": "3d3ca33266ab618ce5f25dc369a71a5d304de919ecca8d3c7c06c4d4143bcbc9",
+      "trace": "4aeb2da5ccea0b651b2fc3751692541b2af0aef83cfe7be4f7555b58789e2c0d",
+      "decisions": 30,
+      "accepted": 1,
+      "ledger": {
+        "revenue": 656.0,
+        "truck_trip": 188.1392013,
+        "truck_time": 30.694905357248246,
+        "drone_activation": 325.0,
+        "flight": 69.31832019287916,
+        "lateness": 0.0,
+        "rejection": 518.4,
+        "net": -475.5524268501274
+      },
+      "changes": 0,
+      "h": 5,
+      "wait_mode": "adaptive",
+      "review_intervals": [
+        2,
+        5,
+        10
+      ],
+      "realized_pickups": 25,
+      "realized_orders": 41,
+      "realized_pickup_share": 0.6097560975609756,
+      "world_spec": {
+        "layout_id": 112882,
+        "day_id": 0,
+        "total": 40,
+        "share": 0.6,
+        "pattern": "uniform",
+        "cities": 2,
+        "pickup_deadline_lags": [
+          240,
+          300,
+          360
+        ],
+        "arrival_mode": "p2"
+      },
+      "input_hash": "36eacc55b1f6e0bd131bff0da2d3dd0bb1d5ff024cabfc54a9635e136453806f",
+      "i0_hash": "4d398d77a14a1aa1d3486a1f75d9e7d7a83ef89bc2080b4020113d0a40d96ec0",
+      "sample_count": 30,
+      "trained_model": true,
+      "canonical_decisions": "cd5f040a16a99b5dde0d87a81f9ae38152bd8a1db836e5e629dd2477ae029a9c",
+      "decision_summary": [
+        {
+          "at": 7.0,
+          "plan_hash": "56cd899111af59bf424d6275915aee6409c7c94eb3e770f3ffda19e0a5acc158",
+          "admissions": {
+            "P00000": true
+          },
+          "waits": {},
+          "J": 42.847573149872595,
+          "W": -136.9712910218428,
+          "features": [
+            0.09756097560975609,
+            0.5626524390243902,
+            0.0,
+            0.000766073182591272,
+            0.0273162423737342,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 13.775,
+          "plan_hash": "52c3f2e39fccdf3363a6a9de0cca3085806c3a81c26edfd5c7d83cf77cbe48be",
+          "admissions": {},
+          "waits": {},
+          "J": 42.847573149872595,
+          "W": -129.94385527171835,
+          "features": [
+            0.09756097560975609,
+            0.445579268292683,
+            0.0,
+            0.0005784950102926962,
+            0.022598504361291943,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 29.311800199999997,
+          "plan_hash": "61243851e6c8831b325bd574363d378f12422d90b70d78b74d4e97c89fe9918e",
+          "admissions": {},
+          "waits": {},
+          "J": 42.847573149872595,
+          "W": -77.35774656434037,
+          "features": [
+            0.06265243902439026,
+            0.18467987804878036,
+            0.0,
+            0.00022702940917620438,
+            0.010469490568756804,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 40.7368002,
+          "plan_hash": "b43f8679e94092dfb24531b639717b1b5c3742720473c3e9acc0d8b62d70d3e7",
+          "admissions": {},
+          "waits": {},
+          "J": 42.847573149872595,
+          "W": -55.985210460590835,
+          "features": [
+            0.048628048780487806,
+            0.07576219512195123,
+            0.0,
+            9.901406984822797e-05,
+            0.005320054945054944,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 56.1736004,
+          "plan_hash": "b900778b3430758964fb75b258665f0d6c0aecccdd82243ff3fd290b06dc7c93",
+          "admissions": {},
+          "waits": {},
+          "J": 42.847573149872595,
+          "W": -5.24507360707536,
+          "features": [
+            0.004954268292682928,
+            7.621951219512195e-05,
+            0.0,
+            1.7951534530335564e-05,
+            0.00021808146868038266,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 64.73726339312061,
+          "plan_hash": "bcdc2fbe655a554cd938619dc14b5048df721db192e12a29c6514d178befc8bc",
+          "admissions": {},
+          "waits": {},
+          "J": 42.847573149872595,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            4.258339745997738e-06,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 155.0,
+          "plan_hash": "39f250a7af0c8999a343e5e79369f6d018c5a1c9983b5a4f99ec1d26e748c8cd",
+          "admissions": {
+            "P00001": false
+          },
+          "waits": {},
+          "J": 25.247573149872593,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 173.0,
+          "plan_hash": "ea05b85f31f8ecc8c19c2f072fa6e4579e19404e2960d5724114640e7cfbd5e7",
+          "admissions": {
+            "P00002": false
+          },
+          "waits": {},
+          "J": -1.9524268501274047,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 187.0,
+          "plan_hash": "1ee837d6128ceaaeeb8ebf86063138bc0c554bdd473111bf8f429205c82d9c54",
+          "admissions": {
+            "P00003": false
+          },
+          "waits": {},
+          "J": -30.752426850127407,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 189.0,
+          "plan_hash": "fa33638915e2873e8487335c3b2fc5d0f0b0b50c94ae86a0a0104f299a22940a",
+          "admissions": {
+            "P00004": false
+          },
+          "waits": {},
+          "J": -43.552426850127404,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 190.0,
+          "plan_hash": "8f9ffbb49a272a984e09990459a443cfafcc4ea8104c27ce301309887c01d4f5",
+          "admissions": {
+            "P00005": false
+          },
+          "waits": {},
+          "J": -67.5524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 191.0,
+          "plan_hash": "1cdf2a4887fc26c4a8c8f365c452202c4db6d07a1738ef1904cd030659d52ff4",
+          "admissions": {
+            "P00006": false
+          },
+          "waits": {},
+          "J": -80.3524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 199.0,
+          "plan_hash": "61651283aff57aec4d4f215976f95ca7e63a601a85a9ed0b2e1a97511fa5d3f0",
+          "admissions": {
+            "P00007": false
+          },
+          "waits": {},
+          "J": -105.95242685012741,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 207.0,
+          "plan_hash": "ed7bd57fe427ef038568d267d4af59a6736ac8a8873be212d63fb2760b4908d9",
+          "admissions": {
+            "P00008": false
+          },
+          "waits": {},
+          "J": -134.7524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 242.0,
+          "plan_hash": "255dd7ef38e285eb8603cc0ad22f4ea5444f2e029770baa0554b3b41ef905f16",
+          "admissions": {
+            "P00009": false
+          },
+          "waits": {},
+          "J": -165.1524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 253.0,
+          "plan_hash": "ad494ac0f1cb499ea0946482595469c7475106f53aff776966d65138f2f89ddc",
+          "admissions": {
+            "P00010": false
+          },
+          "waits": {},
+          "J": -176.35242685012742,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 286.0,
+          "plan_hash": "ecbe597ea67ee3aa42c4b52df3acc98a3fbe24cc5414082bd07569e8e6a82a8a",
+          "admissions": {
+            "P00011": false
+          },
+          "waits": {},
+          "J": -203.5524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 317.0,
+          "plan_hash": "b617a2f5265d4832c007dbc8aad5cb953c4a6452c975aef7868967ffe4d77e7c",
+          "admissions": {
+            "P00012": false
+          },
+          "waits": {},
+          "J": -232.35242685012742,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 333.0,
+          "plan_hash": "ba4331cec6641a2c4dd0f1d300d1faba274f7443afaef6d5acd6d90e081d9dcf",
+          "admissions": {
+            "P00013": false
+          },
+          "waits": {},
+          "J": -249.9524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 336.0,
+          "plan_hash": "7b8c80c1e49be993fe578babe8b21be50ed78c1c18bb7ef51a85cdb11d4c4ca7",
+          "admissions": {
+            "P00014": false
+          },
+          "waits": {},
+          "J": -265.9524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 403.0,
+          "plan_hash": "ce135e1c3e30a2161affababb4fb01ca856bd35db8b800e29a7a1763b2c9cb7b",
+          "admissions": {
+            "P00015": false
+          },
+          "waits": {},
+          "J": -293.1524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 412.0,
+          "plan_hash": "44b1d7353a2369fa8f1f094dc1afb326f77406ccd05d8ffca8aa57b71233918a",
+          "admissions": {
+            "P00016": false
+          },
+          "waits": {},
+          "J": -323.5524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 468.0,
+          "plan_hash": "573f44ba2a404e4b4643152c12f6c9acc11e65706fd504639cb9828a1cd58f75",
+          "admissions": {
+            "P00017": false
+          },
+          "waits": {},
+          "J": -337.9524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 470.0,
+          "plan_hash": "7898adb1b308414711e73a2eeddf429c6d114c4b8ead254f233abc6caab784aa",
+          "admissions": {
+            "P00018": false
+          },
+          "waits": {},
+          "J": -347.5524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 473.0,
+          "plan_hash": "06b6036613a272a0e55b1decf794bc24f7abaac74d42b845ff7258c93273c25e",
+          "admissions": {
+            "P00019": false
+          },
+          "waits": {},
+          "J": -371.5524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 476.0,
+          "plan_hash": "579cd0755e0ccb8b25ab92a637e1b29f1647dec66d72107486d6a731c265d234",
+          "admissions": {
+            "P00020": false
+          },
+          "waits": {},
+          "J": -397.1524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 477.0,
+          "plan_hash": "80a9ba52963c8b6fddd9c9460355903d3f9185492e22ae2b3178f48e4f11627a",
+          "admissions": {
+            "P00021": false
+          },
+          "waits": {},
+          "J": -427.5524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 494.0,
+          "plan_hash": "79e365ac27ecf5d96aeb95faa6d0f2fd263c79e1917a24db78c8515338cf2be2",
+          "admissions": {
+            "P00022": false
+          },
+          "waits": {},
+          "J": -453.1524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 506.0,
+          "plan_hash": "0724ae185ba579aee4d5aa7d303a81d2703385f66aeb3d99b580434758145ea7",
+          "admissions": {
+            "P00023": false
+          },
+          "waits": {},
+          "J": -462.7524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 575.0,
+          "plan_hash": "cda441bc54df213dd01ebf748deea8236291c7ac2f7bc55e868994aadd7ee5b2",
+          "admissions": {
+            "P00024": false
+          },
+          "waits": {},
+          "J": -475.5524268501274,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "action_search": {
+        "solver": "gurobi",
+        "epochs": 30,
+        "wait_mode": "adaptive",
+        "chosen_wait_interval_counts": {},
+        "feasible_wait_epochs": 4,
+        "feasible_wait_interval_counts": {
+          "10": 11,
+          "5": 11,
+          "2": 11
+        },
+        "feasible_wait_interval_epochs": {
+          "10": 4,
+          "5": 4,
+          "2": 4
+        },
+        "feature_diagnostics": {
+          "existing_chain_near_h_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.09756097560975609,
+            "nonzero_candidates": 112,
+            "action_varying_epochs": 3
+          },
+          "existing_chain_later_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 1.0041920731707321,
+            "nonzero_candidates": 111,
+            "action_varying_epochs": 5
+          },
+          "added_trip_reliance_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 2.2689786585365868,
+            "nonzero_candidates": 286,
+            "action_varying_epochs": 25
+          },
+          "demand_weighted_drone_tail_delay": {
+            "minimum": 0.0,
+            "maximum": 0.0017440053062202981,
+            "nonzero_candidates": 354,
+            "action_varying_epochs": 28
+          },
+          "demand_weighted_recovery_capacity": {
+            "minimum": 0.0,
+            "maximum": 0.9969230769230774,
+            "nonzero_candidates": 352,
+            "action_varying_epochs": 29
+          },
+          "future_pickup_lateness_exposure": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "nonzero_candidates": 0,
+            "action_varying_epochs": 0
+          },
+          "demand_weighted_delivery_slack": {
+            "minimum": 0.9679361900624759,
+            "maximum": 1.0,
+            "nonzero_candidates": 378,
+            "action_varying_epochs": 4
+          }
+        },
+        "decision_seconds": 9.287280699999997,
+        "truncated_epochs": 1,
+        "base_search_truncated_epochs": 1,
+        "enhancement_truncated_epochs": 1,
+        "forced_reject_requests": 0,
+        "service_patterns_attempted": 32,
+        "service_patterns_accepted": 32,
+        "wait_patterns_attempted": 33,
+        "wait_patterns_accepted": 33,
+        "wait_search_truncated_epochs": 0,
+        "service_search_truncated_epochs": 1
+      }
+    },
+    {
+      "net": -444.3960240711143,
+      "plans": "22a7c3ffe5763b462fd8d29d0a620f45dfe5b406a036910e4378c072069b2e89",
+      "trace": "2b3257d10bedab9a32f14faee54e1b23e5df37551368be3e6c6027d4496463ec",
+      "decisions": 30,
+      "accepted": 1,
+      "ledger": {
+        "revenue": 656.0,
+        "truck_trip": 188.1392013,
+        "truck_time": 31.592666964767957,
+        "drone_activation": 325.0,
+        "flight": 37.26415580634637,
+        "lateness": 0.0,
+        "rejection": 518.4,
+        "net": -444.3960240711143
+      },
+      "changes": 0,
+      "h": 5,
+      "wait_mode": "adaptive",
+      "review_intervals": [
+        2,
+        5,
+        10
+      ],
+      "realized_pickups": 25,
+      "realized_orders": 41,
+      "realized_pickup_share": 0.6097560975609756,
+      "world_spec": {
+        "layout_id": 112882,
+        "day_id": 0,
+        "total": 40,
+        "share": 0.6,
+        "pattern": "dual",
+        "cities": 2,
+        "pickup_deadline_lags": [
+          240,
+          300,
+          360
+        ],
+        "arrival_mode": "p2"
+      },
+      "input_hash": "e16e9f497801ce8f93af48411fcbe402670079b2e88d1c98039cff3ac938092c",
+      "i0_hash": "9b8ee7b0bb7e7065d631ca2a5efe34df51cba26976fd1aad25450de6bb2abd58",
+      "sample_count": 30,
+      "trained_model": true,
+      "canonical_decisions": "de4ba00249fe588a463c1ccb65527577d5b6191370328b078bdbe89110478031",
+      "decision_summary": [
+        {
+          "at": 7.0,
+          "plan_hash": "007bd99ae871f9cc2cb5ecf5db218ead36d8902b048dc047198f685dcb04ec95",
+          "admissions": {
+            "P00000": true
+          },
+          "waits": {},
+          "J": 74.00397592888567,
+          "W": -149.12289867309966,
+          "features": [
+            0.09756097560975607,
+            0.7650914634146344,
+            0.0,
+            0.00033925511448829705,
+            0.03589931461884393,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 15.15,
+          "plan_hash": "2b82de48b153680929540e8910a786e29f7861e39a014ca1a6b9d5fb209222f9",
+          "admissions": {},
+          "waits": {},
+          "J": 74.00397592888567,
+          "W": -139.75298433960037,
+          "features": [
+            0.09756097560975607,
+            0.6089939024390245,
+            0.0,
+            0.0002057107324980607,
+            0.029596910612535613,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 29.7868002,
+          "plan_hash": "c82fe64a3b7d5b3c21e54d556c4902dfcab71e17207759e4b440536b9fbbcca6",
+          "admissions": {},
+          "waits": {},
+          "J": 74.00397592888567,
+          "W": -123.35563425597663,
+          "features": [
+            0.09756097560975607,
+            0.33582317073170725,
+            0.0,
+            6.505777220133095e-05,
+            0.01836566983443285,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 41.536800199999995,
+          "plan_hash": "3d99a10ce02e789a0cadeac1c1a726430ca0a7aad618199fa2f485ad2d22930a",
+          "admissions": {},
+          "waits": {},
+          "J": 74.00397592888567,
+          "W": -88.32699762260843,
+          "features": [
+            0.07644817073170732,
+            0.12431402439024387,
+            0.0,
+            1.311343653149797e-05,
+            0.008593633750080869,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 52.3448672119199,
+          "plan_hash": "04733ae33693dbf17525a230e26d89ccb28678816e7df1676463922db99a1fc5",
+          "admissions": {},
+          "waits": {},
+          "J": 74.00397592888567,
+          "W": -48.043529526305996,
+          "features": [
+            0.044359756097560966,
+            0.018673780487804877,
+            0.0,
+            2.2809752875954026e-10,
+            0.00272334801896957,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 66.9816674119199,
+          "plan_hash": "dcd2023ed87476a3e11a6f370f3bcf4268eef935ae7de5565896f11b20d4524a",
+          "admissions": {},
+          "waits": {},
+          "J": 74.00397592888567,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 155.0,
+          "plan_hash": "39f250a7af0c8999a343e5e79369f6d018c5a1c9983b5a4f99ec1d26e748c8cd",
+          "admissions": {
+            "P00001": false
+          },
+          "waits": {},
+          "J": 56.403975928885664,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 173.0,
+          "plan_hash": "ea05b85f31f8ecc8c19c2f072fa6e4579e19404e2960d5724114640e7cfbd5e7",
+          "admissions": {
+            "P00002": false
+          },
+          "waits": {},
+          "J": 29.20397592888567,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 187.0,
+          "plan_hash": "1ee837d6128ceaaeeb8ebf86063138bc0c554bdd473111bf8f429205c82d9c54",
+          "admissions": {
+            "P00003": false
+          },
+          "waits": {},
+          "J": 0.40397592888566763,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 189.0,
+          "plan_hash": "fa33638915e2873e8487335c3b2fc5d0f0b0b50c94ae86a0a0104f299a22940a",
+          "admissions": {
+            "P00004": false
+          },
+          "waits": {},
+          "J": -12.396024071114333,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 190.0,
+          "plan_hash": "8f9ffbb49a272a984e09990459a443cfafcc4ea8104c27ce301309887c01d4f5",
+          "admissions": {
+            "P00005": false
+          },
+          "waits": {},
+          "J": -36.39602407111433,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 191.0,
+          "plan_hash": "1cdf2a4887fc26c4a8c8f365c452202c4db6d07a1738ef1904cd030659d52ff4",
+          "admissions": {
+            "P00006": false
+          },
+          "waits": {},
+          "J": -49.19602407111433,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 199.0,
+          "plan_hash": "61651283aff57aec4d4f215976f95ca7e63a601a85a9ed0b2e1a97511fa5d3f0",
+          "admissions": {
+            "P00007": false
+          },
+          "waits": {},
+          "J": -74.79602407111433,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 207.0,
+          "plan_hash": "ed7bd57fe427ef038568d267d4af59a6736ac8a8873be212d63fb2760b4908d9",
+          "admissions": {
+            "P00008": false
+          },
+          "waits": {},
+          "J": -103.59602407111433,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 242.0,
+          "plan_hash": "255dd7ef38e285eb8603cc0ad22f4ea5444f2e029770baa0554b3b41ef905f16",
+          "admissions": {
+            "P00009": false
+          },
+          "waits": {},
+          "J": -133.99602407111433,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 253.0,
+          "plan_hash": "ad494ac0f1cb499ea0946482595469c7475106f53aff776966d65138f2f89ddc",
+          "admissions": {
+            "P00010": false
+          },
+          "waits": {},
+          "J": -145.19602407111432,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 286.0,
+          "plan_hash": "ecbe597ea67ee3aa42c4b52df3acc98a3fbe24cc5414082bd07569e8e6a82a8a",
+          "admissions": {
+            "P00011": false
+          },
+          "waits": {},
+          "J": -172.39602407111434,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 317.0,
+          "plan_hash": "b617a2f5265d4832c007dbc8aad5cb953c4a6452c975aef7868967ffe4d77e7c",
+          "admissions": {
+            "P00012": false
+          },
+          "waits": {},
+          "J": -201.19602407111432,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 333.0,
+          "plan_hash": "ba4331cec6641a2c4dd0f1d300d1faba274f7443afaef6d5acd6d90e081d9dcf",
+          "admissions": {
+            "P00013": false
+          },
+          "waits": {},
+          "J": -218.79602407111435,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 336.0,
+          "plan_hash": "7b8c80c1e49be993fe578babe8b21be50ed78c1c18bb7ef51a85cdb11d4c4ca7",
+          "admissions": {
+            "P00014": false
+          },
+          "waits": {},
+          "J": -234.79602407111435,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 403.0,
+          "plan_hash": "ce135e1c3e30a2161affababb4fb01ca856bd35db8b800e29a7a1763b2c9cb7b",
+          "admissions": {
+            "P00015": false
+          },
+          "waits": {},
+          "J": -261.99602407111433,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 412.0,
+          "plan_hash": "44b1d7353a2369fa8f1f094dc1afb326f77406ccd05d8ffca8aa57b71233918a",
+          "admissions": {
+            "P00016": false
+          },
+          "waits": {},
+          "J": -292.3960240711143,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 468.0,
+          "plan_hash": "573f44ba2a404e4b4643152c12f6c9acc11e65706fd504639cb9828a1cd58f75",
+          "admissions": {
+            "P00017": false
+          },
+          "waits": {},
+          "J": -306.79602407111435,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 470.0,
+          "plan_hash": "7898adb1b308414711e73a2eeddf429c6d114c4b8ead254f233abc6caab784aa",
+          "admissions": {
+            "P00018": false
+          },
+          "waits": {},
+          "J": -316.3960240711143,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 473.0,
+          "plan_hash": "06b6036613a272a0e55b1decf794bc24f7abaac74d42b845ff7258c93273c25e",
+          "admissions": {
+            "P00019": false
+          },
+          "waits": {},
+          "J": -340.3960240711143,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 476.0,
+          "plan_hash": "579cd0755e0ccb8b25ab92a637e1b29f1647dec66d72107486d6a731c265d234",
+          "admissions": {
+            "P00020": false
+          },
+          "waits": {},
+          "J": -365.99602407111433,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 477.0,
+          "plan_hash": "80a9ba52963c8b6fddd9c9460355903d3f9185492e22ae2b3178f48e4f11627a",
+          "admissions": {
+            "P00021": false
+          },
+          "waits": {},
+          "J": -396.3960240711143,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 494.0,
+          "plan_hash": "79e365ac27ecf5d96aeb95faa6d0f2fd263c79e1917a24db78c8515338cf2be2",
+          "admissions": {
+            "P00022": false
+          },
+          "waits": {},
+          "J": -421.99602407111433,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 506.0,
+          "plan_hash": "0724ae185ba579aee4d5aa7d303a81d2703385f66aeb3d99b580434758145ea7",
+          "admissions": {
+            "P00023": false
+          },
+          "waits": {},
+          "J": -431.59602407111436,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 575.0,
+          "plan_hash": "cda441bc54df213dd01ebf748deea8236291c7ac2f7bc55e868994aadd7ee5b2",
+          "admissions": {
+            "P00024": false
+          },
+          "waits": {},
+          "J": -444.3960240711143,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "action_search": {
+        "solver": "gurobi",
+        "epochs": 30,
+        "wait_mode": "adaptive",
+        "chosen_wait_interval_counts": {},
+        "feasible_wait_epochs": 4,
+        "feasible_wait_interval_counts": {
+          "10": 8,
+          "5": 8,
+          "2": 8
+        },
+        "feasible_wait_interval_epochs": {
+          "10": 4,
+          "5": 4,
+          "2": 4
+        },
+        "feature_diagnostics": {
+          "existing_chain_near_h_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.09756097560975607,
+            "nonzero_candidates": 105,
+            "action_varying_epochs": 2
+          },
+          "existing_chain_later_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.9586128048780493,
+            "nonzero_candidates": 104,
+            "action_varying_epochs": 5
+          },
+          "added_trip_reliance_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 2.105487804878049,
+            "nonzero_candidates": 280,
+            "action_varying_epochs": 25
+          },
+          "demand_weighted_drone_tail_delay": {
+            "minimum": 0.0,
+            "maximum": 0.0003604629339772393,
+            "nonzero_candidates": 343,
+            "action_varying_epochs": 27
+          },
+          "demand_weighted_recovery_capacity": {
+            "minimum": 0.0,
+            "maximum": 0.9963076923076927,
+            "nonzero_candidates": 345,
+            "action_varying_epochs": 29
+          },
+          "future_pickup_lateness_exposure": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "nonzero_candidates": 0,
+            "action_varying_epochs": 0
+          },
+          "demand_weighted_delivery_slack": {
+            "minimum": 1.0,
+            "maximum": 1.0,
+            "nonzero_candidates": 371,
+            "action_varying_epochs": 0
+          }
+        },
+        "decision_seconds": 9.806437600000038,
+        "truncated_epochs": 1,
+        "base_search_truncated_epochs": 1,
+        "enhancement_truncated_epochs": 1,
+        "forced_reject_requests": 0,
+        "service_patterns_attempted": 32,
+        "service_patterns_accepted": 32,
+        "wait_patterns_attempted": 24,
+        "wait_patterns_accepted": 24,
+        "wait_search_truncated_epochs": 0,
+        "service_search_truncated_epochs": 1
+      }
+    },
+    {
+      "net": -652.4675506780309,
+      "plans": "dc00de1ab0cb2b00a22b79e3f5564a2b6f9f80b4026522272a4f3aee22e580ed",
+      "trace": "42f0f4530311cd114fdd46735baa5aef25d96050e0c050930ea1ef71ad11ce0f",
+      "decisions": 54,
+      "accepted": 3,
+      "ledger": {
+        "revenue": 1344.0,
+        "truck_trip": 188.1392013,
+        "truck_time": 45.37958510032953,
+        "drone_activation": 700.0,
+        "flight": 136.54876427770134,
+        "lateness": 0.0,
+        "rejection": 926.4,
+        "net": -652.4675506780309
+      },
+      "changes": 0,
+      "h": 5,
+      "wait_mode": "adaptive",
+      "review_intervals": [
+        2,
+        5,
+        10
+      ],
+      "realized_pickups": 48,
+      "realized_orders": 80,
+      "realized_pickup_share": 0.6,
+      "world_spec": {
+        "layout_id": 112882,
+        "day_id": 0,
+        "total": 80,
+        "share": 0.6,
+        "pattern": "uniform",
+        "cities": 2,
+        "pickup_deadline_lags": [
+          240,
+          300,
+          360
+        ],
+        "arrival_mode": "p2"
+      },
+      "input_hash": "8dece3425b243922c9a52d901b9bb979db0cdd445bc16a4916d6289851a89f19",
+      "i0_hash": "245774a89584c8b3c863a459920eb61e2c7f05540299a38889410899a5ef386c",
+      "sample_count": 54,
+      "trained_model": true,
+      "canonical_decisions": "377ca385d7ad35722f3e9452588ca08094e6c2e2f64f5635f7956bcac077bc0c",
+      "decision_summary": [
+        {
+          "at": 13.0,
+          "plan_hash": "5fd9ecf9ebb8818a672e8ccdf6821d84b8e9066cfc0ba999216124eea43b042f",
+          "admissions": {
+            "P00000": true
+          },
+          "waits": {},
+          "J": 200.6094638531879,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0020188060497712914,
+            0.0,
+            0.0,
+            0.9836966446739928
+          ]
+        },
+        {
+          "at": 14.125,
+          "plan_hash": "cc409b2589417dcf2f1b7176f3e7e797a383e416ebad16d40ed4d658c5ea8024",
+          "admissions": {},
+          "waits": {},
+          "J": 200.6094638531879,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0019523007507085781,
+            0.0,
+            0.0,
+            0.9836966446739929
+          ]
+        },
+        {
+          "at": 25.45099519267001,
+          "plan_hash": "69e18bbf6945b42856940dfe49532d5257a236757ba30725d65ea09af002b1d8",
+          "admissions": {},
+          "waits": {},
+          "J": 200.6094638531879,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0013062907658348097,
+            0.0,
+            0.0,
+            0.9836966446739928
+          ]
+        },
+        {
+          "at": 42.71279539267001,
+          "plan_hash": "b0fda6d8a2cd5bf56f2e5a61c0d886aa2751736238f7eeef2d3d24d4278e32e5",
+          "admissions": {},
+          "waits": {},
+          "J": 200.6094638531879,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0006001694709439036,
+            0.0,
+            0.0,
+            0.9836966446739929
+          ]
+        },
+        {
+          "at": 48.0,
+          "plan_hash": "4b05d6cd197821672e044d565b268e475138ba8d14bd09b1a0cbc66647fdf8c0",
+          "admissions": {
+            "P00001": true
+          },
+          "waits": {},
+          "J": 226.91905043924245,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.00045138642400679746,
+            0.0,
+            0.0,
+            0.981174984183476
+          ]
+        },
+        {
+          "at": 51.0,
+          "plan_hash": "20d63255792d6a5c0d34f25bbcc80190b6c49c95c2be7289a7dd58dafcbd13fd",
+          "admissions": {
+            "P00002": true
+          },
+          "waits": {},
+          "J": 273.9324493219691,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0006486556144372546,
+            0.0,
+            0.0,
+            0.9676042924477427
+          ]
+        },
+        {
+          "at": 55.38779539267001,
+          "plan_hash": "317564c885c48c9cffee0e6f0c7748610cea5dbf427faed911e4dfd9285514bc",
+          "admissions": {},
+          "waits": {},
+          "J": 273.9324493219691,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0005380013177001681,
+            0.0,
+            0.0,
+            0.9676042924477427
+          ]
+        },
+        {
+          "at": 71.40121164083546,
+          "plan_hash": "f323bb0ec332eae4d5e98aa7a4e9260f05b8cc5e9008a3c0ae8ae18f29e0a32d",
+          "admissions": {},
+          "waits": {},
+          "J": 273.9324493219691,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.00022797638916650565,
+            0.0,
+            0.0,
+            0.9687167111389597
+          ]
+        },
+        {
+          "at": 88.18801184083546,
+          "plan_hash": "754ca65463fedb92fb953970930f558fbe584fc59460720e3a67ea09d9bdf615",
+          "admissions": {},
+          "waits": {},
+          "J": 273.9324493219691,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            6.149861399668806e-05,
+            0.0,
+            0.0,
+            0.9687167111389599
+          ]
+        },
+        {
+          "at": 101.44896275082382,
+          "plan_hash": "070f9e7a3122fee900702d00e665436c2dd1d81230019415b4f25db44c4dc7a4",
+          "admissions": {},
+          "waits": {},
+          "J": 273.9324493219691,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            7.192514176574674e-06,
+            0.0,
+            0.0,
+            0.9687167111389599
+          ]
+        },
+        {
+          "at": 129.0,
+          "plan_hash": "1ee837d6128ceaaeeb8ebf86063138bc0c554bdd473111bf8f429205c82d9c54",
+          "admissions": {
+            "P00003": false
+          },
+          "waits": {},
+          "J": 245.13244932196912,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 140.0,
+          "plan_hash": "fa33638915e2873e8487335c3b2fc5d0f0b0b50c94ae86a0a0104f299a22940a",
+          "admissions": {
+            "P00004": false
+          },
+          "waits": {},
+          "J": 232.3324493219691,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 152.0,
+          "plan_hash": "8f9ffbb49a272a984e09990459a443cfafcc4ea8104c27ce301309887c01d4f5",
+          "admissions": {
+            "P00005": false
+          },
+          "waits": {},
+          "J": 208.3324493219691,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 153.0,
+          "plan_hash": "1cdf2a4887fc26c4a8c8f365c452202c4db6d07a1738ef1904cd030659d52ff4",
+          "admissions": {
+            "P00006": false
+          },
+          "waits": {},
+          "J": 195.53244932196912,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 170.0,
+          "plan_hash": "61651283aff57aec4d4f215976f95ca7e63a601a85a9ed0b2e1a97511fa5d3f0",
+          "admissions": {
+            "P00007": false
+          },
+          "waits": {},
+          "J": 169.93244932196913,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 177.0,
+          "plan_hash": "ed7bd57fe427ef038568d267d4af59a6736ac8a8873be212d63fb2760b4908d9",
+          "admissions": {
+            "P00008": false
+          },
+          "waits": {},
+          "J": 141.13244932196912,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 181.0,
+          "plan_hash": "255dd7ef38e285eb8603cc0ad22f4ea5444f2e029770baa0554b3b41ef905f16",
+          "admissions": {
+            "P00009": false
+          },
+          "waits": {},
+          "J": 110.73244932196913,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 186.0,
+          "plan_hash": "ad494ac0f1cb499ea0946482595469c7475106f53aff776966d65138f2f89ddc",
+          "admissions": {
+            "P00010": false
+          },
+          "waits": {},
+          "J": 99.53244932196912,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 201.0,
+          "plan_hash": "ecbe597ea67ee3aa42c4b52df3acc98a3fbe24cc5414082bd07569e8e6a82a8a",
+          "admissions": {
+            "P00011": false
+          },
+          "waits": {},
+          "J": 72.33244932196912,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 225.0,
+          "plan_hash": "b617a2f5265d4832c007dbc8aad5cb953c4a6452c975aef7868967ffe4d77e7c",
+          "admissions": {
+            "P00012": false
+          },
+          "waits": {},
+          "J": 43.532449321969125,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 231.0,
+          "plan_hash": "ba4331cec6641a2c4dd0f1d300d1faba274f7443afaef6d5acd6d90e081d9dcf",
+          "admissions": {
+            "P00013": false
+          },
+          "waits": {},
+          "J": 25.932449321969123,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 236.0,
+          "plan_hash": "7b8c80c1e49be993fe578babe8b21be50ed78c1c18bb7ef51a85cdb11d4c4ca7",
+          "admissions": {
+            "P00014": false
+          },
+          "waits": {},
+          "J": 9.932449321969122,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 259.0,
+          "plan_hash": "ce135e1c3e30a2161affababb4fb01ca856bd35db8b800e29a7a1763b2c9cb7b",
+          "admissions": {
+            "P00015": false
+          },
+          "waits": {},
+          "J": -17.26755067803088,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 267.0,
+          "plan_hash": "2a1b30ffc291d70888b46825e5779bce68387bed0553675052f8c78fdfe6569a",
+          "admissions": {
+            "P00016": false,
+            "P00017": false
+          },
+          "waits": {},
+          "J": -62.06755067803088,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 274.0,
+          "plan_hash": "7898adb1b308414711e73a2eeddf429c6d114c4b8ead254f233abc6caab784aa",
+          "admissions": {
+            "P00018": false
+          },
+          "waits": {},
+          "J": -71.66755067803088,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 291.0,
+          "plan_hash": "06b6036613a272a0e55b1decf794bc24f7abaac74d42b845ff7258c93273c25e",
+          "admissions": {
+            "P00019": false
+          },
+          "waits": {},
+          "J": -95.66755067803088,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 294.0,
+          "plan_hash": "579cd0755e0ccb8b25ab92a637e1b29f1647dec66d72107486d6a731c265d234",
+          "admissions": {
+            "P00020": false
+          },
+          "waits": {},
+          "J": -121.26755067803087,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 297.0,
+          "plan_hash": "80a9ba52963c8b6fddd9c9460355903d3f9185492e22ae2b3178f48e4f11627a",
+          "admissions": {
+            "P00021": false
+          },
+          "waits": {},
+          "J": -151.6675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 304.0,
+          "plan_hash": "79e365ac27ecf5d96aeb95faa6d0f2fd263c79e1917a24db78c8515338cf2be2",
+          "admissions": {
+            "P00022": false
+          },
+          "waits": {},
+          "J": -177.2675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 312.0,
+          "plan_hash": "0724ae185ba579aee4d5aa7d303a81d2703385f66aeb3d99b580434758145ea7",
+          "admissions": {
+            "P00023": false
+          },
+          "waits": {},
+          "J": -186.86755067803088,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 328.0,
+          "plan_hash": "cda441bc54df213dd01ebf748deea8236291c7ac2f7bc55e868994aadd7ee5b2",
+          "admissions": {
+            "P00024": false
+          },
+          "waits": {},
+          "J": -199.6675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 352.0,
+          "plan_hash": "ab5482634d63d5f398f16b66f7a4180697544596323958e07e1e01ca05cb1e4b",
+          "admissions": {
+            "P00025": false
+          },
+          "waits": {},
+          "J": -214.06755067803087,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 359.0,
+          "plan_hash": "d03e3413dce05694d3f5f17d4e6575455ee0a0c1bf44d990b9ce7eeddd76cba1",
+          "admissions": {
+            "P00026": false
+          },
+          "waits": {},
+          "J": -230.06755067803087,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 383.0,
+          "plan_hash": "d9951011d30e481f44eefaf9925a9769d3c079f5fc2c792f5a87e235861508eb",
+          "admissions": {
+            "P00027": false
+          },
+          "waits": {},
+          "J": -255.6675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 390.0,
+          "plan_hash": "750f10416e5b12680b6811a63ec4704d54048b5fc867e117c43c85a1bfbcafea",
+          "admissions": {
+            "P00028": false
+          },
+          "waits": {},
+          "J": -286.0675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 405.0,
+          "plan_hash": "3cae1b321da4392bf95eb0f2ffaa52acc2faac0372f61aa5d2b30e2e7bdc76c7",
+          "admissions": {
+            "P00029": false
+          },
+          "waits": {},
+          "J": -303.66755067803086,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 421.0,
+          "plan_hash": "901e26503ec7c375137ac7a99757d1f6e1e67949743e636e2c19dbec6f6008b2",
+          "admissions": {
+            "P00030": false
+          },
+          "waits": {},
+          "J": -326.0675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 422.0,
+          "plan_hash": "8fbb2af5c6baf81a54e2ca0db7bcadaaf5c6ca78544619529732c64f9287b92a",
+          "admissions": {
+            "P00031": false
+          },
+          "waits": {},
+          "J": -342.0675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 430.0,
+          "plan_hash": "1b2f4fb2c59f595b39a483017d12ad938778241dca917ef65fd1e441d07017f9",
+          "admissions": {
+            "P00032": false
+          },
+          "waits": {},
+          "J": -351.66755067803086,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 441.0,
+          "plan_hash": "9556be4ca95d9b12b6852d1dba476d1e0033f5071acc22c8d80a55c2e7233b88",
+          "admissions": {
+            "P00033": false
+          },
+          "waits": {},
+          "J": -377.2675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 455.0,
+          "plan_hash": "af8dabb6d8a041682caf5dbbb59173579b2f78c4d87fa0ada53e48cc50bfb685",
+          "admissions": {
+            "P00034": false
+          },
+          "waits": {},
+          "J": -407.66755067803086,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 458.0,
+          "plan_hash": "1e37ead24bee330aa4e98223a648610c47a571fc8a17876e12a0817ae8c3f908",
+          "admissions": {
+            "P00035": false
+          },
+          "waits": {},
+          "J": -434.86755067803085,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 463.0,
+          "plan_hash": "fc25d303786246b407d1942ebd799adc35973b1db2623ca477e3c503d05e55f8",
+          "admissions": {
+            "P00036": false
+          },
+          "waits": {},
+          "J": -457.2675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 472.0,
+          "plan_hash": "4475505129e21b8e8f53aaf96c163e7192e1058affd45f0dd03b949842f82d46",
+          "admissions": {
+            "P00037": false
+          },
+          "waits": {},
+          "J": -478.0675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 482.0,
+          "plan_hash": "81f6377f9de6040cefbb80cdd915375c0d9ff50ce77eff13977cd9f443a8f357",
+          "admissions": {
+            "P00038": false
+          },
+          "waits": {},
+          "J": -490.86755067803085,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 499.0,
+          "plan_hash": "3615b9d7173368336f029fcb27aeb37b6fedbcab880b9c4b55d298ab6ac41fdc",
+          "admissions": {
+            "P00039": false
+          },
+          "waits": {},
+          "J": -510.0675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 506.0,
+          "plan_hash": "e818edf3943203b0e17dfbe5a590e60dcf16a9c3699fe91d38ab4ec79e0f6290",
+          "admissions": {
+            "P00040": false
+          },
+          "waits": {},
+          "J": -532.4675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 518.0,
+          "plan_hash": "e4e051ccb07e9924125f40b4000ca94da5702ed8c2931951e82831252829a59b",
+          "admissions": {
+            "P00041": false
+          },
+          "waits": {},
+          "J": -546.8675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 532.0,
+          "plan_hash": "a23c19d8431e8463853408a777a5f646a21a944579b1abd9d91caa71a1a7ba15",
+          "admissions": {
+            "P00042": false
+          },
+          "waits": {},
+          "J": -558.0675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 535.0,
+          "plan_hash": "e8bc988942f3258459fdf7d17505b4ca263cfc90aaa9174234b2c920470e56e0",
+          "admissions": {
+            "P00043": false
+          },
+          "waits": {},
+          "J": -588.4675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 542.0,
+          "plan_hash": "088dbdaf38a6f6b611593d0102be4e9501b25c4e5db6697e48267094bc3cacbf",
+          "admissions": {
+            "P00044": false
+          },
+          "waits": {},
+          "J": -598.0675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 552.0,
+          "plan_hash": "b52803ae11ba51232e3573617819d5be7bdb53b2718a5230c26f7d27ad5b1f93",
+          "admissions": {
+            "P00045": false
+          },
+          "waits": {},
+          "J": -612.4675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 563.0,
+          "plan_hash": "475894db16a5e09f58c934e05a388534a5ded2f5d499d04ad7e15e3b932405b7",
+          "admissions": {
+            "P00046": false
+          },
+          "waits": {},
+          "J": -628.4675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 570.0,
+          "plan_hash": "b895e604d1f9ab73210f7ab4c94bc645e3a717692ae9533ac120404769d77269",
+          "admissions": {
+            "P00047": false
+          },
+          "waits": {},
+          "J": -652.4675506780309,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "action_search": {
+        "solver": "gurobi",
+        "epochs": 54,
+        "wait_mode": "adaptive",
+        "chosen_wait_interval_counts": {},
+        "feasible_wait_epochs": 4,
+        "feasible_wait_interval_counts": {
+          "10": 11,
+          "5": 11,
+          "2": 11
+        },
+        "feasible_wait_interval_epochs": {
+          "10": 4,
+          "5": 4,
+          "2": 4
+        },
+        "feature_diagnostics": {
+          "existing_chain_near_h_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.0975609756097561,
+            "nonzero_candidates": 85,
+            "action_varying_epochs": 6
+          },
+          "existing_chain_later_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.8681402439024384,
+            "nonzero_candidates": 78,
+            "action_varying_epochs": 6
+          },
+          "added_trip_reliance_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 4.5379573170731735,
+            "nonzero_candidates": 614,
+            "action_varying_epochs": 47
+          },
+          "demand_weighted_drone_tail_delay": {
+            "minimum": 0.0,
+            "maximum": 0.0031271830442575464,
+            "nonzero_candidates": 749,
+            "action_varying_epochs": 50
+          },
+          "demand_weighted_recovery_capacity": {
+            "minimum": 0.0,
+            "maximum": 0.9889573317307696,
+            "nonzero_candidates": 695,
+            "action_varying_epochs": 50
+          },
+          "future_pickup_lateness_exposure": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "nonzero_candidates": 0,
+            "action_varying_epochs": 0
+          },
+          "demand_weighted_delivery_slack": {
+            "minimum": 0.9416517799508083,
+            "maximum": 1.0,
+            "nonzero_candidates": 793,
+            "action_varying_epochs": 8
+          }
+        },
+        "decision_seconds": 27.34055529999995,
+        "truncated_epochs": 4,
+        "base_search_truncated_epochs": 3,
+        "enhancement_truncated_epochs": 3,
+        "forced_reject_requests": 0,
+        "service_patterns_attempted": 128,
+        "service_patterns_accepted": 128,
+        "wait_patterns_attempted": 33,
+        "wait_patterns_accepted": 33,
+        "wait_search_truncated_epochs": 0,
+        "service_search_truncated_epochs": 4
+      }
+    },
+    {
+      "net": -614.1128729251385,
+      "plans": "17484272c13d5c0f42f1634149e07b94682142aaae3fa5fd3dc61a9d6e5de4c5",
+      "trace": "b3782622704b0c6179e5c487746ebfbe86baf40830a9d62142a4bd3a58df2d13",
+      "decisions": 53,
+      "accepted": 3,
+      "ledger": {
+        "revenue": 1344.0,
+        "truck_trip": 188.1392013,
+        "truck_time": 34.57758078927301,
+        "drone_activation": 725.0,
+        "flight": 83.9960908358655,
+        "lateness": 0.0,
+        "rejection": 926.4,
+        "net": -614.1128729251385
+      },
+      "changes": 0,
+      "h": 5,
+      "wait_mode": "adaptive",
+      "review_intervals": [
+        2,
+        5,
+        10
+      ],
+      "realized_pickups": 48,
+      "realized_orders": 80,
+      "realized_pickup_share": 0.6,
+      "world_spec": {
+        "layout_id": 112882,
+        "day_id": 0,
+        "total": 80,
+        "share": 0.6,
+        "pattern": "dual",
+        "cities": 2,
+        "pickup_deadline_lags": [
+          240,
+          300,
+          360
+        ],
+        "arrival_mode": "p2"
+      },
+      "input_hash": "909375c71e781b299be1a333a898a4b1c4da75ff493e4f3ae1b581a2578d2e6f",
+      "i0_hash": "f36076a67a25f3cbaccd4e2979e8ac25f92672ad334411941c6e0e7d910e967e",
+      "sample_count": 53,
+      "trained_model": true,
+      "canonical_decisions": "528b44f491c3928a69a018c06ff1919a2a8d5cf38ef831cbcb18b694862e89a7",
+      "decision_summary": [
+        {
+          "at": 13.0,
+          "plan_hash": "d3e7615f500d571e9ebb4ebce68bc6471828021ec07944c5e541450e3557da06",
+          "admissions": {
+            "P00000": true
+          },
+          "waits": {},
+          "J": 253.77313197565994,
+          "W": -266.7321401542349,
+          "features": [
+            0.19512195121951215,
+            1.0051829268292685,
+            0.0,
+            0.0006021926056779669,
+            0.02464813874755073,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 18.0,
+          "plan_hash": "79f2934ae2907a04b727c73886471a32b07954852787201f867d5a759e2ef436",
+          "admissions": {},
+          "waits": {},
+          "J": 253.77313197565994,
+          "W": -246.350286677371,
+          "features": [
+            0.18643292682926826,
+            0.8187500000000002,
+            0.0,
+            0.00046607464266095464,
+            0.020849720939642043,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 32.886800199999996,
+          "plan_hash": "672adf81156d4eaec269f97e1f41e9f9626a4143f830a17c4b0866cfc2037ea2",
+          "admissions": {},
+          "waits": {},
+          "J": 253.77313197565994,
+          "W": -133.67718051397193,
+          "features": [
+            0.09756097560975607,
+            0.5077743902439024,
+            0.0,
+            0.00018239140398874074,
+            0.012858372226948755,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 46.2118002,
+          "plan_hash": "f875f593df0de45f821a7c5217ad35d49c4e65c816d3e816fe367c6bbdf7430e",
+          "admissions": {},
+          "waits": {},
+          "J": 253.77313197565994,
+          "W": -117.27983043034818,
+          "features": [
+            0.09756097560975607,
+            0.2346036585365853,
+            0.0,
+            4.3378712138317036e-05,
+            0.007139181981711275,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 48.0,
+          "plan_hash": "3e66d86372d9be3010c50afc282aabd975e1f15b72d8ae6dee8f0e4228d9eeb8",
+          "admissions": {
+            "P00001": true
+          },
+          "waits": {},
+          "J": 286.864813320438,
+          "W": -122.84008786861779,
+          "features": [
+            0.1021341463414634,
+            0.24664634146341455,
+            0.0,
+            3.904254621795582e-05,
+            0.007445008460236886,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 51.0,
+          "plan_hash": "eb4d960f406b98b7855096333a9c904ca10932b4adb1122fc92d81c614c1afea",
+          "admissions": {
+            "P00002": true
+          },
+          "waits": {},
+          "J": 312.2871270748615,
+          "W": -119.3515894457465,
+          "features": [
+            0.1018292682926829,
+            0.1939024390243902,
+            0.0,
+            2.919913308226085e-05,
+            0.006245904388497421,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 56.91873764655268,
+          "plan_hash": "e2fa98419bdfa4fa4c0b0c7792f972989358d109c145dd2e8d255b3cd7bfbc8a",
+          "admissions": {},
+          "waits": {},
+          "J": 312.2871270748615,
+          "W": -108.67631041331077,
+          "features": [
+            0.09725609756097559,
+            0.09664634146341462,
+            0.0,
+            1.2187103558452243e-05,
+            0.004111910402470187,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 59.38215177318252,
+          "plan_hash": "48accc2db044ce71bc51c820d7995967fa976caff3ee12bc51667cbb0da04e7f",
+          "admissions": {},
+          "waits": {},
+          "J": 312.2871270748615,
+          "W": -99.06961025935956,
+          "features": [
+            0.09115853658536584,
+            0.044054878048780485,
+            0.0,
+            6.48521067152456e-06,
+            0.002874661798758457,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 74.44395197318252,
+          "plan_hash": "0aa33e4e53212298174eb77afb7817b7cbc0a30ec84964b5dbefc9003c64224b",
+          "admissions": {},
+          "waits": {},
+          "J": 312.2871270748615,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 129.0,
+          "plan_hash": "1ee837d6128ceaaeeb8ebf86063138bc0c554bdd473111bf8f429205c82d9c54",
+          "admissions": {
+            "P00003": false
+          },
+          "waits": {},
+          "J": 283.4871270748615,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 140.0,
+          "plan_hash": "fa33638915e2873e8487335c3b2fc5d0f0b0b50c94ae86a0a0104f299a22940a",
+          "admissions": {
+            "P00004": false
+          },
+          "waits": {},
+          "J": 270.6871270748615,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 152.0,
+          "plan_hash": "8f9ffbb49a272a984e09990459a443cfafcc4ea8104c27ce301309887c01d4f5",
+          "admissions": {
+            "P00005": false
+          },
+          "waits": {},
+          "J": 246.68712707486148,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 153.0,
+          "plan_hash": "1cdf2a4887fc26c4a8c8f365c452202c4db6d07a1738ef1904cd030659d52ff4",
+          "admissions": {
+            "P00006": false
+          },
+          "waits": {},
+          "J": 233.8871270748615,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 170.0,
+          "plan_hash": "61651283aff57aec4d4f215976f95ca7e63a601a85a9ed0b2e1a97511fa5d3f0",
+          "admissions": {
+            "P00007": false
+          },
+          "waits": {},
+          "J": 208.2871270748615,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 177.0,
+          "plan_hash": "ed7bd57fe427ef038568d267d4af59a6736ac8a8873be212d63fb2760b4908d9",
+          "admissions": {
+            "P00008": false
+          },
+          "waits": {},
+          "J": 179.4871270748615,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 181.0,
+          "plan_hash": "255dd7ef38e285eb8603cc0ad22f4ea5444f2e029770baa0554b3b41ef905f16",
+          "admissions": {
+            "P00009": false
+          },
+          "waits": {},
+          "J": 149.08712707486148,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 186.0,
+          "plan_hash": "ad494ac0f1cb499ea0946482595469c7475106f53aff776966d65138f2f89ddc",
+          "admissions": {
+            "P00010": false
+          },
+          "waits": {},
+          "J": 137.8871270748615,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 201.0,
+          "plan_hash": "ecbe597ea67ee3aa42c4b52df3acc98a3fbe24cc5414082bd07569e8e6a82a8a",
+          "admissions": {
+            "P00011": false
+          },
+          "waits": {},
+          "J": 110.6871270748615,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 225.0,
+          "plan_hash": "b617a2f5265d4832c007dbc8aad5cb953c4a6452c975aef7868967ffe4d77e7c",
+          "admissions": {
+            "P00012": false
+          },
+          "waits": {},
+          "J": 81.8871270748615,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 231.0,
+          "plan_hash": "ba4331cec6641a2c4dd0f1d300d1faba274f7443afaef6d5acd6d90e081d9dcf",
+          "admissions": {
+            "P00013": false
+          },
+          "waits": {},
+          "J": 64.28712707486149,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 236.0,
+          "plan_hash": "7b8c80c1e49be993fe578babe8b21be50ed78c1c18bb7ef51a85cdb11d4c4ca7",
+          "admissions": {
+            "P00014": false
+          },
+          "waits": {},
+          "J": 48.287127074861495,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 259.0,
+          "plan_hash": "ce135e1c3e30a2161affababb4fb01ca856bd35db8b800e29a7a1763b2c9cb7b",
+          "admissions": {
+            "P00015": false
+          },
+          "waits": {},
+          "J": 21.087127074861492,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 267.0,
+          "plan_hash": "2a1b30ffc291d70888b46825e5779bce68387bed0553675052f8c78fdfe6569a",
+          "admissions": {
+            "P00016": false,
+            "P00017": false
+          },
+          "waits": {},
+          "J": -23.71287292513851,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 274.0,
+          "plan_hash": "7898adb1b308414711e73a2eeddf429c6d114c4b8ead254f233abc6caab784aa",
+          "admissions": {
+            "P00018": false
+          },
+          "waits": {},
+          "J": -33.31287292513851,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 291.0,
+          "plan_hash": "06b6036613a272a0e55b1decf794bc24f7abaac74d42b845ff7258c93273c25e",
+          "admissions": {
+            "P00019": false
+          },
+          "waits": {},
+          "J": -57.31287292513851,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 294.0,
+          "plan_hash": "579cd0755e0ccb8b25ab92a637e1b29f1647dec66d72107486d6a731c265d234",
+          "admissions": {
+            "P00020": false
+          },
+          "waits": {},
+          "J": -82.9128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 297.0,
+          "plan_hash": "80a9ba52963c8b6fddd9c9460355903d3f9185492e22ae2b3178f48e4f11627a",
+          "admissions": {
+            "P00021": false
+          },
+          "waits": {},
+          "J": -113.3128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 304.0,
+          "plan_hash": "79e365ac27ecf5d96aeb95faa6d0f2fd263c79e1917a24db78c8515338cf2be2",
+          "admissions": {
+            "P00022": false
+          },
+          "waits": {},
+          "J": -138.91287292513852,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 312.0,
+          "plan_hash": "0724ae185ba579aee4d5aa7d303a81d2703385f66aeb3d99b580434758145ea7",
+          "admissions": {
+            "P00023": false
+          },
+          "waits": {},
+          "J": -148.5128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 328.0,
+          "plan_hash": "cda441bc54df213dd01ebf748deea8236291c7ac2f7bc55e868994aadd7ee5b2",
+          "admissions": {
+            "P00024": false
+          },
+          "waits": {},
+          "J": -161.31287292513852,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 352.0,
+          "plan_hash": "ab5482634d63d5f398f16b66f7a4180697544596323958e07e1e01ca05cb1e4b",
+          "admissions": {
+            "P00025": false
+          },
+          "waits": {},
+          "J": -175.7128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 359.0,
+          "plan_hash": "d03e3413dce05694d3f5f17d4e6575455ee0a0c1bf44d990b9ce7eeddd76cba1",
+          "admissions": {
+            "P00026": false
+          },
+          "waits": {},
+          "J": -191.7128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 383.0,
+          "plan_hash": "d9951011d30e481f44eefaf9925a9769d3c079f5fc2c792f5a87e235861508eb",
+          "admissions": {
+            "P00027": false
+          },
+          "waits": {},
+          "J": -217.31287292513852,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 390.0,
+          "plan_hash": "750f10416e5b12680b6811a63ec4704d54048b5fc867e117c43c85a1bfbcafea",
+          "admissions": {
+            "P00028": false
+          },
+          "waits": {},
+          "J": -247.7128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 405.0,
+          "plan_hash": "3cae1b321da4392bf95eb0f2ffaa52acc2faac0372f61aa5d2b30e2e7bdc76c7",
+          "admissions": {
+            "P00029": false
+          },
+          "waits": {},
+          "J": -265.3128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 421.0,
+          "plan_hash": "901e26503ec7c375137ac7a99757d1f6e1e67949743e636e2c19dbec6f6008b2",
+          "admissions": {
+            "P00030": false
+          },
+          "waits": {},
+          "J": -287.7128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 422.0,
+          "plan_hash": "8fbb2af5c6baf81a54e2ca0db7bcadaaf5c6ca78544619529732c64f9287b92a",
+          "admissions": {
+            "P00031": false
+          },
+          "waits": {},
+          "J": -303.7128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 430.0,
+          "plan_hash": "1b2f4fb2c59f595b39a483017d12ad938778241dca917ef65fd1e441d07017f9",
+          "admissions": {
+            "P00032": false
+          },
+          "waits": {},
+          "J": -313.3128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 441.0,
+          "plan_hash": "9556be4ca95d9b12b6852d1dba476d1e0033f5071acc22c8d80a55c2e7233b88",
+          "admissions": {
+            "P00033": false
+          },
+          "waits": {},
+          "J": -338.9128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 455.0,
+          "plan_hash": "af8dabb6d8a041682caf5dbbb59173579b2f78c4d87fa0ada53e48cc50bfb685",
+          "admissions": {
+            "P00034": false
+          },
+          "waits": {},
+          "J": -369.3128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 458.0,
+          "plan_hash": "1e37ead24bee330aa4e98223a648610c47a571fc8a17876e12a0817ae8c3f908",
+          "admissions": {
+            "P00035": false
+          },
+          "waits": {},
+          "J": -396.5128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 463.0,
+          "plan_hash": "fc25d303786246b407d1942ebd799adc35973b1db2623ca477e3c503d05e55f8",
+          "admissions": {
+            "P00036": false
+          },
+          "waits": {},
+          "J": -418.9128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 472.0,
+          "plan_hash": "4475505129e21b8e8f53aaf96c163e7192e1058affd45f0dd03b949842f82d46",
+          "admissions": {
+            "P00037": false
+          },
+          "waits": {},
+          "J": -439.7128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 482.0,
+          "plan_hash": "81f6377f9de6040cefbb80cdd915375c0d9ff50ce77eff13977cd9f443a8f357",
+          "admissions": {
+            "P00038": false
+          },
+          "waits": {},
+          "J": -452.5128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 499.0,
+          "plan_hash": "3615b9d7173368336f029fcb27aeb37b6fedbcab880b9c4b55d298ab6ac41fdc",
+          "admissions": {
+            "P00039": false
+          },
+          "waits": {},
+          "J": -471.7128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 506.0,
+          "plan_hash": "e818edf3943203b0e17dfbe5a590e60dcf16a9c3699fe91d38ab4ec79e0f6290",
+          "admissions": {
+            "P00040": false
+          },
+          "waits": {},
+          "J": -494.1128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 518.0,
+          "plan_hash": "e4e051ccb07e9924125f40b4000ca94da5702ed8c2931951e82831252829a59b",
+          "admissions": {
+            "P00041": false
+          },
+          "waits": {},
+          "J": -508.5128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 532.0,
+          "plan_hash": "a23c19d8431e8463853408a777a5f646a21a944579b1abd9d91caa71a1a7ba15",
+          "admissions": {
+            "P00042": false
+          },
+          "waits": {},
+          "J": -519.7128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 535.0,
+          "plan_hash": "e8bc988942f3258459fdf7d17505b4ca263cfc90aaa9174234b2c920470e56e0",
+          "admissions": {
+            "P00043": false
+          },
+          "waits": {},
+          "J": -550.1128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 542.0,
+          "plan_hash": "088dbdaf38a6f6b611593d0102be4e9501b25c4e5db6697e48267094bc3cacbf",
+          "admissions": {
+            "P00044": false
+          },
+          "waits": {},
+          "J": -559.7128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 552.0,
+          "plan_hash": "b52803ae11ba51232e3573617819d5be7bdb53b2718a5230c26f7d27ad5b1f93",
+          "admissions": {
+            "P00045": false
+          },
+          "waits": {},
+          "J": -574.1128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 563.0,
+          "plan_hash": "475894db16a5e09f58c934e05a388534a5ded2f5d499d04ad7e15e3b932405b7",
+          "admissions": {
+            "P00046": false
+          },
+          "waits": {},
+          "J": -590.1128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "at": 570.0,
+          "plan_hash": "b895e604d1f9ab73210f7ab4c94bc645e3a717692ae9533ac120404769d77269",
+          "admissions": {
+            "P00047": false
+          },
+          "waits": {},
+          "J": -614.1128729251385,
+          "W": 0.0,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "action_search": {
+        "solver": "gurobi",
+        "epochs": 53,
+        "wait_mode": "adaptive",
+        "chosen_wait_interval_counts": {},
+        "feasible_wait_epochs": 4,
+        "feasible_wait_interval_counts": {
+          "10": 8,
+          "5": 8,
+          "2": 8
+        },
+        "feasible_wait_interval_epochs": {
+          "10": 4,
+          "5": 4,
+          "2": 4
+        },
+        "feature_diagnostics": {
+          "existing_chain_near_h_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 0.19512195121951215,
+            "nonzero_candidates": 201,
+            "action_varying_epochs": 6
+          },
+          "existing_chain_later_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 1.8594512195121993,
+            "nonzero_candidates": 200,
+            "action_varying_epochs": 7
+          },
+          "added_trip_reliance_city_proxy": {
+            "minimum": 0.0,
+            "maximum": 4.239329268292686,
+            "nonzero_candidates": 568,
+            "action_varying_epochs": 47
+          },
+          "demand_weighted_drone_tail_delay": {
+            "minimum": 0.0,
+            "maximum": 0.0009458437197417007,
+            "nonzero_candidates": 684,
+            "action_varying_epochs": 49
+          },
+          "demand_weighted_recovery_capacity": {
+            "minimum": 0.0,
+            "maximum": 0.9920162259615384,
+            "nonzero_candidates": 686,
+            "action_varying_epochs": 51
+          },
+          "future_pickup_lateness_exposure": {
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "nonzero_candidates": 0,
+            "action_varying_epochs": 0
+          },
+          "demand_weighted_delivery_slack": {
+            "minimum": 0.9916428614413744,
+            "maximum": 1.0,
+            "nonzero_candidates": 732,
+            "action_varying_epochs": 3
+          }
+        },
+        "decision_seconds": 22.764612999999713,
+        "truncated_epochs": 4,
+        "base_search_truncated_epochs": 2,
+        "enhancement_truncated_epochs": 3,
+        "forced_reject_requests": 0,
+        "service_patterns_attempted": 104,
+        "service_patterns_accepted": 104,
+        "wait_patterns_attempted": 24,
+        "wait_patterns_accepted": 24,
+        "wait_search_truncated_epochs": 0,
+        "service_search_truncated_epochs": 3
+      }
+    }
+  ],
+  "model": {
+    "version": "unified-vfa-development-v3",
+    "h": 5,
+    "feature_set": "existing_chain_opportunity",
+    "operating_rules": {
+      "pickup_deadline_law": "independent_discrete_uniform",
+      "pickup_deadline_lags": [
+        240,
+        300,
+        360
+      ],
+      "truck_handling_setup": 0,
+      "drone_handling_setup_per_request": 0,
+      "truck_handling_per_kg": 0.025,
+      "drone_handling_per_kg": 0.025,
+      "customer_service_per_request": 1
+    },
+    "wait_mode": "adaptive",
+    "review_intervals": [
+      2,
+      5,
+      10
+    ],
+    "arrival_mode": "p2",
+    "feature_horizon": 5,
+    "active_features": [
+      "existing_chain_near_h_city_proxy",
+      "existing_chain_later_city_proxy"
+    ],
+    "feature_names": [
+      "existing_chain_near_h_city_proxy",
+      "existing_chain_later_city_proxy",
+      "added_trip_reliance_city_proxy",
+      "demand_weighted_drone_tail_delay",
+      "demand_weighted_recovery_capacity",
+      "future_pickup_lateness_exposure",
+      "demand_weighted_delivery_slack"
+    ],
+    "weights": [
+      -203.76427799833,
+      -26.676576681681663,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scales": [
+      0.19263490116604678,
+      0.4444169292243883,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "trained": true,
+    "fit": {
+      "method": "equal_day_scaled_ridge_no_intercept",
+      "ridge": 1.0,
+      "days": 8,
+      "samples": 441,
+      "target": "audited_full_day_net_minus_J_known"
+    }
+  }
+}
