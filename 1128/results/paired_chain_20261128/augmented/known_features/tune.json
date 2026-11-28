@@ -1,0 +1,2191 @@
+{
+  "input_receipts": {
+    "protocol.json": "589bd4261b1677cba959282d02f59e6854885464cad1979cf43e3dd8cbfdcdc6",
+    "sites.json": "68c431152200ef495dc4749a8ba2f225837e72d3cf9ab4b68e80548bb091778c",
+    "source/fit_paired_chain.py": "aec41de11aa37a66dc3c33e9c45936546cc3b4f2b4dcad7464286db3e4bb8817",
+    "source/unified_vfa_features.py": "75356b4e733248e76a225424170f86421e2ba619733c5b2517417e52e0d01b58",
+    "source/unified_vfa_policy.py": "381f63ac95e29baab0f0ba3757fb16410c55176acdef06ea76bfc1bf83ee2c5d",
+    "source/e1_sim/online.py": "0cf6f412951b51b33d4bb3ec3bf43973588959b50613ae3f790eab6b306f5934",
+    "source/paired_downstream_opportunity.py": "b17210c6ddfae70e9d0ab2853d8aec426d558f896f9f40a0b8bb94ecbca049da",
+    "snapshots/s20261128_L112901_d1_N80_dual_e00_I0E00001.pkl.gz": "6bb91f029897d6714207478ce5893cd917198b5de18d558997781672070b5c56",
+    "snapshots/s20261128_L112901_d1_N80_dual_e01_I0E00001.pkl.gz": "44a5dd9a205535160525540930e6b0fd74b80403611007a7ffc6cf736f02715b",
+    "snapshots/s20261128_L112901_d1_N80_uniform_e00_I0E00001.pkl.gz": "88b7f8c0202f384eecf6b25d3b421882afc4ca7dfb8e6812380127007e526ddb",
+    "snapshots/s20261128_L112901_d1_N80_uniform_e01_I0E00001.pkl.gz": "7bc79f67af8b03a1e3318dd42aa09ac4d77c45551eaa9bc5c431bb76315fcdd5",
+    "snapshots/s20261128_L112902_d1_N80_dual_e00_I0E00001.pkl.gz": "429235d724bd2b652e4f63538fa1f4699521dcb27f7df37bb3b8cc7548114d7a",
+    "snapshots/s20261128_L112902_d1_N80_uniform_e00_I0E00001.pkl.gz": "8cdac0296b5a8a23dbf5334c9edd85a3a07fa299746c55d78e0b2799fe09a1ad",
+    "snapshots/s20261128_L112902_d1_N80_uniform_e01_I0E00001.pkl.gz": "0b81e037ac8ac1eaf2fbd47b45683eddb97213b986e596656e7fd9a6e185d0fc"
+  },
+  "feature_names": [
+    "existing_chain_near_h_city_proxy",
+    "existing_chain_later_city_proxy",
+    "added_trip_reliance_city_proxy",
+    "demand_weighted_drone_tail_delay",
+    "demand_weighted_recovery_capacity",
+    "future_pickup_lateness_exposure",
+    "demand_weighted_delivery_slack",
+    "downstream_profitable_pickup_count"
+  ],
+  "states": [
+    {
+      "site_id": "s20261128_L112901_d1_N80_dual_e00_I0E00001",
+      "case": "s20261128_L112901_d1_N80_dual",
+      "spec": {
+        "layout_id": 112901,
+        "day_id": 1,
+        "total": 80,
+        "share": 0.6,
+        "pattern": "dual"
+      },
+      "at": 15.525,
+      "truck": "I0E00001",
+      "station": "L1+",
+      "closed": false,
+      "known_state_hash": "f86ae7d003d2396e9a653287fde28d4ec2a46ccaf8d0e5171ab24cf381baa622",
+      "J": [
+        178.05956220761607,
+        177.25956220761606,
+        176.05956220761607,
+        174.05956220761607
+      ],
+      "features": [
+        [
+          0.1679878048925874,
+          0.7922256101670186,
+          0.0,
+          0.0005781904178418099,
+          0.019727052181344323,
+          0.0,
+          0.9981223143755672,
+          1.7385888501742157
+        ],
+        [
+          0.18521341463945537,
+          0.8521341467621042,
+          0.0,
+          0.000618743215747937,
+          0.02121942021718529,
+          0.0,
+          0.9964273991222382,
+          1.8152439024390241
+        ],
+        [
+          0.19405487804935223,
+          0.9602134150596062,
+          0.0,
+          0.0006827111445577375,
+          0.02347975527188474,
+          0.0,
+          0.9938850262422444,
+          1.9302264808362366
+        ],
+        [
+          0.19512195121951217,
+          1.1542682931089585,
+          0.0,
+          0.0007976943111090301,
+          0.0272515184882459,
+          0.0,
+          0.9896477381089216,
+          2.1218641114982577
+        ]
+      ],
+      "plan_hashes": [
+        "e3366eee945a1ac42e1bd694face2d66f44edc5987f479e064b9c43b0e82a928",
+        "bacda3e0d7852896f36926d68b699fc502a22b872d434b4438fc5a7f6fbe2581",
+        "6a571b1f4e1bf56628b91cde3de8ad7869428f93278e86e13301b6caa81fc7ca",
+        "b1cccce72d8f020be9bcaf7697d7f0820403aa5ccf61b5b3a6d96502e5e86f94"
+      ],
+      "downstream_audit": [
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.7385888501742157,
+          "expected_positive_margin_CNY": 54.8523699008964,
+          "expected_late_ready_reservations": 0.7971689895470385,
+          "max_profitable_extra_delay": 20.412882114338046,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 15.525,
+              "spare": 1093.0,
+              "drone_tail": 33.35342228025036,
+              "delivery_delay_budget": 587.7843309619822
+            },
+            {
+              "station": "L2+",
+              "departure": 27.684398,
+              "spare": 1101.0,
+              "drone_tail": 15.525,
+              "delivery_delay_budget": 587.7843309619822
+            },
+            {
+              "station": "L2-",
+              "departure": 56.486186602106564,
+              "spare": 1282.0,
+              "drone_tail": 64.07723519558499,
+              "delivery_delay_budget": 587.7843309619822
+            },
+            {
+              "station": "L1-",
+              "departure": 68.44558460210656,
+              "spare": 1282.0,
+              "drone_tail": 15.525,
+              "delivery_delay_budget": 587.7843309619822
+            }
+          ],
+          "spatial_points": 128,
+          "release_slots": 53,
+          "station_positive_margin_CNY": {
+            "L1+": 0.0,
+            "L2+": 7.207758023186555,
+            "L2-": 14.972424352677828,
+            "L1-": 32.672187525032015
+          },
+          "station_profitable_requests": {
+            "L1+": 0.0,
+            "L2+": 0.22519599303135887,
+            "L2-": 0.5027003484320558,
+            "L1-": 1.0106925087108016
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.8152439024390241,
+          "expected_positive_margin_CNY": 57.338065162080525,
+          "expected_late_ready_reservations": 0.7975174216027877,
+          "max_profitable_extra_delay": 20.412882114338046,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 17.525,
+              "spare": 1093.0,
+              "drone_tail": 33.35342228025036,
+              "delivery_delay_budget": 585.7843309619822
+            },
+            {
+              "station": "L2+",
+              "departure": 29.684398,
+              "spare": 1101.0,
+              "drone_tail": 15.525,
+              "delivery_delay_budget": 585.7843309619822
+            },
+            {
+              "station": "L2-",
+              "departure": 58.486186602106564,
+              "spare": 1282.0,
+              "drone_tail": 66.07723519558499,
+              "delivery_delay_budget": 585.7843309619822
+            },
+            {
+              "station": "L1-",
+              "departure": 70.44558460210656,
+              "spare": 1282.0,
+              "drone_tail": 15.525,
+              "delivery_delay_budget": 585.7843309619822
+            }
+          ],
+          "spatial_points": 128,
+          "release_slots": 55,
+          "station_positive_margin_CNY": {
+            "L1+": 0.0,
+            "L2+": 8.45059861085721,
+            "L2-": 14.972424352677828,
+            "L1-": 33.91504219854551
+          },
+          "station_profitable_requests": {
+            "L1+": 0.0,
+            "L2+": 0.26352351916376304,
+            "L2-": 0.5027003484320557,
+            "L1-": 1.0490200348432057
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.9302264808362366,
+          "expected_positive_margin_CNY": 61.06662918262098,
+          "expected_late_ready_reservations": 0.7975174216027876,
+          "max_profitable_extra_delay": 20.412882114338046,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 20.525,
+              "spare": 1093.0,
+              "drone_tail": 33.35342228025036,
+              "delivery_delay_budget": 582.7843309619822
+            },
+            {
+              "station": "L2+",
+              "departure": 32.684398,
+              "spare": 1101.0,
+              "drone_tail": 15.525,
+              "delivery_delay_budget": 582.7843309619822
+            },
+            {
+              "station": "L2-",
+              "departure": 61.486186602106564,
+              "spare": 1282.0,
+              "drone_tail": 69.07723519558499,
+              "delivery_delay_budget": 582.7843309619822
+            },
+            {
+              "station": "L1-",
+              "departure": 73.44558460210656,
+              "spare": 1282.0,
+              "drone_tail": 15.525,
+              "delivery_delay_budget": 582.7843309619822
+            }
+          ],
+          "spatial_points": 128,
+          "release_slots": 58,
+          "station_positive_margin_CNY": {
+            "L1+": 0.0,
+            "L2+": 10.314880621127433,
+            "L2-": 14.972424352677828,
+            "L1-": 35.779324208815716
+          },
+          "station_profitable_requests": {
+            "L1+": 0.0,
+            "L2+": 0.3210148083623693,
+            "L2-": 0.5027003484320558,
+            "L1-": 1.106511324041812
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 2.1218641114982577,
+          "expected_positive_margin_CNY": 67.2809025501884,
+          "expected_late_ready_reservations": 0.7975174216027874,
+          "max_profitable_extra_delay": 20.412882114338053,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 25.525,
+              "spare": 1093.0,
+              "drone_tail": 33.35342228025036,
+              "delivery_delay_budget": 577.7843309619822
+            },
+            {
+              "station": "L2+",
+              "departure": 37.684398,
+              "spare": 1101.0,
+              "drone_tail": 15.525,
+              "delivery_delay_budget": 577.7843309619822
+            },
+            {
+              "station": "L2-",
+              "departure": 66.48618660210656,
+              "spare": 1282.0,
+              "drone_tail": 74.07723519558499,
+              "delivery_delay_budget": 577.7843309619822
+            },
+            {
+              "station": "L1-",
+              "departure": 78.44558460210656,
+              "spare": 1282.0,
+              "drone_tail": 15.525,
+              "delivery_delay_budget": 577.7843309619822
+            }
+          ],
+          "spatial_points": 128,
+          "release_slots": 63,
+          "station_positive_margin_CNY": {
+            "L1+": 0.0,
+            "L2+": 13.422017304911138,
+            "L2-": 14.972424352677827,
+            "L1-": 38.88646089259942
+          },
+          "station_profitable_requests": {
+            "L1+": 0.0,
+            "L2+": 0.41683362369337973,
+            "L2-": 0.5027003484320558,
+            "L1-": 1.2023301393728227
+          }
+        }
+      ]
+    },
+    {
+      "site_id": "s20261128_L112901_d1_N80_dual_e01_I0E00001",
+      "case": "s20261128_L112901_d1_N80_dual",
+      "spec": {
+        "layout_id": 112901,
+        "day_id": 1,
+        "total": 80,
+        "share": 0.6,
+        "pattern": "dual"
+      },
+      "at": 27.684398,
+      "truck": "I0E00001",
+      "station": "L2+",
+      "closed": false,
+      "known_state_hash": "37249bb748cfffeb63b18c858776a11f548175c77ef3f1538044f8ed529793b6",
+      "J": [
+        178.05956220761607,
+        177.25956220761606,
+        176.05956220761607,
+        174.05956220761607
+      ],
+      "features": [
+        [
+          0.09756097566202987,
+          0.5454268295605359,
+          0.0,
+          0.0003094248545538455,
+          0.013506588104301944,
+          0.0,
+          0.9981223143755674,
+          1.2834277003484325
+        ],
+        [
+          0.09756097566202987,
+          0.5844512198253479,
+          0.0,
+          0.00033848392063513767,
+          0.01432633361276598,
+          0.0,
+          0.9964273991222382,
+          1.3582534843205571
+        ],
+        [
+          0.10045731712389261,
+          0.6429878052225658,
+          0.0,
+          0.0003847142205883247,
+          0.015608202558821725,
+          0.0,
+          0.9938850262422444,
+          1.4712979094076655
+        ],
+        [
+          0.142835365881674,
+          0.7434451223464585,
+          0.0,
+          0.0004688092560602994,
+          0.018474327011972734,
+          0.0,
+          0.9896477381089217,
+          1.6619337979094073
+        ]
+      ],
+      "plan_hashes": [
+        "7f5f3fa66f61202f8e6f86479e123e14e3b85dc4611ed608fb449667385d1f20",
+        "53a6a4b38b77a8cdfbd612a2ca9b95a0c1ddacabd59f6b4b7712b24ca321d3a9",
+        "3d4d47afd8bfb0fc68ee6d1986ae0c3b308666fd4e7f1e0e1f46e2ef0fe4dc00",
+        "14f7aada9a4718afdfeddefe4461a29971d90de24fce5c948402d10c117c216c"
+      ],
+      "downstream_audit": [
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.2834277003484325,
+          "expected_positive_margin_CNY": 40.18748383662895,
+          "expected_late_ready_reservations": 0.6524390243902438,
+          "max_profitable_extra_delay": 20.412882114338046,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L2+",
+              "departure": 27.684398,
+              "spare": 1101.0,
+              "drone_tail": 27.684398,
+              "delivery_delay_budget": 587.7843309619822
+            },
+            {
+              "station": "L2-",
+              "departure": 56.486186602106564,
+              "spare": 1282.0,
+              "drone_tail": 64.07723519558499,
+              "delivery_delay_budget": 587.7843309619822
+            },
+            {
+              "station": "L1-",
+              "departure": 68.44558460210656,
+              "spare": 1282.0,
+              "drone_tail": 27.684398,
+              "delivery_delay_budget": 587.7843309619822
+            }
+          ],
+          "spatial_points": 128,
+          "release_slots": 41,
+          "station_positive_margin_CNY": {
+            "L2+": 0.0,
+            "L2-": 14.972424352677827,
+            "L1-": 25.21505948395113
+          },
+          "station_profitable_requests": {
+            "L2+": 0.0,
+            "L2-": 0.5027003484320557,
+            "L1-": 0.7807273519163765
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.3582534843205571,
+          "expected_positive_margin_CNY": 42.57154240380395,
+          "expected_late_ready_reservations": 0.6889372822299653,
+          "max_profitable_extra_delay": 20.412882114338046,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L2+",
+              "departure": 29.684398,
+              "spare": 1101.0,
+              "drone_tail": 27.684398,
+              "delivery_delay_budget": 585.7843309619822
+            },
+            {
+              "station": "L2-",
+              "departure": 58.486186602106564,
+              "spare": 1282.0,
+              "drone_tail": 66.07723519558499,
+              "delivery_delay_budget": 585.7843309619822
+            },
+            {
+              "station": "L1-",
+              "departure": 70.44558460210656,
+              "spare": 1282.0,
+              "drone_tail": 27.684398,
+              "delivery_delay_budget": 585.7843309619822
+            }
+          ],
+          "spatial_points": 128,
+          "release_slots": 43,
+          "station_positive_margin_CNY": {
+            "L2+": 1.1412038936615128,
+            "L2-": 14.972424352677827,
+            "L1-": 26.457914157464607
+          },
+          "station_profitable_requests": {
+            "L2+": 0.03649825783972126,
+            "L2-": 0.5027003484320558,
+            "L1-": 0.8190548780487807
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.4712979094076655,
+          "expected_positive_margin_CNY": 46.20204770341438,
+          "expected_late_ready_reservations": 0.7422256097560975,
+          "max_profitable_extra_delay": 20.412882114338046,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L2+",
+              "departure": 32.684398,
+              "spare": 1101.0,
+              "drone_tail": 27.684398,
+              "delivery_delay_budget": 582.7843309619822
+            },
+            {
+              "station": "L2-",
+              "departure": 61.486186602106564,
+              "spare": 1282.0,
+              "drone_tail": 69.07723519558499,
+              "delivery_delay_budget": 582.7843309619822
+            },
+            {
+              "station": "L1-",
+              "departure": 73.44558460210656,
+              "spare": 1282.0,
+              "drone_tail": 27.684398,
+              "delivery_delay_budget": 582.7843309619822
+            }
+          ],
+          "spatial_points": 128,
+          "release_slots": 46,
+          "station_positive_margin_CNY": {
+            "L2+": 2.907427183001723,
+            "L2-": 14.972424352677827,
+            "L1-": 28.322196167734834
+          },
+          "station_profitable_requests": {
+            "L2+": 0.09205139372822299,
+            "L2-": 0.5027003484320557,
+            "L1-": 0.8765461672473871
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.6619337979094073,
+          "expected_positive_margin_CNY": 52.367890501644936,
+          "expected_late_ready_reservations": 0.7935975609756097,
+          "max_profitable_extra_delay": 20.412882114338053,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L2+",
+              "departure": 37.684398,
+              "spare": 1101.0,
+              "drone_tail": 27.684398,
+              "delivery_delay_budget": 577.7843309619822
+            },
+            {
+              "station": "L2-",
+              "departure": 66.48618660210656,
+              "spare": 1282.0,
+              "drone_tail": 74.07723519558499,
+              "delivery_delay_budget": 577.7843309619822
+            },
+            {
+              "station": "L1-",
+              "departure": 78.44558460210656,
+              "spare": 1282.0,
+              "drone_tail": 27.684398,
+              "delivery_delay_budget": 577.7843309619822
+            }
+          ],
+          "spatial_points": 128,
+          "release_slots": 51,
+          "station_positive_margin_CNY": {
+            "L2+": 5.966133297448573,
+            "L2-": 14.972424352677825,
+            "L1-": 31.42933285151854
+          },
+          "station_profitable_requests": {
+            "L2+": 0.18686846689895467,
+            "L2-": 0.5027003484320557,
+            "L1-": 0.9723649825783973
+          }
+        }
+      ]
+    },
+    {
+      "site_id": "s20261128_L112901_d1_N80_uniform_e00_I0E00001",
+      "case": "s20261128_L112901_d1_N80_uniform",
+      "spec": {
+        "layout_id": 112901,
+        "day_id": 1,
+        "total": 80,
+        "share": 0.6,
+        "pattern": "uniform"
+      },
+      "at": 13.45,
+      "truck": "I0E00001",
+      "station": "L1+",
+      "closed": false,
+      "known_state_hash": "6070df38865575b963839765d499c4fe528a579e393e00aca031603243ceb011",
+      "J": [
+        92.74913072564861,
+        91.9491307256486,
+        90.74913072564861,
+        88.74913072564861
+      ],
+      "features": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.001105236171124217,
+          0.0,
+          0.0,
+          0.9995660825848263,
+          1.112630662020906
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0011999018736290393,
+          0.0,
+          0.0,
+          0.9978711672834193,
+          1.1781358885017421
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0013497343618288718,
+          0.0,
+          0.0,
+          0.9953287943313088,
+          1.278135888501742
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.001620345667342188,
+          0.0,
+          0.0,
+          0.9910915060777915,
+          1.448606271777003
+        ]
+      ],
+      "plan_hashes": [
+        "0f8cdda1ce221ce1011e5bddd0806eb688dfe5d46d200ccaf40511cb91f4ff25",
+        "9639d6a33dd679dbeee4c43f53a3a56dc47d8a28cc8aef7a36ae19770f102503",
+        "15b75bcd66a155a22d4801eafdb26d1cd7dd25425b4e5aab0f67c2fec18c1ffc",
+        "c512c503475bdf112739fcc2f42a215599d6cfc1c0676410e2756bba27ea9713"
+      ],
+      "downstream_audit": [
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.112630662020906,
+          "expected_positive_margin_CNY": 31.170789925349204,
+          "expected_late_ready_reservations": 1.112630662020906,
+          "max_profitable_extra_delay": 31.932624866457715,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 13.45,
+              "spare": 1010.0,
+              "drone_tail": 21.67271926505017,
+              "delivery_delay_budget": 589.4879774643445
+            },
+            {
+              "station": "L2+",
+              "departure": 27.709398,
+              "spare": 1102.0,
+              "drone_tail": 41.020114742053394,
+              "delivery_delay_budget": 589.4879774643445
+            },
+            {
+              "station": "L2-",
+              "departure": 40.459398,
+              "spare": 1212.0,
+              "drone_tail": 55.497972633658726,
+              "delivery_delay_budget": 589.4879774643445
+            },
+            {
+              "station": "L1-",
+              "departure": 54.618796,
+              "spare": 1300.0,
+              "drone_tail": 62.14897503158413,
+              "delivery_delay_budget": 589.4879774643445
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 41,
+          "station_positive_margin_CNY": {
+            "L1+": 0.0,
+            "L2+": 6.128864871535646,
+            "L2-": 5.548400797111772,
+            "L1-": 19.493524256701786
+          },
+          "station_profitable_requests": {
+            "L1+": 0.0,
+            "L2+": 0.22317073170731708,
+            "L2-": 0.20553135888501742,
+            "L1-": 0.6839285714285714
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.1781358885017421,
+          "expected_positive_margin_CNY": 33.01485924407465,
+          "expected_late_ready_reservations": 1.1781358885017421,
+          "max_profitable_extra_delay": 31.932624866457715,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 15.45,
+              "spare": 1010.0,
+              "drone_tail": 21.67271926505017,
+              "delivery_delay_budget": 587.4879774643445
+            },
+            {
+              "station": "L2+",
+              "departure": 29.709398,
+              "spare": 1102.0,
+              "drone_tail": 43.020114742053394,
+              "delivery_delay_budget": 587.4879774643445
+            },
+            {
+              "station": "L2-",
+              "departure": 42.459398,
+              "spare": 1212.0,
+              "drone_tail": 57.497972633658726,
+              "delivery_delay_budget": 587.4879774643445
+            },
+            {
+              "station": "L1-",
+              "departure": 56.618796,
+              "spare": 1300.0,
+              "drone_tail": 64.14897503158413,
+              "delivery_delay_budget": 587.4879774643445
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 43,
+          "station_positive_margin_CNY": {
+            "L1+": 0.8468940423914626,
+            "L2+": 7.004416996040739,
+            "L2-": 5.548400797111771,
+            "L1-": 19.615147408530675
+          },
+          "station_profitable_requests": {
+            "L1+": 0.029355400696864112,
+            "L2+": 0.25505226480836235,
+            "L2-": 0.2055313588850174,
+            "L1-": 0.6881968641114984
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.278135888501742,
+          "expected_positive_margin_CNY": 35.8823851100058,
+          "expected_late_ready_reservations": 1.278135888501742,
+          "max_profitable_extra_delay": 31.932624866457715,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 18.45,
+              "spare": 1010.0,
+              "drone_tail": 21.67271926505017,
+              "delivery_delay_budget": 584.4879774643445
+            },
+            {
+              "station": "L2+",
+              "departure": 32.709398,
+              "spare": 1102.0,
+              "drone_tail": 46.020114742053394,
+              "delivery_delay_budget": 584.4879774643445
+            },
+            {
+              "station": "L2-",
+              "departure": 45.459398,
+              "spare": 1212.0,
+              "drone_tail": 60.497972633658726,
+              "delivery_delay_budget": 584.4879774643445
+            },
+            {
+              "station": "L1-",
+              "departure": 59.618796,
+              "spare": 1300.0,
+              "drone_tail": 67.14897503158413,
+              "delivery_delay_budget": 584.4879774643445
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 46,
+          "station_positive_margin_CNY": {
+            "L1+": 2.5227148733938587,
+            "L2+": 8.317745182798378,
+            "L2-": 5.548400797111771,
+            "L1-": 19.493524256701786
+          },
+          "station_profitable_requests": {
+            "L1+": 0.085801393728223,
+            "L2+": 0.3028745644599303,
+            "L2-": 0.2055313588850174,
+            "L1-": 0.6839285714285714
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.448606271777003,
+          "expected_positive_margin_CNY": 40.93061370569767,
+          "expected_late_ready_reservations": 1.448606271777003,
+          "max_profitable_extra_delay": 31.932624866457715,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 23.45,
+              "spare": 1010.0,
+              "drone_tail": 21.67271926505017,
+              "delivery_delay_budget": 579.4879774643445
+            },
+            {
+              "station": "L2+",
+              "departure": 37.709398,
+              "spare": 1102.0,
+              "drone_tail": 51.020114742053394,
+              "delivery_delay_budget": 579.4879774643445
+            },
+            {
+              "station": "L2-",
+              "departure": 50.459398,
+              "spare": 1212.0,
+              "drone_tail": 65.49797263365873,
+              "delivery_delay_budget": 579.4879774643445
+            },
+            {
+              "station": "L1-",
+              "departure": 64.618796,
+              "spare": 1300.0,
+              "drone_tail": 72.14897503158413,
+              "delivery_delay_budget": 579.4879774643445
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 51,
+          "station_positive_margin_CNY": {
+            "L1+": 5.3820631578230005,
+            "L2+": 10.50662549406111,
+            "L2-": 5.54840079711177,
+            "L1-": 19.493524256701786
+          },
+          "station_profitable_requests": {
+            "L1+": 0.17656794425087108,
+            "L2+": 0.3825783972125435,
+            "L2-": 0.20553135888501745,
+            "L1-": 0.6839285714285713
+          }
+        }
+      ]
+    },
+    {
+      "site_id": "s20261128_L112901_d1_N80_uniform_e01_I0E00001",
+      "case": "s20261128_L112901_d1_N80_uniform",
+      "spec": {
+        "layout_id": 112901,
+        "day_id": 1,
+        "total": 80,
+        "share": 0.6,
+        "pattern": "uniform"
+      },
+      "at": 27.709398,
+      "truck": "I0E00001",
+      "station": "L2+",
+      "closed": false,
+      "known_state_hash": "9233f34dc2890eb577919bdc90d7f2d33a0d5e9d8cdaf798b08c99e9b4f6401d",
+      "J": [
+        141.27390660689363,
+        140.47390660689362,
+        139.27390660689363,
+        137.27390660689363
+      ],
+      "features": [
+        [
+          0.005335365705174821,
+          0.025304877344543435,
+          0.0,
+          0.0008861349882516604,
+          0.0005994478780036716,
+          0.0,
+          0.9831132670613114,
+          1.3612369337979093
+        ],
+        [
+          0.005335365705174821,
+          0.027439023626613362,
+          0.0,
+          0.0009529805533110085,
+          0.0006412004665213403,
+          0.0,
+          0.9814183517599044,
+          1.4307491289198604
+        ],
+        [
+          0.005335365705174821,
+          0.03064024304971825,
+          0.0,
+          0.0010585323025653593,
+          0.0007038293492978434,
+          0.0,
+          0.9788759788077942,
+          1.5350174216027872
+        ],
+        [
+          0.005335365705174821,
+          0.03597560875489307,
+          0.0,
+          0.0012485409557634853,
+          0.0008082108205920151,
+          0.0,
+          0.9714643317995901,
+          1.7087979094076653
+        ]
+      ],
+      "plan_hashes": [
+        "7adaac7c5a9cecdebc2550a0425247e42fe17bff6da7fc894849354d448b9fba",
+        "a878446896af3418039446fe3334900c72867abc4dc5c7aeb317adaae9fecea8",
+        "fea5266cd83dc0f3f6527bd9501ff55c69ebd9d8fa13acd080ed2c5800161ed3",
+        "416dbb81321ea9616af1db7f5719c20e91f02fcc5ebb6eaab116441dd5ab0a0e"
+      ],
+      "downstream_audit": [
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.3612369337979093,
+          "expected_positive_margin_CNY": 40.133369986759696,
+          "expected_late_ready_reservations": 1.3260452961672475,
+          "max_profitable_extra_delay": 24.424229264383108,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L2+",
+              "departure": 27.709398,
+              "spare": 1102.0,
+              "drone_tail": 41.020114742053394,
+              "delivery_delay_budget": 570.0736556868994
+            },
+            {
+              "station": "L2-",
+              "departure": 59.87371977744504,
+              "spare": 1194.0,
+              "drone_tail": 55.497972633658726,
+              "delivery_delay_budget": 570.0736556868994
+            },
+            {
+              "station": "L1-",
+              "departure": 74.03311777744504,
+              "spare": 1282.0,
+              "drone_tail": 81.56329680902917,
+              "delivery_delay_budget": 570.0736556868994
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 47,
+          "station_positive_margin_CNY": {
+            "L2+": 0.0,
+            "L2-": 17.78713486322349,
+            "L1-": 22.346235123536193
+          },
+          "station_profitable_requests": {
+            "L2+": 0.0,
+            "L2-": 0.5772212543554006,
+            "L1-": 0.7840156794425088
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.4307491289198604,
+          "expected_positive_margin_CNY": 42.19946511811719,
+          "expected_late_ready_reservations": 1.3931184668989547,
+          "max_profitable_extra_delay": 24.424229264383108,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L2+",
+              "departure": 29.709398,
+              "spare": 1102.0,
+              "drone_tail": 41.020114742053394,
+              "delivery_delay_budget": 568.0736556868994
+            },
+            {
+              "station": "L2-",
+              "departure": 61.87371977744504,
+              "spare": 1194.0,
+              "drone_tail": 57.497972633658726,
+              "delivery_delay_budget": 568.0736556868994
+            },
+            {
+              "station": "L1-",
+              "departure": 76.03311777744504,
+              "spare": 1282.0,
+              "drone_tail": 83.56329680902917,
+              "delivery_delay_budget": 568.0736556868994
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 49,
+          "station_positive_margin_CNY": {
+            "L2+": 0.0,
+            "L2-": 18.902326372302838,
+            "L1-": 23.29713874581433
+          },
+          "station_profitable_requests": {
+            "L2+": 0.0,
+            "L2-": 0.6133710801393727,
+            "L1-": 0.8173780487804878
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.5350174216027872,
+          "expected_positive_margin_CNY": 45.29860781515342,
+          "expected_late_ready_reservations": 1.4937282229965156,
+          "max_profitable_extra_delay": 24.424229264383108,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L2+",
+              "departure": 32.709398,
+              "spare": 1102.0,
+              "drone_tail": 41.020114742053394,
+              "delivery_delay_budget": 565.0736556868994
+            },
+            {
+              "station": "L2-",
+              "departure": 64.87371977744503,
+              "spare": 1194.0,
+              "drone_tail": 60.497972633658726,
+              "delivery_delay_budget": 565.0736556868994
+            },
+            {
+              "station": "L1-",
+              "departure": 79.03311777744504,
+              "spare": 1282.0,
+              "drone_tail": 86.56329680902917,
+              "delivery_delay_budget": 565.0736556868994
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 52,
+          "station_positive_margin_CNY": {
+            "L2+": 0.0,
+            "L2-": 20.575113635921866,
+            "L1-": 24.723494179231533
+          },
+          "station_profitable_requests": {
+            "L2+": 0.0,
+            "L2-": 0.6675958188153309,
+            "L1-": 0.8674216027874564
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.7087979094076653,
+          "expected_positive_margin_CNY": 50.463845643547124,
+          "expected_late_ready_reservations": 1.661411149825784,
+          "max_profitable_extra_delay": 24.424229264383108,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L2+",
+              "departure": 37.709398,
+              "spare": 1102.0,
+              "drone_tail": 41.020114742053394,
+              "delivery_delay_budget": 560.0736556868994
+            },
+            {
+              "station": "L2-",
+              "departure": 69.87371977744503,
+              "spare": 1194.0,
+              "drone_tail": 65.49797263365873,
+              "delivery_delay_budget": 560.0736556868994
+            },
+            {
+              "station": "L1-",
+              "departure": 84.03311777744504,
+              "spare": 1282.0,
+              "drone_tail": 91.56329680902917,
+              "delivery_delay_budget": 560.0736556868994
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 57,
+          "station_positive_margin_CNY": {
+            "L2+": 0.0,
+            "L2-": 23.363092408620236,
+            "L1-": 27.100753234926874
+          },
+          "station_profitable_requests": {
+            "L2+": 0.0,
+            "L2-": 0.7579703832752612,
+            "L1-": 0.9508275261324041
+          }
+        }
+      ]
+    },
+    {
+      "site_id": "s20261128_L112902_d1_N80_dual_e00_I0E00001",
+      "case": "s20261128_L112902_d1_N80_dual",
+      "spec": {
+        "layout_id": 112902,
+        "day_id": 1,
+        "total": 80,
+        "share": 0.6,
+        "pattern": "dual"
+      },
+      "at": 18.9,
+      "truck": "I0E00001",
+      "station": "L1+",
+      "closed": false,
+      "known_state_hash": "526875f0f9a326ea5ee9e7e16b3305b2cda022dd7ec8b549f30a96d2409e39fd",
+      "J": [
+        437.091060895866,
+        436.291060895866,
+        435.091060895866,
+        433.091060895866
+      ],
+      "features": [
+        [
+          0.14710365865964709,
+          0.42713414741659317,
+          0.0,
+          0.0004576626875288373,
+          0.012000388766490459,
+          0.0,
+          1.0,
+          1.0944686411149824
+        ],
+        [
+          0.17103658542757985,
+          0.4775914645604755,
+          0.0,
+          0.000489096110432729,
+          0.013480023509247882,
+          0.0,
+          1.0,
+          1.1711236933797908
+        ],
+        [
+          0.1908536585475242,
+          0.5742378060762402,
+          0.0,
+          0.0005393927458739776,
+          0.01578975868992085,
+          0.0,
+          1.0,
+          1.2861062717770033
+        ],
+        [
+          0.19512195121951217,
+          0.7650914646237642,
+          0.0,
+          0.000631611141170488,
+          0.019658126296570974,
+          0.0,
+          1.0,
+          1.4777439024390244
+        ]
+      ],
+      "plan_hashes": [
+        "8b8c8a777332b731d888bbbf1559bf5080ddfe5818fbce4d6a7420113e7accce",
+        "cabbf07ab060413eadf9e0181cc37760c9a3a1a82696579990b0012db666a026",
+        "bcfd0ec8b9154f953ff299a20eacb0fcbf2734000fe2cf5d5949f56b2a38d8f1",
+        "97f9299bdf6fa808a7fd2ffde46885b468d6b4efd0371ceb6c857bc21e5e3e92"
+      ],
+      "downstream_audit": [
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.0944686411149824,
+          "expected_positive_margin_CNY": 34.61161504109545,
+          "expected_late_ready_reservations": 0.5321864111498256,
+          "max_profitable_extra_delay": 21.732567133402114,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 18.9,
+              "spare": 1138.0,
+              "drone_tail": 46.173272347477784,
+              "delivery_delay_budget": 602.2978581712861
+            },
+            {
+              "station": "L2+",
+              "departure": 29.0222604,
+              "spare": 1138.0,
+              "drone_tail": 18.9,
+              "delivery_delay_budget": 602.2978581712861
+            },
+            {
+              "station": "L2-",
+              "departure": 42.5972604,
+              "spare": 1281.0,
+              "drone_tail": 51.50799401254248,
+              "delivery_delay_budget": 602.2978581712861
+            },
+            {
+              "station": "L1-",
+              "departure": 53.19452080000001,
+              "spare": 1300.0,
+              "drone_tail": 18.9,
+              "delivery_delay_budget": 602.2978581712861
+            }
+          ],
+          "spatial_points": 128,
+          "release_slots": 35,
+          "station_positive_margin_CNY": {
+            "L1+": 0.0,
+            "L2+": 6.547035406194981,
+            "L2-": 6.593335997632643,
+            "L1-": 21.471243637267804
+          },
+          "station_profitable_requests": {
+            "L1+": 0.0,
+            "L2+": 0.20533536585365855,
+            "L2-": 0.22364982578397213,
+            "L1-": 0.6654834494773519
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.1711236933797908,
+          "expected_positive_margin_CNY": 37.096541211071624,
+          "expected_late_ready_reservations": 0.535191637630662,
+          "max_profitable_extra_delay": 21.7325671334021,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 20.9,
+              "spare": 1138.0,
+              "drone_tail": 46.173272347477784,
+              "delivery_delay_budget": 600.2978581712861
+            },
+            {
+              "station": "L2+",
+              "departure": 31.0222604,
+              "spare": 1138.0,
+              "drone_tail": 18.9,
+              "delivery_delay_budget": 600.2978581712861
+            },
+            {
+              "station": "L2-",
+              "departure": 44.5972604,
+              "spare": 1281.0,
+              "drone_tail": 53.50799401254248,
+              "delivery_delay_budget": 600.2978581712861
+            },
+            {
+              "station": "L1-",
+              "departure": 55.19452080000001,
+              "spare": 1300.0,
+              "drone_tail": 18.9,
+              "delivery_delay_budget": 600.2978581712861
+            }
+          ],
+          "spatial_points": 128,
+          "release_slots": 37,
+          "station_positive_margin_CNY": {
+            "L1+": 0.0,
+            "L2+": 7.789106902657677,
+            "L2-": 6.593335997632644,
+            "L1-": 22.71409831078129
+          },
+          "station_profitable_requests": {
+            "L1+": 0.0,
+            "L2+": 0.2436628919860627,
+            "L2-": 0.2236498257839721,
+            "L1-": 0.7038109756097563
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.2861062717770033,
+          "expected_positive_margin_CNY": 40.825105231612056,
+          "expected_late_ready_reservations": 0.535191637630662,
+          "max_profitable_extra_delay": 21.7325671334021,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 23.9,
+              "spare": 1138.0,
+              "drone_tail": 46.173272347477784,
+              "delivery_delay_budget": 597.2978581712861
+            },
+            {
+              "station": "L2+",
+              "departure": 34.0222604,
+              "spare": 1138.0,
+              "drone_tail": 18.9,
+              "delivery_delay_budget": 597.2978581712861
+            },
+            {
+              "station": "L2-",
+              "departure": 47.5972604,
+              "spare": 1281.0,
+              "drone_tail": 56.50799401254248,
+              "delivery_delay_budget": 597.2978581712861
+            },
+            {
+              "station": "L1-",
+              "departure": 58.19452080000001,
+              "spare": 1300.0,
+              "drone_tail": 18.9,
+              "delivery_delay_budget": 597.2978581712861
+            }
+          ],
+          "spatial_points": 128,
+          "release_slots": 40,
+          "station_positive_margin_CNY": {
+            "L1+": 0.0,
+            "L2+": 9.6533889129279,
+            "L2-": 6.593335997632644,
+            "L1-": 24.57838032105152
+          },
+          "station_profitable_requests": {
+            "L1+": 0.0,
+            "L2+": 0.30115418118466897,
+            "L2-": 0.22364982578397213,
+            "L1-": 0.7613022648083626
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.4777439024390244,
+          "expected_positive_margin_CNY": 47.039378599179464,
+          "expected_late_ready_reservations": 0.5351916376306621,
+          "max_profitable_extra_delay": 21.7325671334021,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 28.9,
+              "spare": 1138.0,
+              "drone_tail": 46.173272347477784,
+              "delivery_delay_budget": 592.2978581712861
+            },
+            {
+              "station": "L2+",
+              "departure": 39.0222604,
+              "spare": 1138.0,
+              "drone_tail": 18.9,
+              "delivery_delay_budget": 592.2978581712861
+            },
+            {
+              "station": "L2-",
+              "departure": 52.5972604,
+              "spare": 1281.0,
+              "drone_tail": 61.50799401254248,
+              "delivery_delay_budget": 592.2978581712861
+            },
+            {
+              "station": "L1-",
+              "departure": 63.19452080000001,
+              "spare": 1300.0,
+              "drone_tail": 18.9,
+              "delivery_delay_budget": 592.2978581712861
+            }
+          ],
+          "spatial_points": 128,
+          "release_slots": 45,
+          "station_positive_margin_CNY": {
+            "L1+": 0.0,
+            "L2+": 12.760525596711606,
+            "L2-": 6.593335997632645,
+            "L1-": 27.685517004835223
+          },
+          "station_profitable_requests": {
+            "L1+": 0.0,
+            "L2+": 0.39697299651567947,
+            "L2-": 0.2236498257839721,
+            "L1-": 0.8571210801393732
+          }
+        }
+      ]
+    },
+    {
+      "site_id": "s20261128_L112902_d1_N80_uniform_e00_I0E00001",
+      "case": "s20261128_L112902_d1_N80_uniform",
+      "spec": {
+        "layout_id": 112902,
+        "day_id": 1,
+        "total": 80,
+        "share": 0.6,
+        "pattern": "uniform"
+      },
+      "at": 14.325,
+      "truck": "I0E00001",
+      "station": "L1+",
+      "closed": false,
+      "known_state_hash": "3aab70b6ed1423c073645f1c37e4d3f665e82c848a8a6e096e072481181523c6",
+      "J": [
+        404.162344792301,
+        403.362344792301,
+        402.162344792301,
+        400.162344792301
+      ],
+      "features": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0009781739520833839,
+          0.0,
+          0.0,
+          1.0,
+          1.0644599303135889
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0010667412785898976,
+          0.0,
+          0.0,
+          0.9999846545390291,
+          1.131010452961672
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0012074326451657898,
+          0.0,
+          0.0,
+          0.9974422815803279,
+          1.231054006968641
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0014628259276352675,
+          0.0,
+          0.0,
+          0.9932049933158259,
+          1.4058797909407668
+        ]
+      ],
+      "plan_hashes": [
+        "9ee9164282de5af698578cfa372a746a0b02164f4459b04dcdf538f5e04e7a5a",
+        "355ac9b338a260c0547ec1f435f6f0c29a2650bf77d8a6d74fbb51ff10465239",
+        "00d9680182e63ab172c53a6a682d1db6f3592dec3991d3cb382229c1db14da2b",
+        "393b31649f1496fcf57e76759a43600f1ac80639371772377d9328b384c30adc"
+      ],
+      "downstream_audit": [
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.0644599303135889,
+          "expected_positive_margin_CNY": 29.759132075448957,
+          "expected_late_ready_reservations": 1.0644599303135889,
+          "max_profitable_extra_delay": 26.999439331224387,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 14.325,
+              "spare": 955.0,
+              "drone_tail": 23.646070960641836,
+              "delivery_delay_budget": 591.9818923566052
+            },
+            {
+              "station": "L2+",
+              "departure": 27.5722604,
+              "spare": 1080.0,
+              "drone_tail": 38.17092111721918,
+              "delivery_delay_budget": 591.9818923566052
+            },
+            {
+              "station": "L2-",
+              "departure": 40.197260400000005,
+              "spare": 1185.0,
+              "drone_tail": 51.47197730600087,
+              "delivery_delay_budget": 591.9818923566052
+            },
+            {
+              "station": "L1-",
+              "departure": 53.19452080000001,
+              "spare": 1300.0,
+              "drone_tail": 64.4361318230923,
+              "delivery_delay_budget": 591.9818923566052
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 39,
+          "station_positive_margin_CNY": {
+            "L1+": 0.0,
+            "L2+": 3.791232482449718,
+            "L2-": 8.151818064362237,
+            "L1-": 17.816081528637003
+          },
+          "station_profitable_requests": {
+            "L1+": 0.0,
+            "L2+": 0.13418989547038326,
+            "L2-": 0.2915940766550522,
+            "L1-": 0.6386759581881533
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.131010452961672,
+          "expected_positive_margin_CNY": 31.648942204315514,
+          "expected_late_ready_reservations": 1.131010452961672,
+          "max_profitable_extra_delay": 26.999439331224387,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 16.325,
+              "spare": 955.0,
+              "drone_tail": 23.646070960641836,
+              "delivery_delay_budget": 589.9818923566052
+            },
+            {
+              "station": "L2+",
+              "departure": 29.5722604,
+              "spare": 1080.0,
+              "drone_tail": 40.17092111721918,
+              "delivery_delay_budget": 589.9818923566052
+            },
+            {
+              "station": "L2-",
+              "departure": 42.197260400000005,
+              "spare": 1185.0,
+              "drone_tail": 53.47197730600087,
+              "delivery_delay_budget": 589.9818923566052
+            },
+            {
+              "station": "L1-",
+              "departure": 55.19452080000001,
+              "spare": 1300.0,
+              "drone_tail": 66.4361318230923,
+              "delivery_delay_budget": 589.9818923566052
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 41,
+          "station_positive_margin_CNY": {
+            "L1+": 0.9656292219745468,
+            "L2+": 4.374499018211213,
+            "L2-": 8.49273243549275,
+            "L1-": 17.816081528637003
+          },
+          "station_profitable_requests": {
+            "L1+": 0.0337979094076655,
+            "L2+": 0.15483449477351915,
+            "L2-": 0.30370209059233444,
+            "L1-": 0.6386759581881533
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.231054006968641,
+          "expected_positive_margin_CNY": 34.58508451027059,
+          "expected_late_ready_reservations": 1.231054006968641,
+          "max_profitable_extra_delay": 26.999439331224387,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 19.325,
+              "spare": 955.0,
+              "drone_tail": 23.646070960641836,
+              "delivery_delay_budget": 586.9818923566052
+            },
+            {
+              "station": "L2+",
+              "departure": 32.572260400000005,
+              "spare": 1080.0,
+              "drone_tail": 43.17092111721918,
+              "delivery_delay_budget": 586.9818923566052
+            },
+            {
+              "station": "L2-",
+              "departure": 45.197260400000005,
+              "spare": 1185.0,
+              "drone_tail": 56.47197730600087,
+              "delivery_delay_budget": 586.9818923566052
+            },
+            {
+              "station": "L1-",
+              "departure": 58.19452080000001,
+              "spare": 1300.0,
+              "drone_tail": 69.4361318230923,
+              "delivery_delay_budget": 586.9818923566052
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 44,
+          "station_positive_margin_CNY": {
+            "L1+": 2.5155001675916093,
+            "L2+": 5.249398821853457,
+            "L2-": 9.004103992188522,
+            "L1-": 17.816081528637
+          },
+          "station_profitable_requests": {
+            "L1+": 0.08471254355400697,
+            "L2+": 0.185801393728223,
+            "L2-": 0.3218641114982578,
+            "L1-": 0.6386759581881533
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 1.4058797909407668,
+          "expected_positive_margin_CNY": 39.756520404276195,
+          "expected_late_ready_reservations": 1.4058797909407668,
+          "max_profitable_extra_delay": 26.999439331224387,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L1+",
+              "departure": 24.325,
+              "spare": 955.0,
+              "drone_tail": 23.646070960641836,
+              "delivery_delay_budget": 581.9818923566052
+            },
+            {
+              "station": "L2+",
+              "departure": 37.572260400000005,
+              "spare": 1080.0,
+              "drone_tail": 48.17092111721918,
+              "delivery_delay_budget": 581.9818923566052
+            },
+            {
+              "station": "L2-",
+              "departure": 50.197260400000005,
+              "spare": 1185.0,
+              "drone_tail": 61.47197730600087,
+              "delivery_delay_budget": 581.9818923566052
+            },
+            {
+              "station": "L1-",
+              "departure": 63.19452080000001,
+              "spare": 1300.0,
+              "drone_tail": 74.4361318230923,
+              "delivery_delay_budget": 581.9818923566052
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 49,
+          "station_positive_margin_CNY": {
+            "L1+": 5.376483794367191,
+            "L2+": 6.707565161257194,
+            "L2-": 9.856389920014808,
+            "L1-": 17.816081528637
+          },
+          "station_profitable_requests": {
+            "L1+": 0.1776567944250871,
+            "L2+": 0.23741289198606272,
+            "L2-": 0.35213414634146334,
+            "L1-": 0.6386759581881533
+          }
+        }
+      ]
+    },
+    {
+      "site_id": "s20261128_L112902_d1_N80_uniform_e01_I0E00001",
+      "case": "s20261128_L112902_d1_N80_uniform",
+      "spec": {
+        "layout_id": 112902,
+        "day_id": 1,
+        "total": 80,
+        "share": 0.6,
+        "pattern": "uniform"
+      },
+      "at": 27.5722604,
+      "truck": "I0E00001",
+      "station": "L2+",
+      "closed": false,
+      "known_state_hash": "56146a297fa4fbddd2fec00de344a4eeb8365028286068fc05ba9a70710a1e5f",
+      "J": [
+        404.162344792301,
+        403.362344792301,
+        402.162344792301,
+        400.162344792301
+      ],
+      "features": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0004846959795463502,
+          0.0,
+          0.0,
+          1.0,
+          0.6386759581881534
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0005346711098830875,
+          0.0,
+          0.0,
+          0.9999846545390291,
+          0.7047038327526131
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0006149172070535212,
+          0.0,
+          0.0,
+          0.9974422815803278,
+          0.8050522648083622
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.000762749773445119,
+          0.0,
+          0.0,
+          0.9932049933158258,
+          0.9788327526132402
+        ]
+      ],
+      "plan_hashes": [
+        "5c4c0ae01229166e1c68e07b2299e8f48f23bba547b5ed4d363705a4e4b5309d",
+        "11bd8571a9d43e5eb6e907c728dacb33ac46b89d440f01365f3341de00939a28",
+        "4aff47db96b1bf6bdd514a7ad520848a82b6523a315000aeefb8a988fda5c669",
+        "b945901e09ba38e0c26e024c90d51cf3dcb5fca48665e4a15850c5fbcd1a35b9"
+      ],
+      "downstream_audit": [
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 0.6386759581881534,
+          "expected_positive_margin_CNY": 17.813262337771896,
+          "expected_late_ready_reservations": 0.6386759581881534,
+          "max_profitable_extra_delay": 26.999439331224387,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L2+",
+              "departure": 27.5722604,
+              "spare": 1080.0,
+              "drone_tail": 38.17092111721918,
+              "delivery_delay_budget": 591.9818923566052
+            },
+            {
+              "station": "L2-",
+              "departure": 40.197260400000005,
+              "spare": 1185.0,
+              "drone_tail": 51.47197730600087,
+              "delivery_delay_budget": 591.9818923566052
+            },
+            {
+              "station": "L1-",
+              "departure": 53.19452080000001,
+              "spare": 1300.0,
+              "drone_tail": 64.4361318230923,
+              "delivery_delay_budget": 591.9818923566052
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 26,
+          "station_positive_margin_CNY": {
+            "L2+": 0.0,
+            "L2-": 5.9358746520138945,
+            "L1-": 11.877387685758002
+          },
+          "station_profitable_requests": {
+            "L2+": 0.0,
+            "L2-": 0.21289198606271775,
+            "L1-": 0.4257839721254355
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 0.7047038327526131,
+          "expected_positive_margin_CNY": 19.67535071872596,
+          "expected_late_ready_reservations": 0.7047038327526131,
+          "max_profitable_extra_delay": 26.999439331224387,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L2+",
+              "departure": 29.5722604,
+              "spare": 1080.0,
+              "drone_tail": 38.17092111721918,
+              "delivery_delay_budget": 589.9818923566052
+            },
+            {
+              "station": "L2-",
+              "departure": 42.197260400000005,
+              "spare": 1185.0,
+              "drone_tail": 53.47197730600087,
+              "delivery_delay_budget": 589.9818923566052
+            },
+            {
+              "station": "L1-",
+              "departure": 55.19452080000001,
+              "spare": 1300.0,
+              "drone_tail": 66.4361318230923,
+              "delivery_delay_budget": 589.9818923566052
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 28,
+          "station_positive_margin_CNY": {
+            "L2+": 0.9484431743572923,
+            "L2-": 5.9358746520138945,
+            "L1-": 12.791032892354773
+          },
+          "station_profitable_requests": {
+            "L2+": 0.033275261324041815,
+            "L2-": 0.21289198606271775,
+            "L1-": 0.4585365853658536
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 0.8050522648083622,
+          "expected_positive_margin_CNY": 22.569662274570224,
+          "expected_late_ready_reservations": 0.8050522648083622,
+          "max_profitable_extra_delay": 26.999439331224387,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L2+",
+              "departure": 32.572260400000005,
+              "spare": 1080.0,
+              "drone_tail": 38.17092111721918,
+              "delivery_delay_budget": 586.9818923566052
+            },
+            {
+              "station": "L2-",
+              "departure": 45.197260400000005,
+              "spare": 1185.0,
+              "drone_tail": 56.47197730600087,
+              "delivery_delay_budget": 586.9818923566052
+            },
+            {
+              "station": "L1-",
+              "departure": 58.19452080000001,
+              "spare": 1300.0,
+              "drone_tail": 69.4361318230923,
+              "delivery_delay_budget": 586.9818923566052
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 31,
+          "station_positive_margin_CNY": {
+            "L2+": 2.4722869203064013,
+            "L2-": 5.935874652013894,
+            "L1-": 14.161500702249926
+          },
+          "station_profitable_requests": {
+            "L2+": 0.08449477351916376,
+            "L2-": 0.21289198606271775,
+            "L1-": 0.5076655052264808
+          }
+        },
+        {
+          "feature": "downstream_profitable_pickup_count",
+          "units": "expected_requests",
+          "target_truck": "I0E00001",
+          "spatial_cells": 8,
+          "hidden_future_used": false,
+          "reservation_rule": "release <= planned station departure; wait only until earliest cargo readiness then load",
+          "expected_profitable_requests": 0.9788327526132402,
+          "expected_positive_margin_CNY": 27.67001944368772,
+          "expected_late_ready_reservations": 0.9788327526132402,
+          "max_profitable_extra_delay": 26.999439331224387,
+          "limitations": [
+            "isolated single-request opportunities, not jointly serviceable demand",
+            "append a new sortie after all known work; no insertion into a known sortie",
+            "append truck loading after planned departure even if earlier loading slack may exist",
+            "conservative all-remaining-D delay budget and all-unfinished-P incremental lateness",
+            "deterministic midpoint spatial quadrature; grid resolution is an approximation"
+          ],
+          "windows": [
+            {
+              "station": "L2+",
+              "departure": 37.572260400000005,
+              "spare": 1080.0,
+              "drone_tail": 38.17092111721918,
+              "delivery_delay_budget": 581.9818923566052
+            },
+            {
+              "station": "L2-",
+              "departure": 50.197260400000005,
+              "spare": 1185.0,
+              "drone_tail": 61.47197730600087,
+              "delivery_delay_budget": 581.9818923566052
+            },
+            {
+              "station": "L1-",
+              "departure": 63.19452080000001,
+              "spare": 1300.0,
+              "drone_tail": 74.4361318230923,
+              "delivery_delay_budget": 581.9818923566052
+            }
+          ],
+          "spatial_points": 64,
+          "release_slots": 36,
+          "station_positive_margin_CNY": {
+            "L2+": 5.288531072931981,
+            "L2-": 5.935874652013894,
+            "L1-": 16.44561371874185
+          },
+          "station_profitable_requests": {
+            "L2+": 0.17639372822299654,
+            "L2-": 0.21289198606271775,
+            "L1-": 0.5895470383275261
+          }
+        }
+      ]
+    }
+  ],
+  "offline_future_read_for_features": false
+}

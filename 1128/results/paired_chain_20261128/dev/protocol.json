@@ -1,0 +1,256 @@
+{
+  "version": "paired-chain-primary-campaign-v1",
+  "split": "dev",
+  "samples": 32,
+  "seed": 20261128,
+  "cases": [
+    {
+      "layout_id": 112903,
+      "day_id": 2,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "uniform"
+    },
+    {
+      "layout_id": 112903,
+      "day_id": 2,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "dual"
+    },
+    {
+      "layout_id": 112904,
+      "day_id": 3,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "uniform"
+    },
+    {
+      "layout_id": 112904,
+      "day_id": 3,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "dual"
+    },
+    {
+      "layout_id": 112905,
+      "day_id": 2,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "uniform"
+    },
+    {
+      "layout_id": 112905,
+      "day_id": 2,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "dual"
+    },
+    {
+      "layout_id": 112906,
+      "day_id": 3,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "uniform"
+    },
+    {
+      "layout_id": 112906,
+      "day_id": 3,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "dual"
+    },
+    {
+      "layout_id": 112907,
+      "day_id": 2,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "uniform"
+    },
+    {
+      "layout_id": 112907,
+      "day_id": 2,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "dual"
+    },
+    {
+      "layout_id": 112908,
+      "day_id": 3,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "uniform"
+    },
+    {
+      "layout_id": 112908,
+      "day_id": 3,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "dual"
+    },
+    {
+      "layout_id": 112909,
+      "day_id": 2,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "uniform"
+    },
+    {
+      "layout_id": 112909,
+      "day_id": 2,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "dual"
+    },
+    {
+      "layout_id": 112910,
+      "day_id": 3,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "uniform"
+    },
+    {
+      "layout_id": 112910,
+      "day_id": 3,
+      "total": 80,
+      "share": 0.6,
+      "pattern": "dual"
+    }
+  ],
+  "split_design": {
+    "train": {
+      "layouts": [
+        112871,
+        112872
+      ],
+      "days": [
+        1,
+        2
+      ],
+      "samples": 16
+    },
+    "tune": {
+      "layouts": [
+        112901,
+        112902
+      ],
+      "days": [
+        1
+      ],
+      "samples": 24
+    },
+    "dev": {
+      "layouts": [
+        112903,
+        112904,
+        112905,
+        112906,
+        112907,
+        112908,
+        112909,
+        112910
+      ],
+      "days": [
+        2,
+        3
+      ],
+      "samples": 32,
+      "day_assignment": "odd_layout_day2_even_layout_day3"
+    }
+  },
+  "interventions": [
+    0,
+    2,
+    5,
+    10
+  ],
+  "source_policy": "none, no exploration",
+  "continuation_policy": "same none, no exploration",
+  "state_filter": "post_unload_primary only; genuine immediate departure; no loading reservation",
+  "conditional_sampling": "one sampled suffix per state/replica shared by all four branches",
+  "seed_rule": "evaluate_sample SHA256 of site ID and replica; seed enters case/site ID",
+  "original_suffix_replica": -1,
+  "original_suffix_in_training_labels": false,
+  "search": {
+    "candidate_budget": 32,
+    "enhancement_budget": 8,
+    "action_solver": "gurobi",
+    "mip_pattern_limit": 32
+  },
+  "setting": {
+    "h": 5,
+    "review_intervals": [
+      2,
+      5,
+      10
+    ],
+    "feature_horizon": 5
+  },
+  "world_options": {
+    "arrival_mode": "p2",
+    "improvement_budget": 8,
+    "history_days": 160,
+    "temporal": "peak"
+  },
+  "source_hashes": {
+    "run_paired_chain_campaign.py": "849b6b2e507050d987a83d2dfa158362d5b38d5c911616ee77a90e5f5922212f",
+    "run_paired_wait_diagnostic.py": "9f2a26e802568c5eec1148ff664912ea3f1a16fa01a26daef7705be20fc45dc4",
+    "paired_wait_branches.py": "6dd75fccf3543c424c5688fe85c26b8a780979cad7d3e4ede34aa0515d4237d4",
+    "paired_wait_suffix.py": "6c7c63d747290d7924c13b6180792055af9f37c452d89bc34d41fbaed0b501cc",
+    "run_feature_screen.py": "5363ec4a89d6fc8c2f315d36aacf81b2ab6ae82d796b034ec7a61d0f47fdb975",
+    "uniform_wait_worlds.py": "864c805d5c16a92e10710d71a005db6f9c455f705702acc24b7ca80fff266276",
+    "unified_vfa_policy.py": "381f63ac95e29baab0f0ba3757fb16410c55176acdef06ea76bfc1bf83ee2c5d",
+    "unified_vfa_features.py": "75356b4e733248e76a225424170f86421e2ba619733c5b2517417e52e0d01b58",
+    "joint_action_mip.py": "2f8286c842515518f0fae436aef8ca44102587fefcc87a3e904ad044ce807873",
+    "service_action_mip.py": "a81b8991049c7fab0cc901efbef28c75f34467f6afb3978aa349c4f5d1af12f5",
+    "run_global_demand_pilot.py": "78a92048c2632bc541f6db9419a3a42a36696bbf32dd4c4101ee02ac92055571",
+    "run_multiscale.py": "8be54a91444d4bd59c1ebad2d644f8c952ead6370a293ff159185075c730695a",
+    "e1_sim/__init__.py": "d1736e576fb09f73d921e0ba425b95325e36cd639a3e3b188b77dd1d9fc2e753",
+    "e1_sim/__main__.py": "74fff10eb2bd330c92909b27a5a9ae84f41b3f268a5c04f51f849276919f19c6",
+    "e1_sim/audit.py": "f24d7043e8fb4751bce7ce776b2082943c316da65be924261f4fbc67a5caa05a",
+    "e1_sim/comparators.py": "62495bf87ea95944ff048b4fb529f4419f11947490f3707e62ac9397e3a23d5f",
+    "e1_sim/constraints.py": "1a50b496d6e390cb14279ddf6933972af72236d9dcff406985f1bed82159967f",
+    "e1_sim/cost_model.py": "8a2daf408a0974fc973e1c7112ca858e0a52bd2079321f28331d2f7b928952f6",
+    "e1_sim/enhancement.py": "c15893f7bb97b9a7850c835b9a44e3dc776a26631a89a12e2bb789425f076a2d",
+    "e1_sim/examples.py": "5bd1ea9344f67c6b9ee272d9d9953d3616e088979195df9b759b314e7fdd3b03",
+    "e1_sim/forecast.py": "eac549c144eeeaa8c8ab6615199b24be4bfe4cbc1dc3ff93b9e858a64bb5d763",
+    "e1_sim/formal_features.py": "5b0a8c4918bca28d2e5871bf62af9aa2fadaaf06cdc92f8f43c87daf6eed414c",
+    "e1_sim/formal_learning.py": "e8c35abf7f805eebb7356c705b092b364227fe9a5fe6b27cae1aa1faa755aff1",
+    "e1_sim/information.py": "2e7fabd83f5cc4755fbcb0d5313d8969f9b005945d6cda2558365c2861eb50c9",
+    "e1_sim/initial_enhancement.py": "a635c10a1659da3cbd54b12619abc254e8bc8c6db78346ce8a349ce7623b7076",
+    "e1_sim/initial_timing.py": "7a751b19dded1e9bb4ee127ad3e25fe58efb50bda92c2aabf42db6203cbfb50b",
+    "e1_sim/initializer.py": "5f185c6e92d3feafb45c8f9cc3ce925c799161ba07edf0924c1757e7f1d53c8c",
+    "e1_sim/kernel.py": "6264f550916be9209e00e74798404e46fc9ecf107c9394351286e646eb1f95ad",
+    "e1_sim/learning.py": "125160322a0f58c3d7d36a1e422b7e964b1b5c579c83865f6e3e3b6c8e042dea",
+    "e1_sim/multiscale.py": "098f6f8b9923f06d259821bb17ae817ae0d0e9728293ad0c11f11c2ddfada9e8",
+    "e1_sim/online.py": "0cf6f412951b51b33d4bb3ec3bf43973588959b50613ae3f790eab6b306f5934",
+    "e1_sim/online_examples.py": "992c1de4c6d9ace9d1acb2db61a479a3c8a2fdb4edb9c00d730670c8558e1550",
+    "e1_sim/p2_arrivals.py": "b05d8b40ce509a51511c36e9e83935a38b5356bf2103bff6db3781adfca5a87e",
+    "e1_sim/pi_adapter.py": "851e5fe2086ac70f8ac4183813fa50c730cda491f58606c3d5b717e11766ef9d",
+    "e1_sim/pi_fixed_solver.py": "3705d14091886153d55636e00571f7e21e10e9d64f66572e909c5a9de5b38e20",
+    "e1_sim/pi_mapping.py": "bdd6b6743f7a5d36de4db1d2382ad494c880a68fef55d6ff893f508b3a5ad7d2",
+    "e1_sim/pi_route_bound.py": "59491d23d1903c3f31774d704db7bd1445ac81b822101ed107bc2ee36ba7b935",
+    "e1_sim/policy_cases.py": "b0595126f41f090acbf9198434a513d525852ac97f1e029a182c67b34a3118e2",
+    "e1_sim/quantities.py": "e25649469edb02a6ceaf1b2b950c3ab0d261f5589fdcb86a2cdb50e69d99e78c",
+    "e1_sim/resource_features.py": "88831363dd2f7771216f376b0a58b5b0afe73ac736485982bc8a7b7447582099",
+    "e1_sim/retiming.py": "3af4f4dd031dd26d963d5c03653e6fd792b58cfc17ec2f38dfc78df9880b4b59",
+    "e1_sim/runner.py": "7d61c780de8ec5f900d6a82f7babb9e2f55283bba1b9dfe06133a21c21b2f2de",
+    "e1_sim/system_wait.py": "f98643da466f59fb6514915154c2755579be1eb55e6bbe358034515149e6e509",
+    "e1_sim/unknown_demand.py": "c7dac9622992276f58e6fa0ca40a351421e43df6e97a9d1a15fe2fbc3393b3ab",
+    "e1_sim/wtq.py": "fff923ea8224fa8f868c28e53232d4695eeb34c3e05ed39639ca275b60a5aea8",
+    "e1_sim/wtq_audit.py": "fc8a82ad24d46d5facfd8258ab52d8924f1e39c5d22932f1629621d1f84aa73c",
+    "e1_sim/wtq_compiler.py": "e75feaaa9d07c0363b4412e6ad6f076cf376ef52477fb8df5ec0c82fe14791cf",
+    "e1_sim/wtq_full_day.py": "42cc52b6d1cb703ddb88df512e09edc8e0c5889742e1e829935de712221ff188",
+    "e1_sim/wtq_policy.py": "ec0c8dac1d799997005bfe559507bbcb43508c4611d288f6a5c153bdcb5b8121",
+    "data/fixtures/e1_cases.json": "18052bb30b09bfa0ecd40f1b9066276bd78e366db8d0b6f1c7348e6901a1b791"
+  },
+  "reserved_final_test_layouts": [
+    112891,
+    112892,
+    112893,
+    112894
+  ],
+  "independent_test_opened": false,
+  "scope": "train/tune/new development, not final test",
+  "dependence": "States within a world are dependent; spatial variants share random streams."
+}

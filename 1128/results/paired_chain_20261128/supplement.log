@@ -1,0 +1,93 @@
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+{"status": "waiting_for_train_and_tune"}
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "D:\download\Anaconda\envs\pytorch\lib\concurrent\futures\process.py", line 239, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "E:\����\����5����̬��\������\ʵ��\1128\dynamic-adaptive-v3\code\e1_v04\supplement_paired_chain.py", line 162, in evaluate_and_publish
+    future_created = publish_copy_if_absent(scratch / 'offline_futures' / name,
+  File "E:\����\����5����̬��\������\ʵ��\1128\dynamic-adaptive-v3\code\e1_v04\supplement_paired_chain.py", line 113, in publish_copy_if_absent
+    os.link(str(temporary), str(destination))
+PermissionError: [WinError 5] �ܾ����ʡ�: 'E:\\����\\����5����̬��\\������\\ʵ��\\1128\\dynamic-adaptive-v3\\results\\paired_chain_20261128\\dev\\offline_futures\\.supplement-publish-paeczmrz.tmp' -> 'E:\\����\\����5����̬��\\������\\ʵ��\\1128\\dynamic-adaptive-v3\\results\\paired_chain_20261128\\dev\\offline_futures\\s20261128_L112910_d3_N80_uniform_e03_I0E00001_r30.json'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "supplement_paired_chain.py", line 291, in <module>
+    main()
+  File "supplement_paired_chain.py", line 281, in main
+    schedule(root, args.jobs, args.wait_for_training)
+  File "supplement_paired_chain.py", line 260, in schedule
+    result = future.result()
+  File "D:\download\Anaconda\envs\pytorch\lib\concurrent\futures\_base.py", line 437, in result
+    return self.__get_result()
+  File "D:\download\Anaconda\envs\pytorch\lib\concurrent\futures\_base.py", line 389, in __get_result
+    raise self._exception
+PermissionError: [WinError None] �ܾ����ʡ�: 'E:\\����\\����5����̬��\\������\\ʵ��\\1128\\dynamic-adaptive-v3\\results\\paired_chain_20261128\\dev\\offline_futures\\.supplement-publish-paeczmrz.tmp' -> 'E:\\����\\����5����̬��\\������\\ʵ��\\1128\\dynamic-adaptive-v3\\results\\paired_chain_20261128\\dev\\offline_futures\\s20261128_L112910_d3_N80_uniform_e03_I0E00001_r30.json'

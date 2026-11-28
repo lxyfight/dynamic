@@ -1,0 +1,330 @@
+[
+  {
+    "model": {
+      "version": "paired-action-ridge-v1",
+      "kind": "paired",
+      "columns": [
+        0,
+        1,
+        7
+      ],
+      "alpha": 0.001,
+      "weights": [
+        -0.8197055824609497,
+        -10.252577684733309,
+        24.293383106531266
+      ],
+      "scales": [
+        0.02341917809868333,
+        0.09394128941412473,
+        0.22460139401429793
+      ],
+      "raw_coefficients": [
+        -35.00146670420663,
+        -109.13814094605947,
+        108.16220982575366
+      ],
+      "intercept": 0.0,
+      "feature_names": [
+        "existing_chain_near_h_city_proxy",
+        "existing_chain_later_city_proxy",
+        "downstream_profitable_pickup_count"
+      ],
+      "fit": {
+        "target": "mean_suffix[(G_h-G_0)-(J_h-J_0)]",
+        "weighting": "equal eligible case/state/action; sum weights=1",
+        "weight_sum": 0.9999999999999999,
+        "feature_scaling": "train-only uncentered weighted RMS; no target scaling",
+        "rows": 60,
+        "cases": 8,
+        "states": 20,
+        "zero_rms_columns": [],
+        "weighted_rmse": 9.641533214695036,
+        "matrix_rank": 3,
+        "singular_values": [
+          1.578194263092699,
+          0.5787105135826215,
+          0.4176086797592102
+        ]
+      }
+    },
+    "tune_equal_case_gain": 15.983986834590695,
+    "tune_choice_counts": {
+      "2": 2,
+      "10": 5
+    }
+  },
+  {
+    "model": {
+      "version": "paired-action-ridge-v1",
+      "kind": "paired",
+      "columns": [
+        0,
+        1,
+        7
+      ],
+      "alpha": 0.01,
+      "weights": [
+        -0.7709762440773271,
+        -9.484848161176847,
+        23.419111041102376
+      ],
+      "scales": [
+        0.02341917809868333,
+        0.09394128941412473,
+        0.22460139401429793
+      ],
+      "raw_coefficients": [
+        -32.92072167642266,
+        -100.96570124095757,
+        104.26966023021004
+      ],
+      "intercept": 0.0,
+      "feature_names": [
+        "existing_chain_near_h_city_proxy",
+        "existing_chain_later_city_proxy",
+        "downstream_profitable_pickup_count"
+      ],
+      "fit": {
+        "target": "mean_suffix[(G_h-G_0)-(J_h-J_0)]",
+        "weighting": "equal eligible case/state/action; sum weights=1",
+        "weight_sum": 0.9999999999999999,
+        "feature_scaling": "train-only uncentered weighted RMS; no target scaling",
+        "rows": 60,
+        "cases": 8,
+        "states": 20,
+        "zero_rms_columns": [],
+        "weighted_rmse": 9.657445486442523,
+        "matrix_rank": 3,
+        "singular_values": [
+          1.578194263092699,
+          0.5787105135826215,
+          0.4176086797592102
+        ]
+      }
+    },
+    "tune_equal_case_gain": 18.516612488061213,
+    "tune_choice_counts": {
+      "2": 1,
+      "10": 5,
+      "5": 1
+    }
+  },
+  {
+    "model": {
+      "version": "paired-action-ridge-v1",
+      "kind": "paired",
+      "columns": [
+        0,
+        1,
+        7
+      ],
+      "alpha": 0.1,
+      "weights": [
+        -0.22868074018750534,
+        -4.726530701979988,
+        17.60984214567097
+      ],
+      "scales": [
+        0.02341917809868333,
+        0.09394128941412473,
+        0.22460139401429793
+      ],
+      "raw_coefficients": [
+        -9.764678300147612,
+        -50.313666455480025,
+        78.40486575319271
+      ],
+      "intercept": 0.0,
+      "feature_names": [
+        "existing_chain_near_h_city_proxy",
+        "existing_chain_later_city_proxy",
+        "downstream_profitable_pickup_count"
+      ],
+      "fit": {
+        "target": "mean_suffix[(G_h-G_0)-(J_h-J_0)]",
+        "weighting": "equal eligible case/state/action; sum weights=1",
+        "weight_sum": 0.9999999999999999,
+        "feature_scaling": "train-only uncentered weighted RMS; no target scaling",
+        "rows": 60,
+        "cases": 8,
+        "states": 20,
+        "zero_rms_columns": [],
+        "weighted_rmse": 10.371774103077307,
+        "matrix_rank": 3,
+        "singular_values": [
+          1.578194263092699,
+          0.5787105135826215,
+          0.4176086797592102
+        ]
+      }
+    },
+    "tune_equal_case_gain": 24.936842724451562,
+    "tune_choice_counts": {
+      "10": 7
+    }
+  },
+  {
+    "model": {
+      "version": "paired-action-ridge-v1",
+      "kind": "paired",
+      "columns": [
+        0,
+        1,
+        7
+      ],
+      "alpha": 1.0,
+      "weights": [
+        1.4479418616155857,
+        1.3021154156563655,
+        6.6332872868987085
+      ],
+      "scales": [
+        0.02341917809868333,
+        0.09394128941412473,
+        0.22460139401429793
+      ],
+      "raw_coefficients": [
+        61.82718520326687,
+        13.86094893711969,
+        29.5335980260053
+      ],
+      "intercept": 0.0,
+      "feature_names": [
+        "existing_chain_near_h_city_proxy",
+        "existing_chain_later_city_proxy",
+        "downstream_profitable_pickup_count"
+      ],
+      "fit": {
+        "target": "mean_suffix[(G_h-G_0)-(J_h-J_0)]",
+        "weighting": "equal eligible case/state/action; sum weights=1",
+        "weight_sum": 0.9999999999999999,
+        "feature_scaling": "train-only uncentered weighted RMS; no target scaling",
+        "rows": 60,
+        "cases": 8,
+        "states": 20,
+        "zero_rms_columns": [],
+        "weighted_rmse": 13.868094094371365,
+        "matrix_rank": 3,
+        "singular_values": [
+          1.578194263092699,
+          0.5787105135826215,
+          0.4176086797592102
+        ]
+      }
+    },
+    "tune_equal_case_gain": 24.936842724451562,
+    "tune_choice_counts": {
+      "10": 7
+    }
+  },
+  {
+    "model": {
+      "version": "paired-action-ridge-v1",
+      "kind": "paired",
+      "columns": [
+        0,
+        1,
+        7
+      ],
+      "alpha": 10.0,
+      "weights": [
+        0.6360451133332886,
+        0.68864159437373,
+        1.3024942568959041
+      ],
+      "scales": [
+        0.02341917809868333,
+        0.09394128941412473,
+        0.22460139401429793
+      ],
+      "raw_coefficients": [
+        27.15915608366496,
+        7.330552930117519,
+        5.799137011647347
+      ],
+      "intercept": 0.0,
+      "feature_names": [
+        "existing_chain_near_h_city_proxy",
+        "existing_chain_later_city_proxy",
+        "downstream_profitable_pickup_count"
+      ],
+      "fit": {
+        "target": "mean_suffix[(G_h-G_0)-(J_h-J_0)]",
+        "weighting": "equal eligible case/state/action; sum weights=1",
+        "weight_sum": 0.9999999999999999,
+        "feature_scaling": "train-only uncentered weighted RMS; no target scaling",
+        "rows": 60,
+        "cases": 8,
+        "states": 20,
+        "zero_rms_columns": [],
+        "weighted_rmse": 17.5636285264118,
+        "matrix_rank": 3,
+        "singular_values": [
+          1.578194263092699,
+          0.5787105135826215,
+          0.4176086797592102
+        ]
+      }
+    },
+    "tune_equal_case_gain": 15.256590527224585,
+    "tune_choice_counts": {
+      "10": 3,
+      "0": 4
+    }
+  },
+  {
+    "model": {
+      "version": "paired-action-ridge-v1",
+      "kind": "paired",
+      "columns": [
+        0,
+        1,
+        7
+      ],
+      "alpha": 100.0,
+      "weights": [
+        0.08140928618499202,
+        0.08836296424586092,
+        0.15050558610705791
+      ],
+      "scales": [
+        0.02341917809868333,
+        0.09394128941412473,
+        0.22460139401429793
+      ],
+      "raw_coefficients": [
+        3.476180327163958,
+        0.9406190270215189,
+        0.6701008547501573
+      ],
+      "intercept": 0.0,
+      "feature_names": [
+        "existing_chain_near_h_city_proxy",
+        "existing_chain_later_city_proxy",
+        "downstream_profitable_pickup_count"
+      ],
+      "fit": {
+        "target": "mean_suffix[(G_h-G_0)-(J_h-J_0)]",
+        "weighting": "equal eligible case/state/action; sum weights=1",
+        "weight_sum": 0.9999999999999999,
+        "feature_scaling": "train-only uncentered weighted RMS; no target scaling",
+        "rows": 60,
+        "cases": 8,
+        "states": 20,
+        "zero_rms_columns": [],
+        "weighted_rmse": 18.928938144948326,
+        "matrix_rank": 3,
+        "singular_values": [
+          1.578194263092699,
+          0.5787105135826215,
+          0.4176086797592102
+        ]
+      }
+    },
+    "tune_equal_case_gain": 0.0,
+    "tune_choice_counts": {
+      "0": 7
+    }
+  }
+]

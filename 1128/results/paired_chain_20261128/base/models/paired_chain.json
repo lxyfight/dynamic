@@ -1,0 +1,60 @@
+{
+  "version": "paired-action-ridge-v1",
+  "kind": "paired",
+  "columns": [
+    0,
+    1
+  ],
+  "alpha": 1.0,
+  "weights": [
+    2.927194303218815,
+    3.490727407411289
+  ],
+  "scales": [
+    0.02341917809868333,
+    0.09394128941412473
+  ],
+  "raw_coefficients": [
+    124.99133363622984,
+    37.15860649967227
+  ],
+  "intercept": 0.0,
+  "feature_names": [
+    "existing_chain_near_h_city_proxy",
+    "existing_chain_later_city_proxy"
+  ],
+  "fit": {
+    "target": "mean_suffix[(G_h-G_0)-(J_h-J_0)]",
+    "weighting": "equal eligible case/state/action; sum weights=1",
+    "weight_sum": 0.9999999999999999,
+    "feature_scaling": "train-only uncentered weighted RMS; no target scaling",
+    "rows": 60,
+    "cases": 8,
+    "states": 20,
+    "zero_rms_columns": [],
+    "weighted_rmse": 16.991312261664966,
+    "matrix_rank": 2,
+    "singular_values": [
+      1.3138880103697927,
+      0.5231618260218415
+    ]
+  },
+  "selection": {
+    "source": "tune only",
+    "objective": "equal-case mean paired gain vs depart",
+    "tune_equal_case_gain": 15.256590527224585,
+    "alpha_grid": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "tie_break": "largest alpha within 1e-9; action ties shortest h",
+    "tune_choice_counts": {
+      "10": 3,
+      "0": 4
+    }
+  }
+}
